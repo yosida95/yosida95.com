@@ -1,0 +1,12 @@
+VirtualDocumentRoot
+===================
+
+以前、 `VirtualHostの設定 - yosida95 on Hatena </2011/07/19/211021.html>`__ という記事を書きましたが、 Apache では標準で VirtualDocumentRoot なんていうものがあったんですね。
+知りませんでした。
+
+.. code-block:: apache
+
+    <VirtualHost *:80>
+        ServerName default
+        VirtualDocumentRoot "/var/www/%0/htdocs"
+    </VirtualHost>

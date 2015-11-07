@@ -1,0 +1,29 @@
+VirtualHost の設定
+==================
+
+ディレクトリを追加するだけで、独自のドキュメントルートが設定できる httpd.conf
+
+-  ドメインの大文字・小文字を区別しない
+-  ``/var/www/html`` がデフォルトのドキュメントルート
+-  VirutalHost のドキュメントルートは ``/var/www/ホスト名(小文字)/htdocs``
+-  ``/var/www/ホスト名 ( 小文字 )`` が存在しない場合はデフォルトの ``/var/www/html`` がドキュメントルート
+
+.. code-block:: apache
+
+    ServerName localhost
+    NameVirtualHost *:80
+    <VirtualHost *:80>
+        ServerName default
+        DocumentRoot /var/www/html
+        UseCanonicalName off
+        RewriteEngine on
+        RewriteMap tolower int:tolower
+        RewriteCond /var/www/${tolower:%{HTTP_HOST}} -d
+        RewriteRule ^(.*)$ /var/www/${tolower:%{HTTP_HOST}}/htdocs/$1 [QSA]
+        <Directory /var/www/*/htdocs>
+            Order deny,allow
+            Allow from All
+            AllowOverride All
+            Options Includes ExecCGI FollowSymLinks
+        <Directory>
+    </VirtualHost>

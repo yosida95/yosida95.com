@@ -1,0 +1,265 @@
+プロセス監視ツールSupervisorを導入する
+======================================
+
+1 インストール
+--------------
+
+PyPI に登録されているので pip でインストールできます。
+
+.. code-block:: sh
+
+    $ sudo pip install supervisor
+
+pip がインストールされていない場合は、 pip を入れるなり Supervisor をソースから入れるなりして自力でがんばってください。
+pip は大抵の場合 python-pip とかそんな雰囲気の名前で OS の標準リポジトリに登録されています。
+
+2 設定ファイルを書き出す
+------------------------
+
+Supervisor のインストールが終わると ``echo\_supervisord\_conf`` というコマンドが追加されます。
+こいつは supervisord の設定ファイルの雛形を標準出力に書き出します。
+
+従って、
+
+.. code-block:: sh
+
+    $ sudo echo_supervisord_conf > /etc/supervisord.conf
+
+とやれば設定ファイルが作成されます。
+
+3 最低限の設定をする
+--------------------
+
+.. code-block:: diff
+
+    0a1,2
+    > ; Sample supervisor config file.
+    > 
+    3,6c5,8
+    < chmod=0700                  ; ソケットファイルの権限
+    < chown=www-data:www-data     ; ソケットファイルのオーナーユーザー, グループ。ウェブサーバーの実行ユーザーが望ましい。
+    < username=user               ; ウェブコンパネにアクセスするためのユーザー名
+    < password=pass               ; ウェブコンパネにアクセスするためのパスワード
+    -
+    > ;chmod=0700                 ; socket file mode (default 0700)
+    > ;chown=nobody:nogroup       ; socket file uid:gid owner
+    > ;username=user              ; (default is no username (open server))
+    > ;password=123               ; (default is no password (open server))
+    14c16
+    < logfile=/var/log/supervisord.log ; supervisord自体のログファイルのパス
+    -
+    > logfile=/tmp/supervisord.log ; (main log file;default $CWD/supervisord.log)
+    18c20
+    < pidfile=/var/run/supervisord.pid ; supervisord自体のpidファイルのパス
+    -
+    > pidfile=/tmp/supervisord.pid ; (supervisord pidfile;default supervisord.pid)
+    40,41c42,43
+    < username=user              ; ウェブコンパネにアクセスするためのユーザー名, 5行目で指定したもの
+    < password=pass                ;ウェブコンパネにアクセスするためのパスワード, 6行目で指定
+    -
+    > ;username=chris              ; should be same as http_username if set
+    > ;password=123                ; should be same as http_password if set
+
+この例ではウェブコンパネへのアクセスを同一サーバー上に居るウェブサーバーが受付け、それを UNIX socket にリバースプロキシする想定で設定しています。
+TCP socket を利用したい場合は [unix\_http\_server] ディレクティブをコメントアウトして、代わりに [inet\_http\_server] を設定してください。
+
+参考までに ``http://[server]/supervisor/`` でアクセスできるようにする Nginx 設定ファイルの記述例を挙げておきます。
+
+.. code-block:: nginx
+
+    upstream supervisor {
+        server unix:///tmp/supervisor.sock;
+    }
+
+    server {
+        listen       80 default;
+        server_name [server];
+
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+
+        location /supervisor/ {
+            # 実運用では一般のユーザーにアクセスされないように、allow, denyを使ってアクセス制限するべきです
+            rewrite ^/supervisor(/.*)$ $1 break;
+            proxy_pass http://supervisor/;
+        }
+    }
+
+4 ここまでの動作を確認してみる
+------------------------------
+
+設定ファイルが書き終わり、ウェブコンパネへのアクセス方法も確保できたら、
+
+.. code-block:: sh
+
+    $ sudo /usr/bin/supervisord -n
+
+で起動してみてください。
+-n オプションを指定することによりデーモン化されません。
+エラーメッセージが出た場合は ``/etc/supervisord.conf`` の該当箇所の記述を見直してください。
+
+起動した場合は終了させずに ``http://[server]/supervisor/`` へアクセスしてみてください。
+
+|Supervisor|
+
+このような画面が表示されたら成功です。
+表示されない場合はサーバーの設定ファイルを見なおしてください。
+
+5 監視するプロセスを設定する
+----------------------------
+
+それではいよいよ Supervisor で監視するプロセスを設定してみます。
+
+設定内容を ``/etc/supervisord.conf`` にベタ書きしても問題ありませんが、プロセス単位でファイルを分けたほうが管理しやすいと思うので、専用のディレクトリ ``/etc/supervisor.d`` を作ってそこに設定ファイルを置いていく形にします。
+
+/etc/supervisord.conf の include ディレクティブを設定
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: diff
+
+    128,129c130,131
+    < [include]
+    < files = /etc/supervisor.d/\*.ini
+    -
+    > ;[include]
+    > ;files = relative/directory/\*.ini
+
+ディレクトリを作成
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: sh
+
+    $ mkdir /etc/supervisor.d
+
+設定ファイルを記述
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: ini
+
+    # 今回は TwitActivity のバックエンドに使われている uWSGI を Supervisor で管理する想定で書き進めてみます
+    [program:uwsgi_twitactivity]
+    command=/usr/bin/uwsgi --ini-paste /var/www/twit.yosida95.com/production.ini ; 実行コマンド
+    process_name=%(program_name)s ; プロセスの名前, uwsgi_twitactivityに展開される
+    numprocs=1                    ; 実行するプロセスの数
+    autostart=true                ; プロセスが死んだ場合自動で再起動するか
+    user=www-data                 ; プロセスを実行するユーザー
+    redirect_stderr=true          ; stderrをstdoutにリダイレクトするか
+    stdout_logfile=/var/www/twit.yosida95.com/uwsgi.log ; stdoutを記録するファイル名
+    stopsignal=INT                ; プロセスが停止するシグナル
+    environment=PYTHON_EGG_CACHE=/var/www/twit.yosida95.com/.cache ; 実行時に渡される環境変数
+
+!!注意!!
+~~~~~~~~
+
+監視するプロセスが自分自身でデーモン化しないようにしてください。
+自分自身でデーモン化する場合 fork した後自分自身を kill します ( 参考: `Pythonのプロセスをデーモン化する - yosida95's hatenablog </2012/03/03/230238.html>`__ ) ので、 Supervisor はプロセスが死んだとして起動をリトライします。
+しかし、その全てに失敗するので起動に失敗したものとして認識されます。
+
+大抵の自分自身をデーモン化できるサーバープログラムの場合、 daemonize や nodaemon と言ったそれっぽい名前のオプションがあるので、そいつを適切に指定してやってください。
+
+6 supervisor を起動してみる
+---------------------------
+
+先程の4と同じ手順で起動します。
+そして、 ``http://[server]/supervisor/`` にアクセスしてみましょう。
+
+|Supervisor uWSGI|
+
+ご覧のとおり uwsgi\_twitactivity が running として表示されています。
+このメニューにある restart などをクリックすれば uWSGI が再起動したりします。
+
+それでは試しに uWSGI をわざと殺して本当に生き返るのか実験してみます。
+Supervisordを -n オプションをつけて起動したまま別の端末から次のコマンドを実行してみます。
+
+.. code-block:: sh
+
+    $ sudo kill -KILL $UWSGI_PID
+    $ # supervisorを起動した端末
+    2012-03-23 01:41:24,346 INFO exited: uwsgi_twitactivity (terminated by SIGKILL; not expected)
+    2012-03-23 01:41:25,353 INFO spawned: 'uwsgi_twitactivity' with pid 20864
+    2012-03-23 01:41:26,895 INFO success: uwsgi_twitactivity entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+こんな感じで生き返ってくれました。
+
+7 Supervisord を自動起動する
+----------------------------
+
+Supervisor 用に chkconfig 対応起動シェルスクリプトをそれっぽく書いてみました。
+※ RHEL 系の場合を想定しています
+
+/etc/rc.d/init.d/supervisord
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: sh
+
+    #!/bin/sh
+
+    # chkconfig: - 15 15
+    # description: Copyright (C) yosida95 All Right Reserved.
+
+    . /etc/rc.d/init.d/functions
+
+    SUPERVISORD="/usr/bin/supervisord"
+    PIDFILE="/var/run/supervisord.pid"
+
+    start() {
+        if [ ! -x "$SUPERVISORD" ]; then
+            echo "$SUPERVISORD is not executable."
+            exit 1
+        fi
+
+        echo "Starting ..."
+        $SUPERVISORD --pidfile $PIDFILE
+
+        return $?
+    }
+
+    stop() {
+        echo "Stopping ..."
+        kill -QUIT `cat $PIDFILE`
+        [ $? -eq 0 ] && rm -f $PIDFILE
+        return $retval
+    }
+
+    case $1 in
+        start)
+            start
+        ;;
+        stop)
+            stop
+        ;;
+        *)
+            echo "$0 start|srop"
+            exit 2
+        ;;
+    esac
+
+自動起動
+~~~~~~~~
+
+.. code-block:: sh
+
+    $ sudo chkconfig --add supervisord
+    $ sudo chkconfig supervisord on
+
+これで、OS起動時にsupervisordが自動的に起動され、登録されているプロセスも自動で立ち上がるようになります。
+
+supervisorctl
+~~~~~~~~~~~~~
+
+Supervisor には supervisorctl という便利なコマンドも用意されています。
+これを解説する余力が今無いので解説は省きますが、 supervisorctl -h とすればヘルプが表示されるし、使い方はわかると思います。
+基本的に、ウェブコンパネでできることがこのコマンドラインツールでできます。
+
+参考
+~~~~
+
+- `適当なスクリプトをデーモン化するのにSupervisorが便利 - id:anatooのブログ <http://d.hatena.ne.jp/anatoo/20120310/1331321778>`__
+- `prasinos' work memo chkconfig 対応スタートアップスクリプトの書き方 <http://prasinos.blog2.fc2.com/blog-entry-592.html>`__
+
+.. |Supervisor| image:: https://yosida95.kvs.gehirn.jp/blog/2012/03/22/030615/supervisor.png
+   :width: 100%
+.. |Supervisor uWSGI| image:: https://yosida95.kvs.gehirn.jp/blog/2012/03/22/030615/supervisor-uwsgi.png
+   :width: 100%

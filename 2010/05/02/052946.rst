@@ -1,0 +1,45 @@
+はじめのいっぽ 〜 Python 〜
+===========================
+
+Chupa Chups を60個衝動買いしてしまった yosida95 です。
+(←の出だしがマイブームです。(笑))
+
+以前、 Python を初めたと書きましたが、その時に書いたコードを載せてみます。
+
+僕が Python に興味を持った理由が簡単に GUI アプリが作れるということだったので、さっそく Tkinter を使って GUI アプリを作ってみました。
+
+コードは Python 3 向けに書きましたので、 Python 2 以下では動作しません。
+また、日本語が含まれていますので文字コードは UTF-8 です。
+Tkinter を使ったアプリではクラスを使うのが常識みたいですが、処理が少ないのでクラスは使わずに作ってみました。
+
+我ながらバリくそ汚いコードだと自覚していますので、これに関する批判は胸の中にとどめておいてください。
+
+.. code-block:: python
+
+    from tkinter import *
+    root = Tk()
+
+    root.title("Y 〜Change the massage〜")
+
+    buff = StringVar()
+    buff.set("ボタンをクリックするとメッセージが変わります。")
+    Label(root, textvariable = buff, width = 50).pack()
+
+    def chg_label(key):
+            if key == 'Reset':
+                    return lambda : buff.set("ボタンをクリックするとメッセージが変わります。")
+            else:
+                    return lambda : buff.set(key)
+
+
+    for key in ('yosida95', 'yosida95\'s site', 'yosida95\'s blog','Reset'):
+            Button(root, text = key, width = 30, command = chg_label(key)).pack()
+
+    root.mainloop()
+
+Python 初心者なので、勉強のために基本構文を少し多く盛り込んでみました。
+
+それにしても、今まで PHP や JavaScript 、 C などを今まで使っていたので、関数や for 構文等の書き方には戸惑いましたね。
+ついうっかり分岐条件を () で囲みそうになったり、関数や for 構文などで {} を使いそうになってしまったり、 etc …
+
+これからもっと Python を頑張っていきます。

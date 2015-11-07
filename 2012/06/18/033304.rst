@@ -1,0 +1,118 @@
+画像まとめてダウンローダー作った
+================================
+
+ちょっと必要になったから、ウェブページのアドレスを渡すとそのページ中にある画像をダウンロードしてくれるスクリプトを作った。
+やっつけ仕事。
+
+基本的に img タグを追ってるけど、 img タグが a タグの中にいて、かつその a タグの href 属性に指定されてる URL が画像の場合はそっちをダウンロードしてきてくれる (img タグにサムネイルを指定してクリックすると大きくなるページを想定)。
+
+使ってるマシンの CPU コア数分だけプロセス作って、そいつらで並列に画像をダウンロードするからそれなりに速いと思う。
+コアあたりスレッド2つで動くなら、 CPU の数 * 2でやるともっと速いかもね。
+
+.. code-block:: python
+
+   #-*- coding: utf-8 -*-
+
+   import os
+   import re
+   import urllib
+   import argparse
+   from urlparse import urljoin
+   from BeautifulSoup import BeautifulSoup
+   from multiprocessing import (
+           Pool,
+           cpu_count,
+       )
+
+
+   IMAGE_EXTS = [u'jpg', u'jpeg', u'png', u'gif']
+
+
+   def get_args():
+       parser = argparse.ArgumentParser()
+       parser.add_argument(u'url', type=str,
+           help=u'ダウンロードしたい画像があるウェブページのURL')
+       parser.add_argument(u'directory', type=str,
+           help=u'ダウンロードした画像を入れるディレクトリ')
+       parser.add_argument(u'-e', u'--ext', action=u'append', default=[],
+           help=u'jpg, jpeg, png, gifの他にダウンロードしたい画像拡張子 [複数指定可能]')
+       parser.add_argument(u'-d', u'--domain', action=u'append', default=[],
+           help=u'ダウンロードする画像があるドメインを制限する [複数指定可能]')
+
+       return parser.parse_args()
+
+
+   def get_html_source(url):
+       entry = urllib.urlopen(url)
+       if 200 < entry.code < 300:
+           raise Exception()
+
+       return unicode(entry.read())
+
+
+   def get_pictures_list(url, is_valid_img):
+       pictures = []
+
+       soup = BeautifulSoup(get_html_source(url))
+       for img in soup.findAll('img'):
+           if is_valid_img(img[u'src']):
+               if img.parent.name == u'a'\
+               and is_valid_img(img.parent[u'href']):
+                   pictures.append(urljoin(url, img.parent[u'href']))
+               else:
+                   pictures.append(urljoin(url, img[u'src']))
+
+       return pictures
+
+
+   def get_img_validator(exts=[], domains=[]):
+       patterns = []
+
+       if len(exts) > 0:
+           patterns.append(re.compile(ur'\.(%s)$' % ur'|'.join(exts), re.UNICODE))
+
+       if len(domains) > 0:
+           domains = [domain.replace(u'.', u'\.') for domain in domains]
+           patterns.append(re.compile(
+               ur'^((https?://([^.]+\.)*%s/)|(?!http))' % ur'|'.join(domains),
+               re.UNICODE))
+
+       def is_valid_img(url):
+           for pattern in patterns:
+               if pattern.search(url) is None:
+                   break
+           else:
+               return True
+
+           return False
+
+       return is_valid_img
+
+
+   def downloader(arg):
+       url, savepath = arg
+       urllib.urlretrieve(url, os.path.join(savepath, url.split(u'/')[-1]))
+
+
+   def save_pictures(pictures, savepath):
+       if not os.path.isdir(savepath):
+           raise Exception
+
+       pool = Pool(cpu_count())
+       pool.map(downloader, [(url, savepath) for url in pictures])
+       pool.close()
+       pool.join()
+
+
+   def main():
+       args = get_args()
+
+       pictures = get_pictures_list(
+           args.url, get_img_validator(IMAGE_EXTS + args.ext, args.domain))
+
+       if len(pictures) > 0:
+           save_pictures(pictures, os.path.abspath(args.directory))
+
+
+   if __name__ == '__main__':
+       main()

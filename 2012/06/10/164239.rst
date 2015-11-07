@@ -1,0 +1,165 @@
+はてなキーワード、または Wikipedia のタイ卜ルから MeCab 用の CSV ファイルを生成するマン
+=======================================================================================
+
+データ入手元
+------------
+
+Wikipedia
+~~~~~~~~~
+
+http://dumps.wikimedia.org/jawiki/latest/
+
+jawiki-latest-all-titles-in-ns0
+
+はてなキーワード
+~~~~~~~~~~~~~~~~
+
+http://d.hatena.ne.jp/hatenadiary/20060922/1158908401
+
+keywordlist\_furigana.csv
+
+
+Python スクリプト
+-----------------
+
+.. code-block:: python
+   :caption: create_dic.py
+
+   #-*- coding: utf-8 -*-
+
+   import re
+   import csv
+   import argparse
+   import htmlentitydefs
+   import unicodedata
+   from BeautifulSoup import BeautifulSoup
+
+
+   ignores = [
+       ur'^[1-9][0-9]*年(代?の(オリンピックサッカー競技|スポーツ|メジャーリーグベースボール|ワールドシリーズ|航空|野球|バレーボール|美術|建築)|(全米テニス選手権|全米選手権_\(テニス\)|全豪テニス選手権|民主党全国大会|アメリカ合衆国大統領選挙|ウィンブルドン選手権|オーストラレーシアン選手権)|代)?$',
+       ur'^([1-9]|1[012])月([1-9]|[12][0-9]|3[01]日)?$',
+       ur'^[0-9]+$',
+       ur'^.{1,}記号$',
+       ur'^.+_\(.+\)$',
+       ur'^([a-zA-Z0-9-]+)(\.[a-zA-Z0-9-]+){1,}',
+       ur'^[^\w\d]+$',
+       ur'[%s]' % ''.join([chr(x) for x in range(0, 32)]),
+   ]
+   ignore_pattern = re.compile(ur'|'.join(ignores), re.UNICODE)
+
+
+   def arg_parse():
+       parser = argparse.ArgumentParser(
+           description=u'はてなキーワード, またはWikipediaのタイ卜ルからMeCab用のcsvファイルを生成するマン')
+       parser.add_argument(u'--source', choices=(u'hatena', u'wikipedia'),
+                           required=True, help=u'inputの取得元')
+       parser.add_argument(u'input', type=argparse.FileType(u'r'),
+                           help=u'配布元からダウンロードしてきたcsvファイル')
+       parser.add_argument(u'output', type=argparse.FileType(u'w+'),
+                           help=u'MeCab用に変換したcsvファイルの出力先')
+       return parser.parse_args()
+
+
+   def text_normalize(sentence):
+       assert isinstance(sentence, unicode)
+
+       # html remove
+       sentence = BeautifulSoup(sentence).text
+
+       # remove url
+       sentence = re.sub(r'https?(:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:\@&=+\$,%#]+)',
+                         u'', sentence)
+
+       # replace html entity
+       matches = re.findall(r'(&#(x?)([0-9a-fA-F]+);?)', sentence)
+       for match in matches:
+           try:
+               result = unichr(int(match[2], 16 if match[1] == u'x' else 10))
+           except ValueError:
+               continue
+           else:
+               sentence = sentence.replace(match[0], result)
+
+       matches = re.findall(r'(&([a-zA-Z]+);?)', sentence)
+       for match in matches:
+           try:
+               result = htmlentitydefs.name2codepoint[match[1]]
+           except KeyError:
+               continue
+           else:
+               sentence = sentence.replace(match[0], unichr(result))
+
+       # replace wave tilde to long
+       dashes = [u'\u2013', u'\u2014', u'\u2015', u'\u2053', u'\u2212', u'\u2500',
+                 u'\u2501', u'\u254C', u'\u254D', u'\u2574', u'\u2576', u'\u2578',
+                 u'\u257A', u'\u301c', u'\u3030', u'\uff5e']
+       for dash in dashes:
+           sentence = sentence.replace(dash, u'\u30fc')
+
+       # unitify long repeats
+       sentence = re.sub(ur'\u30fc{2,}', u'\u30fc', sentence)
+
+       # NFKC normalization
+       sentence = unicodedata.normalize(u'NFKC', sentence)
+
+       # Lower
+       sentence = sentence.lower()
+
+       return sentence
+
+
+   def convert_hatena_keyword(input, output):
+       csv_writer = csv.writer(output)
+
+       for line in input:
+           line = line.decode(u'euc-jp', u'replace')
+           keyword = text_normalize(line.split(u'\t')[1].strip())
+
+           if len(keyword) < 2:
+               continue
+           elif ignore_pattern.match(keyword) is not None:
+               continue
+           cost = unicode(int(max(-36000, -400 * len(keyword) ** 1.5)))
+
+           csv_writer.writerow([value.encode(u'euc-jp', u'replace') for value in [
+               keyword, u'0', u'0', cost, u'名詞', u'一般', u'*', u'*',
+               u'*', u'*', keyword, u'*', u'*', u'はてなキーワード', u'']])
+
+
+   def convert_wikipedia_titles(input, output):
+       csv_writer = csv.writer(output)
+
+       for line in input:
+           keyword = text_normalize(line.decode(u'utf-8', u'replace'))
+
+           if len(keyword) < 2:
+               continue
+           elif ignore_pattern.match(keyword) is not None:
+               continue
+           cost = unicode(int(max(-36000, -400 * len(keyword) ** 1.5)))
+
+           csv_writer.writerow([value.encode(u'euc-jp', u'replace') for value in [
+               keyword, u'0', u'0', cost, u'名詞', u'一般', u'*', u'*',
+               u'*', u'*', keyword, u'*', u'*', u'Wikipedia', u'']])
+
+
+   def main():
+       args = arg_parse()
+       if args.source == u'hatena':
+           convert_hatena_keyword(args.input, args.output)
+       elif args.source == u'wikipedia':
+           convert_wikipedia_titles(args.input, args.output)
+
+
+   if __name__ == '__main__':
+       main()
+
+ごめんなさい
+------------
+
+生起コストの計算がちゃんとしてなくてごめんなさい。
+
+参考
+----
+
+`livedoor Techブログ : wikipediaのデータや顔文字辞書からmecabのユーザ辞書を作成するフレームワーク <http://blog.livedoor.jp/techblog/archives/65828235.html>`__
