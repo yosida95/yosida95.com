@@ -38,7 +38,7 @@ disqus_shortname = None
 html_favicon = '_static/favicon.ico'
 
 # Pick another Tinkerer theme or use your own
-html_theme = 'flat'
+html_theme = 'Supremacy4T'
 
 # Theme-specific options, see docs
 html_theme_options = {}
@@ -83,11 +83,15 @@ exclude_patterns = ['drafts/*', '_templates/*', '.venv/*']
 
 # Add templates to be rendered in sidebar here
 html_sidebars = {
-    '**': ['recent.html', 'searchbox.html']
+    '**': ['author.html', 'github.html', 'recent.html',
+           'hatebu_popular.html', 'hatebu_recent.html']
 }
 
 # Add an index to the HTML documents.
 html_use_index = False
+
+language = 'en'
+html_search_language = 'ja'
 
 # **************************************************************
 # Do not modify below lines as the values are required by
