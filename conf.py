@@ -67,7 +67,7 @@ first_page_title = None
 # **************************************************************
 
 # Add other Sphinx extensions here
-extensions = ['tinkerer.ext.blog']
+extensions = ['tinkerer.ext.blog', 'sitemap', 'hidemail']
 
 # Add other template paths here
 templates_path = ['_templates']
@@ -79,7 +79,7 @@ html_static_path = ['_static', tinkerer.paths.static]
 html_theme_path = ['_themes', tinkerer.paths.themes]
 
 # Add file patterns to exclude from build
-exclude_patterns = ['drafts/*', '_templates/*', '.venv/*']
+exclude_patterns = ['drafts/*', '_templates/*', '.venv/*', '_exts/*']
 
 # Add templates to be rendered in sidebar here
 html_sidebars = {
