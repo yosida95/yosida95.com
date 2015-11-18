@@ -1,0 +1,10 @@
+{#- vim:set filetype=htmljinja shiftwidth=2: -#}
+{%- extends "layout.html" -%}
+{%- set script_files = script_files + ['_static/google_analytics.js'] -%}
+
+{%- block body -%}
+    {{ timestamp(metadata.formatted_date) }}
+    {{ body }}
+    {{ post_meta(metadata) }}
+    {{ comments }}
+{%- endblock -%}
