@@ -17,7 +17,7 @@ PGP Key Finger Print
 Contacts
 --------
 EMail
-    kohei@yosida95.com
+    :email:`kohei@yosida95.com`
 Twitter
     `@yosida95 <https://twitter.com/yosida95>`_
 Facebook
