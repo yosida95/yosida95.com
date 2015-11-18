@@ -25,7 +25,7 @@ author = 'Kohei YOSHIDA'
 copyright = '2015, ' + author
 
 # Change this to your blog root URL (required for RSS feed)
-website = 'https://blog.yosida95.com/blog/'
+website = 'https://yosida95.com/'
 
 # **************************************************************
 # More tweaks you can do
