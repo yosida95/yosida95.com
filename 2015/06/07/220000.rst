@@ -11,7 +11,7 @@ SMTP で使われる Sender Policy Framework (SPF) のマクロを使う
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">Gehirn MTA が穏やかではないのは、ぼくが SMTP サーバーを golang でフルスクラッチしたという点です</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/580718274897260544">March 25, 2015</a></blockquote>
 
-`Gehirn Infrastructure Services の Public Preview 開始によせて </2015/04/01/173000.html>`__
+:doc:`/2015/04/01/173000`
 
 この記事では、その経験から `Sender Policy Framework <https://tools.ietf.org/html/rfc7208>`__ (SPF) の verifier を書いている過程で知ったマクロ機能をご紹介します。
 

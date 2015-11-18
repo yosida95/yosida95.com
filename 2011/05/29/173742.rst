@@ -10,7 +10,7 @@ CORESERVER で Python のフレームワーク web.py を動かしました。
 注意
 ~~~~
 
-僕の環境では以前のエントリ `CORESERVERでPython2.7.1を動かした - yosida95 on Hatena </2011/05/15/194021.html>`__\ のように、 Python 2.7 をインストールしてあり、 easy\_install が使えます。
+僕の環境では以前のエントリ :doc:`/2011/05/15/194021` のように、 Python 2.7 をインストールしてあり、 easy\_install が使えます。
 そのため、インストールに easy\_install を使ってしまっています。
 
 これができない人は、 web.py のサイトからファイルをダウンロードしてきて、設置、 `PYTHONPATHの挙動を正確に把握する - ぎじゅっやさん <http://hain.jp/index.php/tech-j/2008/01/21/PYTHONPATH>`__\ などを参考に、パスを通してあげればいいと思います。

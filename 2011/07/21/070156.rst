@@ -1,7 +1,7 @@
 VirtualHost 自動設定スクリプト
 ==============================
 
-`VirtualHostの設定 - yosida95 on Hatena </2011/07/19/211021.html>`__ でディレクトリを追加するだけで VirtualHost の設定が済む httpd.conf を掲載しました。
+:doc:`/2011/07/19/211021` でディレクトリを追加するだけで VirtualHost の設定が済む httpd.conf を掲載しました。
 あのあとあの記事に従って設置したディレクトリの中で更に mod\_rewrite を使うと転送ループなどの問題が発生してしまいましたので、VirtualHostを追加する Python スクリプトを書きました。
 
 ``/var/www/mkvhost/mkvhost.py``

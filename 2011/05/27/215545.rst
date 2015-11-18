@@ -8,7 +8,7 @@ mimura1133 と isidai さんにお会いしてきた！
 普段勉強をしないせいでテスト期間中コードも書けずに勉強してきた僕は、その反動で今日は遊びたくなり、 Twitter で「アキバで合流できる人とか居ませんかー？」とポストしたところ、 `@mimura1133 <http://twitter.com/mimura1133>`__ さんからリプライが飛んできてお会いする事になりました。
 `@mimura1133 <http://twitter.com/mimura1133>`__ さんと待ち合わせをしていたらなんと `@isidai <http://twitter.com/isidai>`__ さんが突撃してきまして、この3人でスタバやヨドアキ、デニーズに行きました。
 
-`@mimura1133 <http://twitter.com/mimura1133>`__ さんはU-20プロコンで経済産業大臣賞を受賞され、 `@isidai <http://twitter.com/isidai>`__ さんは\ `いまをのこす - Pckles <http://pckles.com/>`__ や http://twittalk.jp/ 、 `ux.nu - 短縮URLサービス <http://ux.nu/>`__\ などを運営する `ゲヒルン株式会社 <http://www.gehirn.co.jp/>`__\ の社長さんで、「 http://yashima.me/ 」では中心人物として活動され、さらに先日のエントリー「\ `僕がプログラミング始めたきっかけ - yosida95 on Hatena </2011/05/16/235339.html>`__ 」「\ `プログラミングを始めたきっかけ(改訂版) - yosida95 on Hatena </2011/05/20/193525.html>`__ 」でも取り上げたとおり、高校生の時に「\ `「ブラッディ・マンデイ」を考察する:isidaiの考察日誌 - CNET Japan <http://japan.cnet.com/blog/isidai/2008/10/12/entry_27017004/>`__ 」を書かれていて、僕に大きな影響を与えた方でもあります。
+`@mimura1133 <http://twitter.com/mimura1133>`__ さんはU-20プロコンで経済産業大臣賞を受賞され、 `@isidai <http://twitter.com/isidai>`__ さんは\ `いまをのこす - Pckles <http://pckles.com/>`__ や http://twittalk.jp/ 、 `ux.nu - 短縮URLサービス <http://ux.nu/>`__\ などを運営する `ゲヒルン株式会社 <http://www.gehirn.co.jp/>`__\ の社長さんで、「 http://yashima.me/ 」では中心人物として活動され、さらに先日のエントリー「 :doc:`/2011/05/16/235339` 」「 :doc:`/2011/05/20/193525` 」でも取り上げたとおり、高校生の時に「\ `「ブラッディ・マンデイ」を考察する:isidaiの考察日誌 - CNET Japan <http://japan.cnet.com/blog/isidai/2008/10/12/entry_27017004/>`__ 」を書かれていて、僕に大きな影響を与えた方でもあります。
 
 このようなすごい方々とお会いできることができて、本当に嬉しかったです。
 僕が最年少でして、年上のお二方の前では萎縮してしまい口数が減って、すみませんでした。
