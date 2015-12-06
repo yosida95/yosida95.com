@@ -16,7 +16,7 @@ project = 'yosida95'
 tagline = '将来の夢はおもしろお兄さんです。'
 
 # Change this to the description of your blog
-description = 'This is an awesome blog'
+description = 'yosida95 のブログ'
 
 # Change this to your name
 author = 'Kohei YOSHIDA'
