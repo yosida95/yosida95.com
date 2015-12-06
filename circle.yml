@@ -1,0 +1,16 @@
+machine:
+    timezone: Asia/Tokyo
+    python:
+        version: 2.7.10
+dependencies:
+    override:
+        - pip install --upgrade 'tinkerer==1.5'
+        - pip install --upgrade 'fabric>=1.10.0,<1.11'
+test:
+    override:
+        - tinker -b
+deployment:
+    tinkerer:
+        branch: blog
+        commands:
+            - fab -f fabfile.py production deploy
