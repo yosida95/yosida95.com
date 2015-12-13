@@ -44,5 +44,3 @@ Django のミドルウェアを自作する
     <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/yosida95">@yosida95</a> おめがたんよしだくんばりのイケメンですか？</p>&mdash; あたがわ (@ipv4) <a href="https://twitter.com/ipv4/status/151300256510914560">December 26, 2011</a></blockquote>
 
     <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/ipv4">@ipv4</a> とってもイケメンでした。ぼくが一緒に並んでいるのが恥ずかしくなる程度に。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/151300715711709184">December 26, 2011</a></blockquote>
-
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

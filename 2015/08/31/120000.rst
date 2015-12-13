@@ -99,7 +99,6 @@ YAPC::Asia Tokyo
 .. raw:: html
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">マメ知識ですが、よしだ先生のプロフィール写真は僕が撮影したものなので今後は「NHKに採用されたこともある写真家」と名乗っていきます。</p>&mdash; うみさま (@umisama) <a href="https://twitter.com/umisama/status/629875658307407872">August 8, 2015</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 今月の月報は以上です。
 来月も頑張るぞい！

@@ -157,7 +157,5 @@ CombConf は個別には小さなトラブルもありましたが、全体を�
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">CombConf 来てない人損してるというよりは、来てる人めっちゃ得してる <a href="https://twitter.com/hashtag/combconf?src=hash">#combconf</a></p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/282740132300345344">December 23, 2012</a></blockquote>
 
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 .. _`id:koba789`: http://blog.hatena.ne.jp/koba789/
 .. _`@oidong1`: https://twitter.com/oidong1

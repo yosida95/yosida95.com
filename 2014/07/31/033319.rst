@@ -61,7 +61,6 @@ Ubuntu で Zabbix Server を 1.8 系から 2.2 系へアップグレードした
 .. raw:: html
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">Zabbix を OS の標準リポジトリに入っている 1.8 系から 2.2.4 にアップグレードした。長い道のりだった。主に mysqldump でのバックアップ作成と 1.8 から 2.0 の時のデータベースマイグレーションが。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/493613687597318144">July 28, 2014</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 1.8 から 2.0 へのデータベースマイグレーションバッチは 500 万レコードくらいのテーブルに対して容赦なく ALTER TABLE を仕掛けてくるのでめちゃくちゃ時間がかかります。
 あまりに時間がかかったので、夜中バッチを起動して翌朝に完了していることを期待してそのまま眠りました。

@@ -93,7 +93,6 @@ Gehirn EDJ
 .. raw:: html
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">大人な対応を取る相手は、その場でも後からでもそこで譲歩された意味に気づける、つまり反省のある相手でないとただ損をするだけという気づきがあるので、これからは反省のない人間に対しては同じレベルでバカだのチョンだのと応戦していきたい</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/540400786354606080">December 4, 2014</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 最後に
 ------
@@ -106,7 +105,6 @@ Gehirn EDJ
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">ゲヒルンからの重要なお知らせを配信するにあたって、これまでに無いくらい緊張している</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/580716750494257153">March 25, 2015</a></blockquote>
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">今めっちゃ手が震えてる</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/580718532108775424">March 25, 2015</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 今日から Gehirn Infrastructure Services の Public Preview の提供を開始ということで、どのような使い方をしていただけるのか、果たしてぼくらが夢見たインフラサービスはユーザーに受け入れたもらえるのかなど、とてもわくわくしています。
 Public Preview で Gehirn Infrastructure Services に触っていただき、一緒にわくわくしていただけたら幸いです。

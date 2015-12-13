@@ -55,5 +55,3 @@
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/masawada">@masawada</a> 人間性ではなく性格です。ご確認ください。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/429088254562816000">January 31, 2014</a></blockquote>
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">こちらからは以上です。ありがとうございました。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/429087102307794944">January 31, 2014</a></blockquote>
-
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

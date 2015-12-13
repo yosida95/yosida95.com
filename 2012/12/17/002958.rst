@@ -13,8 +13,6 @@
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">12/8とかいう微妙な日付を指定することにより<a href="https://twitter.com/mactkg">@mactkg</a>が途中で投げ出しにくくなるライフハック</p>&mdash; JA1TYE/Ryota Suzuki (@JA1TYE) <a href="https://twitter.com/JA1TYE/status/274886292452544512">December 1, 2012</a></blockquote>
 
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 このつぶやきの趣旨に賛同して、16日の担当を申し出たがためにこんな時間にブログ記事を書いています。
 
 このつぶやきにある目的を達成できたらよかったのですが、アドベントカレンダー参加時に「いつでもよいです」とコメントした人をぼくの前に持ってくるとかいう姑息な手段により、主催の `@mactkg`_ さんが楽をしているためこの目標は達成できませんでした。

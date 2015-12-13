@@ -36,7 +36,6 @@ yosida95 の2013年を振り返る
 .. raw:: html
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">もうさ、ぼくが課題研究で開発して成績では5を取ってきたプロダクトのソースコード公開するから、各位はそれを自分の成果として持っていけばいいんじゃないんですかね。課題研究、&quot;できる&quot;人が損する仕組みになっているから、みんなが平等にサボれる用にするための協力ならしますよ。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/412600146115821568">December 16, 2013</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 高校関連で今年最も特筆すべきことと言えば、やはり先週公開した「 :doc:`/2013/12/22/000222` 」のことでしょう。
 300を超えるはてブを獲得し、このブログエントリが基になった派生エントリや、このエントリに言及するエントリも幾つか公開されました。
@@ -59,16 +58,12 @@ yosida95 の2013年を振り返る
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">これが「無責任な周囲による無責任な意見」です。ご確認ください。</p>&mdash; 霧矢あおい (@KOBA789) <a href="https://twitter.com/KOBA789/status/414612376613171200">December 22, 2013</a></blockquote>
 
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 このエントリの公開は12月22日に日付が変わった頃でしたが、エントリ自体は、実は公開する1ヶ月以上前に書いて、その後折にふれて細かな修正を加えながら温めて来たものでした。
 エントリを公開した理由としては、「体験談を共有したい」「他の学校の体験談を知りたい」という事以上にいくつかの思惑がありましたが、それらについてはここには書かずにおきます。
 
 .. raw:: html
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">よしださんにんまりだろうな</p>&mdash; hinasssan (@hinasssan) <a href="http://twitter.com/hinasssan/status/414587593527795712">December 22, 2013</a></blockquote>
-
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ( hinata くんには思惑その他について明かしていないのにも関わらずこのツイートがあったので、さとり世代の力を感じずにはいられません。 )
 

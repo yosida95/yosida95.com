@@ -15,8 +15,6 @@ Ubuntu のパッケージリポジトリのミラーをローカルに建てた�
 
     <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/ytooyama123">@ytooyama123</a> jaist の BAN がどのレイヤーで行われているか分かりませんが、一般的には L3 で行われていると思うので、その場合 motd すら表示されないですね。表示された motd の中にご自身のクライアントの IP が含まれていない事をご確認ください。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/435795058990645248">February 18, 2014</a></blockquote>
 
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 【修正 2013/08/04】 /etc/apt/mirror.list にミスが有りましたので修正しました。
 修正前の記事では run\_postmirror が 0 に設定されていましたが、これでは postmirror.sh が実行されません。
 

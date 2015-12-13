@@ -58,7 +58,6 @@
 .. raw:: html
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">このクソ忙しくて少しでも多く時間が欲しい状態において、集中して仕事をするためにオフィスに出てきたばかりに却って集中力を削られるのは我慢ならないのでしばらくレアキャラになろう</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/570905917186650112">February 26, 2015</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 これから
 --------

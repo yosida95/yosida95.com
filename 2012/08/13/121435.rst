@@ -39,8 +39,6 @@ LT でデモ見せる予行演習してたら\ 仮想マシン\ のホストサ�
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">oid○ng1 「非リア充は死ねっ」 マジ名言過ぎて鳥肌モノ <a href="https://twitter.com/hashtag/upcamp?src=hash">#upcamp</a></p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/234248352932446208">August 11, 2012</a></blockquote>
 
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 ハッカソン編
 ------------
 

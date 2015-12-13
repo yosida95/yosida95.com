@@ -20,7 +20,6 @@ index.htmlとこいつに呼ばれる CSS, JavaScript ファイルだけしか�
 .. raw:: html
 
     <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/yosida95">@yosida95</a> 各イベントサイトで自分が参加してるイベント一覧が見られるサイト作ってほしい <a href="https://twitter.com/hashtag/pyhack?src=hash">#pyhack</a></p>&mdash; Takanori Suzuki (@takanory) <a href="https://twitter.com/takanory/status/140271223392317440">November 26, 2011</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 この次の回の Python mini Hack-a-thon中で開発を始めたのですが、その中では終わらずしばらく放置していたら年をいつの間にか越してしまいました(ﾃﾍﾍﾟﾛ
 

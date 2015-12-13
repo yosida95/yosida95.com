@@ -52,8 +52,6 @@
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">ホッテントリジェネレータで東京工業大学附属科学技術高等学校って入れたら東京工業大学附属科学技術高等学校は即刻滅亡すべきって出てきたから <a href="https://twitter.com/yosida95">@yosida95</a> はいますぐこれにタイトルを変えるべき</p>&mdash; DJ香風智乃 (@masawada) <a href="https://twitter.com/masawada/status/414416282985828352">December 21, 2013</a></blockquote>
 
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 はじめに
 --------
 
