@@ -1,0 +1,7 @@
+
+                  <h2>{{ text_tags }}</h2>
+                  <ul>
+                    {%- for tag, count in tags|dictsort %}
+                    <li><a href="{{ pathto('tags/' + taglinks[tag])}}">{{ tag }}</a></li>
+                    {%- endfor %}
+                  </ul>

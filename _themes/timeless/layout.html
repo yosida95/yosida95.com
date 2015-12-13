@@ -1,0 +1,133 @@
+{#- vim:set filetype=htmljinja shiftwidth=2: -#}
+
+{%- macro timestamp(date) -%}
+  {%- if date -%}
+    on {{ date }}
+  {%- endif -%}
+{%- endmacro -%}
+
+{%- macro author(author_name) -%}
+  {%- if author_name -%}
+    {{ text_posted_by }} {{ author_name }}
+  {%- endif -%}
+{%- endmacro -%}
+
+{%- macro post_meta(metadata, comment_count_code=None) -%}
+                  {%- if metadata.author -%}
+                  {{ text_posted_by }} {{ metadata.author }}
+                  {%- endif %}
+
+                  <span class="categories">
+                    Category:
+                    {%- if metadata.filing["categories"] -%}
+                    {%- for link, category in metadata.filing["categories"] -%}
+                    <a href="{{ pathto('categories/' + link) }}">{{ category }}</a>
+                    {%- if not loop.last -%}, {%- endif -%}
+                    {%- endfor -%}
+                    {%- else -%}
+                    uncategorized
+                    {%- endif %}
+                  </span>
+
+                  <span class="tags">
+                    Tags:
+                    {%- if metadata.filing["tags"] -%}
+                    {%- for link, tag in metadata.filing["tags"] -%}
+                    <a href="{{ pathto('tags/' + link) }}">{{ tag }}</a>
+                    {%- if not loop.last %}, {% endif -%}
+                    {%- endfor -%}
+                    {%- else -%}
+                    untagged
+                    {%- endif %}
+                  </span>
+{%- endmacro -%}
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/' + style, 1) }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/pygments.css', 1) }}" />
+    {%- for cssfile in css_files %}
+    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    {%- endfor -%}
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    {%- for scriptfile in script_files -%}
+    {%- if "jquery" not in scriptfile.lower() %}
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endif -%}
+    {%- endfor -%}
+    <script type="text/javascript" src="{{ pathto('_static/twitter.js', 1) }}"></script>
+    <script type="text/javascript" src="{{ pathto('_static/google_analytics.js', 1) }}"></script>
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '{{ url_root }}',
+        VERSION:     '{{ release|e }}',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '{{ '' if no_search_suffix else file_suffix }}',
+        HAS_SOURCE:  {{ has_source|lower }}
+      };
+    </script>
+
+    <link rel="alternate" type="application/rss+xml" href="{{ pathto('rss.xml', 1) }}" />
+    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}" />
+    {%- block extrahead -%} {% endblock -%}
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <div id="logo">
+          <h1><a href="{{ pathto('pages/about') }}">yosida95 </a></h1>
+          <p>{{ tagline|e }}</p>
+        </div>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="{{ pathto('pages/about') }}"><span>Home</span></a></li>
+          <li><a href="{{ pathto('page1') }}"><span>Blog</span></a></li>
+          <li><a href="https://yosida95.com/photos/"><span>Photos</span></a></li>
+        </ul>
+      </div>
+      <div id="page">
+        <div id="content">
+          {% block body -%}{% endblock -%}
+          {%- if prev or next %}
+          <ul class="related">
+            {%- if prev %}
+            <li class="left">&laquo;<a href="{{ prev.link|e }}">{{ prev.title }}</a></li>
+            {%- endif %}
+            {%- if next %}
+            <li class="right"><a href="{{ next.link|e }}">{{ next.title }}</a>&raquo;</li>
+            {%- endif %}
+          </ul>
+          {%- endif %}
+        </div>
+        <div id="sidebar">
+          <ul>
+            {% for sidebartemplate in sidebars -%}
+            <li>
+              {%- include sidebartemplate %}
+            </li>
+            {% endfor -%}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      {%- if show_copyright %}
+      <p>{%- trans copyright=copyright|e -%}&copy; Copyright {{ copyright }}. {% endtrans -%}</p>
+      <p>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+      {%- endif -%}
+      {%- if show_sphinx %}
+      <p>Powered by <a href="http://www.tinkerer.me/">Tinkerer</a> and <a href="http://sphinx.pocoo.org/">Sphinx</a>.</p>
+      {%- endif %}
+    </div>
+  </body>
+</html>

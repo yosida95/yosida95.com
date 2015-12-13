@@ -1,0 +1,18 @@
+{#- vim:set filetype=htmljinja shiftwidth=2: -#}
+{%- extends "layout.html" -%}
+
+{%- block body -%}
+              <div class="post">
+                {%- if metadata.formatted_date %}
+                <p class="date">{{ metadata.formatted_date }}</p>
+                {%- endif %}
+                <div class="entry">
+                  {{ body }}
+                </div>
+                {%- if metadata.formatted_date %}
+                <div class="meta">
+                  {{ post_meta(metadata) }}
+                </div>
+                {% endif -%}
+              </div>
+{%- endblock -%}
