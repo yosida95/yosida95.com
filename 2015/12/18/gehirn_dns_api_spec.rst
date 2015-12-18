@@ -40,20 +40,6 @@ API を用いて行える操作は以下に示すとおりです。
 リクエストボディが必要な場合は、当該 JSON Schema に適合する形式の JSON を送信して下さい。
 なお、この場合 `Content-Type: application/json` リクエストヘッダーが必要となります。
 
-リクエスト例
-^^^^^^^^^^^^
-
-.. code-block:: http
-
-   POST /dns/v1/zones HTTP/1.1
-   Host: api.gis.gehirn.jp
-   Content-Type: application/json
-   Authorization: Basic dG9rZW46c2VjcmV0
-
-   {
-       "name": "example.com"
-   }
-
 ゾーン
 ~~~~~~
 
@@ -74,28 +60,42 @@ JSON Schema
          "minLength": 4,
          "type": "string",
          "maxLength": 256
+       },
+       "current_version_id": {
+         "minLength": 36,
+         "type": "string",
+         "maxLength": 36
+       },
+       "current_version": {
+         "type": "object",
+         "properties": {
+           "id": {
+             "minLength": 36,
+             "type": "string",
+             "maxLength": 36
+           },
+           "name": {
+             "minLength": 1,
+             "type": "string",
+             "maxLength": 255
+           }
+         }
        }
      }
    }
 
 
-+------------+--------------------------+
-| フィールド | 意味                     |
-+============+==========================+
-| id         | zone を特定する一意な ID |
-+------------+--------------------------+
-| name       | ドメイン名               |
-+------------+--------------------------+
-
-ゾーンの一覧の取得
-^^^^^^^^^^^^^^^^^^
-
-Path
-   `/zones`
-HTTP Verb
-   GET
-Request Body
-   不要
++--------------------+---------------------------------+------------------+
+| フィールド         | 意味                            | リクエスト時要否 |
++====================+=================================+==================+
+| id                 | ゾーンを特定する一意な ID       | 不要             |
++--------------------+---------------------------------+------------------+
+| name               | ドメイン名                      | 必要             |
++--------------------+---------------------------------+------------------+
+| current_version_id | 現在アクティブなバージョンの ID | 不要             |
++--------------------+---------------------------------+------------------+
+| current_version    | 現在アクティブなバージョン      | 不要             |
++--------------------+---------------------------------+------------------+
 
 ゾーンの作成
 ^^^^^^^^^^^^
@@ -106,6 +106,52 @@ HTTP Verb
    POST
 Request Body
    必要
+
+**リクエスト例**
+
+.. code-block:: http
+
+   POST /dns/v1/zones HTTP/1.1
+   Host: api.gis.gehirn.jp
+   Content-Type: application/json
+   Authorization: Basic dG9rZW46c2VjcmV0
+
+   {
+       "name": "yaml.jp"
+   }
+
+**レスポンス例**
+
+.. code-block:: http
+
+   HTTP/1.1 200 OK
+   Server: nginx
+   Date: Fri, 18 Dec 2015 10:41:01 GMT
+   Content-Type: application/json; charset=UTF-8
+   Content-Length: 388
+
+   {
+     "id": "92e52aab-81ac-4c87-b659-b7b36e05cb7f",
+     "name": "yaml.jp",
+     "current_version_id": "234b6f0e-8b64-4cd9-8647-16cd26133266",
+     "current_version": {
+       "id": "234b6f0e-8b64-4cd9-8647-16cd26133266",
+       "editable": true,
+       "name": "\u6700\u521d\u306e\u30d0\u30fc\u30b8\u30e7\u30f3",
+       "created_at": "2015-03-05T10:49:04Z",
+       "last_modified_at": "2015-03-05T10:49:04Z"
+     }
+   }
+
+ゾーンのリストの取得
+^^^^^^^^^^^^^^^^^^^^
+
+Path
+   `/zones`
+HTTP Verb
+   GET
+Request Body
+   不要
 
 ゾーンの取得
 ^^^^^^^^^^^^
@@ -151,23 +197,20 @@ JSON Schema
      }
    }
 
-+------------+-------------------------------+
-| フィールド | 意味                          |
-+============+===============================+
-| id         | バージョンを特定する一意な ID |
-+------------+-------------------------------+
-| name       | 任意のバージョン名            |
-+------------+-------------------------------+
++------------------+-------------------------------+------------------+
+| フィールド       | 意味                          | リクエスト時要否 |
++==================+===============================+==================+
+| id               | バージョンを特定する一意な ID | 不要             |
++------------------+-------------------------------+------------------+
+| name             | 任意のバージョン名            | 必要             |
++------------------+-------------------------------+------------------+
+| editable         | 編集可否                      | 不要             |
++------------------+-------------------------------+------------------+
+| created_at       | バージョン作成時刻            | 不要             |
++------------------+-------------------------------+------------------+
+| last_modified_at | バージョン最終更新時刻        | 不要             |
++------------------+-------------------------------+------------------+
 
-バージョン一覧の取得
-^^^^^^^^^^^^^^^^^^^^
-
-Path
-   `/zones/:zone_id/versions`
-HTTP Verb
-   GET
-Request Body
-   不要
 
 バージョンの作成
 ^^^^^^^^^^^^^^^^
@@ -178,6 +221,47 @@ HTTP Verb
    POST
 Request Body
    必要
+
+**リクエスト例**
+
+.. code-block:: http
+
+   POST /dns/v1/zones/234b6f0e-8b64-4cd9-8647-16cd26133266/versions HTTP/1.1
+   Host: api.gis.gehirn.jp
+   Content-Type: application/json
+   Authorization: Basic dG9rZW46c2VjcmV0
+
+   {
+       "name": "新しいバージョン"
+   }
+
+**レスポンス例**
+
+.. code-block:: http
+
+   HTTP/1.1 200 OK
+   Server: nginx
+   Date: Fri, 18 Dec 2015 10:41:01 GMT
+   Content-Type: application/json; charset=UTF-8
+   Content-Length: 218
+
+   {
+     "id": "f66504b0-bb65-4766-9d7c-18c4e8406071",
+     "editable": true,
+     "name": "\u65b0\u3057\u3044\u30d0\u30fc\u30b8\u30e7\u30f3",
+     "created_at": "2015-12-18T10:49:13Z",
+     "last_modified_at": "2015-12-18T10:49:13Z"
+   }
+
+バージョンリストの取得
+^^^^^^^^^^^^^^^^^^^^^^
+
+Path
+   `/zones/:zone_id/versions`
+HTTP Verb
+   GET
+Request Body
+   不要
 
 バージョンの取得
 ^^^^^^^^^^^^^^^^
@@ -347,16 +431,6 @@ JSON Schema
 | records.data     | TXT データ                                        | type が TXT の時のみ           |
 +------------------+---------------------------------------------------+--------------------------------+
 
-レコードセット一覧の取得
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Path
-   `/zones/:zone_id/versions/:version_id/records`
-HTTP Verb
-   GET
-Request Body
-   不要
-
 レコードセットの作成
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -366,6 +440,66 @@ HTTP Verb
    POST
 Request Body
    必要
+
+**リクエスト例**
+
+.. code-block:: http
+
+   POST /dns/v1/zones/234b6f0e-8b64-4cd9-8647-16cd26133266/versions/f66504b0-bb65-4766-9d7c-18c4e8406071/records HTTP/1.1
+   Host: api.gis.gehirn.jp
+   Content-Type: application/json
+   Authorization: Basic dG9rZW46c2VjcmV0
+
+   {
+     "name": "yaml.jp.",
+     "ttl": 300,
+     "type": "A",
+     "enable_alias": false,
+     "records": [
+       {
+         "address":"192.0.2.10"
+       },
+       {
+         "address":"192.0.2.11"
+       }
+     ]
+   }
+
+**レスポンス例**
+
+.. code-block:: http
+
+   HTTP/1.1 200 OK
+   Server: nginx
+   Date: Fri, 18 Dec 2015 10:41:01 GMT
+   Content-Type: application/json; charset=UTF-8
+   Content-Length: 218
+
+   {
+     "id": "e590d62a-3676-4b08-832a-a1fdd6dfefdf",
+     "name": "yaml.jp.",
+     "type": "A",
+     "enable_alias": false,
+     "ttl": 300,
+     "records": [
+       {
+         "address": "192.0.2.10"
+       },
+       {
+         "address": "192.0.2.11"
+       }
+     ]
+   }
+
+レコードセットリストの取得
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Path
+   `/zones/:zone_id/versions/:version_id/records`
+HTTP Verb
+   GET
+Request Body
+   不要
 
 レコードセットの取得
 ^^^^^^^^^^^^^^^^^^^^
