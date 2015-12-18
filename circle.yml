@@ -4,7 +4,7 @@ machine:
         version: 3.5.0
 dependencies:
     override:
-        - pip install --upgrade 'tinkerer==1.5'
+        - pip install 'tinkerer==1.5'
 test:
     override:
         - tinker -b
