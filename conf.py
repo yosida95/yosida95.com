@@ -60,7 +60,7 @@ slug_word_separator = '_'
 landing_page = 'about'
 
 # Set to override the default name of the first page ("Home")
-first_page_title = None
+first_page_title = 'Page 1'
 
 # **************************************************************
 # Edit lines below to further customize Sphinx build
