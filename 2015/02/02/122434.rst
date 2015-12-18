@@ -65,3 +65,8 @@
 ----
 
 1 週間の出張から始まった、とにかく忙しい年始だった。
+
+.. author:: default
+.. categories:: none
+.. tags:: monthly-report
+.. comments::

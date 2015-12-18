@@ -73,3 +73,8 @@ server\_arch は上西さんのお話を目当てに選んだところ当日都�
 
 以上です。
 来月も頑張るぞい。
+
+.. author:: default
+.. categories:: none
+.. tags:: monthly-report
+.. comments::

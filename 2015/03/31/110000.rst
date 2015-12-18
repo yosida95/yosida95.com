@@ -51,3 +51,7 @@ Public Preview から正式提供に移行するまでまだ予断を許され�
 .. |GitHub Activity| image:: https://yosida95.com/photos/u1BDB.raw.png
    :width: 100%
    :target: https://yosida95.com/photos/u1BDB.raw.png
+.. author:: default
+.. categories:: none
+.. tags:: monthly-report
+.. comments::

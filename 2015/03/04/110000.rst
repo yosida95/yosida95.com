@@ -70,3 +70,7 @@
 
 .. |GitHub Contributions| image:: https://yosida95.com/photos/rXP9Q.raw.png
    :width: 100%
+.. author:: default
+.. categories:: none
+.. tags:: monthly-report
+.. comments::

@@ -68,3 +68,8 @@ yosida95/timetable
 以上です。
 ありがとうございました。
 来月も頑張るぞい！
+
+.. author:: default
+.. categories:: none
+.. tags:: monthly-report
+.. comments::

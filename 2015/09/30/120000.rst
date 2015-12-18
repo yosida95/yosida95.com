@@ -68,3 +68,8 @@ yosida95/golang-jenkins
 
 ここのところ毎月 `yosida95/golang-jenkins <https://github.com/yosida95/golang-jenkins>`__ に Pull Request が来ていて、ちゃんと使われているんだなぁと感じています。
 しかし、オーナーのぼくはここの所 Jenkins を使っておりません。
+
+.. author:: default
+.. categories:: none
+.. tags:: monthly-report
+.. comments::

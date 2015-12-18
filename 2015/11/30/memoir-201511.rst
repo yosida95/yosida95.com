@@ -65,8 +65,7 @@ Go Conference 2015 Winter
 以上です。
 来月も頑張るぞい!
 
-
 .. author:: default
-.. categories:: 日記
-.. tags:: 月報
+.. categories:: none
+.. tags:: monthly-report
 .. comments::
