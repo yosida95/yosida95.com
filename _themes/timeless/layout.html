@@ -17,18 +17,6 @@
                   {{ text_posted_by }} {{ metadata.author }}
                   {%- endif %}
 
-                  <span class="categories">
-                    Category:
-                    {%- if metadata.filing["categories"] -%}
-                    {%- for link, category in metadata.filing["categories"] -%}
-                    <a href="{{ pathto('categories/' + link) }}">{{ category }}</a>
-                    {%- if not loop.last -%}, {%- endif -%}
-                    {%- endfor -%}
-                    {%- else -%}
-                    uncategorized
-                    {%- endif %}
-                  </span>
-
                   <span class="tags">
                     Tags:
                     {%- if metadata.filing["tags"] -%}
