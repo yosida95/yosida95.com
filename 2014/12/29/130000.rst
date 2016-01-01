@@ -38,6 +38,10 @@ twitter でゲヒルンの活動がよくわからないという声もちらほ
 26 日の金曜日にあった納会と二次会のカラオケから帰ってきて1年間を振り返ってみましたが、風通しの良い会社で自由にのびのびとさせてもらっていて、技術的にも組織で働く人間としても大きく成長した気がしました。
 ありがたいことに転職のお誘いやヘッドハンティングをいただくことがあるのですが、まだゲヒルンでやりたいことがあるのでしばらくはお応えすることができません。
 
+.. |雇用契約書| image:: https://yosida95.com/photos/rZTg6.raw.jpeg
+   :width: 100%
+   :target: https://yosida95.com/photos/rZTg6.raw.jpeg
+
 OSS 活動
 --------
 
@@ -167,6 +171,7 @@ OSS にしたプロダクト
 余談ですが、昔アイデンティティについて思案して Write Only な Twitter Client を作ったり、だれでも匿名でぼくのアカウントから発言できるようにしていた頃に Twilog を消してしまったのですが、\ `ツイセーブというサービス <http://twisave.com/yosida95/search/%E5%8A%A9%E3%81%A3%E4%BA%BA+OR+%E9%9F%B3%E4%BF%A1%E4%B8%8D%E9%80%9A+OR+%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%83%88+-Qiita+OR+%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88+OR+%E7%A4%BE%E5%86%85%E3%83%8B%E3%83%BC%E3%83%88+OR+%E7%A4%BE%E4%BC%9A%E7%9A%84>`__ の存在を知り登録したところ、 tweets.zip から過去の発言を登録できて最高に便利でした。
 おかげでぼくの twitter での過去の発言を簡単に発掘でき、この記事を書くぼくの助けとなりました。
 
-.. |雇用契約書| image:: https://yosida95.com/photos/rZTg6.raw.jpeg
-   :width: 100%
-   :target: https://yosida95.com/photos/rZTg6.raw.jpeg
+.. author:: default
+.. categories:: none
+.. tags:: 一年の振り返り
+.. comments::

@@ -224,3 +224,8 @@ Python mini Hack-a-thon に参加した。
 
 2012年以降もよろしくお願いします＞＜
 精進します(｀・ω・´)ｼｬｷｰﾝ
+
+.. author:: default
+.. categories:: none
+.. tags:: 一年の振り返り
+.. comments::

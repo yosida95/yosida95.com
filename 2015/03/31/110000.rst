@@ -53,5 +53,5 @@ Public Preview から正式提供に移行するまでまだ予断を許され�
    :target: https://yosida95.com/photos/u1BDB.raw.png
 .. author:: default
 .. categories:: none
-.. tags:: monthly-report
+.. tags:: 月報
 .. comments::

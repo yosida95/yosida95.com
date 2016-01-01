@@ -103,5 +103,5 @@ Erlang を始めた
 
 .. author:: default
 .. categories:: none
-.. tags:: yearly-report
+.. tags:: 一年の振り返り
 .. comments::

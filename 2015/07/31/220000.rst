@@ -48,5 +48,5 @@
 
 .. author:: default
 .. categories:: none
-.. tags:: monthly-report
+.. tags:: 月報
 .. comments::

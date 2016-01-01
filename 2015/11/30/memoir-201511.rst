@@ -67,5 +67,5 @@ Go Conference 2015 Winter
 
 .. author:: default
 .. categories:: none
-.. tags:: monthly-report
+.. tags:: 月報
 .. comments::

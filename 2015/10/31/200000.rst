@@ -76,5 +76,5 @@ server\_arch は上西さんのお話を目当てに選んだところ当日都�
 
 .. author:: default
 .. categories:: none
-.. tags:: monthly-report
+.. tags:: 月報
 .. comments::

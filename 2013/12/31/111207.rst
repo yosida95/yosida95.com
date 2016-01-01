@@ -25,6 +25,8 @@ yosida95 の2013年を振り返る
 勉強会の運営という面でも、やはり PyCon JP 2012 の運営と CombConf の主催に携わっていた2012年に対して2013年は何もしない1年でした。
 一方、すでに `PyCon JP 2014 <http://2014.pycon.jp/>`__ のメディアスタッフとして活動を始めた\ [#pycon-stuff]_\ ので、2014年は勉強会の運営に関わっていける1年になると思います。
 
+.. [#pycon-stuff] `PyCon JP 2014 のロゴが決定しました! <http://pyconjp.blogspot.jp/2013/12/pycon-jp-2014-logo.html>`__
+
 高校関連
 ~~~~~~~~
 
@@ -36,6 +38,9 @@ yosida95 の2013年を振り返る
 .. raw:: html
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">もうさ、ぼくが課題研究で開発して成績では5を取ってきたプロダクトのソースコード公開するから、各位はそれを自分の成果として持っていけばいいんじゃないんですかね。課題研究、&quot;できる&quot;人が損する仕組みになっているから、みんなが平等にサボれる用にするための協力ならしますよ。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/412600146115821568">December 16, 2013</a></blockquote>
+
+.. |夏休み最終日ですね| image:: https://yosida95.com/photos/MhcH1.raw.png
+   :width: 100%
 
 高校関連で今年最も特筆すべきことと言えば、やはり先週公開した「 :doc:`/2013/12/22/000222` 」のことでしょう。
 300を超えるはてブを獲得し、このブログエントリが基になった派生エントリや、このエントリに言及するエントリも幾つか公開されました。
@@ -79,6 +84,8 @@ yosida95 の2013年を振り返る
 
 2014年4月からは正社員登用されることが決まっているので、さらにわくわくする毎日が待ち受けているのかと思うと、夜も寝られませんし、朝も起きられません。
 
+.. [#gehirn-moved] `本社移転のご案内 <http://www.gehirn.co.jp/press/2013/12/27/239/>`__
+
 まとめ
 ------
 
@@ -91,7 +98,7 @@ yosida95 の2013年を振り返る
 今年1年ありがとうございました。
 よしだ先生の2014年にもご期待ください!
 
-.. |夏休み最終日ですね| image:: https://yosida95.com/photos/MhcH1.raw.png
-   :width: 100%
-.. [#pycon-stuff] `PyCon JP 2014 のロゴが決定しました! <http://pyconjp.blogspot.jp/2013/12/pycon-jp-2014-logo.html>`__
-.. [#gehirn-moved] `本社移転のご案内 <http://www.gehirn.co.jp/press/2013/12/27/239/>`__
+.. author:: default
+.. categories:: none
+.. tags:: 一年の振り返り
+.. comments::
