@@ -1,3 +1,5 @@
+/* vim:set filetype=css shiftwidth=2: */
+
 /*
 Design by TEMPLATED
 http://templated.co
@@ -263,6 +265,10 @@ ul.related li.right {
   float: right;
   text-align: right;
   margin: 0px 0px 0px 2%;
+}
+
+.highlight {
+  overflow: scroll;
 }
 
 /* Sidebar */
