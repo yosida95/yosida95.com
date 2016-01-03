@@ -10,6 +10,6 @@ test:
         - tinker -b
 deployment:
     tinkerer:
-        branch: blog
+        branch: master
         commands:
             - deploy/production.sh
