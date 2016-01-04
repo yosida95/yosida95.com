@@ -51,7 +51,7 @@ rss_service = None
 rss_generate_full_posts = False
 
 # Number of blog posts per page
-posts_per_page = 3
+posts_per_page = 8
 
 # Character use to replace non-alphanumeric characters in slug
 slug_word_separator = '_'
