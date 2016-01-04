@@ -10,3 +10,8 @@ VirtualDocumentRoot
         ServerName default
         VirtualDocumentRoot "/var/www/%0/htdocs"
     </VirtualHost>
+
+.. author:: default
+.. categories:: none
+.. tags:: Apache HTTP Server
+.. comments::

@@ -22,3 +22,8 @@
 --------------------
 
 よろしくお願いします。
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

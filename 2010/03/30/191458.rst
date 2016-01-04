@@ -10,3 +10,8 @@ ID は「 `@yosida95 <http://twitter.com/yosida95>`__ 」です。
 まだ、何もつぶやいていませんが…
 
 Twitter やっている人はよろしければフォローしてください。
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

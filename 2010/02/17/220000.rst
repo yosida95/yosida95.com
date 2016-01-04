@@ -7,6 +7,8 @@
 親戚からいただいたお年玉、すべて使い切ってしまいました。
 (この先一年間が思いやられますね…)
 
+.. more::
+
 +--------+------------------------------------------------+
 | CPU    | AMD Phenom X4 965 Black Edition                |
 +--------+------------------------------------------------+
@@ -29,3 +31,8 @@
 
 .. |windows_experience| image:: https://kvs.gehirn.jp/yosida95/blog/2010/02/17/220000/windows_experience.jpg
    :width: 100%
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

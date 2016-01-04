@@ -3,6 +3,8 @@ Django のミドルウェアを自作する
 
 この記事は、 `もういくつ寝るとお正月カレンダー <http://atnd.org/events/23689>`__ の2日目のものです。
 
+.. more::
+
 `@oidong1 <http://twitter.com/oidong1>`__ さんが当初定員1人で ATND 立てていたことを良い事に、彼が私にやったように補欠登録してたら、いつの間にか定員が増やされて私まで書くはめになってしまいました。
 それにしても、\ `よしだアドベントカレンダー <http://atnd.org/events/23369>`__\ とは何だったのか。
 
@@ -44,3 +46,8 @@ Django のミドルウェアを自作する
     <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/yosida95">@yosida95</a> おめがたんよしだくんばりのイケメンですか？</p>&mdash; あたがわ (@ipv4) <a href="https://twitter.com/ipv4/status/151300256510914560">December 26, 2011</a></blockquote>
 
     <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/ipv4">@ipv4</a> とってもイケメンでした。ぼくが一緒に並んでいるのが恥ずかしくなる程度に。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/151300715711709184">December 26, 2011</a></blockquote>
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, Django
+.. comments::

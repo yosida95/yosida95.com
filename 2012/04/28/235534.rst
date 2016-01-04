@@ -14,3 +14,8 @@ hinatter が運営していた「\ `見てるなう <http://miteru.gkbr.me>`__\ 
 第3者にあなたのアカウントを使って勝手に見てるなうされます。
 
 【見てるなう(仮) http://miteru.yosida95.com\ 】よろしくお願いします。
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, 見てるなう(仮)
+.. comments::

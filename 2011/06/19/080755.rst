@@ -12,3 +12,8 @@ Twitter や Facebook 、 Skype 、 mixi などで「おめでとう」を言っ�
 ブログ更新が放置気味なので、ブログ更新しなきゃ、という強迫観念によりこのような記事を書いてしまいました。
 反省はしています。
 後悔は(ry
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

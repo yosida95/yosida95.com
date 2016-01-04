@@ -9,6 +9,8 @@ yosida95's site
 総制作時間1時間強、まだプロトタイプの段階ですが、スクリーンショットを一応載せておきます。
 公開するときにこのデザインを保っているか自体も分かりませんが。(笑)
 
+.. more::
+
 まだ公開までは時間がかかりそうなので、それまでしばらくお待ちください。
 
 |design|
@@ -20,3 +22,8 @@ yosida95's site
 
 .. |design| image:: https://yosida95.kvs.gehirn.jp/blog/2010/05/19/004712/design.jpg
    :width: 100%
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

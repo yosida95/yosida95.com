@@ -13,6 +13,8 @@
 
 その中で、 `id:koba789`_ に「こんなのがあるんだけど」って紹介したら「めっちゃいきたい！」って話になったので、データセンターに萌えるタイプの人間としてデータセンターに対する熱意を応募フォームに書き添えて、ほぼ同時に応募しました。
 
+.. more::
+
 北海道グルメツアー
 ------------------
 
@@ -103,3 +105,8 @@ LT のデモ中、ウェブコンパネと MySQL のコネクション切れに�
 
 .. _`id:koba789`: http://blog.hatena.ne.jp/koba789/
 .. _`id:toriimiyukki`: http://blog.hatena.ne.jp/toriimiyukki/
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

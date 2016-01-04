@@ -7,6 +7,8 @@
 
 Decoo とは今年の4月1日に\ `このような <http://megalodon.jp/2012-0401-1242-31/af2012.decoo.jp/>`__\ 若い世代に嬉しい採用活動を行い話題になった渋谷のIT企業です。
 
+.. more::
+
 きっかけ
 --------
 
@@ -79,3 +81,8 @@ Decoo とは今年の4月1日に\ `このような <http://megalodon.jp/2012-040
 
 - `PyCon JP 2012 開催します！ - PyCon JP 2012 <http://2012.pycon.jp/>`__
 - `PyCon JP 2012 参加登録ページ <http://connpass.com/event/708/>`__
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

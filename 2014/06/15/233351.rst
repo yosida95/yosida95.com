@@ -11,6 +11,8 @@ JSONSchema を Python のオブジェクトとマッピングするライブラ�
 
 JSONSchema の仕様を見ていくほど、無理に core と validation を切り分けようとして残念な感じになっている部分とか、複雑になっている部分とかが散見されて残念な気持ちになりますが、まだ draft4 なので目をつぶります。
 
+.. more::
+
 JSONSchema in Python
 --------------------
 
@@ -188,3 +190,8 @@ jsmapper では全ての JSONSchema を JSONSchema というクラスのイン�
 
 また、明日は私の誕生日です。
 このライブラリによって救われる方や、純粋に私の誕生日を祝ってくださる方からの\ `誕生日プレゼントをお待ちしています <http://amzn.to/yosida95>`__\ 。
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, JSONSchema
+.. comments::

@@ -7,6 +7,8 @@
 こんにちは yosida95 です。
 昨年書いた「 :doc:`/2013/12/22/000222` 」という記事にまつわるおもしろ事象を twitter にて観測したのでご紹介します。
 
+.. more::
+
 .. raw:: html
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">進路で後悔してる人は辛いんだろうなぁ</p>&mdash; †ハルカス†＠子供たちに明るい未来を (@newworldhoge) <a href="https://twitter.com/newworldhoge/statuses/427435157419601920">January 26, 2014</a></blockquote>
@@ -55,3 +57,8 @@
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/masawada">@masawada</a> 人間性ではなく性格です。ご確認ください。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/429088254562816000">January 31, 2014</a></blockquote>
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">こちらからは以上です。ありがとうございました。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/429087102307794944">January 31, 2014</a></blockquote>
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

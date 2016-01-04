@@ -13,6 +13,8 @@ Vyatta には DNS Forwarging の機能があります。
 
 実際には、 Forwarding とは言ってもデフォルトでキャッシングが有効になっているので、一旦 Vyatta のキャッシュにレスポンスが貯められて、そのキャッシュから imac に対してレスポンスが返るようです(cash-size を0にすれば、言葉通りそのまま転送されてきます)。
 
+.. more::
+
 127.0.1.1 が返ってくる
 ======================
 
@@ -55,3 +57,8 @@ akari の named の設定とファイアウォールの設定を変えて、 192
 
 .. |network-graph| image:: https://yosida95.kvs.gehirn.jp/blog/2013/02/03/081842/network-graph.png
    :width: 100%
+
+.. author:: default
+.. categories:: none
+.. tags:: Vyatta, Network, DNS
+.. comments::

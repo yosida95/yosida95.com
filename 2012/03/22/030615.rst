@@ -13,6 +13,8 @@ PyPI に登録されているので pip でインストールできます。
 pip がインストールされていない場合は、 pip を入れるなり Supervisor をソースから入れるなりして自力でがんばってください。
 pip は大抵の場合 python-pip とかそんな雰囲気の名前で OS の標準リポジトリに登録されています。
 
+.. more::
+
 2 設定ファイルを書き出す
 ------------------------
 
@@ -263,3 +265,8 @@ Supervisor には supervisorctl という便利なコマンドも用意されて
    :width: 100%
 .. |Supervisor uWSGI| image:: https://yosida95.kvs.gehirn.jp/blog/2012/03/22/030615/supervisor-uwsgi.png
    :width: 100%
+
+.. author:: default
+.. categories:: none
+.. tags:: Supervisor, monitoring
+.. comments::

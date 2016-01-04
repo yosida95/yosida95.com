@@ -6,6 +6,8 @@
 また、ネットワークにアクセスするためにはプロクシの認証を通る必要があります。
 何をダウンロードしたか、どのページを見たかはアカウントごとにログが取られているはずですので、ご注意を。
 
+.. more::
+
 わが校の情報技術基礎の授業でプログラミングの授業はやるものの、 C言語を使って行われるため、 Python は Ubuntu にバンドルされている 2.4 のままです。
 
 1年ちょっと前に Python に出会いその魅力に惹きこまれた僕としては、(最新の) Python 2.7 を使いたいよ！暇な時間は Python といちゃいちゃしたいよ！と、当然なるわけです。
@@ -98,3 +100,8 @@ bitbucket などからリポジトリを clone する時などは、やはりプ
 --------
 
 - `Mercurialのproxy設定 - irykazeの日記 - Rubyist <http://rubyist.g.hatena.ne.jp/irykaze/20080708>`__
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, 学校
+.. comments::

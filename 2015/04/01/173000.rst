@@ -12,6 +12,8 @@ Gehirn Infrastructure Services はぼくが\ `ゲヒルンでアルバイトを�
 
 Gehirn Infrastructure Services が提供する新機能や技術的な詳細は会社のブログ、 `Gehirn News <http://news.gehirn.jp>`__ で追ってご説明しようと思っていますので、この個人のブログではぼくが Gehirn Infrastructure Services にどのように関わってきたかを振り返りたいと思います。
 
+.. more::
+
 GWS02
 -----
 
@@ -111,4 +113,10 @@ Public Preview で Gehirn Infrastructure Services に触っていただき、一
 
 追伸
 ----
+
 この記事を書くなかで気づいたのですが、今日はぼくがゲヒルンの正職員として2年目を迎える区切りの日のようです。
+
+.. author:: default
+.. categories:: none
+.. tags:: Gehirn
+.. comments::

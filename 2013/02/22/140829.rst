@@ -8,6 +8,8 @@ Consistent Hashing の実装
 それを読んでスッキリ理解できたのだが、自分で実装してみないことには落ち着かない。
 そこで、この Node.js の Consistent Hashing 実装を Python に移植してみた。
 
+.. more::
+
 .. code-block:: python
 
    #-*- coding: utf-8 -*-
@@ -89,3 +91,8 @@ Consistent Hashing の実装
 -  `移植元:node-consistent-hashing <https://github.com/dakatsuka/node-consistent-hashing>`__
 -  `移植元のライセンス:MIT
    LICENSE <https://github.com/dakatsuka/node-consistent-hashing/blob/master/LICENSE>`__
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, Consistent Hashing
+.. comments::

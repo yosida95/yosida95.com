@@ -15,6 +15,8 @@
 例えば Gmail 、例えば Google Maps 。
 Web そのものをプラットフォームとしてサービスを提供しリッチなユーザー体験がもたらされた頃、人々はこぞって Web2.0 という言葉を使用して持て囃した。
 
+.. more::
+
 1 なぜ今 Web2.0 なのか
 ----------------------
 
@@ -104,3 +106,8 @@ Blog の項ではそもそもブログとはなんぞやという所から始ま
    :width: 100%
 .. |お姉さん 2.0| image:: https://yosida95.kvs.gehirn.jp/blog/2012/04/01/222721/guide.png
    :width: 100%
+
+.. author:: default
+.. categories:: none
+.. tags:: ネタ
+.. comments::

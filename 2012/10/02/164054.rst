@@ -9,3 +9,8 @@ PyCon JP 2012 に参加してきました #pyconjp
 - `第1回　複雑さは幸せを殺す ─初日／2日目キーノートと開発者向け注目セッションから：PyCon JP 2012参加レポート｜gihyo.jp … 技術評論社 <http://gihyo.jp/news/report/01/pyconjp2012/0001>`__
 - `第2回　17歳のVPS構築記，Python3の最新情報からソーシャルゲーム，WebフレームワークとPythonの話：PyCon JP 2012参加レポート｜gihyo.jp … 技術評論社 <http://gihyo.jp/news/report/01/pyconjp2012/0002>`__
 - `第3回　Open Spaces，ライトニングトーク，Sprints─PyConならではのセッションたち─そして来年は？：PyCon JP 2012参加レポート｜gihyo.jp … 技術評論社 <http://gihyo.jp/news/report/01/pyconjp2012/0003>`__
+
+.. author:: default
+.. categories:: none
+.. tags:: PyCon JP, Python
+.. comments::

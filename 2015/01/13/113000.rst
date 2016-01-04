@@ -13,6 +13,8 @@
 最初のころは個人でのみ CircleCI を利用していたのですが、個人の契約に任意の Organization を Piggyback させられることを知り `GehirnInc <https://github.com/GehirnInc>`__ アカウントでも CircleCI を利用できるようにしました。
 そして現在は社内で開発している多くのプロダクトで CircleCI が利用されるようになりました (というか、ぼくが参加するプロジェクトでは、ぼくが開発をしないリポジトリに対しても CircleCI を使うための Pull Request を投げています)。
 
+.. more::
+
 CI と自動デプロイ
 -----------------
 
@@ -184,3 +186,8 @@ etcd 単体の機能として通信経路の TLS 暗号化と、クライアン�
 -  ポエムを書こうとしたけれど文章がまとまらなかった
 
    -  世の中のポエマー各位すごい
+
+.. author:: default
+.. categories:: none
+.. tags:: etcd, deployment, Python
+.. comments::

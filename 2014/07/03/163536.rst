@@ -17,6 +17,8 @@ GehirnDNS
 このイケている DNS サービス、 `Gehirn DNS <http://www.gehirn.jp/dns.html>`__ には 1 つだけイケていない点があります。
 それは、オフィシャル・アンオフィシャル問わず `Go 言語 <http://golang.org/>`__\ で書かれた API Client が無いということです。
 
+.. more::
+
 golang-gehirndns
 ----------------
 
@@ -32,3 +34,8 @@ golang-gehirndns
 --------
 
 ぼくが\ `昨年の 8 月に転職した </2013/08/01/222538.html>`__\ こととこの記事の内容は無関係です。
+
+.. author:: default
+.. categories:: none
+.. tags:: Gehirn, Go, DNS
+.. comments::

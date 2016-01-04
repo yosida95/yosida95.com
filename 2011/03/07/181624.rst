@@ -21,3 +21,8 @@
 
 .. |snowman| image:: https://yosida95.kvs.gehirn.jp/blog/2011/03/07/181624/snowman.jpg
    :width: 100%
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

@@ -13,6 +13,8 @@
 パワポにその機能が付属しているのは承知していたんですが、暇つぶしにはいいかと「俺が作っちゃる」と宣言し JavaScript でストップウォッチを組みだしたんです。
 極々簡単なものを。
 
+.. more::
+
 キーをたたき出すと周りに人だかりが。
 どうやら私の発言が筒抜けで、みんなが興味をいだいたよう。
 中には監督していた先生の顔まで。
@@ -60,3 +62,8 @@
        <input type="button" value="Start" onclick="w_start()" /><input type="button" value="Stop" onclick="w_stop()" /></p>
     </body>
     </html>
+
+.. author:: default
+.. categories:: none
+.. tags:: 学校, JavaScript
+.. comments::

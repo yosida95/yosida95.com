@@ -8,6 +8,8 @@ VirtualHost の設定
 -  VirutalHost のドキュメントルートは ``/var/www/ホスト名(小文字)/htdocs``
 -  ``/var/www/ホスト名 ( 小文字 )`` が存在しない場合はデフォルトの ``/var/www/html`` がドキュメントルート
 
+.. more::
+
 .. code-block:: apache
 
     ServerName localhost
@@ -27,3 +29,8 @@ VirtualHost の設定
             Options Includes ExecCGI FollowSymLinks
         <Directory>
     </VirtualHost>
+
+.. author:: default
+.. categories:: none
+.. tags:: Apache HTTP Server
+.. comments::

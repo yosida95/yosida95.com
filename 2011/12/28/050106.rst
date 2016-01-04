@@ -20,6 +20,8 @@
 
 結構面白いなー、と思ったので、手抜きではありますがそれっぽいの書いて見ました。
 
+.. more::
+
 .. code-block:: python
 
    #-*- coding: utf-8 -*-
@@ -99,3 +101,8 @@
        numeron = Numeron()
        numeron.start()
        numeron.end()
+
+.. author:: default
+.. categories:: none
+.. tags:: Python
+.. comments::

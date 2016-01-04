@@ -15,6 +15,8 @@ SMTP で使われる Sender Policy Framework (SPF) のマクロを使う
 
 この記事では、その経験から `Sender Policy Framework <https://tools.ietf.org/html/rfc7208>`__ (SPF) の verifier を書いている過程で知ったマクロ機能をご紹介します。
 
+.. more::
+
 SPF とは
 --------
 
@@ -218,3 +220,8 @@ SPF を設定する上で気をつけていただきたい点として、 DoS �
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">smtpd の運用を適切に行うためには SMTP とその関連仕様への理解が不可欠で、それだけじゃく smtpd の複雑な設定や dovcot などとの連携にも気を使わなくてはいけないから絶対にオススメできない。商用 smtpd を書いて運用している今でもこの気持ちは変わらない。</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/607444053811064832">June 7, 2015</a></blockquote>
 
 ありがとうございました。
+
+.. author:: default
+.. categories:: none
+.. tags:: SMTP, SPF
+.. comments::

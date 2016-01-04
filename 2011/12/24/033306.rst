@@ -18,3 +18,8 @@
 勉強会終了後には、 `@oidong1 <http://twitter.com/oidong1>`__ さんと、 `@Alice1017 <http://twitter.com/Alice1017>`__ さんと晩御飯をご一緒しました。
 
 今度、なにか機会があれば、ぼくもなにかネタを用意してセッションなり LT なりして、若者のなかでおじさんが悪あがきしてみたいと思います。
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

@@ -4,6 +4,8 @@
 昨7日に行われた\ `プログラミング生放送勉強会14@品川 <http://atnd.org/events/26346>`__\ に参加してきました。
 そこで、プロ生ちゃんより年下のぼくが LT をさせて頂きました。
 
+.. more::
+
 タイトルは「 Python meets MongoDB 」です。
 仰々しいタイトルですが、内容は先日公開したサービス `#TwitActivity <http://twit.yosida95.com/>`__ のステマです。
 
@@ -21,3 +23,8 @@
     <script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm17501045"></script>
 
 17:28あたりから
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記, Python
+.. comments::

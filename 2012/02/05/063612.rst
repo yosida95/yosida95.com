@@ -3,6 +3,8 @@ Gravatar から画像を取ってくる
 
 今年に入ってからまだ1本しかエントリー書いてなかったので、焦っています。
 
+.. more::
+
 .. code-block:: python
 
    def get_gravatar(mailaddress):
@@ -23,3 +25,8 @@ Gravatar から画像を取ってくる
 API がすっきりしていて綺麗ですね。
 
 問い合わせたメールアドレスに対して Gravatar が登録されていない場合は DEDAULT\_USER\_ICON に指定した URL へリダイレクトしてくれます。
+
+.. author:: default
+.. categories:: none
+.. tags:: Python
+.. comments::

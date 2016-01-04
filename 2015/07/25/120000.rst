@@ -10,6 +10,8 @@ UNIX や Linux ではユーザーパスワードのハッシュ関数として c
 
 -  `GehirnInc/crypt <https://github.com/GehirnInc/crypt>`__
 
+.. more::
+
 経緯
 ----
 
@@ -36,3 +38,8 @@ jeramey/go-pwhash の開発は前述のとおり滞っていて、 jeramey/go-pw
 不具合などのご報告やパッチをお待ちしています。
 
 よろしくお願いします。
+
+.. author:: default
+.. categories:: none
+.. tags:: Go, Linux
+.. comments::

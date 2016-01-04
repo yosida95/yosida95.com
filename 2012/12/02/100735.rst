@@ -18,6 +18,8 @@ CombConf ってなによって方は、 `CombConf 公式サイト <http://combco
 中学生・高校生では無い方の参加も一般参加枠にてお待ちしています！
 `CombConf 一般参加枠参加登録フォーム <http://connpass.com/event/1205/>`__\ よりどしどし参加登録してください！
 
+.. more::
+
 Google Apps Script
 ------------------
 
@@ -289,3 +291,8 @@ Google Apps Script の開発環境として、 Google が公式に Web IDE を�
 寝てないのでさくっと書くつもりでしたが、気づいたら2610文字の長文になってました。
 お読み頂きありがとうございました。
 Happy Hacking!!!
+
+.. author:: default
+.. categories:: none
+.. tags:: Google App Script, CombConf, JavaScript
+.. comments::

@@ -6,6 +6,8 @@ upcamp-ってなに
 
 `#upcamp 2014 <http://ya.spcamp.org/>`__ ここ見てね。
 
+.. more::
+
 LT 編
 -----
 
@@ -70,3 +72,8 @@ LT でデモ見せる予行演習してたら\ 仮想マシン\ のホストサ�
 .. raw:: html
 
     <script async class="speakerdeck-embed" data-id="50286f119697ed0002015fc2" data-ratio="1.3333333333333333" src="http://speakerdeck.com/assets/embed.js"></script>
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

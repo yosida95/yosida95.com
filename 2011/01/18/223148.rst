@@ -11,3 +11,8 @@ cmd.exe で直に Python コード書いてて、 UTF-8 の文字列を出力さ
     sys.stdout = codecs.getwriter('utf_8')(sys.stdout)
 
 これを実行した後は再度実行する必要もなく UTF-8 文字列を出力させてくれます。
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, Windows
+.. comments::

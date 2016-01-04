@@ -13,6 +13,8 @@ Go
 Python
     `yosida95/python-sshkey <https://github.com/yosida95/python-sshkey>`__
 
+.. more::
+
 SSH 公開鍵ユーティリティ
 ------------------------
 
@@ -138,3 +140,8 @@ python-sshkey
 .. |Gehirn RS2 Plus 公開鍵の管理| image:: http://yosida95.kvs.gehirn.jp/news/20150511/added_publickey.png
    :width: 100%
    :target: http://yosida95.kvs.gehirn.jp/news/20150511/added_publickey.png
+
+.. author:: default
+.. categories:: none
+.. tags:: Go, Python, SSH
+.. comments::

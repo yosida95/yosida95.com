@@ -11,6 +11,8 @@ CORESERVER では未だに Python 2.4.3 が動いています。
 参考にしたウェブページがこちら。
 「\ `ワタシのート:CORESERVER(CORE-MINI)にPython2.6.6を入れた <http://r0nb.blogspot.com/2005/11/coreservercore-minipython266.html>`__\ 」
 
+.. more::
+
 作業手順はほとんど変わりませんでした。
 
 .. code-block:: sh
@@ -58,3 +60,8 @@ Python 環境をアップグレードできました。
 
 ちなみに、インストールの段階でものっそい CPU 食います。
 1度 make をやり直したせいも有るのでしょうが、 0pt だった使用率が 177pt になっていました。
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, CORESERVER, XREA
+.. comments::

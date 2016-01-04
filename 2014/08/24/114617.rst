@@ -13,6 +13,8 @@ IFTTT と連携させると最高便利です。
 
 そんな Pushover を使って Zabbix や munin のアラートを手持ちのスマートフォンに通知してみようという試みです。
 
+.. more::
+
 Zabbix
 ------
 
@@ -114,3 +116,8 @@ munin
 .. |Zabbix pushover| image:: https://yosida95.com/photos/oUryv.resized.jpeg
    :width: 100%
    :target: https://yosida95.com/photos/oUryv
+
+.. author:: default
+.. categories:: none
+.. tags:: Zabbix, munin, monitoring, alert
+.. comments::

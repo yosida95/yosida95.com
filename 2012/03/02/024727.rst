@@ -9,6 +9,8 @@ TwitActivity は `TweetDialogue <https://dialogue.yosida95.com/>`__ に生まれ
 
 3/1 0:00より、登録したユーザーが Twitter 上で行った会話を時系列でまとめて時系列に表示する Web サイト、 `TwitActivity <http://twit.yosida95.com/>`__ を公開しました。
 
+.. more::
+
 技術的な話
 ----------
 
@@ -49,3 +51,8 @@ Twitter での会話のログを取っておきたいことが時々あります
 マジ便利です。
 
 ぜひお試しください。
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, TwitActivity
+.. comments::

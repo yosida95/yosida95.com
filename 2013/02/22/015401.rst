@@ -1,4 +1,5 @@
 .. role:: strike
+   :class: strike
 
 PasteDeploy で、設定ファイルのセクションを指定してアプリケーションを立ち上げる
 ==============================================================================
@@ -7,6 +8,8 @@ PasteDeploy で、設定ファイルのセクションを指定してアプリ�
 
 メモです。
 仕事の中で気になったので、調べてまとめてみました。
+
+.. more::
 
 はじめに
 ========
@@ -108,3 +111,8 @@ uWSGI の場合は、--paste や --ini-paste というオプションに PasteDe
 SECTION\_NAME を環境変数によって変えるとか、フロントエンドサーバーからのオプションで切り替えるとか、そういう使い方ができると思います。
 
 # 簡単なメモを書くつもりが30分くらい時間を奪われてて萎えぽよ
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, PasteDeploy, uWSGI, gunicorn, Pyramid
+.. comments::

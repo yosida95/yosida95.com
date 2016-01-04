@@ -2,3 +2,8 @@
 ===========================
 
 http://2012.yosida95.com
+
+.. author:: default
+.. categories:: none
+.. tags:: Python
+.. comments::

@@ -7,10 +7,12 @@
 こんばんは yosida95 です。
 生きています。
 
-ぼくの自室環境では、\ 仮想マシン\ のイメージや Mac の TimeMachine のバックアップイメージなどを RAID-Z2 on OpenIndiana (WD Red 使用)なストレージサーバーに保管しています。
+ぼくの自室環境では、仮想マシンのイメージや Mac の TimeMachine のバックアップイメージなどを RAID-Z2 on OpenIndiana (WD Red 使用)なストレージサーバーに保管しています。
 
 そのためハードウェア障害程度には耐えられそうですが、何があるのか分からないのでさらにバックアップするに越したことはありません。
 そこで、 Amazon Web Services が提供している `Amazon Glacier <http://aws.amazon.com/jp/glacier/>`__ に保管することにしました。
+
+.. more::
 
 いつものアレ
 ------------
@@ -213,3 +215,8 @@ Amazon Glacier のもっと詳しい特徴などについては各々調べて�
 ------
 
 夏休みに入ったし、 LeapMotion も手に入れたので、また近いうちに記事書きます。
+
+.. author:: default
+.. categories:: none
+.. tags:: AWS, Glacier, Python
+.. comments::

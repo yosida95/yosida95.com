@@ -13,6 +13,8 @@ Celery とは Python 製のタスクキューです。
 
 Django からこの Celery を使う日本語解説記事は複数見かけましたが、 Pyramid から使う解説記事は見つけられなかったのでぼくが書いておきます。
 
+.. more::
+
 pyramid\_celery をインストールする
 ----------------------------------
 
@@ -172,3 +174,8 @@ StackOverFlow に、「 pyramid\_celeryd は非常に薄いラッパーで、こ
 
 -  `Celery - Distributed Task Queue <http://docs.celeryproject.org/en/latest/index.html>`__
 -  `celeryのPeriodic Taskについてのメモ <http://kk6.hateblo.jp/entry/2012/09/06/celery%E3%81%AEPeriodic_Task%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%83%A1%E3%83%A2>`__
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, Celery, Pyramid
+.. comments::

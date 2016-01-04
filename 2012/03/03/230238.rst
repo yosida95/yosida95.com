@@ -3,6 +3,7 @@ Pythonのプロセスをデーモン化する
 
 別に Python に限った話では無く、他のプログラム言語でも手順は同じです。
 
+.. more::
 
 .. code-block:: python
 
@@ -52,3 +53,8 @@ Pythonのプロセスをデーモン化する
 ----
 
 `偽偽夜食日記: daemon起動時の二重forkの理由 (2005-03-16) <http://rryu.sakura.ne.jp/nisenise-fuhito/2005/03/16/377.html>`__
+
+.. author:: default
+.. categories:: none
+.. tags:: Python
+.. comments::

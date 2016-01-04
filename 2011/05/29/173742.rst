@@ -4,6 +4,8 @@ CORESERVERで web.py を CGI として動かす
 タイトルまんま。
 CORESERVER で Python のフレームワーク web.py を動かしました。
 
+.. more::
+
 1. web.pyのインストール
 -----------------------
 
@@ -117,3 +119,8 @@ hoge.com/hoge にアクセスで HOGEHOGE が表示されれば成功
 
 - `フレームワークWeb.py - m-tagの日記 <http://d.hatena.ne.jp/m-tag/20091007/1254903609>`__
 - `Blog not found <http://r0nb.blogspot.com/2010/02/webpy-03xweb.html>`__
+
+.. author:: default
+.. categories:: none
+.. tags:: CORESERVER, Python, web.py
+.. comments::

@@ -17,3 +17,8 @@ Gitのウェブフロントは凄くて関心しました。
 
 なんかこれ以上書いても小学生的な感想しか出てこないと思うので、このへんにしておきます。
 次回の #pyfes も参加したいですがすでに補欠……。
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, 日記
+.. comments::

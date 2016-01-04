@@ -4,6 +4,8 @@ VirtualHost 自動設定スクリプト
 :doc:`/2011/07/19/211021` でディレクトリを追加するだけで VirtualHost の設定が済む httpd.conf を掲載しました。
 あのあとあの記事に従って設置したディレクトリの中で更に mod\_rewrite を使うと転送ループなどの問題が発生してしまいましたので、VirtualHostを追加する Python スクリプトを書きました。
 
+.. more::
+
 ``/var/www/mkvhost/mkvhost.py``
 
 .. code-block:: python
@@ -172,3 +174,8 @@ VirtualHost 削除時
 後はガイドに従うだけ。
 サーバーの再起動等必要なし。
 なおこれは Cent OS で yum で Apache を入れた場合に標準パスに従っていますので、異なる環境の時はそれに合わせてスクリプト内部のパスを書き換えてください。
+
+.. author:: default
+.. categories:: none
+.. tags:: Apache HTTP Server, Python
+.. comments::

@@ -12,6 +12,8 @@ URL 短縮サービスの API 使ってみたよ
 
 さて本題ですが、 Python の勉強がてら有名な URL 短縮サービスの API を使って URL の短縮及び展開を行うスクリプトを書いてみました。
 
+.. more::
+
 多分 Python で書いた過去最長のソースコードです。
 
 .. code-block:: python
@@ -146,3 +148,8 @@ URL 短縮サービスの API 使ってみたよ
 
 .. |yosida95_logo| image:: https://kvs.gehirn.jp/yosida95/blog/2011/01/20/221945/logo.png
    :width: 100%
+
+.. author:: default
+.. categories:: none
+.. tags:: Python
+.. comments::

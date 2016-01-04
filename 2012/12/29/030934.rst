@@ -8,6 +8,8 @@ PQI Air Card が届いた
 なんでも、 `CombConf </2012/12/25/064109.html>`__ 開催にあたり、ぼくが立て替えていた分をこれで返すそうです。
 年末一杯遊べるおもちゃを与えてくれてありがとうございます!!
 
+.. more::
+
 PQI Air Card とは
 =================
 
@@ -136,3 +138,8 @@ FTP で接続できなくする
 ==========
 
 `ひとりぶろぐ » デジカメ内部でRubyを動かす狂気！無線LAN内蔵SDカードアダプタPQI Air Cardの間違った使い方 <http://hitoriblog.com/?p=12627>`__ - 大いに参考にさせていただきました。
+
+.. author:: default
+.. categories:: none
+.. tags:: PQI Air Card
+.. comments::

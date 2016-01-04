@@ -7,6 +7,8 @@
 今月の更新頻度がいつになく高いですが、特にこれといった理由はありません。
 強いて言えば yosida95 が暇くらいなもので…。
 
+.. more::
+
 さて、先日はうれしいことがありました。
 それは、このブログに初コメントが付いたことです。
 リリーさんから頂きました。
@@ -40,3 +42,8 @@
    :width: 100%
 .. |excursion_3| image:: https://kvs.gehirn.jp/yosida95/blog/2010/05/18/224824/excursion_3.jpg
    :width: 100%
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記, 学校
+.. comments::

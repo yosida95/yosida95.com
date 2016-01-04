@@ -10,6 +10,8 @@ urllib3 や requests で使用する Cipher Suite を指定する
 
 トレースバックは以下です。
 
+.. more::
+
 .. code-block:: python
 
    Traceback (most recent call last):
@@ -161,3 +163,8 @@ requests を使っている場合は、 ``requests.packages.urllib3.util.ssl_.DE
 ぼくの休日とは一体……
 
 ありがとうございました。
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, TLS, HTTP
+.. comments::

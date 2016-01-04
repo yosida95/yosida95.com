@@ -20,6 +20,8 @@ NIC 取り付けました
 
 bonding を試してみるしかない。
 
+.. more::
+
 よしだ VPS
 ==========
 
@@ -240,3 +242,8 @@ pre-up とか post-up とかのフックを設定してみたけれど、自分�
 
 -  `UbuntuBonding - Community Help Wiki <https://help.ubuntu.com/community/UbuntuBonding>`__
 -  `25.7.2. チャンネルボンディングの使用 <https://access.redhat.com/knowledge/docs/ja-JP/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/sec-Using_Channel_Bonding.html>`__
+
+.. author:: default
+.. categories:: none
+.. tags:: Linux, Network
+.. comments::

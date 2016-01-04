@@ -15,6 +15,8 @@ yosida95 です。
 
 本日、\ `見てるなう(仮) <https://miteru.yosida95.com/>`__\ をアップデートし、より快適にご利用いただけるようにしました。
 
+.. more::
+
 アップデートの内容
 ------------------
 
@@ -75,3 +77,8 @@ jQuery の廃止
 今回のアップデートに関して発生したと思われる問題、その他の問題がありましたら `Twitter <https://twitter.com/yosida95>`__ または `EMail <https://www.google.com/recaptcha/mailhide/d?k=01zs72Bn9xjCrWFSVTR9iUNw==&c=twvYTxrQ6qscX7r-9ew6RfzB3wBg4QI5gXMjsh6DpUc=>`__ にてご連絡ください。
 
 今後とも、\ `見てるなう(仮) <https://miteru.yosida95.com/>`__\ をよろしくお願いします。
+
+.. author:: default
+.. categories:: none
+.. tags:: 見てるなう(仮), Python
+.. comments::

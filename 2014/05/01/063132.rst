@@ -31,6 +31,8 @@ Python のバージョンを指定していないため、 TravisCI (Ubuntu 12.0
    after_success:
        - if test "$TOXENV" = "coverage"; then coveralls; fi
 
+.. more::
+
 はじめに
 --------
 
@@ -110,3 +112,8 @@ matrix.exclude
 
 この問題を解決するために、テストを実行しなくてよい環境の組み合わせを ``.travis.yml`` の ``matrix.exclude`` に羅列していきます。
 上記の例では ``TOXENV`` によるバージョンの指定と ``python`` が一致しない場合に加え、 ``python 3.4`` 以外での coverage の取得を exclude しています。
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, Travis CI, tox
+.. comments::

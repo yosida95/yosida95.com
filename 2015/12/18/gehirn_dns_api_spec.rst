@@ -9,6 +9,8 @@ Gehirn DNS API 仕様
 
 また、ここで説明する仕様は、\ `2015年12月21日17時に予定しているメンテナンス <http://support.gehirn.jp/information/maintenance/2015/12/17/1185/>`__\ が終了した後に有効となります。
 
+.. more::
+
 API 仕様
 --------
 

@@ -13,6 +13,8 @@ CombConf ってなに
 
 詳しくは、 `CombConf 公式サイト <http://combconf.com/>`__\ や、ぼくが書いて `gihyo に掲載していただいた告知記事 <http://gihyo.jp/news/info/2012/11/2701>`__ をご覧ください。
 
+.. more::
+
 スタッフになったきっかけ
 ========================
 
@@ -159,3 +161,8 @@ CombConf は個別には小さなトラブルもありましたが、全体を�
 
 .. _`id:koba789`: http://blog.hatena.ne.jp/koba789/
 .. _`@oidong1`: https://twitter.com/oidong1
+
+.. author:: default
+.. categories:: none
+.. tags:: CombConf, 日記
+.. comments::

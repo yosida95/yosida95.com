@@ -15,3 +15,8 @@
     >>> list = [list[x] for x in range(0, len(list)) if not list[x] in list[:x]]
     >>> list
     ['Red', 'Yellow', 'Blue', 'White', 'Black', 'Pink']
+
+.. author:: default
+.. categories:: none
+.. tags:: Python
+.. comments::

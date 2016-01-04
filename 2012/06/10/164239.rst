@@ -18,6 +18,7 @@ http://d.hatena.ne.jp/hatenadiary/20060922/1158908401
 
 keywordlist\_furigana.csv
 
+.. more::
 
 Python スクリプト
 -----------------
@@ -163,3 +164,8 @@ Python スクリプト
 ----
 
 `livedoor Techブログ : wikipediaのデータや顔文字辞書からmecabのユーザ辞書を作成するフレームワーク <http://blog.livedoor.jp/techblog/archives/65828235.html>`__
+
+.. author:: default
+.. categories:: none
+.. tags:: MeCab, Python
+.. comments::

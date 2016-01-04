@@ -16,6 +16,8 @@ CSS ハックを使うパターンや、 IE 独自拡張である expressions �
 
 そこで、 JavaScript で IE 向けのみに有効な関数を作りました。
 
+.. more::
+
 .. code-block:: js
 
     function minWidth(id, min, normal){
@@ -38,3 +40,8 @@ CSS ハックを使うパターンや、 IE 独自拡張である expressions �
 
 もしうまくいかないというようなことがあったり、別の手法があったりした場合はコメントに書いておいてください。
 修正させていただきます。
+
+.. author:: default
+.. categories:: none
+.. tags:: JavaScript, Internet Explorer
+.. comments::

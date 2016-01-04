@@ -9,6 +9,8 @@
 使ってるマシンの CPU コア数分だけプロセス作って、そいつらで並列に画像をダウンロードするからそれなりに速いと思う。
 コアあたりスレッド2つで動くなら、 CPU の数 * 2でやるともっと速いかもね。
 
+.. more::
+
 .. code-block:: python
 
    #-*- coding: utf-8 -*-
@@ -116,3 +118,8 @@
 
    if __name__ == '__main__':
        main()
+
+.. author:: default
+.. categories:: none
+.. tags:: Python
+.. comments::

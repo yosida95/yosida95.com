@@ -10,6 +10,8 @@ VyOS で Policy Based Routingして複数の ISP を使い分ける
 `昨年の9月にひとり暮らしを始め </2014/09/19/083000.html>`__ てから今まで、 WG1800HP で PPP してゲートウェイとして使ってきました。
 しかし、定期的に具合が悪くなり PPP セッションが切れる事、足元には XEON と Intel NIC を計4ポート積んだサーバーが眠っていてもったいないと感じていた事から、このサーバーを KVM で仮想化して、ソフトウェアルーターである VyOS をそのゲストとして動かすことで、 WG1800HP をタダの WiFi AP として運用することにしました。
 
+.. more::
+
 | 今回組んだネットワークのネットワーク図は以下の通りです。
 |  |ネットワーク図|
 
@@ -111,3 +113,8 @@ yosida95VPS は `2012年に PyCon JP で発表 <http://2012.pycon.jp/program/ses
 .. |ネットワーク図| image:: https://yosida95.com/photos/i2Vlz.raw.png
    :width: 100%
    :target: https://yosida95.com/photos/i2Vlz.raw.png
+
+.. author:: default
+.. categories:: none
+.. tags:: VyOS, Network
+.. comments::

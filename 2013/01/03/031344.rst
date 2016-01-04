@@ -13,6 +13,8 @@ mixslide
 
 今日、1月3日の0時0分ごろに `mixslide`_ というウェブサービスをリリースしたので、お知らせします。
 
+.. more::
+
 mixslide ってなに
 =================
 
@@ -93,3 +95,8 @@ Twitter アカウントをお持ちでないなら、\ `yosida95の連絡先一�
 .. _mixslide: http://mixslide.com/
 .. _`@oidong1`: https://twitter.com/oidong1
 .. _`@yosida95`: https://twitter.com/yosida95
+
+.. author:: default
+.. categories:: none
+.. tags:: mixslide
+.. comments::

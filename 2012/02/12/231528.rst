@@ -8,6 +8,8 @@ Skype が公開している Public API を Python からいじれる Skype4Py �
 
 ついでなので、チャットで特定の単語から始まる発言に反応する Bot 的な何かのフレームワーク ( とは言えない何か ) を簡単に作りました。
 
+.. more::
+
 .. code-block:: python
    :caption: skypebot.py
 
@@ -132,3 +134,8 @@ Windowsのことは知りません。
 
 本格的に Bot として動かすなら Skype のデーモン化が必要になります。
 これについては `Linux上で動くSkype用のbotを作る方法 - muddy brown thang <http://d.hatena.ne.jp/moriyoshi/20100926/1285517353>`__ をご参照ください。
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, Skype
+.. comments::

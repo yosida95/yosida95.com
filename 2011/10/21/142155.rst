@@ -21,3 +21,8 @@
 
 間違ったことを教えてしまいました。
 ごめんなさい。。。
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

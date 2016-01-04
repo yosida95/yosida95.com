@@ -1,6 +1,8 @@
 ご苦労さまでした
 ================
 
+.. more::
+
 .. code-block:: python
 
    #!/usr/bin/env python
@@ -79,3 +81,8 @@
 
    if __name__ == '__main__':
        main()
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, 学校
+.. comments::

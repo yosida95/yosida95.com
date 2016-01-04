@@ -2,6 +2,7 @@ Gehirn Web Services ファミリーのGehirn RS2 に恋をしてPyramid を動�
 =====================================================================
 
 .. role:: strike
+   :class: strike
 
 2012/11/22 記事の最後に追記しました
 
@@ -15,6 +16,8 @@ Gehirn RS2 とは
 ---------------
 
 `ゲヒルン株式会社 <http://www.gehirn.co.jp/>`__ が先日リリースした Gehirn Web Services というインフラプラットフォームファミリーのうちの1プロダクトで、平たく言うとレンタルサーバーサービスです。
+
+.. more::
 
 Gehirn RS2 のすごい話
 ---------------------
@@ -149,3 +152,8 @@ pcreate の時点で / にサンプルのビューが定義されているので
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/yosida95">@yosida95</a> rs2 install python でpythonbrew入るようになったので普通に使えるか見て欲しいです。</p>&mdash; isidai (@isidai) <a href="https://twitter.com/isidai/status/270425354726948864">November 19, 2012</a></blockquote>
 
 `rs2コマンドをアップデートしました <http://support.gehirn.jp/information/news/2012/11/19/629/>`__
+
+.. author:: default
+.. categories:: none
+.. tags:: Gehirn, Python
+.. comments::

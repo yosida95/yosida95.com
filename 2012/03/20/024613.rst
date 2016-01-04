@@ -4,6 +4,8 @@ ATNDに掲載されているイベントを検索するサービスをリリー�
 `Event Search - ATND, connpass, Zusaarまとめて検索 <http://event.yosida95.com/>`__
 去る3/19日の7時にリリースしました。
 
+.. more::
+
 概要
 ----
 
@@ -33,3 +35,8 @@ index.htmlとこいつに呼ばれる CSS, JavaScript ファイルだけしか�
 
 よろしくおねがいします
 ----------------------
+
+.. author:: default
+.. categories:: none
+.. tags:: Python, Event Search
+.. comments::

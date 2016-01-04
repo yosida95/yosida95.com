@@ -1,3 +1,6 @@
+.. role:: strike
+   :class: strike
+
 Google Compute Engine を軽く使ってみた感想
 ==========================================
 
@@ -14,7 +17,9 @@ Google Compute Engine
 現在開催中の Google I/O で Google の IaaS 、 Google Compute Engine の Preview 版の一般公開が発表されました。
 `関連記事:Google、IaaSの「Google Compute Engine」プレビュー版を一般公開 <http://cloud.watch.impress.co.jp/docs/news/20130517_599836.html>`__
 
-Amazon Web Services の EC2 の対抗馬として騒がれているので、どんなものか\ [STRIKEOUT:学校の試験期間中の暇な時間を活かして]\ 軽く触ってみました。
+Amazon Web Services の EC2 の対抗馬として騒がれているので、どんなものか\ :strike:`学校の試験期間中の暇な時間を活かして`\ 軽く触ってみました。
+
+.. more::
 
 Web コンソール
 --------------
@@ -34,7 +39,7 @@ REST API
 インスタンスの作り方
 ~~~~~~~~~~~~~~~~~~~~
 
-[STRIKEOUT:REST API 操作の例として、インスタンスの作成方法を紹介します。]
+:strike:`REST API 操作の例として、インスタンスの作成方法を紹介します。`
 REST API 操作例としてインスタンスの作成方法を紹介出来れば良いのですが、それを書くにはブログはあまりにも狭すぎるので、ある Zone(データセンター) で稼働中のインスタンスの一覧を取得してみます。
 
 OAuth 2.0
@@ -59,7 +64,7 @@ Google の各種 API は、認可プロトコルとして OAuth 2.0 が採用さ
 
     $ curl -d client_id=${ClientID} -d client_secret=${ClientSecret} -d redirect_uri=${RedirectURI} -d grant_type=authorization_code -d code=${Verifier} https://accounts.google.com/o/oauth2/token
 
-成功すると、 JSON で access\ \_token が返ってくるので、これを保存します。
+成功すると、 JSON で access_token が返ってくるので、これを保存します。
 
 インスタンスの一覧を取得する
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -120,3 +125,8 @@ API クライアントがあります。
 --------
 
 REST API の使い方説明しようと思ったら、分量の大半を OAuth 2.0 の認可ステップに費やされた。。。
+
+.. author:: default
+.. categories:: none
+.. tags:: Google Cloud Platform, Compute Engine
+.. comments::

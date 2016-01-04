@@ -5,3 +5,8 @@ Solaris の IP Filter に詳しくなろう
 ========
 
 `man 4 ipf <http://docs.oracle.com/cd/E19082-01/819-2251/6n4i7td97/index.html>`__\ を読め
+
+.. author:: default
+.. categories:: none
+.. tags:: Solaris, Network, IP Filter
+.. comments::

@@ -14,3 +14,8 @@
 
 なお、Amazon ウィッシュリストはこちらで公開しています。
 http://amzn.to/yosida95
+
+.. author:: default
+.. categories:: none
+.. tags:: 日記
+.. comments::

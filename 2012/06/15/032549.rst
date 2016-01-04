@@ -20,3 +20,8 @@ Event Search をアップデートしました
 .. raw:: html
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">connpassを含めて頂き有難うございます！ RT <a href="https://twitter.com/yosida95">@yosida95</a> ATNDを検索するアレは、ATND BETA, conpass, Zusaarをまとめて検索できるツールとして生まれかわりました。<a href="http://t.co/2PoLK33L">http://t.co/2PoLK33L</a></p>&mdash; connpass (@connpass_jp) <a href="https://twitter.com/connpass_jp/status/213084000296767488">June 14, 2012</a></blockquote>
+
+.. author:: default
+.. categories:: none
+.. tags:: Event Search
+.. comments::

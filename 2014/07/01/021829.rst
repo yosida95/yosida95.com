@@ -13,6 +13,8 @@ twitter では事前に予告したのですが、ありがたいことに\ `見
 
 そこで、 Route53 の Health Check 機能とこれに連動した Failover 機能を使って、サーバーが止まっている間だけ A レコードを書き換え、影響を受ける全てのサービスの全てのパスで CloudFront にホストしたメンテナンスを知らせるメッセージを表示できるようにしてみました。
 
+.. more::
+
 Route53 を使った Failover 先として一般的に使われる先は Amazon S3 です。
 Amazon Web Services の公式ブログにも Failover 先として S3 を利用する方法が紹介されています。
 
@@ -85,3 +87,8 @@ CloudFront に独自 SSL 証明書を適用する
 .. |CloudFront 設定画面| image:: https://yosida95.com/photos/cAy7p.resized.png
    :width: 100%
    :target: https://yosida95.com/photos/cAy7p.raw.png
+
+.. author:: default
+.. categories:: none
+.. tags:: AWS, CloudFront, TLS, HTTP
+.. comments::
