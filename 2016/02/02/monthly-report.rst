@@ -55,5 +55,5 @@
 
 .. author:: default
 .. categories:: none
-.. tags:: none
+.. tags:: 月報
 .. comments::
