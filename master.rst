@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2016/02/02/monthly-report
    2015/12/31/yearly_report
    2015/12/31/monthly_report
    2015/12/18/gehirn_dns_api_spec
