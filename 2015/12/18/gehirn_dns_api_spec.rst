@@ -1,6 +1,14 @@
 Gehirn DNS API 仕様
 ===================
 
+追記
+----
+
+`ゲヒルン株式会社`_\ として公式に Gehirn DNS を含む `Gehrin Web Services API Documentation`_ を公開したので、今後はそちらを参照して下さい。
+今後、この非公式ドキュメントはメンテナンスしません。
+
+.. _`Gehirn Web Services API Documentation`: https://support.gehirn.jp/apidocs/
+
 はじめに
 --------
 
