@@ -32,13 +32,25 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xml:lang='ja'
+      lang='ja'>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+    <meta property="og:title" content="{{ title|striptags|e }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://yosida95.com/{{ pagename }}{{ file_suffix }}" />
+    <meta property="og:description" content="yosida95 のブログ" />
+    <meta property="og:image" content="https://yosida95.com/_static/icon_200x200.png" />
+    <meta property="og:site_name" content="yosida95" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@yosida95" />
+    <meta name="twitter:title" content="{{ title|striptags|e }}" />
+    <meta name="twitter:description" content="yosida95 のブログ" />
+    <meta name="twitter:image" content="https://yosida95.com/_static/icon_200x200.png" />
+    <title>{{ title|striptags|e }} - yosida95</title>
 
     <link rel="stylesheet" type="text/css" href="{{ pathto('_static/' + style, 1) }}" media="screen" />
     <link rel="stylesheet" type="text/css" href="{{ pathto('_static/pygments.css', 1) }}" />
