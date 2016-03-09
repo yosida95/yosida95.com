@@ -1,7 +1,7 @@
 {#- vim:set filetype=htmljinja shiftwidth=2: -#}
 {%- extends "layout.html" -%}
 
-{%- block body -%}
+{%- block body %}
               <div class="archive">
                 <h1>{{ title }}</h1>
                 {%- for year in years|sort(reverse=True) %}
