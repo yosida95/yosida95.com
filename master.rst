@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2016/04/08/monthly_report
    2016/03/06/monthly_report
    2016/02/02/monthly-report
    2015/12/31/yearly_report
