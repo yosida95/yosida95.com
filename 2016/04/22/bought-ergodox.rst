@@ -121,6 +121,11 @@ ErgoDox の特徴は、すべてがオープンソースであることです。
 
 わたしは、 ErgoDox EZ を受け取ったその日の内にファームウェアを書き換えて自分好みのキーマップを作りました。
 現時点でのわたしのベストは `yosida95/qmk_firmware <https://github.com/yosida95/qmk_firmware/tree/keymap-yosida95/keyboard/ergodox_ez/keymaps/yosida95>`__ です。
+
+.. image:: http://yosida95.com/photos/TiYqC.resized.png
+   :alt: yosida95 keymap for ErgoDox EZ
+   :target: http://yosida95.com/photos/TiYqC.raw.png
+
 ファームウェアを書き換えると言っても、キーマップを書くだけなら特別 C や組み込み系に精通している必要はありません。
 README とそこからリンクされている各ドキュメントに一通り目を通せば、何をすればよいかということは把握できます。
 あとは各キーに対応する配列データの各要素にキーコードを置いていくだけで、どうってことはありません。
