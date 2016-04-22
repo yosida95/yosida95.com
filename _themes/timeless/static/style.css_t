@@ -12,18 +12,19 @@ body {
   background: #FFFFFF url(img02.gif) repeat;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  color: #402C16;
+  color: #333333;
 }
 
 h1, h2, h3 {
-  margin: 0;
+  margin: 0 0 5px;
   padding: 0;
   font-weight: normal;
-  color: #2E9F13;
+  color: #222222;
 }
 
 h1 {
   font-size: 2.4em;
+  color: #2E9F13;
 }
 
 h2 {
@@ -182,7 +183,6 @@ img.aligncenter {
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
-  color: #4E5B64;
   border: none;
 }
 
@@ -217,7 +217,6 @@ img.aligncenter {
 #content h1 {
   margin: 0px 0px 10px;
   letter-spacing: -1px;
-  color: #1A1A1A;
 }
 
 .post {
@@ -320,7 +319,6 @@ ul.related li.right {
   border-bottom: 1px solid #D0D0D0;
   letter-spacing: -1px;
   font-size: 24px;
-  color: #1A1A1A;
 }
 
 #sidebar p {
@@ -359,4 +357,5 @@ ul.related li.right {
 
 #footer a {
   color: #676767;
+  text-decoration: underline;
 }
