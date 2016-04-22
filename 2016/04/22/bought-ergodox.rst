@@ -96,9 +96,9 @@ ErgoDox を長い時間使うほど、その利点が肩や指の疲労感とし
 
 また、チルトするための脚が3点にあることがとても便利で、腕を内側にひねることなく、さらに自然な姿勢でキーボードを操作できます。
 
-.. image:: http://yosida95.com/photos/TjZfa.resized.jpeg
+.. image:: https://yosida95.com/photos/TjZfa.resized.jpeg
    :alt: ErgoDox Tilt Kit
-   :target: http://yosida95.com/photos/TjZfa.raw.jpeg
+   :target: https://yosida95.com/photos/TjZfa.raw.jpeg
 
 打鍵感は Happy Hacking Keyboard と同じ押下圧 45g の赤軸を選択したため、違和感なく乗り換えることができました。
 キートップの質感についても、 Happy Hacking Keyboard と遜色ありません。
@@ -122,9 +122,9 @@ ErgoDox の特徴は、すべてがオープンソースであることです。
 わたしは、 ErgoDox EZ を受け取ったその日の内にファームウェアを書き換えて自分好みのキーマップを作りました。
 現時点でのわたしのベストは `yosida95/qmk_firmware <https://github.com/yosida95/qmk_firmware/tree/keymap-yosida95/keyboard/ergodox_ez/keymaps/yosida95>`__ です。
 
-.. image:: http://yosida95.com/photos/TiYqC.resized.png
+.. image:: https://yosida95.com/photos/TiYqC.resized.png
    :alt: yosida95 keymap for ErgoDox EZ
-   :target: http://yosida95.com/photos/TiYqC.raw.png
+   :target: https://yosida95.com/photos/TiYqC.raw.png
 
 ファームウェアを書き換えると言っても、キーマップを書くだけなら特別 C や組み込み系に精通している必要はありません。
 README とそこからリンクされている各ドキュメントに一通り目を通せば、何をすればよいかということは把握できます。
