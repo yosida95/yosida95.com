@@ -50,6 +50,21 @@
     <meta name="twitter:title" content="{{ title|striptags|e }}" />
     <meta name="twitter:description" content="yosida95 のブログ" />
     <meta name="twitter:image" content="https://yosida95.com/_static/icon_200x200.png" />
+    <!--
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+             xmlns:dc="http://purl.org/dc/elements/1.1/"
+             xmlns:foaf="http://xmlns.com/foaf/0.1/">
+      <rdf:Description rdf:about="https://yosida95.com/{{ pagename }}{{ file_suffix }}">
+        <foaf:maker rdf:parseType="Resource">
+          <foaf:holdsAccount>
+            <foaf:OnlineAccount foaf:accountName="yosida95">
+              <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
+            </foaf:OnlineAccount>
+          </foaf:holdsAccount>
+        </foaf:maker>
+      </rdf:Description>
+    </rdf:RDF>
+    -->
     <title>{{ title|striptags|e }} - yosida95</title>
 
     <link rel="stylesheet" type="text/css" href="{{ pathto('_static/' + style, 1) }}" media="screen" />
@@ -87,19 +102,6 @@
     <link rel="alternate" type="application/rss+xml" href="{{ pathto('rss.xml', 1) }}" />
     <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}" />
     {%- block extrahead -%} {% endblock %}
-    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-             xmlns:dc="http://purl.org/dc/elements/1.1/"
-             xmlns:foaf="http://xmlns.com/foaf/0.1/">
-      <rdf:Description rdf:about="https://yosida95.com/{{ pagename }}{{ file_suffix }}">
-        <foaf:maker rdf:parseType="Resource">
-          <foaf:holdsAccount>
-            <foaf:OnlineAccount foaf:accountName="yosida95">
-              <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
-            </foaf:OnlineAccount>
-          </foaf:holdsAccount>
-        </foaf:maker>
-      </rdf:Description>
-    </rdf:RDF>
   </head>
   <body>
     <div id="wrapper">
