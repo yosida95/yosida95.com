@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2016/05/29/update_whole_entries_in_hatena
    2016/05/28/move_my_blog
    2016/04/22/bought-ergodox
    2016/04/08/monthly_report
