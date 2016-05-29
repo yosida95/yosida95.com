@@ -226,5 +226,5 @@ PATH_TO_APACHE_REWRITE_RULES には移転前のブログパスから移転後の
 
 .. author:: default
 .. categories:: none
-.. tags:: python AtomPub
+.. tags:: Python, AtomPub
 .. comments::
