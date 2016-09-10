@@ -1,0 +1,23 @@
+{#- vim:set filetype=htmljinja shiftwidth=2: -#}
+{% extends "page.html" %}
+
+{% block titlesuffix -%} &mdash; Blog{{ super() }}{%- endblock %}
+
+{% block body %}
+            {%- for metadata in posts %}
+            <div class="post">
+              <div class="post-content">
+                <div class="post-info">
+                  <span class="date"><span class="bold">{{ metadata.date.strftime('%b') }} {{ metadata.date.day}}</span> {{ metadata.date.year }}</span>
+                  <span class="comments-nr"><span class="bold">-</span> comments</span>
+                  <p><span>By</span> {{ metadata.author }}</p>
+                  <p><span>In</span> {{ category_list(metadata.filing["categories"]) }}</p>
+                  <p><span>Tags</span> {{ tag_list(metadata.filing["tags"]) }}</p>
+                </div>
+                <div class="post-entry">
+{{ metadata.body }}
+                </div>
+              </div>
+            </div>
+            {%- endfor %}
+{%- endblock %}

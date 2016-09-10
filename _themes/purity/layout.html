@@ -1,0 +1,186 @@
+{#- vim:set filetype=htmljinja shiftwidth=2: -#}
+
+{%- set url_root = pathto('', 1) -%}
+{%- if url_root == '#' -%}
+  {%- set url_root = '' -%}
+{%- endif -%}
+
+{%- macro category_list(post_categories) -%}
+    {%- if post_categories -%}
+      {% for link, category in post_categories -%}
+        <a href="{{ pathto('categories/' + link + '.html', 1) }}">{{ category }}</a>
+        {%- if not loop.last -%}, {% endif -%}
+      {% endfor -%}
+    {%- else -%}
+    Uncategorized
+    {%- endif -%}
+{%- endmacro -%}
+
+{%- macro tag_list(post_tags) -%}
+    {%- if post_tags -%}
+      {% for link, tag in post_tags -%}
+        <a href="{{ pathto('tags/' + link + '.html', 1) }}">{{ tag }}</a>
+        {%- if not loop.last -%}, {% endif -%}
+      {% endfor -%}
+    {%- else -%}
+    Untagged
+    {%- endif -%}
+{%- endmacro -%}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xml:lang='ja'
+      lang='ja'>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="description" content="{{ description|striptags|e }}">
+    <!-- The Open Graph protocol -->
+    <meta property="og:title" content="{{ title|striptags|e }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yosida95.com/{{ pagename }}{{ file_suffix }}">
+    <meta property="og:description" content="{{ description|striptags|e }}">
+    <meta property="og:image" content="https://yosida95.com/_static/icon_200x200.png">
+    <meta property="og:site_name" content="yosida95">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@yosida95">
+    <meta name="twitter:title" content="{{ title|striptags|e }}">
+    <meta name="twitter:description" content="{{ description|striptags|e }}">
+    <meta name="twitter:image" content="https://yosida95.com/_static/icon_200x200.png">
+
+    {%- if hasdoc('about') %}
+    <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}">
+    {%- endif %}
+    {%- if hasdoc('genindex') %}
+    <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}">
+    {%- endif %}
+    {%- if hasdoc('search') %}
+    <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}">
+    {%- endif %}
+    {%- if prev %}
+    <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}">
+    {%- endif %}
+    {%- if next %}
+    <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}">
+    {%- endif %}
+
+    <title>{{ title|striptags|e }}{% block titlesuffix %} &mdash; {{ docstitle|e }}{% endblock %}</title>
+
+    <!-- Website Styles -->
+    <link rel="stylesheet" href="{{ pathto('_static/normalize.css', 1) }}" type="text/css">
+    <link rel="stylesheet" href="{{ pathto('_static/sphinx.css', 1) }}" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/' + style, 1) }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/pygments.css', 1) }}">
+    <!-- Responsive & Retina Display Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/responsive.css', 1) }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/retina.css', 1) }}" media="screen">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/custom.css', 1) }}" media="screen">
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/ie7.css', 1) }}" media="screen">
+    <![endif]-->
+    {%- for cssfile in css_files %}
+    <link rel="stylesheet" type="text/css" href="{{ pathto(cssfile, 1) }}">
+    {%- endfor %}
+
+    <link rel="alternate" type="application/rss+xml" href="{{ pathto('rss.xml', 1) }}">
+    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}">
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '{{ url_root }}',
+        VERSION:     '{{ release|e }}',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '{{ '' if no_search_suffix else file_suffix }}',
+        HAS_SOURCE:  {{ has_source|lower }}
+      };
+    </script>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-15957452-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script type="text/javascript" src="{{ pathto('_static/twitter.js', 1) }}"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    {%- for scriptfile in script_files -%}
+    {%- if "jquery" not in scriptfile.lower() %}
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endif -%}
+    {%- endfor %}
+    {%- block extrahead %}{% endblock %}
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <div class="inner">
+          <div class="logo">
+            <a href="{{ pathto('pages/about') }}"><strong>yosida95</strong></a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="{{ pathto('pages/about') }}"><span>Home</span></a></li>
+              <li><a href="{{ pathto('page1') }}"><span>Blog</span></a></li>
+              <li><a href="https://yosida95.com/photos"><span>Photos</span></a></li>
+            </ul>
+
+            <select id="mobile-nav">
+              <option>Select page:</option>
+              <option value="{{ pathto('pages/about') }}">Home</option>
+              <option value="{{ pathto('page1') }}">Blog</option>
+              <option value="https://yosida95.com/photos">Photos</option>
+            </select>
+          </div><!-- .nav end -->
+          <div class="clear"></div>
+        </div><!-- .inner end -->
+      </div><!-- #header end -->
+
+      <div id="main">
+        {%- block content %}
+        {%- if not metadata.is_page %}
+        <div class="tagline inner">
+          <h1>Blog</h1>
+          <span>{{ tagline|e }}</span>
+          <div class="clear"></div>
+        </div>
+        {%- endif %}
+
+        <div class="inner custom_content">
+          <div class="content">
+          {%- block body -%}
+          {%- endblock %}
+          </div>
+          <div class="sidebar">
+            {%- for sidebar in sidebars %}
+            <div class="sidebar_item">
+              {%- include sidebar -%}
+            </div>
+            {%- endfor %}
+          </div>
+          <div class="clear"></div>
+        </div><!-- .inner End -->
+        {%- endblock %}{# content End #}
+      </div><!-- #main End -->
+
+      <div id="footer">
+        <div class="footer_small">
+          <div class="copyright">&copy; Copyright {{ copyright }}.</div>
+          <div class="social">
+            <a href="https://github.com/yosida95"><img src="{{ pathto('_static/img/social/github.svg', 1) }}" width="24" alt="GitHub"></a>
+            <a href="https://twitter.com/yosida95"><img src="{{ pathto('_static/img/social/twitter.svg', 1) }}" width="24" alt="Twitter"></a>
+            <a href="https://www.facebook.com/yosida95"><img src="{{ pathto('_static/img/social/facebook.svg', 1) }}" width="24" alt="facebook"></a>
+            <a href="{{ pathto('rss.xml', 1) }}"><img src="{{ pathto('_static/img/social/rss.svg', 1) }}" width="24" alt="RSS Feed"></a>
+          </div>
+        </div>
+      </div><!-- #footer End -->
+    </div><!-- #wrapper End -->
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57d37edcf04e9ecd"></script>
+  </body>
+</html>

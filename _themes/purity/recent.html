@@ -1,0 +1,9 @@
+{#- vim:set filetype=htmljinja shiftwidth=2: -#}
+              <h5>{{ text_recent_posts }}</h5>
+              <ul>
+                {%- for post, post_title in recent[:5] %}
+                <li>
+                  <a href="{{ pathto(post) }}"><strong>{{ post_title }}</strong></a>
+                </li>
+                {%- endfor %}
+              </ul>

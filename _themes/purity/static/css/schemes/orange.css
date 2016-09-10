@@ -1,0 +1,15 @@
+/* 
+/
+/ Purity HTML/CSS Template
+/ Color scheme stylesheet: Orange
+/
+*/
+
+
+a,.home_tagline h1 a,.nav ul li.current > a,.nav ul li:hover > a,.nav ul li.current > a:hover,.sidebar ul a:hover,.slider .nivo-caption a,.title a:hover,.comments-nr a:hover,.comments-nr a:hover .bold,.pagination a:hover,.top a:hover,.filter li.current a {
+	color:orange; /* The scheme color */
+}
+
+::selection {
+	background:orange; /* The scheme color */
+}
