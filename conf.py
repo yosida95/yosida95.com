@@ -1,13 +1,7 @@
 # -*- coding: utf-8 -*-
 
-# flake8: noqa
-
 import tinkerer
 import tinkerer.paths
-
-# **************************************************************
-# TODO: Edit the lines below
-# **************************************************************
 
 # Change this to the name of your blog
 project = 'yosida95'
@@ -38,7 +32,7 @@ disqus_shortname = None
 html_favicon = '_static/favicon.ico'
 
 # Pick another Tinkerer theme or use your own
-html_theme = 'timeless'
+html_theme = 'purity'
 
 # Theme-specific options, see docs
 html_theme_options = {}
@@ -51,7 +45,7 @@ rss_service = None
 rss_generate_full_posts = False
 
 # Number of blog posts per page
-posts_per_page = 8
+posts_per_page = 3
 
 # Character use to replace non-alphanumeric characters in slug
 slug_word_separator = '_'
@@ -85,7 +79,7 @@ exclude_patterns = ['drafts/*', '_templates/*',
 
 # Add templates to be rendered in sidebar here
 html_sidebars = {
-    '**': ['author.html', 'recent.html', 'tags.html']
+    '**': ['searchbox.html', 'author.html', 'recent.html']
 }
 
 # Add an index to the HTML documents.
