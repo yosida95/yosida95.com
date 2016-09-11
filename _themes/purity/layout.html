@@ -28,13 +28,9 @@
 {%- endmacro -%}
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xml:lang='ja'
-      lang='ja'>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Script-Type" content="text/javascript">
+<html lang='ja'>
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
     <meta name="description" content="{{ description|striptags|e }}">
     <!-- The Open Graph protocol -->
     <meta property="og:title" content="{{ title|striptags|e }}">
@@ -154,6 +150,16 @@
           <div class="content">
           {%- block body -%}
           {%- endblock %}
+            {%- if prev or next %}
+            <div class="pagination">
+              {%- if prev %}
+              <a href="{{ prev.link|e }}" class="newer-posts">&laquo; {{ prev.title }}</a>
+              {%- endif %}
+              {%- if next %}
+              <a href="{{ next.link|e }}" class="older-posts">{{ next.title }} &raquo;</a>
+              {%- endif %}
+            </div>
+            {%- endif %}
           </div>
           <div class="sidebar">
             {%- for sidebar in sidebars %}

@@ -10,13 +10,4 @@
             </span>
             {%- endif %}
 {{ body }}
-
-            <div class="pagination">
-              {%- if prev %}
-              <a href="{{ prev.link|e }}" class="newer-posts">&laquo; {{ prev.title }}</a>
-              {%- endif %}
-              {%- if next %}
-              <a href="{{ next.link|e }}" class="older-posts">{{ next.title }} &raquo;</a>
-              {%- endif %}
-            </div>
 {%- endblock %}
