@@ -1,12 +1,17 @@
 /* vim: set filetype=css shiftwidth=2: */
 
-body {
-  font-size: 16px;
-}
-
 #header .logo a, #header .logo strong {
   color: #444;
   font-size: 50px;
   line-height: 50px;
   font-weight: 600;
+}
+
+.code, .highlight {
+  overflow: auto;
+}
+
+.highlight pre {
+  white-space: pre;
+  word-wrap: normal;
 }
