@@ -64,19 +64,13 @@
 
     <title>{{ title|striptags|e }}{% block titlesuffix %} &mdash; {{ docstitle|e }}{% endblock %}</title>
 
-    <!-- Website Styles -->
     <link rel="stylesheet" href="{{ pathto('_static/normalize.css', 1) }}" type="text/css">
     <link rel="stylesheet" href="{{ pathto('_static/sphinx.css', 1) }}" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ pathto('_static/' + style, 1) }}" media="screen">
     <link rel="stylesheet" type="text/css" href="{{ pathto('_static/pygments.css', 1) }}">
-    <!-- Responsive & Retina Display Stylesheets -->
     <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/responsive.css', 1) }}" media="screen">
     <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/retina.css', 1) }}" media="screen">
-    <!-- Custom Stylesheet -->
     <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/custom.css', 1) }}" media="screen">
-    <!--[if IE 7]>
-    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/ie7.css', 1) }}" media="screen">
-    <![endif]-->
     {%- for cssfile in css_files %}
     <link rel="stylesheet" type="text/css" href="{{ pathto(cssfile, 1) }}">
     {%- endfor %}
@@ -120,16 +114,16 @@
           </div>
           <div class="nav">
             <ul>
-              <li><a href="{{ pathto('pages/about') }}"><span>Home</span></a></li>
-              <li><a href="{{ pathto('page1') }}"><span>Blog</span></a></li>
-              <li><a href="https://yosida95.com/photos"><span>Photos</span></a></li>
+              <li><a href="{{ pathto('pages/about') }}"><span>HOME</span></a></li>
+              <li><a href="{{ pathto('page1') }}"><span>BLOG</span></a></li>
+              <li><a href="https://yosida95.com/photos"><span>PHOTOS</span></a></li>
             </ul>
 
             <select id="mobile-nav">
               <option>Select page:</option>
-              <option value="{{ pathto('pages/about') }}">Home</option>
-              <option value="{{ pathto('page1') }}">Blog</option>
-              <option value="https://yosida95.com/photos">Photos</option>
+              <option value="{{ pathto('pages/about') }}">HOME</option>
+              <option value="{{ pathto('page1') }}">BLOG</option>
+              <option value="https://yosida95.com/photos">PHOTOS</option>
             </select>
           </div><!-- .nav end -->
           <div class="clear"></div>
@@ -140,7 +134,7 @@
         {%- block content %}
         {%- if not metadata.is_page %}
         <div class="tagline inner">
-          <h1>Blog</h1>
+          <h1>BLOG</h1>
           <span>{{ tagline|e }}</span>
           <div class="clear"></div>
         </div>
@@ -177,10 +171,10 @@
         <div class="footer_small">
           <div class="copyright">&copy; Copyright {{ copyright }}.</div>
           <div class="social">
-            <a href="https://github.com/yosida95"><img src="{{ pathto('_static/img/social/github.svg', 1) }}" width="24" alt="GitHub"></a>
-            <a href="https://twitter.com/yosida95"><img src="{{ pathto('_static/img/social/twitter.svg', 1) }}" width="24" alt="Twitter"></a>
-            <a href="https://www.facebook.com/yosida95"><img src="{{ pathto('_static/img/social/facebook.svg', 1) }}" width="24" alt="facebook"></a>
-            <a href="{{ pathto('rss.xml', 1) }}"><img src="{{ pathto('_static/img/social/rss.svg', 1) }}" width="24" alt="RSS Feed"></a>
+            <a href="https://github.com/yosida95"><img src="{{ pathto('_static/img/github.svg', 1) }}" width="24" alt="GitHub"></a>
+            <a href="https://twitter.com/yosida95"><img src="{{ pathto('_static/img/twitter.svg', 1) }}" width="24" alt="Twitter"></a>
+            <a href="https://www.facebook.com/yosida95"><img src="{{ pathto('_static/img/facebook.svg', 1) }}" width="24" alt="facebook"></a>
+            <a href="{{ pathto('rss.xml', 1) }}"><img src="{{ pathto('_static/img/rss.svg', 1) }}" width="24" alt="RSS Feed"></a>
           </div>
         </div>
       </div><!-- #footer End -->

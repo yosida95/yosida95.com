@@ -4,9 +4,7 @@
 {% block body %}
             {%- if not metadata.is_page %}
             <span class="post-meta">
-              Posted by <strong>{{ metadata.author }}</strong>
               on <strong>{{ metadata.formatted_date }}</strong>
-              in <strong>{{ category_list(metadata.filing["categories"]) }}</strong>
             </span>
             {%- endif %}
 {{ body }}

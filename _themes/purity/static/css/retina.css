@@ -1,7 +1,7 @@
 @media 	only screen and (-webkit-min-device-pixel-ratio: 2),
 		only screen and (min-device-pixel-ratio: 2) {
 
-/* 
+/*
 /
 / Stylesheet for Retina displays
 /
@@ -10,63 +10,6 @@
 #header .logo img.website-logo { display: none !important; }
 #header .logo img.retina-logo { display: block !important; }
 
-.icon-book		{ background-image: url("../img/rtn/icons/book@2x.png"); }
-.icon-bubbles	{ background-image: url("../img/rtn/icons/bubbles@2x.png"); }
-.icon-bulb		{ background-image: url("../img/rtn/icons/bulb@2x.png"); }
-.icon-cabinet	{ background-image: url("../img/rtn/icons/cabinet@2x.png"); }
-.icon-calendar	{ background-image: url("../img/rtn/icons/calendar@2x.png"); }
-.icon-cart		{ background-image: url("../img/rtn/icons/cart@2x.png"); }
-.icon-chart		{ background-image: url("../img/rtn/icons/chart@2x.png"); }
-.icon-chemical	{ background-image: url("../img/rtn/icons/chemical@2x.png"); }
-.icon-clock		{ background-image: url("../img/rtn/icons/clock@2x.png"); }
-.icon-company	{ background-image: url("../img/rtn/icons/company@2x.png"); }
-.icon-eye		{ background-image: url("../img/rtn/icons/eye@2x.png"); }
-.icon-globe		{ background-image: url("../img/rtn/icons/globe@2x.png"); }
-.icon-help		{ background-image: url("../img/rtn/icons/help@2x.png"); }
-.icon-home		{ background-image: url("../img/rtn/icons/home@2x.png"); }
-.icon-img		{ background-image: url("../img/rtn/icons/img@2x.png"); }
-.icon-image		{ background-image: url("../img/rtn/icons/img@2x.png"); }
-.icon-info		{ background-image: url("../img/rtn/icons/info@2x.png"); }
-.icon-ipad		{ background-image: url("../img/rtn/icons/ipad@2x.png"); }
-.icon-iphone	{ background-image: url("../img/rtn/icons/iphone@2x.png"); }
-.icon-leaf		{ background-image: url("../img/rtn/icons/leaf@2x.png"); }
-.icon-link		{ background-image: url("../img/rtn/icons/link@2x.png"); }
-.icon-mail		{ background-image: url("../img/rtn/icons/mail@2x.png"); }
-.icon-map		{ background-image: url("../img/rtn/icons/map@2x.png"); }
-.icon-mickey	{ background-image: url("../img/rtn/icons/mickey@2x.png"); }
-.icon-pages		{ background-image: url("../img/rtn/icons/pages@2x.png"); }
-.icon-paperclip	{ background-image: url("../img/rtn/icons/paperclip@2x.png"); }
-.icon-phone		{ background-image: url("../img/rtn/icons/phone@2x.png"); }
-.icon-presentation		{ background-image: url("../img/rtn/icons/presentation@2x.png"); }
-.icon-settings	{ background-image: url("../img/rtn/icons/settings@2x.png"); }
-.icon-shuffle	{ background-image: url("../img/rtn/icons/shuffle@2x.png"); }
-.icon-strategy	{ background-image: url("../img/rtn/icons/strategy@2x.png"); }
-.icon-suitcase	{ background-image: url("../img/rtn/icons/suitcase@2x.png"); }
-.icon-tags		{ background-image: url("../img/rtn/icons/tags@2x.png"); }
-.icon-truck		{ background-image: url("../img/rtn/icons/truck@2x.png"); }
-.icon-users		{ background-image: url("../img/rtn/icons/users@2x.png"); }
-.icon-vcard		{ background-image: url("../img/rtn/icons/vcard@2x.png"); }
-.icon-write		{ background-image: url("../img/rtn/icons/write@2x.png"); }
-
-.social-1 { background-image: url("../img/rtn/social/social_1@2x.png"); }
-.social-2 { background-image: url("../img/rtn/social/social_2@2x.png"); }
-.social-3 { background-image: url("../img/rtn/social/social_3@2x.png"); }
-.social-4 { background-image: url("../img/rtn/social/social_4@2x.png"); }
-.social-5 { background-image: url("../img/rtn/social/social_5@2x.png"); }
-.social-6 { background-image: url("../img/rtn/social/social_6@2x.png"); }
-.social-7 { background-image: url("../img/rtn/social/social_7@2x.png"); }
-.social-8 { background-image: url("../img/rtn/social/social_8@2x.png"); }
-.social-9 { background-image: url("../img/rtn/social/social_9@2x.png"); }
-.social-10 { background-image: url("../img/rtn/social/social_10@2x.png"); }
-.social-11 { background-image: url("../img/rtn/social/social_11@2x.png"); }
-.social-12 { background-image: url("../img/rtn/social/social_12@2x.png"); }
-.social-13 { background-image: url("../img/rtn/social/social_13@2x.png"); }
-.social-14 { background-image: url("../img/rtn/social/social_14@2x.png"); }
-.social-15 { background-image: url("../img/rtn/social/social_15@2x.png"); }
-.social-16 { background-image: url("../img/rtn/social/social_16@2x.png"); }
-.social-17 { background-image: url("../img/rtn/social/social_17@2x.png"); }
-
-.search_submit { background:url("../img/rtn/search@2x.png") no-repeat center center; background-size: 60%; }
-.nav select { background: #fff url('../img/rtn/select-arrows@2x.png') no-repeat right center; background-size: 20px; }
-
+.search_submit { background:url("../img/search@2x.png") no-repeat center center; background-size: 60%; }
+.nav select { background: #fff url('../img/select-arrows@2x.png') no-repeat right center; background-size: 20px; }
 }

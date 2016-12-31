@@ -13,24 +13,13 @@
 	.sidebar.sidebar_left 	{ margin: 0 10px 0 0; }
 	.nav ul li				{ font-size: 22px; margin-left: 26px; }
 	.post-info,
-	.blog3 .post-image		{ width: 130px; margin-right: 20px; }
 	.post-entry				{ width: 396px !important; }
-	.comments-nr			{ width: 63px !important; }
 	#wrapper .date					{ width: 64px !important; }	
-	.date .bold,
-	.comments-nr .bold 		{ font-size: 26px; }
 		
 	/* Homepage */	
 	
-	.home-section ul.fourcolumns li,
 	#footer .inner ul.fourcolumns > li 		{ width: 169.5px; margin-left: 20px; }
-	#recent-work ul.fourcolumns li img,
-	#recent-work ul.fourcolumns li a.over 	{ width: 169.5px; height: 111px; }	
-	.home-section ul.threecolumns li,
 	#footer .inner ul.threecolumns > li 	{ width: 232.5px; margin-left: 20px; }
-	#recent-work ul.threecolumns li img,
-	#recent-work ul.threecolumns li a.over 	{ width: 232.5px; height: 165px; }	
-	.home-section ul li:first-child,
 	#footer .inner ul li:first-child 		{ margin-left: 0; }
 	
 	/* Portfolio sizes */
@@ -45,12 +34,6 @@
 	.detailed .item-image 	{ width: 520px; margin-right: 20px;  }
 	.detailed .item-name 	{ width: 198px; }	
 	.one-column > li 		{ width: 738px; }	
-	.home_tagline h1 		{ font-size: 29px; }
-	
-	.avatar-holder			{ width: 60px !important; height: 60px!important; }
-	.avatar-holder img		{ width: 50px; height: auto!important; }
-	
-	.comments-wrap ul li ul.children { margin-left: 0; }
 }
 
 /* Mobile Portrait */
@@ -67,15 +50,10 @@
 	.content,
 	.post-info,
 	.post-entry,
-	.blog3 .post-image,
 	.nav,
-	.big_form input[type=text],
-	.big_form textarea,
 	textarea,
 	.portfolio,
 	.portfolio li img,
-	.home-section ul img,
-	#recent-work .over,
 	.column,
 	.one_half,
 	.one_third,
@@ -88,7 +66,6 @@
 	.four_fifth,
 	.sidebar 				{ width: 100%; }
 	#wrapper .date					{ width: 149px !important; }
-	.comments-nr			{ width: 148px !important; }
 	.nav					{ margin: 0 0 30px 0; }
 	.sidebar				{ margin: 0; }
 	#mobile-nav				{ display: block; }
@@ -102,19 +79,12 @@
 	.one-column li img,
 	.detailed .item-image img { width: 286px; height: auto !important; }
 	
-	.home_tagline 			{ margin: -5px 0; }
-	.home_tagline h1 		{ font-size: 26px; }
 	.tagline 				{ padding: 20px 0 16px 0px !important; }
 	
-	#recent-work ul.home-list li a.over,
-	#recent-work ul.home-list li img 			{ height: 211px; width: 300px; }	
-	.home-section ul.home-list li,
 	#footer .inner ul > li 						{ width: 100% !important; margin: 0 0 20px 0 !important; }
 	#footer .inner ul li:last-child 			{ margin-bottom: 8px !important; }
-	.home-section ul.home-list li:last-child,
 	#footer .inner ul.home-list > li 			{ margin: 0; }
 	
-	.slider .nivo-caption 	{ display: none !important; }
 	.footer2 div 			{ float: none !important; }
 	.footer2 .copyright 	{ margin-bottom: 5px; }
 	.post-info p 			{ text-align: left; }
@@ -122,10 +92,6 @@
 	.tabnav li,
 	.tabnav li a 			{ display: block; }	
 	.tabnav li 				{ padding: 0; }
-	
-	.avatar-holder			{ width: 40px !important; height: 40px!important; }
-	.avatar-holder img		{ width: 40px; height: auto!important; }
-	.comments-wrap ul li ul.children { margin-left: 10px !important; }
 }
 
 /* Mobile Landscape */
@@ -144,15 +110,9 @@
 	.content,
 	.post-info,
 	.post-entry,
-	.blog3 .post-image,
 	.nav,
-	.big_form input[type=text],
-	.big_form textarea,
 	.portfolio,
 	.portfolio li img,
-	.home-section ul img,
-	.home-section ul li,
-	#recent-work .over,
 	#footer li,
 	.column,
 	.one_half,
@@ -166,7 +126,6 @@
 	.four_fifth,
 	.sidebar 				{ width: 100% !important; }
 	#wrapper .date					{ width: 229px !important; }
-	.comments-nr			{ width: 228px !important; }
 	.nav					{ margin: 0 0 30px 0; }	
 	.sidebar				{ margin: 0; }
 	#mobile-nav				{ display: block; }
@@ -181,21 +140,10 @@
 	.one-column li img,
 	.detailed .item-image img { width: 446px; height: auto !important; }
 
-	.home_tagline 			{ margin: -5px 0; }
-	.home_tagline h1 		{ font-size: 28px; }
 	.tagline 				{ padding: 20px 0 16px 0px !important; }
-	#recent-work ul.home-list li a.over,
-	#recent-work ul.home-list li img 			{ height: 323px; }	
-	.home-section ul.home-list li,
 	#footer .inner ul > li 						{ width: 100% !important; margin: 0 0 20px 0 !important; }
 	#footer .inner ul li:last-child 			{ margin-bottom: 8px !important; }
-	.home-section ul.home-list li:last-child,
 	#footer .inner ul.home-list > li 			{ margin: 0; }
 	
-	.slider .nivo-caption 	{ display: block; font-size: 20px; padding: 10px 15px; }
 	.post-info p 			{ text-align: left; }
-	
-	.avatar-holder			{ width: 40px !important; height: 40px!important; }
-	.avatar-holder img		{ width: 40px; height: auto!important; }
-	
 }
