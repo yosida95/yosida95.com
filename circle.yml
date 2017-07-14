@@ -1,14 +1,16 @@
+---
 machine:
-    python:
-        version: 3.5.0
+  python:
+    version: 3.6.1
 dependencies:
-    override:
-        - pip install 'tinkerer==1.5'
+  override:
+    - pip install 'tinkerer==1.6.0'
 test:
-    override:
-        - tinker -b
+  override:
+    - tinker -b
 deployment:
-    tinkerer:
-        branch: master
-        commands:
-            - deploy/production.sh
+  tinkerer:
+    branch: master
+    commands:
+      - deploy/production.sh
+...
