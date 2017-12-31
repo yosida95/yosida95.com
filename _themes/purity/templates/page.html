@@ -1,6 +1,8 @@
 {#- vim:set filetype=htmljinja shiftwidth=2: -#}
 {% extends "base.html" %}
 
+{% block url %}{{ page.url }}{% endblock %}
+
 {% block title -%}
 {{ page.title }}
 {%- endblock %}
