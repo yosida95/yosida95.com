@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"fmt"
 	"html/template"
 	"io"
 	"net/http"
@@ -74,10 +75,6 @@ func (h *Handler) List(w http.ResponseWriter, req *http.Request) {
 		http.Error(w, http.StatusText(http.StatusBadRequest), http.StatusBadRequest)
 		return
 	}
-	var page int64
-	if ret, err := strconv.ParseInt(req.Form.Get("page"), 10, 32); err == nil {
-		page = ret
-	}
 
 	ctx := req.Context()
 	store, err := h.store.Begin(ctx)
@@ -93,8 +90,11 @@ func (h *Handler) List(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 	last := (count + 8) / 9
-	if page < 1 {
-		page = last
+
+	page, err := strconv.ParseInt(req.Form.Get("page"), 10, 32)
+	if err != nil || page > last {
+		http.Redirect(w, req, fmt.Sprintf("/photos?page=%d", last), http.StatusFound)
+		return
 	}
 
 	photos, err := store.
