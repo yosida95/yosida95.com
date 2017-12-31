@@ -78,11 +78,11 @@
           </ul>
 
           <div class="pagination">
-            {{ if gt .PrevPage 0 }}
-            <a href="/photos?page={{.PrevPage}}" class="older-posts">&laquo; Older</a>
-            {{ end }}
             {{ if gt .NextPage 0 }}
-            <a href="/photos?page={{ .NextPage }}" class="newer-posts">Newer &raquo;</a>
+            <a href="/photos?page={{.NextPage}}" class="newer-posts">&laquo; Newer</a>
+            {{ end }}
+            {{ if gt .PrevPage 0 }}
+            <a href="/photos?page={{ .PrevPage }}" class="older-posts">Older &raquo;</a>
             {{ end }}
           </div>
         </div><!-- .inner END -->
