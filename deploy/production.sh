@@ -7,7 +7,4 @@ TARGET="/var/www/yosida95.com/html/"
 
 ROOT=$(cd "$(dirname "$0")"; cd ../; pwd)
 
-cp "${ROOT}/blog/html/rss.html" "${ROOT}/blog/html/rss.xml"
-cp "${ROOT}/_static/googlecad1c35a95af6e0c.html" "${ROOT}/blog/html/"
-cp "${ROOT}/_static/robots.txt" "${ROOT}/blog/html/"
-rsync --delete --exclude ".DS_Store" -pthrvz  --rsh="ssh  -p ${PORT}" "${ROOT}/blog/html/" "${LOGIN_NAME}@${HOSTNAME}:${TARGET}"
+rsync --delete --exclude ".DS_Store" -pthrvz  --rsh="ssh  -p ${PORT}" "${ROOT}/output/" "${LOGIN_NAME}@${HOSTNAME}:${TARGET}"

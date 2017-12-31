@@ -1,0 +1,191 @@
+JSONSchema を Python のオブジェクトとマッピングするライブラリを作った
+=====================================================================
+
+:authors: yosida95
+:tags: Python, JSONSchema
+
+はじめに
+--------
+
+こんばんは yosida95 です。
+世の中には `JSONSchema <http://json-schema.org/>`__ という規格があります。
+
+これは JSON データの format を JSON で定義しようという趣旨の規格で、合わせてバリデーションに関する定義もなされているので、 API ドキュメントとしてこの JSONSchema を公開しておくことでどのようなフォーマットのデータを送ればよいのかということを統一した方法で API 利用者に伝えられ、 API 提供者も受け取ったデータを公開した JSONSchema によってバリデーションすることができます。
+
+JSONSchema の仕様を見ていくほど、無理に core と validation を切り分けようとして残念な感じになっている部分とか、複雑になっている部分とかが散見されて残念な気持ちになりますが、まだ draft4 なので目をつぶります。
+
+
+JSONSchema in Python
+--------------------
+
+ぼくがメインとしている言語の 1 つである Python にも JSONSchema に則ってデータのバリデーションをしてくれるその名もズバリ `jsonschema <https://pypi.python.org/pypi/jsonschema>`__ というライブラリがあります。
+このライブラリは jsonschema の draft v3 と draft v4 をサポートしていて、問題なくデータのバリデーションを行ってくれるのですが、不便な点に JSONSchema の定義を Python の ``dict`` として与えるというものがあります。
+
+つまり、このようにします。
+
+.. code-block:: python
+
+   >>> from jsonschema import validate
+
+   >>> # A sample schema, like what we'd get from json.load()
+   >>> schema = {
+   ...     "type" : "object",
+   ...     "properties" : {
+   ...         "price" : {"type" : "number"},
+   ...         "name" : {"type" : "string"},
+   ...     },
+   ... }
+
+   >>> # If no exception is raised by validate(), the instance is valid.
+   >>> validate({"name" : "Eggs", "price" : 34.99}, schema)
+
+   >>> validate(
+   ...     {"name" : "Eggs", "price" : "Invalid"}, schema
+   ... )                                   # doctest: +IGNORE_EXCEPTION_DETAIL
+   Traceback (most recent call last):
+       ...
+   ValidationError: 'Invalid' is not of type 'number'
+
+スキーマが小さかったり、扱うスキーマの数が少ない場合にはこれでも十分かもしれませんが、 API が大規模になってくると ``dict`` で宣言することは不便です。
+
+この問題を解決するために `jsmapper <https://pypi.python.org/pypi/jsmapper>`__ というライブラリをこの jsonschema ライブラリのフロントエンドとして作りました。
+
+jsmapper
+--------
+
+jsmapper では全ての JSONSchema を JSONSchema というクラスのインスタンスとして宣言します。
+また、 JSONSchema における primitive 型には対応する Python のクラスが存在します。
+先ほど jsonschema 例に挙げたスキーマを、 jsmapper では以下のように定義します。
+
+.. code-block:: python
+
+   # -*- coding: utf-8 -*-
+
+   from jsmapper import (
+       JSONSchema,
+       Object,
+       Number,
+       String,
+   )
+
+
+   Schema = JSONSchema(
+       type=Object(
+           properties={
+               "name": JSONSChema(type=String()),
+               "price": JSONSchema(type=Number()),
+           }
+       )
+   )
+
+しかし、これではあまり幸せになった感じはしない上、タイプ数も増えてしまっています。
+そこで以下のようにも定義することができます。
+
+.. code-block:: python
+
+   # -*- coding: utf-8 -*-
+
+   from jsmapper import (
+       JSONSchema,
+       Mapping,
+       Number,
+       Object,
+       String,
+   )
+
+
+   class ObjectProperty(Mapping):
+       name = JSONSchema(type=String())
+       price = JSONSchema(type=Number())
+
+
+   Schema = JSONSchema(
+       type=Object(
+           properties=ObjectProperty
+       )
+   )
+
+
+   if __name__ == '__main__':
+       Schema.validate({"name" : "Eggs", "price" : 34.99})
+
+       inst = Schema.bind({"name" : "Eggs", "price" : 34.99})
+       assert inst.name == "Eggs"
+       assert inst.price == 34.99
+
+この方法の優れたところは、 API を提供するにあたって最も使われるであろう Object 型の properties をクラスを宣言することによって定義でき、また ``bind`` メソッドを使うとバリデーションに成功した場合の返り値として properties
+に渡したクラスのインスタンスが受け取れ、その値にインスタンス変数としてドット演算子でアクセスできることです。
+もう ``dict`` の添字としてアクセスする必要はありません。
+
+また、定義したクラスを継承して派生クラスを作ることができるので、エンドポイントによってわずかにプロパティが違う場合なども ``dict`` を一から宣言することなく異なるプロパティのクラス変数をオーバーライドするだけです。
+
+最後に、少し大きめな jsmapper による JSONSchema の定義を示します。
+
+.. code-block:: python
+
+   # -*- coding: utf-8 -*-
+
+   from jsmapper import (
+       JSONSchema,
+       Array,
+       Mapping,
+       Number,
+       Object,
+       String,
+   )
+   from jsmapper.defines import JSONSchemaDraftV4
+
+
+   class Product(Mapping):
+
+       class Dimensions(Mapping):
+           length = JSONSchema(type=Number())
+           width = JSONSchema(type=Number())
+           height = JSONSchema(type=Number())
+
+       id = JSONSchema(type=Number(),
+                       description="The unique identifier for a product")
+       name = JSONSchema(type=String())
+       price = JSONSchema(type=Number(minimum=0, exclusive_minimum=True))
+       tags = JSONSchema(type=Array(items=JSONSchema(type=String()),
+                                    min_items=1, unique_items=True))
+       dimensions = JSONSchema(type=Object(
+           properties=Dimensions,
+           required=[Dimensions.length, Dimensions.width, Dimensions.height]
+       ))
+       warehouseLocation = JSONSchema(
+           ref="http://json-schema.org/geo",
+           description="Coordinates of the warehouse with the product"
+       )
+
+
+   ProductSchema = JSONSchema(
+       schema=JSONSchemaDraftV4,
+       title="Product set",
+       type=Array(
+           items=JSONSchema(
+               title="Product",
+               type=Object(
+                   properties=Product,
+                   required=[Product.id, Product.name, Product.price]
+               )
+           )
+       ),
+   )
+
+以上です。
+最新バージョンである 0.1.7 のリリースは 2 週間以上前ですが、仕事が忙しく、また他のライブラリの開発もしていてブログエントリにすることを忘れていたことを思い出したので書いてみました。
+
+ちなみにこのライブラリは Python 3 でしか動きません。
+テストは Python 3.3 と Python 3.4 で行っています。
+このライブラリに関係する Python 2 との違いは metaclass
+の指定方法だけだと思いますので、 3to2 を使えば自動でコンバートできると思います。
+ぼくはこのライブラリを Python 2 で使う予定はないので、 Python 2 に対応する予定もありません。
+
+おわりに
+--------
+
+開発は `GitHub <https://github.com/yosida95/python-jsmapper>`__ 上で行っているので、不具合報告や改善案がある場合はそれぞれ Issue や Pull Request でおねがいします。
+
+また、明日は私の誕生日です。
+このライブラリによって救われる方や、純粋に私の誕生日を祝ってくださる方からの\ `誕生日プレゼントをお待ちしています <http://amzn.to/yosida95>`__\ 。

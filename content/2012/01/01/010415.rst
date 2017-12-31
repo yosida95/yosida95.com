@@ -1,0 +1,7 @@
+辰年言語 DRAGONを公開します
+===========================
+
+:authors: yosida95
+:tags: Python
+
+http://2012.yosida95.com

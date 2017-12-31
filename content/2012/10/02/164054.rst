@@ -1,0 +1,14 @@
+PyCon JP 2012 に参加してきました #pyconjp
+=========================================
+
+:authors: yosida95
+:tags: PyCon JP, Python
+
+報告いまさらかよって気もしますが、去る9月15日から17日までの3日間、東京都品川区の\ 産業技術大学院大学\ で行われた PyCon JP 2012 に参加してきました。
+
+いつもなら、感想とかあった出来事とかをここに書いているのですが、今回はすべてこちらにまとめられているので省略します。
+よろしくお願いします。
+
+- `第1回　複雑さは幸せを殺す ─初日／2日目キーノートと開発者向け注目セッションから：PyCon JP 2012参加レポート｜gihyo.jp … 技術評論社 <http://gihyo.jp/news/report/01/pyconjp2012/0001>`__
+- `第2回　17歳のVPS構築記，Python3の最新情報からソーシャルゲーム，WebフレームワークとPythonの話：PyCon JP 2012参加レポート｜gihyo.jp … 技術評論社 <http://gihyo.jp/news/report/01/pyconjp2012/0002>`__
+- `第3回　Open Spaces，ライトニングトーク，Sprints─PyConならではのセッションたち─そして来年は？：PyCon JP 2012参加レポート｜gihyo.jp … 技術評論社 <http://gihyo.jp/news/report/01/pyconjp2012/0003>`__

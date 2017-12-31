@@ -4,10 +4,10 @@ machine:
     version: 3.6.1
 dependencies:
   override:
-    - pip install 'tinkerer==1.6.0'
+    - pip install 'pelican>=3.7,<4.0' 'pelican-alias>=1.1,<2.0'
 test:
   override:
-    - tinker -b
+    - make publish
 deployment:
   tinkerer:
     branch: master

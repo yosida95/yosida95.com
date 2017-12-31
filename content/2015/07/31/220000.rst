@@ -1,0 +1,51 @@
+2015 年 7 月まとめ
+==================
+
+:authors: yosida95
+:tags: 月報
+
+はじめに
+--------
+
+こんにちは yosida95 です。
+今月も月報を書きます。
+先月分は\ `2015 年 6 月まとめ <{filename}/2015/06/30/113000.rst>`_\ です。
+
+
+やったこと
+----------
+
+-  3 日
+
+   -  6月27日に購入した iPad mini 3 を受け取った
+
+-  8 日
+
+   -  `yosida95/golang-jenkins <https://github.com/yosida95/golang-jenkins>`__ に来た `PullRequest#6 <https://github.com/yosida95/golang-jenkins/pull/6>`__ をマージした
+
+-  20 日
+
+   -  `yosida95/python-jsonrpc <https://github.com/yosida95/python-jsonrpc>`__ のトランスポーターに response\_encoding パラメーターを追加した
+
+-  27 日
+
+   -  `/etc/shadow などで使われるハッシュ関数、 crypt(3) を Go 言語で実装しました <{filename}/2015/07/25/120000.rst>`_\ を公開した
+
+-  31 日
+
+   -  社内ハッカソンに参加した
+
+まとめ
+------
+
+今月は大した事をしていない気がします。
+
+`yosida95/golang-jenkins <https://github.com/yosida95/golang-jenkins>`__ は自分が欲しかった部分だけ実装して公開しておいた所、各位が思い思いの機能を実装して Pull Request をくださったおかげで機能が増えてきました。
+
+`yosida95/python-jsonrpc <https://github.com/yosida95/python-jsonrpc>`__ は JSON-RPC 2.0 のクライアント実装で、既存のライブラリがトランスポート層に HTTP を使うことしか考慮していないことについカッとして作った、 TCP socket や Unix Domain Socket をトランスポート層に使えるライブラリでしたが、現在では `Gehirn RS2 Plus <https://www.gehirn.jp/gis/rs2.html>`__ の重要な部分を担っています。
+
+`GehirnInc/crypt <https://github.com/GehirnInc/crypt>`__ は以前から公開しているライブラリですが、この度バグフィックスをしてリライセンスしました。
+このライブラリも、 `Gehirn RS2 Plus <https://www.gehirn.jp/gis/rs2.html>`__ で利用しています。
+
+こちらからは以上です。
+来月も頑張るぞい！

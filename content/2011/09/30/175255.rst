@@ -1,0 +1,104 @@
+情報技術基礎の授業用 PC に Python 環境をセットアップした（夢を見た）
+====================================================================
+
+:authors: yosida95
+:tags: Python, 学校
+
+わが校の情報技術基礎の授業は1つのサーバーに全マシンがぶら下がる形で、ネットブート・ディスクレス Ubuntu で行われます。
+生徒には1人あたり1つ、一般ユーザー ( not sudoer ) アカウントが割り当てられます。
+また、ネットワークにアクセスするためにはプロクシの認証を通る必要があります。
+何をダウンロードしたか、どのページを見たかはアカウントごとにログが取られているはずですので、ご注意を。
+
+
+わが校の情報技術基礎の授業でプログラミングの授業はやるものの、 C言語を使って行われるため、 Python は Ubuntu にバンドルされている 2.4 のままです。
+
+1年ちょっと前に Python に出会いその魅力に惹きこまれた僕としては、(最新の) Python 2.7 を使いたいよ！暇な時間は Python といちゃいちゃしたいよ！と、当然なるわけです。
+
+そこで。
+学校の自分のアカウントで Python 2.7 とそれにともなって easy\_install 、 pip を入れることを夢見ました。
+
+Step1
+-----
+
+一般ユーザーですので当然 ``/usr`` や ``/usr/local`` に対する書き込み権限を持っていませんし、持っていたとしてもここを書き換えてしまうと全校生徒に迷惑をかけてしまいます。
+そこで自分のホームディレクトリに Python をインストールして、そこにパスを通すことにします。
+
+.. code-block:: sh
+
+    $ mkdir ~/src
+    $ cd ~/src
+    $ wget --proxy-user=(プロクシログイン名) --proxy-password=(プロクシパスワード) http://www.python.org/ftp/python/2.7.2/Python-2.7.2.tar.bz2
+    $ tar -xvjf Python-2.7.2.tar.bz2
+    $ cd Python-2.7.2
+    $ ./configure --prefix=$HOME
+    $ make && make install
+
+    $ vi .bashrc (以下の内容を追加)
+    PATH=$PATH:$HOME/bin
+    export PATH
+
+    alias python='python2.7'
+
+Step2 setuptools 導入
+---------------------
+
+setuptools はそのまま実行すると ``/usr/bin`` にインストールしようとして権限不足でエラーを吐きますので、インストール時にprefixを指定してやります。
+
+.. code-block:: sh
+
+    $ cd ~/src
+    $ wget http://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11-py2.7.egg
+    $ sh setuptools-0.6c11-py2.7.egg --prefix=$HOME
+
+Step3 easy\_install を使えるようにする。
+----------------------------------------
+
+上記の通りわが校ではプロクシの認証を通る必要があります。
+easy\_install をこのまま使うと 407 エラーでモジュールをダウンロードすることが出来ません。
+そこで、 easy\_install がプロクシを通るように設定します。
+具体的には、 HTTP\_PROXY という環境変数を設定してやります。
+
+.. code-block:: sh
+
+    $ vi ~/.bashrc (以下の内容を追加)
+    HTTP_PROXY=(プロクシユーザー名):(プロクシパスワード)@(プロクシサーバ):(ポート番号)
+    export HTTP_PROXY
+
+    $ source ~/.bashrc
+    $ easy_install pip
+
+以上で、 Python 、 setuptools 、 pip を入れることに成功しました。
+
+(おまけ)
+--------
+
+え？お前バージョン管理システム使ってねーの？
+えっ Git なにそれおいしいの？
+Python 使いなら迷わず Mercurial だろ！！！ってことで、 hg コマンドが走るようにします。
+
+.. code-block:: sh
+
+    $ cd ~/src
+    $ wget http://selenic.com/hg/archive/tip.tar.bz2
+    $ tar -xvjf tip.tar.bz2
+    $ cd Mercurial-XXXXXXXXXXXX
+    $ make install-home
+
+これで hg が走り、 Mercurial が使えるようになりました。
+
+bitbucket などからリポジトリを clone する時などは、やはりプロクシを通る必要があります。
+また、ファイアウォールががんじがらめなので SSH は使えないと思います。
+従って、 HTTP の プロクシの設定を Mercurial の設定ファイルに記述してやります。(未検証)
+
+.. code-block:: sh
+
+    $ vi ~/.hgrc (以下を追記)
+    [http_proxy]
+    host = (プロクシサーバ):(ポート番号)
+    user = (プロクシユーザー)
+    passwd = (プロクシパスワード)
+
+【参考】
+--------
+
+- `Mercurialのproxy設定 - irykazeの日記 - Rubyist <http://rubyist.g.hatena.ne.jp/irykaze/20080708>`__

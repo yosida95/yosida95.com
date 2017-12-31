@@ -1,0 +1,15 @@
+{#- vim:set filetype=htmljinja shiftwidth=2: -#}
+{% extends "base.html" %}
+
+{% block title -%}
+{{ article.title }}
+{%- endblock %}
+
+{% block body %}
+<h1>{{ article.title }}</h1>
+<span class="post-meta">
+  Posted on <strong>{{ article.date| strftime('%a, %b %d, %Y, %I:%M %p %Z') }}</strong>
+</span>
+
+{{ article.content }}
+{%- endblock %}

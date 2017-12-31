@@ -1,0 +1,38 @@
+{#- vim:set filetype=htmljinja shiftwidth=2: -#}
+{% extends "base.html" %}
+
+{% block body %}
+{%- for article in articles %}
+            <div class="post">
+              <h1 class="title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+              <span class="post-meta">
+                Posted on <strong>{{ article.date| strftime('%a, %b %d, %Y, %I:%M %p %Z') }}</strong>
+              </span>
+
+{{ article.summary}}
+            </div>
+{%- endfor %}
+{%- endblock %}
+
+{%- macro category_list(post_categories) -%}
+    {%- if post_categories -%}
+      {% for link, category in post_categories -%}
+        <a href="{{ SITEURL }}/categories/{{ link }}.html">{{ category }}</a>
+        {%- if not loop.last -%}, {% endif -%}
+      {% endfor -%}
+    {%- else -%}
+    Uncategorized
+    {%- endif -%}
+{%- endmacro -%}
+
+{%- macro tag_list(post_tags) -%}
+    {%- if post_tags -%}
+      {% for link, tag in post_tags -%}
+        <a href="{{ SITEURL }}/tags/{{ link }}.html }}">{{ tag }}</a>
+        {%- if not loop.last -%}, {% endif -%}
+      {% endfor -%}
+    {%- else -%}
+    Untagged
+    {%- endif -%}
+{%- endmacro -%}
+

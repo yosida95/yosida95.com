@@ -1,0 +1,180 @@
+VirtualHost 自動設定スクリプト
+==============================
+
+:authors: yosida95
+:tags: Apache HTTP Server, Python
+
+`VirtualHost の設定`_\ でディレクトリを追加するだけで VirtualHost の設定が済む httpd.conf を掲載しました。
+あのあとあの記事に従って設置したディレクトリの中で更に mod\_rewrite を使うと転送ループなどの問題が発生してしまいましたので、VirtualHostを追加する Python スクリプトを書きました。
+
+.. _VirtualHost の設定: {filename}/2011/07/19/211021.rst
+
+
+``/var/www/mkvhost/mkvhost.py``
+
+.. code-block:: python
+
+    #!/usr/bin/env python
+    #-*- coding: utf-8 -*-
+
+    import sys
+    import os
+    import shutil
+    import fcntl
+    import re
+
+
+    def mkvhost():
+        Conf_Dir = '/etc/httpd/conf.d'
+        Conf_Template = '/var/www/mkvhost/conf.tpl'
+        Init_HTML = '/var/www/mkvhost/index.html'
+
+        host = sys.argv[1].lower()
+        conf = os.path.join(Conf_Dir, '%s.conf' % host)
+        admin = sys.argv[2]
+        root_dir = os.path.normpath(sys.argv[3])
+        if os.path.exists(conf):
+            is_continue = raw_input(u'すでに設定ファイルが存在します。上書きしますか？ (y/N): ')
+            if is_continue == '' or is_continue in ('n', 'N', 'no', 'No', 'NO'):
+                print u'中断しました'
+                exit(0)
+
+        if not os.path.exists(root_dir):
+            is_mkdir = raw_input(u'%sが存在しません。作成しますか？(Y/n): ' % (root_dir))
+            if is_mkdir in ('y', 'Y', 'yes', 'Yes', 'YES') or is_mkdir == '':
+                os.makedirs(root_dir)
+                shutil.copyfile(Init_HTML, '%s/index.html' % root_dir)
+
+        mkconf = open(conf, 'w')
+        fcntl.flock(mkconf.fileno(), fcntl.LOCK_EX)
+        template = open(Conf_Template, 'r')
+        text = template.read() % {'host': host, 'admin': admin, 'root_dir': root_dir}
+        mkconf.write(text)
+        template.close()
+        fcntl.flock(mkconf.fileno(), fcntl.LOCK_UN)
+        mkconf.close()
+        os.system('/etc/init.d/httpd reload')
+
+
+    def rmvhost():
+        Conf_Dir = '/etc/httpd/conf.d'
+
+        host = sys.argv[1]
+        conf_path = os.path.join(Conf_Dir, '%s.conf' % host)
+        if os.path.exists(conf_path):
+            is_continue = raw_input(u'%sの設定を削除します。続行しますか？(y/N): ' % host)
+            if is_continue == '' or is_continue in ('n', 'N', 'no', 'No', 'NO'):
+                print u'中止しました。'
+                exit(0)
+            conf = open(conf_path, 'r')
+            match = re.search(r'DocumentRoot ([^\r\n]+)[\r\n]*', conf.read())
+            conf.close()
+            root_dir = match.group(1) if match else ''
+            if not root_dir == '' and os.path.exists(root_dir):
+                is_delete = raw_input(u'ディレクトリ: %sを削除しますか？(y/N): ' % (root_dir))
+                if is_delete in ('yes', 'Y', 'y', 'YES', 'Yes'):
+                    os.rmdir(os.path.normpath(root_dir))
+            os.remove(conf_path)
+            os.system('/etc/init.d/httpd reload')
+        else:
+            print u'該当の設定が存在しません。'
+            exit(0)
+
+    if __name__ == '__main__':
+        if len(sys.argv) == 4:
+            mkvhost()
+        elif len(sys.argv) == 2:
+            rmvhost()
+        else:
+            print u'引数が不十分です'
+
+``/var/www/mkvhost/conf.tpl``
+
+.. code-block:: apache
+
+    <VirtualHost *:80>
+        ServerName %(host)s
+        ServerAdmin %(admin)s
+        DocumentRoot %(root_dir)s
+
+        <Directory "%(root_dir)s">
+            Order allow,deny
+            Allow from All
+            Options Includes ExecCGI FollowSymLinks
+            AddHandler cgi-script .cgi .pl .py .rb
+            DirectoryIndex index.html index.cgi index.php index.pl index.py index.rb
+            AllowOverride All
+        </Directory>
+    </VirtualHost>
+
+``/var/www/mkvhost/index.html``
+
+.. code-block:: html
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta name="copyright" content="Copyright (C) yosida95 site All Rights Reserved." />
+    <meta name="Author" content="yosida95" />
+    <meta name="robots" content="NOINDEX" />
+    <title>It Works!</title>
+    </head>
+    <body>
+    <h1>It Works!</h1>
+    </body>
+    </html>
+
+``httpd.conf ( 追記 )``
+
+.. code-block:: apache
+
+    Include conf.d/*.conf
+
+また、 Apache は指定されたいずれの VirtualHost ディレクティブの ServerName にもアクセスされたホスト名がマッチしない場合は、最初に指定された VirtualHost ディレクティブの設定を適用します。
+ですので、設定されていないホスト名のための VirtualHost ディレクティブを設定してやると親切だと思います。
+これを僕は httpd.conf 内に直接記述しています。
+次にその設定例を示します。
+
+``/etc/httpd/conf/httpd.conf``
+
+.. code-block:: apache
+
+    <VirtualHost *:80>
+        ServerName default
+        ServerAlias *
+        DocumentRoot /var/www/html
+        ServerAdmin webmaster@hogehoge
+        <Directory "/var/www/html">
+            Order allow,deny
+            Allow from All
+            Options Includes ExecCGI FollowSymLinks
+            AddHandler cgi-script .cgi .pl .py .rb
+            DirectoryIndex index.html index.cgi index.php index.pl index.py index.rb
+            AllowOverride All
+        </Directory>
+    </VirtualHost>
+
+なお ``ServerAlias *`` としているのは、この VirtualHost ディレクティブよりも前に前述の Include の記述があると、そちらで読まれた VirtualHost の設定の内の1つが適用されてしまう為、 ``ServerAlias *`` として全ての設定を受け入れています。
+逆に、この VirtualHost ディレクティブよりも後に Include されている場合はいずれの設定も適用されずに、全てこの VirtualHost の設定が適用されてしまうと思います[未検証]。
+ですので、その場合は ServerAlias を削除してやれば OK です。
+
+How To Use
+----------
+
+VirtualHost追加時
+~~~~~~~~~~~~~~~~~
+
+第1引数にホスト名、第2引数にサーバー管理者のメールアドレス、第3引数にルートディレクトリのフルパスを指定し、あとはガイドに従うだけ。
+サーバーの再起動とかは必要なく、正常終了すれば公開が開始されている。
+
+VirtualHost 削除時
+------------------
+
+第1引数に削除するホスト名を指定。
+後はガイドに従うだけ。
+サーバーの再起動等必要なし。
+なおこれは Cent OS で yum で Apache を入れた場合に標準パスに従っていますので、異なる環境の時はそれに合わせてスクリプト内部のパスを書き換えてください。

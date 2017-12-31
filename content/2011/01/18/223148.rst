@@ -1,0 +1,16 @@
+Python 書いてたら Windows に怒られた
+====================================
+
+:authors: yosida95
+:tags: Python, Windows
+
+cmd.exe で直に Python コード書いてて、 UTF-8 の文字列を出力させようとしたら怒られたのでその対処法のメモ。
+
+.. code-block:: python
+
+    import sys
+    import codecs
+
+    sys.stdout = codecs.getwriter('utf_8')(sys.stdout)
+
+これを実行した後は再度実行する必要もなく UTF-8 文字列を出力させてくれます。

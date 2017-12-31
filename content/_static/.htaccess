@@ -1,0 +1,2 @@
+RewriteEngine on [L,R=301]
+RewriteRule ^pages/about.html$ / [L,R=301]
