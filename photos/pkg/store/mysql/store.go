@@ -3,6 +3,7 @@ package store_mysql
 import (
 	"context"
 	"database/sql"
+	"google.golang.org/api/option"
 	"io"
 	"time"
 
@@ -14,9 +15,10 @@ import (
 )
 
 type Config struct {
-	DSN       string
-	Bucket    string
-	KeyPrefix string
+	DSN         string
+	Bucket      string
+	Credentials string
+	KeyPrefix   string
 }
 
 func New(c Config) (store.StoreFactory, error) {
@@ -52,7 +54,11 @@ func (s *factory) Begin(ctx context.Context) (store.Store, error) {
 		return nil, err
 	}
 
-	cli, err := storage.NewClient(ctx)
+	opts := []option.ClientOption{}
+	if s.cfg.Credentials != "" {
+		opts = append(opts, option.WithCredentialsFile(s.cfg.Credentials))
+	}
+	cli, err := storage.NewClient(ctx, opts...)
 	if err != nil {
 		return nil, err
 	}
