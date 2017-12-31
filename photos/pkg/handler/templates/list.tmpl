@@ -77,17 +77,14 @@
             {{ end }}
           </ul>
 
-          {{/*
           <div class="pagination">
-            {%- if current_page > 1 %}
-            <a href="{{ request.route_path('photo_list', _query=(('page', current_page - 1), )) }}" class="newer-posts">&laquo; Newer</a>
-            {%- endif %}
-            {%- if current_page < last_page %}
-            <a href="{{ request.route_path('photo_list', _query=(('page', current_page + 1), )) }}" class="older-posts">Older &raquo;</a>
-            {%- endif %}
+            {{ if gt .PrevPage 0 }}
+            <a href="/photos?page={{.PrevPage}}" class="older-posts">&laquo; Older</a>
+            {{ end }}
+            {{ if gt .NextPage 0 }}
+            <a href="/photos?page={{ .NextPage }}" class="newer-posts">Newer &raquo;</a>
+            {{ end }}
           </div>
-          {%- endblock %}
-          */}}
         </div><!-- .inner END -->
       </div><!-- #main End -->
 

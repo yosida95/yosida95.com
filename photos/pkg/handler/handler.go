@@ -47,7 +47,19 @@ var listTmpl = template.Must(
 
 type listTmplContext struct {
 	Page   int64
+	Last   int64
 	Photos []*photos.Photo
+}
+
+func (c *listTmplContext) PrevPage() int64 {
+	return c.Page - 1
+}
+
+func (c *listTmplContext) NextPage() int64 {
+	if c.Page < c.Last {
+		return c.Page + 1
+	}
+	return 0
 }
 
 func (h *Handler) List(w http.ResponseWriter, req *http.Request) {
@@ -102,6 +114,7 @@ func (h *Handler) List(w http.ResponseWriter, req *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	listTmpl.Execute(w, &listTmplContext{
 		Page:   page,
+		Last:   last,
 		Photos: photos,
 	})
 }
