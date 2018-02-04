@@ -2,6 +2,10 @@
 machine:
   python:
     version: 3.6.1
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init
 dependencies:
   override:
     - pip install 'pelican>=3.7,<4.0' 'pelican-alias>=1.1,<2.0'
