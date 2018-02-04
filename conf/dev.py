@@ -49,7 +49,10 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+PLUGIN_PATHS = ['../plugins/pelican-plugins']
 PLUGINS = ['pelican_alias']
+
 JINJA_ENVIRONMENT = {'lstrip_blocks': False,
                      'trim_blocks': False}
+
 PYGMENTS_RST_OPTIONS = {}
