@@ -27,7 +27,24 @@
     <link rel="alternate" type="application/rss+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">
     {%- endif %}
 
-    <script type="text/javascript" src="{{ SITEURL }}/theme/js/twitter.js"></script>
+    <script>
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     {%- block extrahead %}{% endblock %}
   </head>
@@ -103,7 +120,6 @@
       </div><!-- #footer End -->
     </div><!-- #wrapper End -->
 
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57d37edcf04e9ecd"></script>
     {%- include "google_analytics.html" %}
   </body>
