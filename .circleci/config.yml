@@ -12,10 +12,10 @@ jobs:
       - run: |
           if [ ! -d ".venv" ]; then
             python -m venv ./.venv
-            . ./.venv/bin/activate
-            pip install --upgrade pip
-            pip install 'pelican>=3.7,<4.0' 'pelican-alias>=1.1,<2.0'
           fi
+          . ./.venv/bin/activate
+          pip install --upgrade pip
+          pip install --upgrade 'pelican>=3.7,<4.0' 'pelican-alias>=1.1,<2.0'
       - save_cache:
           key: build-{{ checksum ".circleci/config.yml" }}
           paths:
@@ -30,15 +30,23 @@ jobs:
             - output
   deploy:
     docker:
-      - image: debian:stretch
+      - image: circleci/python:3.6
     steps:
       - checkout
+      - add_ssh_keys
+      - run: |
+          cat << EOF > ~/.ssh/known_hosts
+          [s1.rs2p.gis.gehirn.jp]:22329,[133.242.85.169]:22329 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPws3mCejM5wXZzASVkQcUCUmK1CZ9bylhrjvgds2L7NLYwyJ/LWWUjxpFbli9jI1qod7swrRII0T1tyOvsAErE=
+          EOF
+
       - attach_workspace:
           at: .
       - run: |
           REVISION="$(git rev-parse --short HEAD)"
-          scp -P 22329 -r ./output/ "rs2p@s1.rs2p.gis.gehirn.jp:/var/www/yosida95.com/${REVISION}"
-          ssh -p 22329 rs2p@s1.rs2p.gis.gehirn.jp "ln -sfT /var/www/yosida95.com/${REVISION} /var/www/yosida95.com/html"
+          ln -s ./output "./${REVISION}"
+          tar czvfh "./${REVISION}.tar.gz" "./${REVISION}"
+          scp -P 22329 "${REVISION}.tar.gz" "rs2p@s1.rs2p.gis.gehirn.jp:/var/www/yosida95.com"
+          ssh -p 22329 rs2p@s1.rs2p.gis.gehirn.jp "cd /var/www/yosida95.com; tar xzf ${REVISION}.tar.gz && ln -sfT /var/www/yosida95.com/${REVISION} ./html"
 workflows:
   version: 2
   deploy:
