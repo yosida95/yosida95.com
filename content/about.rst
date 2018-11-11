@@ -3,6 +3,7 @@ About yosida95
 
 :authors: yosida95
 :slug: about
+:url:
 :save_as: index.html
 :alias: pages/about
 
