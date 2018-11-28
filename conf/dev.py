@@ -18,8 +18,6 @@ STATIC_PATHS = ['_static']
 EXTRA_PATH_METADATA = {
     '_static/.htaccess': {'path': '.htaccess'},
     '_static/robots.txt': {'path': 'robots.txt'},
-    '_static/googlecad1c35a95af6e0c.html': {
-        'path': 'googlecad1c35a95af6e0c.html'},
     '_static/favicon.ico': {'path': 'favicon.ico'}}
 
 ARTICLE_PATHS = ['2009',
