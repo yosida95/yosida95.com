@@ -36,7 +36,7 @@ jobs:
       - add_ssh_keys
       - run: |
           cat << EOF > ~/.ssh/known_hosts
-          [s1.rs2p.gis.gehirn.jp]:22329,[133.242.85.169]:22329 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPws3mCejM5wXZzASVkQcUCUmK1CZ9bylhrjvgds2L7NLYwyJ/LWWUjxpFbli9jI1qod7swrRII0T1tyOvsAErE=
+          [s9.rs2plus.gehirn.ne.jp]:22341,[153.127.109.65]:22341 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGh08oN+BTakK+pFUgZPI9lj1mb8vSuNtl7RmTf/KUmoNYeI/y54HvNMHaWNuy4/Zco3zFctBkZIk4FxPFrVDR4=
           EOF
 
       - attach_workspace:
@@ -45,8 +45,8 @@ jobs:
           REVISION="$(git rev-parse --short HEAD)"
           ln -s ./output "./${REVISION}"
           tar czvfh "./${REVISION}.tar.gz" "./${REVISION}"
-          scp -P 22329 "${REVISION}.tar.gz" "rs2p@s1.rs2p.gis.gehirn.jp:/var/www/yosida95.com"
-          ssh -p 22329 rs2p@s1.rs2p.gis.gehirn.jp "cd /var/www/yosida95.com; tar xzf ${REVISION}.tar.gz && ln -sfT /var/www/yosida95.com/${REVISION} ./html"
+          scp -P 22341 "${REVISION}.tar.gz" "rs2p@s9.rs2plus.gehirn.ne.jp:/var/www/yosida95.com"
+          ssh -p 22341 rs2p@s9.rs2plus.gehirn.ne.jp "cd /var/www/yosida95.com; tar xzf ${REVISION}.tar.gz && ln -sfT /var/www/yosida95.com/${REVISION} ./html"
 workflows:
   version: 2
   deploy:
