@@ -22,11 +22,12 @@
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css" media="screen">
 
-    <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
     <link rel="canonical" href="{{ SITEURL }}/{{ self.url() }}">
+    <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
     {%- if FEED_ALL_ATOM %}
     <link rel="alternate" type="application/rss+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">
     {%- endif %}
+    <link rel="author" href="http://www.hatena.ne.jp/yosida95/">
 
     <script>
       window.twttr = (function(d, s, id) {
