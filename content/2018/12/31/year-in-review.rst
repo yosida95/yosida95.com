@@ -138,7 +138,7 @@ yosida95 の2018年まとめ
 
 購入したのはアイリスオーヤマの `PH-TSA デスクパネルヒーター <https://www.irisohyama.co.jp/seasonal/desk_heater/ph-tsa.html>`_ です。
 
-.. image:: https://storage.googleapis.com/yosida95/blog/2018/12/31/year-in-review/panel-heater.png
+.. image:: https://blogmedia.yosida95.com/2018/12/31/year-in-review/panel-heater.png
    :alt: アイリスオーヤマ PH-TSA デスクパネルヒーター
    :target: https://www.irisohyama.co.jp/seasonal/desk_heater/ph-tsa.html
 

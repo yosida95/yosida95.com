@@ -265,7 +265,7 @@ Supervisor には supervisorctl という便利なコマンドも用意されて
 - `適当なスクリプトをデーモン化するのにSupervisorが便利 - id:anatooのブログ <http://d.hatena.ne.jp/anatoo/20120310/1331321778>`__
 - `prasinos' work memo chkconfig 対応スタートアップスクリプトの書き方 <http://prasinos.blog2.fc2.com/blog-entry-592.html>`__
 
-.. |Supervisor| image:: https://yosida95.kvs.gehirn.jp/blog/2012/03/22/030615/supervisor.png
+.. |Supervisor| image:: https://blogmedia.yosida95.com/2012/03/22/030615/supervisor.png
    :width: 100%
-.. |Supervisor uWSGI| image:: https://yosida95.kvs.gehirn.jp/blog/2012/03/22/030615/supervisor-uwsgi.png
+.. |Supervisor uWSGI| image:: https://blogmedia.yosida95.com/2012/03/22/030615/supervisor-uwsgi.png
    :width: 100%

@@ -22,5 +22,5 @@
 
 |snowman|
 
-.. |snowman| image:: https://yosida95.kvs.gehirn.jp/blog/2011/03/07/181624/snowman.jpg
+.. |snowman| image:: https://blogmedia.yosida95.com/2011/03/07/181624/snowman.jpg
    :width: 100%

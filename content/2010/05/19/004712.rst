@@ -22,5 +22,5 @@ yosida95's site
 
 では、僕は明日学校がありますので、そろそろおやすみなさい。
 
-.. |design| image:: https://yosida95.kvs.gehirn.jp/blog/2010/05/19/004712/design.jpg
+.. |design| image:: https://blogmedia.yosida95.com/2010/05/19/004712/design.jpg
    :width: 100%

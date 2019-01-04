@@ -96,13 +96,13 @@ LT のデモ中、ウェブコンパネと MySQL のコネクション切れに�
 ぼくも同じようなことを思っていました。
 嬉しいです。
 
-.. |entrance| image:: https://yosida95.kvs.gehirn.jp/blog/2012/11/22/033659/entrance.jpg
+.. |entrance| image:: https://blogmedia.yosida95.com/2012/11/22/033659/entrance.jpg
    :width: 100%
-.. |sashimi-rice| image:: https://yosida95.kvs.gehirn.jp/blog/2012/11/22/033659/sashimi-rice.jpg
+.. |sashimi-rice| image:: https://blogmedia.yosida95.com/2012/11/22/033659/sashimi-rice.jpg
    :width: 100%
-.. |rack| image:: https://yosida95.kvs.gehirn.jp/blog/2012/11/22/033659/rack.jpg
+.. |rack| image:: https://blogmedia.yosida95.com/2012/11/22/033659/rack.jpg
    :width: 100%
-.. |sakura-t-shirt| image:: https://yosida95.kvs.gehirn.jp/blog/2012/11/22/033659/sakura-t-shirt.jpg
+.. |sakura-t-shirt| image:: https://blogmedia.yosida95.com/2012/11/22/033659/sakura-t-shirt.jpg
    :width: 100%
 
 .. _`id:koba789`: http://blog.hatena.ne.jp/koba789/

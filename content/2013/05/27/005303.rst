@@ -100,9 +100,9 @@ user は不使用ですので空を、 password は通知を受け取るマシ�
 
 ね、簡単でしょ?
 
-.. |create-media-type| image:: https://yosida95.kvs.gehirn.jp/blog/2013/05/27/005303/create-media-type.png
+.. |create-media-type| image:: https://blogmedia.yosida95.com/2013/05/27/005303/create-media-type.png
    :width: 100%
-.. |add-media| image:: https://yosida95.kvs.gehirn.jp/blog/2013/05/27/005303/add-media.png
+.. |add-media| image:: https://blogmedia.yosida95.com/2013/05/27/005303/add-media.png
    :width: 100%
-.. |growl| image:: https://yosida95.kvs.gehirn.jp/blog/2013/05/27/005303/growl.png
+.. |growl| image:: https://blogmedia.yosida95.com/2013/05/27/005303/growl.png
    :width: 100%

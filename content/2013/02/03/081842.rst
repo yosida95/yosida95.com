@@ -87,5 +87,5 @@ Vyatta 使用時は、不使用時に比べて 5Mbps 程度スループットが
 個人的には、この結果にはとても満足しています。
 1000BASE-T のネットワークで、 1Gbps に近い値がでている事、ハードウェアの物理的限界値らしき値より 5Mbps 程度しか性能劣化が無いことに幸せ感があります。
 
-.. |network-graph| image:: https://yosida95.kvs.gehirn.jp/blog/2013/02/03/081842/network-graph.png
+.. |network-graph| image:: https://blogmedia.yosida95.com/2013/02/03/081842/network-graph.png
    :width: 100%

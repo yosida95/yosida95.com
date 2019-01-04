@@ -137,6 +137,6 @@ python-sshkey
 
 こちらからは以上です。
 
-.. |Gehirn RS2 Plus 公開鍵の管理| image:: http://yosida95.kvs.gehirn.jp/news/20150511/added_publickey.png
+.. |Gehirn RS2 Plus 公開鍵の管理| image:: https://blogmedia.yosida95.com/2015/05/31/121709/added_publickey.png
    :width: 100%
-   :target: http://yosida95.kvs.gehirn.jp/news/20150511/added_publickey.png
+   :target: https://blogmedia.yosida95.com/2015/05/31/121709/added_publickey.png

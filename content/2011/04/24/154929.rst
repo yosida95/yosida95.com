@@ -111,5 +111,5 @@
 そのため、影響を強くうけている部分があります。
 書きあがった後で比較したら ``solve`` 関数なんかまんまな気がします。
 
-.. |answer| image:: https://yosida95.kvs.gehirn.jp/blog/2011/04/24/154929/sudoku.png
+.. |answer| image:: https://blogmedia.yosida95.com/2011/04/24/154929/sudoku.png
    :width: 100%

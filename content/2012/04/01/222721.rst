@@ -106,5 +106,5 @@ Blog の項ではそもそもブログとはなんぞやという所から始ま
    :width: 100%
 .. |タイトル画面| image:: http://cdn-ak.f.st-hatena.com/images/fotolife/y/yosida95/20120401/20120401212917.png
    :width: 100%
-.. |お姉さん 2.0| image:: https://yosida95.kvs.gehirn.jp/blog/2012/04/01/222721/guide.png
+.. |お姉さん 2.0| image:: https://blogmedia.yosida95.com/2012/04/01/222721/guide.png
    :width: 100%

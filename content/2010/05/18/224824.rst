@@ -37,9 +37,9 @@
 まぁ、そんな感じで修学旅行ネタはこれで最後かな、と思います。
 ありがとうございました。
 
-.. |excursion_1| image:: https://kvs.gehirn.jp/yosida95/blog/2010/05/18/224824/excursion_1.jpg
+.. |excursion_1| image:: https://blogmedia.yosida95.com/2010/05/18/224824/excursion_1.jpg
    :width: 100%
-.. |excursion_2| image:: https://kvs.gehirn.jp/yosida95/blog/2010/05/18/224824/excursion_2.jpg
+.. |excursion_2| image:: https://blogmedia.yosida95.com/2010/05/18/224824/excursion_2.jpg
    :width: 100%
-.. |excursion_3| image:: https://kvs.gehirn.jp/yosida95/blog/2010/05/18/224824/excursion_3.jpg
+.. |excursion_3| image:: https://blogmedia.yosida95.com/2010/05/18/224824/excursion_3.jpg
    :width: 100%

@@ -57,5 +57,5 @@ vyatta にログインして ``nslookup vyatta`` をすると 127.0.1.1 が返�
 私が取った方法は3ですｗ最も楽な方法を取りました。
 akari の named の設定とファイアウォールの設定を変えて、 192.168.2.0/24 からのクエリを許可したうえで、 DHCP を使ってネームサーバーとして 192.168.1.10 を配りました。
 
-.. |network-graph| image:: https://yosida95.kvs.gehirn.jp/blog/2013/02/03/081842/network-graph.png
+.. |network-graph| image:: https://blogmedia.yosida95.com/2013/02/03/081842/network-graph.png
    :width: 100%

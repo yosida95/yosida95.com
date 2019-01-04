@@ -148,5 +148,5 @@ URL 短縮サービスの API 使ってみたよ
 
 まぁ、今回の本質は API 使ってみたよ、なのでそれぞれのサービスの短縮・展開が利用出来ればヨシなんです。
 
-.. |yosida95_logo| image:: https://kvs.gehirn.jp/yosida95/blog/2011/01/20/221945/logo.png
+.. |yosida95_logo| image:: https://blogmedia.yosida95.com/2011/01/20/221945/logo.png
    :width: 100%

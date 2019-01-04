@@ -21,7 +21,7 @@
 
 ホテルと新幹線、そして2日間有効で愛知県内の鉄道・バスが乗り放題になる「愛知 DC フリーきっぷ」がセットで |yen| 27,800円でした。
 
-.. image:: https://storage.googleapis.com/yosida95/blog/2018/12/25/trip-to-nagoya/aichi-dc.gif
+.. image:: https://blogmedia.yosida95.com/2018/12/25/trip-to-nagoya/aichi-dc.gif
    :alt: 愛知ディスティネーションキャンペーン
    :target: https://www.aichi-now.jp/dc/
 

@@ -31,5 +31,5 @@
 新入りパソコンですが、一躍メインパソコンとして、私に使われております。
 ちなみに、今まで使ってきた DELL 製の Windows Vista 搭載 PC はサブ PC1 として CPU 切替機を介して現在でも使用しています。
 
-.. |windows_experience| image:: https://kvs.gehirn.jp/yosida95/blog/2010/02/17/220000/windows_experience.jpg
+.. |windows_experience| image:: https://blogmedia.yosida95.com/2010/02/17/220000/windows_experience.jpg
    :width: 100%
