@@ -14,6 +14,10 @@ RELATIVE_URLS = True
 THEME = './_themes/purity'
 SUMMARY_MAX_LENGTH = 10
 DEFAULT_PAGINATION = 5
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{name}{extension}'),
+    (2, '{base_name}/page{number}{extension}', '{base_name}/page{number}{extension}'),
+)
 JINJA_ENVIRONMENT = {
     'lstrip_blocks': False,
     'trim_blocks': False,
@@ -23,7 +27,7 @@ PYGMENTS_RST_OPTIONS = {}
 PLUGIN_PATHS = ['../plugins/pelican-plugins']
 PLUGINS = ['pelican_alias']
 
-INDEX_SAVE_AS = 'archives.html'
+INDEX_SAVE_AS = 'archives/index.html'
 INDEX_URL = 'archives/'
 
 ARCHIVES_SAVE_AS = ''
