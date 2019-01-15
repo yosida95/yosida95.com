@@ -2,7 +2,8 @@ SMTP で使われる Sender Policy Framework (SPF) のマクロを使う
 ============================================================
 
 :authors: yosida95
-:tags: SMTP, SPF
+:category: Protocol
+:tags: SMTP
 
 はじめに
 --------

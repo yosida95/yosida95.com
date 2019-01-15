@@ -2,6 +2,7 @@ IE 向け min-width
 =================
 
 :authors: yosida95
+:category: Code
 :tags: JavaScript, Internet Explorer
 
 おはようございます。

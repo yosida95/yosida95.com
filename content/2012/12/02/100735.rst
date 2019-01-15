@@ -2,7 +2,8 @@ CombConf を支える技術 〜タスクリマインダー〜
 ============================================
 
 :authors: yosida95
-:tags: Google App Script, CombConf, JavaScript
+:category: Code
+:tags: Google App Script, CombConf
 
 こんにちは
 ----------

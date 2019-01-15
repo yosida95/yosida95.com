@@ -2,6 +2,7 @@
 ==================================
 
 :authors: yosida95
+:category: Code
 :tags: Python
 
 こんばんは。

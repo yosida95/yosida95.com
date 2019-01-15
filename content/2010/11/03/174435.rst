@@ -2,7 +2,8 @@
 ==============
 
 :authors: yosida95
-:tags: 日記, 学校
+:category: School
+:tags: Junior High School, Piano
 
 本日文化の日に私が通う学校では文化祭が執り行なわれました。
 毎年文化祭で盛り上がる、文化祭のメインと言っても過言ではないのが合唱コンクール。

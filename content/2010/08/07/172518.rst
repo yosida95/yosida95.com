@@ -2,7 +2,8 @@
 ================================
 
 :authors: yosida95
-:tags: 日記, 工作
+:category: Diary
+:tags: DIY
 
 こんにちは。
 連日暑い日が続きますね。

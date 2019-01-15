@@ -2,7 +2,7 @@ mimura1133 と isidai さんにお会いしてきた！
 ===========================================
 
 :authors: yosida95
-:tags: 日記
+:category: Meetup
 
 こんばんは。
 

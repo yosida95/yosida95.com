@@ -2,7 +2,8 @@
 ==============================
 
 :authors: yosida95
-:tags: 旅行
+:category: Diary
+:tags: Travel
 
 .. include:: <isonum.txt>
 

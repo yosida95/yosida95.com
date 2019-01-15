@@ -2,6 +2,7 @@ Gehirn DNS の Golang API Client を書いた
 ========================================
 
 :authors: yosida95
+:category: Work
 :tags: Gehirn, Go, DNS
 
 はじめに

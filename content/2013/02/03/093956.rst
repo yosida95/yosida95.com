@@ -2,7 +2,8 @@ Vyatta のDNS Forwarding にハマった話
 ====================================
 
 :authors: yosida95
-:tags: Vyatta, Network, DNS
+:category: Networking
+:tags: Vyatta, DNS
 
 |network-graph|
 

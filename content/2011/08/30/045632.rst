@@ -5,7 +5,8 @@
 ======================================
 
 :authors: yosida95
-:tags: 日記
+:category: Meetup
+:tags: Travel
 
 Twitter ではちょこちょこ呟いていましたが、去る8月22日から23日にかけて素敵な大学生のお兄さん ( `@mimura1133 <http://twitter.com/mimura1133>`__ ) 主催の「プログラマ連中で行く、0泊2日の湯河原旅行。」に参加してきました。
 

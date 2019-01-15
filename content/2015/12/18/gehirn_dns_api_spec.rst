@@ -2,6 +2,7 @@ Gehirn DNS API 仕様
 ===================
 
 :authors: yosida95
+:category: Work
 :tags: Gehirn
 
 追記

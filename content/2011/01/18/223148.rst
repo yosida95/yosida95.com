@@ -2,6 +2,7 @@ Python 書いてたら Windows に怒られた
 ====================================
 
 :authors: yosida95
+:category: Code
 :tags: Python, Windows
 
 cmd.exe で直に Python コード書いてて、 UTF-8 の文字列を出力させようとしたら怒られたのでその対処法のメモ。

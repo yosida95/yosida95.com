@@ -2,7 +2,8 @@
 ======
 
 :authors: yosida95
-:tags: 日記, 学校
+:category: Diary
+:tags: Junior High School
 
 おはようございます。
 

@@ -2,7 +2,8 @@
 ===============================
 
 :authors: yosida95
-:tags: 学校
+:category: School
+:tags: Junior High School
 
 今日、31日で俺は中学生ではなくなります。
 

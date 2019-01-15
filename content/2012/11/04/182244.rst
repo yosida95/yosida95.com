@@ -2,6 +2,7 @@ Pyramid でCelery を使って非同期処理をする
 =========================================
 
 :authors: yosida95
+:category: Code
 :tags: Python, Celery, Pyramid
 
 Celery

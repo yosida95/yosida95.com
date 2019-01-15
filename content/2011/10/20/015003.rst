@@ -2,6 +2,7 @@ VirtualDocumentRoot
 ===================
 
 :authors: yosida95
+:category: Operations
 :tags: Apache HTTP Server
 
 以前、\ `VirtualHost の設定`_\ という記事を書きましたが、 Apache では標準で VirtualDocumentRoot なんていうものがあったんですね。

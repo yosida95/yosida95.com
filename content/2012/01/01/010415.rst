@@ -2,6 +2,7 @@
 ===========================
 
 :authors: yosida95
+:category: Work
 :tags: Python
 
 http://2012.yosida95.com

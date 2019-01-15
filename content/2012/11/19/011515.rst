@@ -2,7 +2,8 @@ Gehirn Web Services ファミリーのGehirn RS2 に恋をしてPyramid を動�
 =====================================================================
 
 :authors: yosida95
-:tags: Gehirn, Python
+:category: Code
+:tags: Gehirn, Python, Pyramid
 
 .. role:: strike
    :class: strike

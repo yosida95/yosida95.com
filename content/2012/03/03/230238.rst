@@ -2,7 +2,8 @@ Pythonのプロセスをデーモン化する
 ================================
 
 :authors: yosida95
-:tags: Python
+:category: Code
+:tags: Python, Linux
 
 別に Python に限った話では無く、他のプログラム言語でも手順は同じです。
 

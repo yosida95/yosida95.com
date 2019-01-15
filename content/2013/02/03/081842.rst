@@ -2,7 +2,8 @@ Vyatta を導入した話
 ===================
 
 :authors: yosida95
-:tags: Vyatta, Network
+:category: Networking
+:tags: Vyatta
 
 L2 スイッチを買った
 -------------------

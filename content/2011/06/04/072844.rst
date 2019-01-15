@@ -2,7 +2,7 @@ Hackme Lv5 が解けない
 =====================
 
 :authors: yosida95
-:tags: 日記
+:category: Diary
 
 うぅ…
 ふと思い立って久しぶりにHackme解いてみた。

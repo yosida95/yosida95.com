@@ -2,6 +2,7 @@ MongoDB の DBRef で参照先が削除された場合 ( mongoengine )
 =========================================================
 
 :authors: yosida95
+:category: Code
 :tags: MongoDB, Python
 
 MongoDB の DBRef に cascade が欲しい

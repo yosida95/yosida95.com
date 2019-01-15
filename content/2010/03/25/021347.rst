@@ -2,6 +2,7 @@ Python
 ======
 
 :authors: yosida95
+:category: Diary
 :tags: Python
 
 皆さん、こんばんは。

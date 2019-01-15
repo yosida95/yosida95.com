@@ -2,7 +2,8 @@
 =======
 
 :authors: yosida95
-:tags: 一年の振り返り
+:category: Diary
+:tags: Year in Review
 
 こんにちは。
 Twitter でも散々言っているとおり、睡眠時間が取れていない yosdia95 です。

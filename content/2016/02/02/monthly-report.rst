@@ -2,7 +2,8 @@
 ==================
 
 :authors: yosida95
-:tags: 月報
+:category: Diary
+:tags: Month in Review
 
 こんばんは yosida95 です。
 2016年も月報を書きます。

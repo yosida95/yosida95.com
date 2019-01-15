@@ -2,7 +2,8 @@ ErgoDox というキーボードを買った
 ================================
 
 :authors: yosida95
-:tags: 日記
+:category: Diary
+:tags: IYH, ErgoDox
 
 .. image:: https://yosida95.com/photos/trNdf.resized.jpeg
    :alt: ErgoDox EZ

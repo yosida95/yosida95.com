@@ -2,6 +2,7 @@ VirtualHost の設定
 ==================
 
 :authors: yosida95
+:category: Operations
 :tags: Apache HTTP Server
 
 ディレクトリを追加するだけで、独自のドキュメントルートが設定できる httpd.conf

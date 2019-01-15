@@ -2,6 +2,7 @@ Django のミドルウェアを自作する
 ===============================
 
 :authors: yosida95
+:category: Code
 :tags: Python, Django
 
 この記事は、 `もういくつ寝るとお正月カレンダー <http://atnd.org/events/23689>`__ の2日目のものです。

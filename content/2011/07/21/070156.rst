@@ -2,6 +2,7 @@ VirtualHost 自動設定スクリプト
 ==============================
 
 :authors: yosida95
+:category: Code
 :tags: Apache HTTP Server, Python
 
 `VirtualHost の設定`_\ でディレクトリを追加するだけで VirtualHost の設定が済む httpd.conf を掲載しました。

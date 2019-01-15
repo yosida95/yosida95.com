@@ -2,7 +2,8 @@
 ================
 
 :authors: yosida95
-:tags: Python, 学校
+:category: School
+:tags: Python, High School
 
 .. code-block:: python
 

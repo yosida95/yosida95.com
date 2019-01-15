@@ -2,7 +2,8 @@
 ==============================
 
 :authors: yosida95
-:tags: ネタ
+:category: Diary
+:tags: April Fool
 
 今日、私はここに Web2.0 を極めた事を宣言する。
 

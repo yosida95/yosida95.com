@@ -2,6 +2,7 @@ mixslide というウェブサービス
 =============================
 
 :authors: yosida95
+:category: Work
 :tags: mixslide
 
 こんばんは

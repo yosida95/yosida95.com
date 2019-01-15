@@ -2,7 +2,8 @@ PQI Air Card が届いた
 =====================
 
 :authors: yosida95
-:tags: PQI Air Card
+:category: Code
+:tags: PQI Air Card, BusyBox
 
 女の子と2人でとしまえんに遊びに行ってきた yosida95 です。
 なんか、楽しかった反動で寝られそうにないので、ブログでも書きます。

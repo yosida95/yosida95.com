@@ -2,7 +2,8 @@ ATNDに掲載されているイベントを検索するサービスをリリー�
 ========================================================================
 
 :authors: yosida95
-:tags: Python, Event Search
+:category: Work
+:tags: Event Search, pyhack
 
 `Event Search - ATND, connpass, Zusaarまとめて検索 <http://event.yosida95.com/>`__
 去る3/19日の7時にリリースしました。

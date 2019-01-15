@@ -2,7 +2,8 @@ Python Developers Festa 2012.03に参加してきました #pyfes
 ========================================================
 
 :authors: yosida95
-:tags: Python, 日記
+:category: Meetup
+:tags: pyfes
 
 3月17日オラクル青山センターまで行ってきました。
 ぼくにとって初めての #pyfes 参加でした。

@@ -2,7 +2,8 @@
 =====================================================
 
 :authors: yosida95
-:tags: SSH, Go
+:category: Operations
+:tags: SSH, Linux
 
 はじめに
 --------

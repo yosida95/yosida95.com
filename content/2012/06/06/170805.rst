@@ -2,7 +2,8 @@
 ===============
 
 :authors: yosida95
-:tags: 日記
+:category: Diary
+:tags: Birthday
 
 今日の10日後、6月16日は私の誕生日ですね。
 いささか早くはありますが、なんと `@daisuke\_nomura <http://twitter.com/daisuke_nomura>`__ さんと `@usaturn <http://twitter.com/usaturn>`__ さんから書籍を頂きました！

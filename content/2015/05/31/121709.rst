@@ -2,6 +2,7 @@ SSH 公開鍵ユーティリティを Go と Python で作った
 ================================================
 
 :authors: yosida95
+:category: Code
 :tags: Go, Python, SSH
 
 はじめに

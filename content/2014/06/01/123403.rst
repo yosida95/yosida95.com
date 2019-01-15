@@ -2,7 +2,8 @@
 ========================
 
 :authors: yosida95
-:tags: 見てるなう(仮), Python
+:category: Work
+:tags: miteru
 
 はじめに
 --------

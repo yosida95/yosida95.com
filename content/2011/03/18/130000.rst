@@ -2,7 +2,8 @@
 ======
 
 :authors: yosida95
-:tags: 日記, 学校
+:category: School
+:tags: Junior High School
 
 こんばんは。
 本日18日、僕は無事に中学校の卒業式を迎えられました。

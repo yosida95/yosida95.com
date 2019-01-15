@@ -2,7 +2,8 @@ yosida95 の2016年まとめ
 =======================
 
 :authors: yosida95
-:tags: 一年の振り返り
+:category: Diary
+:tags: Year in Review
 
 はじめに
 --------

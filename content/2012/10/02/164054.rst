@@ -2,6 +2,7 @@ PyCon JP 2012 に参加してきました #pyconjp
 =========================================
 
 :authors: yosida95
+:category: Meetup
 :tags: PyCon JP, Python
 
 報告いまさらかよって気もしますが、去る9月15日から17日までの3日間、東京都品川区の\ 産業技術大学院大学\ で行われた PyCon JP 2012 に参加してきました。

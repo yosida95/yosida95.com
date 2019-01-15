@@ -2,7 +2,8 @@ Ubuntu のパッケージリポジトリのミラーをローカルに建てた�
 =======================================================================
 
 :authors: yosida95
-:tags: Linux, apt-mirror
+:category: Operations
+:tags: Linux, apt
 
 .. raw:: html
 

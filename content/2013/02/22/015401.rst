@@ -5,6 +5,7 @@ PasteDeploy で、設定ファイルのセクションを指定してアプリ�
 ==============================================================================
 
 :authors: yosida95
+:category: Operations
 :tags: Python, PasteDeploy, uWSGI, gunicorn, Pyramid
 
 【2013/03/07 修正】aodag さんよりご指摘を頂いたので、gunicorn に関して修正しました。

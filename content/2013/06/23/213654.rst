@@ -2,7 +2,8 @@ Solaris の IP Filter に詳しくなろう
 ===================================
 
 :authors: yosida95
-:tags: Solaris, Network, IP Filter
+:category: Networking
+:tags: Solaris
 
 とにかく
 --------

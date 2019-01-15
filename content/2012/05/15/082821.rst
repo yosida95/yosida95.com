@@ -2,7 +2,8 @@ No Title (近況報告)
 ===================
 
 :authors: yosida95
-:tags: 学校, 日記
+:category: School
+:tags: High School
 
 例えば、お母さんに料理や手芸を習っていた子が、技術の更なる向上を望んで3年間でそれらを学ぶ教室に入った。
 

@@ -2,7 +2,8 @@ Yes, I can.
 ===========
 
 :authors: yosida95
-:tags: 日記, C
+:category: Diary
+:tags: C
 
 皆様、お久しぶりです。
 タイトル、少し時代遅れですかね…(笑)

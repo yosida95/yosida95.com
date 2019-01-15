@@ -2,6 +2,7 @@ Gehirn Infrastructure Services の Public Preview 開始によせて
 =============================================================
 
 :authors: yosida95
+:category: Work
 :tags: Gehirn
 
 はじめに

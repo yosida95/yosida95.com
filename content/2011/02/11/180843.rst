@@ -2,6 +2,7 @@ mod\_rewriteでサブドメインを無制限に作る
 ========================================
 
 :authors: yosida95
+:category: Operations
 :tags: Apache HTTP Server, XREA
 
 こんにちは。

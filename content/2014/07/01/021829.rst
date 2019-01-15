@@ -2,7 +2,8 @@ AWS の CloudFront で独自 SSL 証明書を利用する
 =============================================
 
 :authors: yosida95
-:tags: AWS, CloudFront, TLS, HTTP
+:category: Operations
+:tags: Amazon Web Services, HTTPS
 
 はじめに
 --------

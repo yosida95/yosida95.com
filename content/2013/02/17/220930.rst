@@ -2,7 +2,8 @@ Linux で NIC の bonding + bridge
 ================================
 
 :authors: yosida95
-:tags: Linux, Network
+:category: Networking
+:tags: Linux
 
 NIC 買いました
 --------------

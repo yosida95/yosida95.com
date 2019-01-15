@@ -2,6 +2,7 @@ Gravatar から画像を取ってくる
 =============================
 
 :authors: yosida95
+:category: Code
 :tags: Python
 
 今年に入ってからまだ1本しかエントリー書いてなかったので、焦っています。

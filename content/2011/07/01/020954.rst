@@ -2,7 +2,7 @@ SNS 作ってます
 ==============
 
 :authors: yosida95
-:tags: 日記
+:category: Diary
 
 Google +1発表されましたね。
 うーむ。

@@ -2,6 +2,7 @@ Consistent Hashing の実装
 =========================
 
 :authors: yosida95
+:category: Code
 :tags: Python, Consistent Hashing
 
 最近、Consisten Hashing について調べている。

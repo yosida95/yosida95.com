@@ -2,7 +2,7 @@ yosida95's site
 ===============
 
 :authors: yosida95
-:tags: 日記
+:category: Work
 
 こんばんは。
 本日初エントリーです。

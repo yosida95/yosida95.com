@@ -2,7 +2,7 @@
 =================================================
 
 :authors: yosida95
-:tags: none
+:category: Notice
 
 こんばんは、 yosida95 です。
 

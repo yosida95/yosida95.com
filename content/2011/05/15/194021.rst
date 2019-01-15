@@ -2,7 +2,8 @@ CORESERVER で Python 2.7.1 を動かした
 =====================================
 
 :authors: yosida95
-:tags: Python, CORESERVER, XREA
+:category: Operations
+:tags: Python, XREA
 
 まずご報告ですが、サーバーを XREA+ から CORESERVER の CORE-MINI プランに移転しました。
 年契約だと月当たり+8円で容量3倍超だし、設定できるドメインが50に増えるし、etc…ということに気づいたので XREA+ の契約が切れるタイミングで移転しました。

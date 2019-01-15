@@ -2,6 +2,7 @@ TravisCI が Python 3.4 をサポートしたので tox を叩く .travis.yml �
 ===========================================================================
 
 :authors: yosida95
+:category: Code
 :tags: Python, Travis CI, tox
 
 更新

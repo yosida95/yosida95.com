@@ -2,7 +2,8 @@ VyOS で Policy Based Routingして複数の ISP を使い分ける
 =======================================================
 
 :authors: yosida95
-:tags: VyOS, Network
+:category: Networking
+:tags: VyOS
 
 はじめに
 --------

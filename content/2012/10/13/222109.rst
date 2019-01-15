@@ -2,7 +2,8 @@
 ====================================
 
 :authors: yosida95
-:tags: 日記
+:category: Work
+:tags: Zero Start
 
 タイトルで軽く釣りました。
 入社と言ってもアルバイトです。

@@ -2,7 +2,8 @@ CombConf というITカンファレンスを開催してきました #combconf
 ===========================================================
 
 :authors: yosida95
-:tags: CombConf, 日記
+:category: Meetup
+:tags: CombConf
 
 あけましておめでとうございまｓ……メリー・クリスマス!!24日中はほぼ一日中寝ていました。
 

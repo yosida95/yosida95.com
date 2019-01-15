@@ -2,6 +2,7 @@
 ============
 
 :authors: yosida95
+:category: Code
 :tags: Python
 
 何気なくテレビを見ていたら、 `Numer0n <http://www.fujitv.co.jp/games/numeron/index.html>`__ というものをやっていました。

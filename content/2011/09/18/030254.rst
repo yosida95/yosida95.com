@@ -5,7 +5,8 @@
 =======================================================
 
 :authors: yosida95
-:tags: Python, 日記
+:category: Meetup
+:tags: pyhack
 
 `(第11回)Python mini Hack-a-thon : ATND <http://atnd.org/events/17896>`__ ( 以下 #pyhack ) に参加してきた。
 

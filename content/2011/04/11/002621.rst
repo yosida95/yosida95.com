@@ -2,7 +2,8 @@
 ==============
 
 :authors: yosida95
-:tags: 学校
+:category: School
+:tags: High School
 
 ええ、というわけで僕は高校生になりました。
 

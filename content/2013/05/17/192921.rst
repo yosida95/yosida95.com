@@ -5,7 +5,8 @@ Google Compute Engine を軽く使ってみた感想
 ==========================================
 
 :authors: yosida95
-:tags: Google Cloud Platform, Compute Engine
+:category: Code
+:tags: Google Cloud Platform
 
 はじめに
 --------

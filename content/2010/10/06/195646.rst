@@ -2,7 +2,8 @@
 ========
 
 :authors: yosida95
-:tags: 学校, JavaScript
+:category: Code
+:tags: JavaScript, Junior High School
 
 久々にプログラミングネタです。
 といっても、しょーもないことですが。

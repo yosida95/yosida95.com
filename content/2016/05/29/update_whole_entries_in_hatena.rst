@@ -2,7 +2,8 @@
 =================================================
 
 :authors: yosida95
-:tags: Python, AtomPub
+:category: Code
+:tags: AtomPub
 
 はじめに
 --------

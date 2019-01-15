@@ -2,7 +2,8 @@
 ==============================
 
 :authors: yosida95
-:tags: Gehirn, 日記
+:category: Work
+:tags: Gehirn
 
 はじめに
 --------

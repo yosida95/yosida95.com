@@ -2,7 +2,8 @@ Zabbix のメディアタイプに Growl を指定し、手元のマシンの Gr
 =======================================================================================
 
 :authors: yosida95
-:tags: Python, Zabbix, monitoring, alert
+:category: Operations
+:tags: Python, Zabbix
 
 はじめに
 --------

@@ -2,7 +2,8 @@
 ========================
 
 :authors: yosida95
-:tags: 日記
+:category: Diary
+:tags: Birthday
 
 去る16日僕は16歳になってしまいました。
 0x10 歳、ようやく二桁です。

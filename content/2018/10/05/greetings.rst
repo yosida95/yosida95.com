@@ -2,6 +2,7 @@
 ======
 
 :authors: yosida95
+:category: Diary
 
 
 はじめに

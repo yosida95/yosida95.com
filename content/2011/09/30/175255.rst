@@ -2,7 +2,8 @@
 ====================================================================
 
 :authors: yosida95
-:tags: Python, 学校
+:category: School
+:tags: Python, High School, Linux, Mercurial
 
 わが校の情報技術基礎の授業は1つのサーバーに全マシンがぶら下がる形で、ネットブート・ディスクレス Ubuntu で行われます。
 生徒には1人あたり1つ、一般ユーザー ( not sudoer ) アカウントが割り当てられます。

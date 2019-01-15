@@ -2,7 +2,8 @@
 ================
 
 :authors: yosida95
-:tags: 日記
+:category: Diary
+:tags: Birthday
 
 こんにちは、 yosida95 です。
 20歳になりました。

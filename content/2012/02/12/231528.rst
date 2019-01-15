@@ -2,6 +2,7 @@ Skype4Pyをいじってみた
 ======================
 
 :authors: yosida95
+:category: Code
 :tags: Python, Skype
 
 Skype が公開している Public API を Python からいじれる Skype4Py というライブラリが存在するので、すこしいじっていました。

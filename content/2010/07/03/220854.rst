@@ -2,7 +2,8 @@ Scan Snap S500を買った
 ======================
 
 :authors: yosida95
-:tags: 日記
+:category: Diary
+:tags: ScanSnap, IYH
 
 みなさん、こんばんは。
 7月になりました。
