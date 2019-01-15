@@ -36,6 +36,9 @@ PAGE_PATHS = ['_pages']
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 
+AUTHORS_SAVE_AS = ''
+AUTHOR_SAVE_AS = ''
+
 STATIC_PATHS = ['_static']
 EXTRA_PATH_METADATA = {
     '_static/.htaccess': {'path': '.htaccess'},
