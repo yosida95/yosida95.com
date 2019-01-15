@@ -1,9 +1,12 @@
-{#- vim:set filetype=htmljinja shiftwidth=2: -#}
 {% extends "base.html" %}
+
+{% from "base_helper.html" import archives with context %}
 
 {% block title -%}
 {{ period | reverse | join(' ') }}
 {%- endblock %}
+
+{% block archives %}{{ archives(expand=dates[0]) }}{% endblock %}
 
 {% block body %}
 {%- for article in dates %}
@@ -17,3 +20,5 @@
             </div>
 {%- endfor %}
 {%- endblock %}
+
+{# vim:set filetype=htmljinja: #}

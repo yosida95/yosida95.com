@@ -1,11 +1,11 @@
-{#- vim:set filetype=htmljinja shiftwidth=2: -#}
 {% extends "base.html" %}
+{% from "base_helper.html" import archives with context %}
 
 {% block url %}{{ article.url }}{% endblock %}
 
-{% block title -%}
-{{ article.title }}
-{%- endblock %}
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block archives %}{{ archives(expand=article) }}{% endblock %}
 
 {% block body %}
 <h1>{{ article.title }}</h1>
@@ -15,3 +15,5 @@
 
 {{ article.content }}
 {%- endblock %}
+
+{# vim:set filetype=htmljinja: #}

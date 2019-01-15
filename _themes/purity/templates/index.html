@@ -1,5 +1,6 @@
-{#- vim:set filetype=htmljinja shiftwidth=2: -#}
 {% extends "base.html" %}
+
+{% from "base_helper.html" import archives with context %}
 
 {% block url %}{{ INDEX_URL }}{% endblock %}
 
@@ -48,3 +49,4 @@
     Untagged
     {%- endif -%}
 {%- endmacro -%}
+{# vim:set filetype=htmljinja: #}

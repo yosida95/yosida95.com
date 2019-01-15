@@ -1,4 +1,4 @@
-{#- vim:set filetype=htmljinja shiftwidth=2: -#}
+{%- from "base_helper.html" import archives with context -%}
 <!DOCTYPE html>
 <html lang='ja'>
   <head prefix="og: http://ogp.me/ns#">
@@ -92,6 +92,15 @@
               </div>
               <p><a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/yosida95">Follow @yosida95</a></p>
             </div>
+
+            {%- if articles|length > 0 %}
+            <div class="sidebar_item">
+              <h5>Archives</h5>
+              {%- block archives %}
+              {{ archives() }}
+              {%- endblock %}
+            </div>
+            {%- endif %}
           </div>
           <div class="clear"></div>
         </div><!-- .inner End -->
@@ -115,3 +124,4 @@
     {%- include "google_analytics.html" %}
   </body>
 </html>
+{#- vim:set filetype=htmljinja: -#}

@@ -1,0 +1,32 @@
+{% macro archives(expand=none) -%}
+              <div>
+                {%- if articles|length > 0 %}
+                {%- with articles = articles|sort(attribute='date') %}
+                <ul>
+                  {%- for article in articles %}
+                  {%- if loop.first or article.date.year != loop.previtem.date.year %}
+                  <li>
+                    <a href="{{ SITEURL }}/{{ YEAR_ARCHIVE_URL.format(date=article.date) }}">{{ article.date.year }}</a>
+                  {%- if expand and expand.date.year == article.date.year %}
+                    <ul>
+                  {%- else %}
+                  </li>
+                  {%- endif %}
+                  {%- endif %}
+
+                  {%- if expand and expand.date.year == article.date.year %}
+                  {%- if loop.first or article.date.year != loop.previtem.date.year or article.date.month != loop.previtem.date.month %}
+                      <li><a href="{{ SITEURL }}/{{ MONTH_ARCHIVE_URL.format(date=article.date) }}">{{ article.date| strftime('%b') }}</a></li>
+                  {%- endif %}
+                  {%- if loop.last or article.date.year != loop.nextitem.date.year %}
+                    </ul>
+                  </li>
+                  {%- endif %}
+                  {%- endif %}
+                  {%- endfor %}
+                </ul>
+                {%- endwith %}
+                {%- endif %}
+              </div>
+{%- endmacro %}
+{# vim: set filetype=htmljinja: #}
