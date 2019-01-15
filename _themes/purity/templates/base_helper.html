@@ -1,7 +1,7 @@
 {% macro archives(expand=none) -%}
+              {%- with articles = (all_articles or articles)|sort(attribute='date') %}
+              {%- if articles|length > 0 %}
               <div>
-                {%- if articles|length > 0 %}
-                {%- with articles = articles|sort(attribute='date') %}
                 <ul>
                   {%- for article in articles %}
                   {%- if loop.first or article.date.year != loop.previtem.date.year %}
@@ -25,8 +25,8 @@
                   {%- endif %}
                   {%- endfor %}
                 </ul>
-                {%- endwith %}
-                {%- endif %}
               </div>
+              {%- endif %}
+              {%- endwith %}
 {%- endmacro %}
 {# vim: set filetype=htmljinja: #}
