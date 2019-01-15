@@ -27,6 +27,9 @@ INDEX_SAVE_AS = 'archives.html'
 INDEX_URL = 'archives/'
 
 ARCHIVES_SAVE_AS = ''
+YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
+DAY_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/index.html'
 
 ARTICLE_PATHS = ['']
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'

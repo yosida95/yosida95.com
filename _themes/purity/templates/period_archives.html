@@ -1,0 +1,19 @@
+{#- vim:set filetype=htmljinja shiftwidth=2: -#}
+{% extends "base.html" %}
+
+{% block title -%}
+{{ period | reverse | join(' ') }}
+{%- endblock %}
+
+{% block body %}
+{%- for article in dates %}
+            <div class="post">
+              <h1 class="title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+              <span class="post-meta">
+                Posted on <strong>{{ article.date| strftime('%a, %b %d, %Y') }}</strong>
+              </span>
+
+{{ article.summary}}
+            </div>
+{%- endfor %}
+{%- endblock %}
