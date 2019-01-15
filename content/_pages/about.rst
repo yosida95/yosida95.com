@@ -1,11 +1,10 @@
 About yosida95
 ==============
 
-:authors: yosida95
 :slug: about
 :url:
 :save_as: index.html
-:alias: pages/about
+:alias: pages/about.html
 
 Name
     吉田 昂平 (Kohei YOSHIDA)
