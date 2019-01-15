@@ -7,7 +7,7 @@ TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = 'ja'
 
 PATH = 'content'
-PATH_METADATA = '(?P<date>\d{4}/\d{2}/\d{2})/(?P<slug>[^\.]*).rst'
+PATH_METADATA = r'(?P<slug>(?P<date>\d{4}/\d{2}/\d{2})/[^\.]+)\.rst'
 USE_FOLDER_AS_CATEGORY = False
 RELATIVE_URLS = True
 
@@ -36,7 +36,7 @@ MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
 DAY_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/index.html'
 
 ARTICLE_PATHS = ['']
-ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
+ARTICLE_URL = '{slug}.html'
 ARTICLE_SAVE_AS = ARTICLE_URL
 
 PAGE_PATHS = ['_pages']
