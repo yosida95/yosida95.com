@@ -31,7 +31,7 @@
 {%- endmacro %}
 
 {% macro taglist(tags) -%}
-  {%- for tag in tags %}
+  {%- for tag in tags|sort %}
                 <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
                 {%- if not loop.last -%}, {% endif %}
   {%- endfor %}
