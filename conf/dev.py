@@ -11,6 +11,8 @@ PATH_METADATA = r'(?P<slug>(?P<date>\d{4}/\d{2}/\d{2})/[^\.]+)\.rst'
 USE_FOLDER_AS_CATEGORY = False
 RELATIVE_URLS = True
 
+DEFAULT_CATEGORY = 'Uncategorized'
+
 THEME = './_themes/purity'
 SUMMARY_MAX_LENGTH = 10
 DEFAULT_PAGINATION = 5

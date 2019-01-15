@@ -1,5 +1,6 @@
 {% extends "base.html" %}
-{% from "base_helper.html" import archives with context %}
+
+{% from "base_helper.html" import archives, taglist with context %}
 
 {% block url %}{{ article.url }}{% endblock %}
 
@@ -8,10 +9,14 @@
 {% block archives %}{{ archives(expand=article) }}{% endblock %}
 
 {% block body %}
-<h1>{{ article.title }}</h1>
-<span class="post-meta">
-  Posted on <strong>{{ article.date| strftime('%a, %b %d, %Y') }}</strong>
-</span>
+            <h1>{{ article.title }}</h1>
+            <span class="post-meta">
+              Posted on <strong>{{ article.date| strftime('%a, %b %d, %Y') }}</strong>
+              in <strong><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></strong>
+              {%- if article.tags %}
+              tagged with {{ taglist(article.tags) }}
+              {%- endif %}
+            </span>
 
 {{ article.content }}
 {%- endblock %}

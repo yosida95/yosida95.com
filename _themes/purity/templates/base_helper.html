@@ -29,4 +29,11 @@
               {%- endif %}
               {%- endwith %}
 {%- endmacro %}
+
+{% macro taglist(tags) -%}
+  {%- for tag in tags %}
+                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+                {%- if not loop.last -%}, {% endif %}
+  {%- endfor %}
+{%- endmacro %}
 {# vim: set filetype=htmljinja: #}
