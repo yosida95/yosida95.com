@@ -4,6 +4,7 @@ iptables の ipt\_recent モジュール
 :authors: yosida95
 :category: Networking
 :tags: Linux
+:alias: 2013/07/31/055100.html
 
 始めに
 ------
