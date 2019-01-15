@@ -1,6 +1,10 @@
 {#- vim:set filetype=htmljinja shiftwidth=2: -#}
 {% extends "base.html" %}
 
+{% block url %}{{ INDEX_URL }}{% endblock %}
+
+{% block title %}Archives{% endblock %}
+
 {% block body %}
 {%- for article in dates_page.object_list %}
             <div class="post">
