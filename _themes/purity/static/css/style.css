@@ -365,7 +365,7 @@ blockquote span {
   text-decoration: none;
   display: block;
 }
-.nav ul li: hover > a {
+.nav ul li:hover > a {
   color: #d16f4e;
 }
 
@@ -400,7 +400,7 @@ blockquote span {
   border-bottom: 1px dotted #ddd;
 }
 
-.nav ul li ul li: last-child a {
+.nav ul li ul li:last-child a {
   border: 0px;
 }
 
@@ -483,15 +483,6 @@ blockquote span {
   float: left;
 }
 
-.sidebar ul a {
-  font-size: 11px;
-  line-height: 20px;
-  color: #888;
-}
-.sidebar ul a:hover {
-  color: #D16F4E;
-}
-
 .sidebar_item {
   width: 100%;
   padding-bottom: 20px;
@@ -499,11 +490,11 @@ blockquote span {
   margin-bottom: 20px;
 }
 
-.sidebar_item: last-child {
+.sidebar_item:last-child {
   border-bottom: 0px;
 }
 
-.sidebar_item p: last-child {
+.sidebar_item p:last-child {
   margin-bottom: 0px;
 }
 
@@ -709,7 +700,7 @@ a.older-posts {
   float: none;
 }
 
-.one-column li: last child {
+.one-column li:last-child {
   margin: 0;
 }
 
