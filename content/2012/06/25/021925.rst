@@ -2,7 +2,7 @@
 ================================================
 
 :authors: yosida95
-:category: Work
+:category: Notice
 :tags: miteru
 
 公開から2ヶ月が経過し、多くの方にご愛用いただいている「\ `見てるなう(仮) <http://miteru.yosida95.com/>`__\ 」にセキュリティ脆弱性があると、ユーザーである `@ww24 <http://twitter.com/ww24>`__ 様より\ `攻撃コード <https://gist.github.com/2978257>`__\ と共にご報告を受けました。
