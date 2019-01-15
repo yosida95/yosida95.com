@@ -95,6 +95,17 @@
 
             {%- if articles|length > 0 %}
             <div class="sidebar_item">
+              <h5>Recent Articles</h5>
+              {%- with articles = articles|sort(attribute='date', reverse=true) %}
+              <ul>
+              {%- for article in articles[:DEFAULT_PAGINATION] %}
+                <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+              {%- endfor %}
+              </ul>
+              {%- endwith %}
+            </div>
+
+            <div class="sidebar_item">
               <h5>Archives</h5>
               {%- block archives %}
               {{ archives() }}
