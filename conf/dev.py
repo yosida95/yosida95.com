@@ -47,8 +47,12 @@ AUTHORS_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
 
 CATEGORIES_SAVE_AS = ''
+CATEGORY_SAVE_AS = 'categories/{slug}/index.html'
+CATEGORY_URL = 'categories/{slug}/'
 
 TAGS_SAVE_AS = ''
+TAG_SAVE_AS = 'tags/{slug}/index.html'
+TAG_URL = 'tags/{slug}/'
 
 STATIC_PATHS = ['_static']
 EXTRA_PATH_METADATA = {
