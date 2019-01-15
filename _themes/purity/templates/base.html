@@ -105,6 +105,15 @@
             </div>
 
             <div class="sidebar_item">
+              <h5>Categories</h5>
+              <ul>
+              {%- for category, articles in categories|sort %}
+                <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a> ({{ articles|length }})</li>
+              {%- endfor %}
+              </ul>
+            </div>
+
+            <div class="sidebar_item">
               <h5>Archives</h5>
               {%- block archives %}
               {{ archives() }}
