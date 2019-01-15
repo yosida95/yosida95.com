@@ -56,7 +56,6 @@ TAG_URL = 'tags/{slug}/'
 
 STATIC_PATHS = ['_static']
 EXTRA_PATH_METADATA = {
-    '_static/.htaccess': {'path': '.htaccess'},
     '_static/robots.txt': {'path': 'robots.txt'},
     '_static/favicon.ico': {'path': 'favicon.ico'},
 }
