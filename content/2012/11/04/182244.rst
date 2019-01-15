@@ -1,5 +1,5 @@
-Pyramid でCelery を使って非同期処理をする
-=========================================
+Pyramid で Celery を使って非同期処理をする
+==========================================
 
 :authors: yosida95
 :category: Code
@@ -12,7 +12,7 @@ Celery とは Python 製のタスクキューです。
 非同期処理をするのに使います。
 
 情弱なのでこの前の PyconJP 2012 で Celery の存在を知りました。
-存在を知る前は、Kestrel とMongoDB を使ってオレオレタスクキューを作って使っていました。
+存在を知る前は、 Kestrel と MongoDB を使ってオレオレタスクキューを作って使っていました。
 それ以前はリクエスト毎にスレッドを生成してそいつを走らせつつレスポンスを返してしまうような実装をしていました。
 
 Django からこの Celery を使う日本語解説記事は複数見かけましたが、 Pyramid から使う解説記事は見つけられなかったのでぼくが書いておきます。
@@ -30,9 +30,9 @@ pip を使ってサクッと pyramid\_celery をインストールします。
 設定ファイルを編集する
 ----------------------
 
-Pyramid から先ほどインストールした pyramid\_celery を使えるように、 PasteDeploy 設定ファイル (development.ini やproduction.ini) を編集します。
+Pyramid から先ほどインストールした pyramid\_celery を使えるように、 PasteDeploy 設定ファイル（ development.ini や production.ini ）を編集します。
 
-具体的には、 pyramid.includes に pyramid\_celery を追加し、[app:main] の中にBROKER\_URL を追加します。
+具体的には、 pyramid.includes に pyramid\_celery を追加し、[app:main] の中に BROKER\_URL を追加します。
 BROKER\_URL には、タスクを保管するメッセージキューの URL を設定します。
 今回は、 RabbitMQ を使う前提でサンプルの値を入れてあります。
 
@@ -44,10 +44,10 @@ BROKER\_URL には、タスクを保管するメッセージキューの URL を
     BROKER_URL = amqp://user:password@host:port//vhost
     CELERY_RESULT_BACKEND = amqp://user:password@host:port//vhost
 
-CELERY\_RESULT\_BACKEND の設定は Celery を使ってただ単に非同期処理をする上では必要のない設定ですが、これを設定してやることでタスクの状態(実行待ちか、実行後か)やタスクを実行した返り値などを取得することができます。
+CELERY\_RESULT\_BACKEND の設定は Celery を使ってただ単に非同期処理をする上では必要のない設定ですが、これを設定してやることでタスクの状態（実行待ちか、実行後か）やタスクを実行した返り値などを取得することができます。
 
 BROKER\_URL や CELERY\_RESULT\_BACKEND としてデフォルトでは RabbitMQ を使うことになっていますが、 RabbitMQ 以外にも、 `Redis <http://docs.celeryproject.org/en/latest/getting-started/brokers/redis.html>`__ や `MongoDB <http://docs.celeryproject.org/en/latest/getting-started/brokers/mongodb.html>`__ 、 `Amazon Simple Queue Service <http://docs.celeryproject.org/en/latest/getting-started/brokers/sqs.html>`__ 、また `SQLAlchemy <http://docs.celeryproject.org/en/latest/getting-started/brokers/sqlalchemy.html>`__ や `Django のORM <http://docs.celeryproject.org/en/latest/getting-started/brokers/django.html>`__ を介して RDBMS を使うこともできるようです。
-(それぞれのリンク先は Celery でこれらをストアとして使うための公式ドキュメント (英語) の該当する記事です)
+（それぞれのリンク先は Celery でこれらをストアとして使うための公式ドキュメント（英語）の該当する記事です）
 
 タスクをプログラミングする
 --------------------------
@@ -55,7 +55,7 @@ BROKER\_URL や CELERY\_RESULT\_BACKEND としてデフォルトでは RabbitMQ 
 既存の Pyramid アプリケーションの中にタスクを定義します。
 ここでは、 myapp.tasks としてタスクを定義していく事にします。
 
-タスクの内容として、メールを送信したり画像のサムネイルを生成したりなどが考えられると思うのですが、どこの解説記事を読んでも (公式ドキュメントでさえも) 足し算をタスクの例としていたので、ここでもそれにならって足し算を例として取り上げます。
+タスクの内容として、メールを送信したり画像のサムネイルを生成したりなどが考えられると思うのですが、どこの解説記事を読んでも（公式ドキュメントでさえも）足し算をタスクの例としていたので、ここでもそれにならって足し算を例として取り上げます。
 
 .. code-block:: python
 
@@ -123,8 +123,8 @@ Celery を使うことで、タスクを実行するスケジュールをアプ�
     def run_first_of_every_month_at_8():
         # 何かの処理
 
-pceleryd とpcelerybeat を実行する
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pceleryd と pcelerybeat を実行する
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: sh
 
@@ -168,12 +168,12 @@ Celery では celery.task を古いモジュールとして、もうこれ以上
     def some_task():
         # 何らかの処理
 
-以上のようにすることが推奨されていますが、pyramid\_celery のドキュメントには celery.task を使ってタスクが定義されていること、 pceleryd は celeryd の config オプションを無効化しているために PasteDeploy 設定ファイルにCELERYBEAT\_SCHEDULE を指定する必要があり、その場合1行に Python の dict を文字列として記述しtimedelta やcrontab を使うには eval を使う必要があるなどカオスになることから古いスタイルを使っています。
+以上のようにすることが推奨されていますが、 pyramid\_celery のドキュメントには celery.task を使ってタスクが定義されていること、 pceleryd は celeryd の config オプションを無効化しているために PasteDeploy 設定ファイルに CELERYBEAT\_SCHEDULE を指定する必要があり、その場合1行に Python の dict を文字列として記述し timedelta や crontab を使うには eval を使う必要があるなどカオスになることから古いスタイルを使っています。
 
-StackOverFlow に、「 pyramid\_celeryd は非常に薄いラッパーで、これがなくて Celery 単体で十分に使えるからpyramid\_celery は必要とされてないよね！」って書いてある記事がありましたが、タスクがデータベースを使った処理をするときには PasteDeploy 設定ファイルから SQLAlchemy の engine を作ってそれを session に bind する処理が必要になり、また開発用と製品用でデータベースを分けている場合にはさらに処理が複雑になるので、ここでは pyramid\_celery を使う方法を書きました。
+StackOverFlow に、「 pyramid\_celeryd は非常に薄いラッパーで、これがなくて Celery 単体で十分に使えるから pyramid\_celery は必要とされてないよね！」って書いてある記事がありましたが、タスクがデータベースを使った処理をするときには PasteDeploy 設定ファイルから SQLAlchemy の engine を作ってそれを session に bind する処理が必要になり、また開発用と製品用でデータベースを分けている場合にはさらに処理が複雑になるので、ここでは pyramid\_celery を使う方法を書きました。
 
-参考URL
--------
+参考 URL
+--------
 
 -  `Celery - Distributed Task Queue <http://docs.celeryproject.org/en/latest/index.html>`__
 -  `celeryのPeriodic Taskについてのメモ <http://kk6.hateblo.jp/entry/2012/09/06/celery%E3%81%AEPeriodic_Task%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%83%A1%E3%83%A2>`__

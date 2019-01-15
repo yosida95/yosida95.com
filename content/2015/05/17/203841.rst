@@ -1,5 +1,5 @@
-VyOS で Policy Based Routingして複数の ISP を使い分ける
-=======================================================
+VyOS で Policy Based Routing して複数の ISP を使い分ける
+========================================================
 
 :authors: yosida95
 :category: Networking

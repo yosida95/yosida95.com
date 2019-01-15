@@ -1,5 +1,5 @@
-Gehirn Web Services ファミリーのGehirn RS2 に恋をしてPyramid を動かす
-=====================================================================
+Gehirn Web Services ファミリーの Gehirn RS2 に恋をして Pyramid を動かす
+=======================================================================
 
 :authors: yosida95
 :category: Code
@@ -53,12 +53,12 @@ Python のバージョンを調べる
     Python 2.6.6
 
 あれ……？
-Python 2系の最新安定版って2.7.3だよな……？
+Python 2 系の最新安定版って 2.7.3 だよな……？
 
 rs2 コマンド
 ~~~~~~~~~~~~
 
-Gehirn RS2 にはrs2 コマンドというものがあって、例えば Node.js を使いたい場合は
+Gehirn RS2 には rs2 コマンドというものがあって、例えば Node.js を使いたい場合は
 
 .. code-block:: sh
 
@@ -70,7 +70,7 @@ Gehirn RS2 にはrs2 コマンドというものがあって、例えば Node.js
 
     $ rs2 use node
 
-とすれば、Node.js が使えるようになります。
+とすれば、 Node.js が使えるようになります。
 
 install の際は、最新バージョンのソースコードをダウンロードしてきてビルドしてくれます。
 
@@ -89,7 +89,7 @@ install の際は、最新バージョンのソースコードをダウンロー
 ~~~~~~~~~~~~~~~~
 
 しかたがないので、 `python.org <http://www.python.org/>`__ から Python 2.7.3 のソースコードをダウンロードしてきて自分のホームディレクトリの下でビルドしました。
-この件について、Gehirn の社長に「 Python 2.7.3 を使いたいんだけど」ってリプを送ったところ次のようにお答えをいただきました。
+この件について、 Gehirn の社長に「 Python 2.7.3 を使いたいんだけど」ってリプを送ったところ次のようにお答えをいただきました。
 
 .. raw:: html
 
@@ -109,7 +109,7 @@ install の際は、最新バージョンのソースコードをダウンロー
 
     <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/yosida95">@yosida95</a> 2.6がいい、2.7がいい、3.1がいいっていう意見を全部聞いてると結局virtualenvに辿り着くのです…</p>&mdash; isidai (@isidai) <a href="https://twitter.com/isidai/status/268030260329730050">November 12, 2012</a></blockquote>
 
-ということで、Gehirn RS2 には virtualenv と virtualenvwrapper を ``/usr/local/bin`` 以下に入れていただけました。
+ということで、 Gehirn RS2 には virtualenv と virtualenvwrapper を ``/usr/local/bin`` 以下に入れていただけました。
 この、 Twitter とかで要望出してカジュアルにレンタルサーバーが使いやすいものになっていくのってとってもステキだと思います＞＜
 
 Pyramid アプリを起動
@@ -117,7 +117,7 @@ Pyramid アプリを起動
 
 ご存知とは思いますが、 Pyramid というのは Python の超素敵な WAF(Web Application Framework) で、家系図的に言うと Pylons2 に当たるプロダクトです。
 
-早速virtualenv を1個切って、
+早速 virtualenv を1個切って、
 
 .. code-block:: sh
 
@@ -126,7 +126,7 @@ Pyramid アプリを起動
     $ cd testproj
     $ python setup.py develop
 
-を実行してさくっとPyramid プロジェクトを作りました。
+を実行してさくっと Pyramid プロジェクトを作りました。
 pcreate の時点で / にサンプルのビューが定義されているので、これを利用してサクッと動作を確認してしまします。
 
 #. 自分に割り当てられたポート番号を確認する
@@ -138,8 +138,8 @@ pcreate の時点で / にサンプルのビューが定義されているので
 最後に
 ------
 
-俺がGehirn RS2 でもっとも最初に Python 2.7.3 を動かし、最初に Pyramid 製アプリケーションを動かし、最初に gunicorn
-を起動し、最初に Python 3.3.0 を動かした人です！！！(よしだ調べ)
+俺が Gehirn RS2 でもっとも最初に Python 2.7.3 を動かし、最初に Pyramid 製アプリケーションを動かし、最初に gunicorn
+を起動し、最初に Python 3.3.0 を動かした人です！！！（よしだ調べ）
 
 追記
 ----

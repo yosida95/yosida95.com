@@ -1,9 +1,9 @@
-Nginx + uWSGI + PHP-FPMサーバー構築備忘録
-=========================================
+NGINX + uWSGI + PHP-FPM サーバー構築備忘録
+==========================================
 
 :authors: yosida95
 :category: Operations
-:tags: NGINX, Linux, uWSGI, PHP-FPM, MySQL
+:tags: NGINX, Linux, Python, uWSGI, PHP, PHP-FPM, MySQL
 
 0. はじめに
 -----------
@@ -18,7 +18,7 @@ Nginx + uWSGI + PHP-FPMサーバー構築備忘録
 OS
     Scientific Linux 6
 ウェブサーバー
-    Nginx
+    NGINX
 データベースサーバー
     MySQL
 バックエンドサーバー
@@ -39,10 +39,10 @@ OS
 GUI だし割りとわかりやすいのでは。
 さくらの VPS でも VNC 越しに GUI インストール！！
 
-2. Nginxインストール
---------------------
+2. NGINX インストール
+---------------------
 
-`Nginxの公式サイト <http://nginx.org>`__\ から、安定版のソースをダウンロードして、解凍、インストール。
+`NGINX の公式サイト <http://nginx.org>`__\ から、安定版のソースをダウンロードして、解凍、インストール。
 
 .. code-block:: sh
 
@@ -59,7 +59,7 @@ GUI だし割りとわかりやすいのでは。
 
     $ /etc/init.d/nginx (start|stop)
 
-って出来たほうが楽ちんだし、再起動したときの自動起動もできるよね！！ってことで、「\ http://shiken.infrabu.info/nginx/nginx%E3%82%92%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%8B%E3%82%89%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%EF%BC%88%EF%BC%8B%E5%9F%BA%E6%9C%AC%E8%A8%AD%E5%AE%9A%EF%BC%89/\ 」様の中段、「nginx 管理スクリプト」の項に記述されているシェルスクリプトを使わせて頂きました。
+って出来たほうが楽ちんだし、再起動したときの自動起動もできるよね！！ってことで、「\ http://shiken.infrabu.info/nginx/nginx%E3%82%92%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%8B%E3%82%89%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%EF%BC%88%EF%BC%8B%E5%9F%BA%E6%9C%AC%E8%A8%AD%E5%AE%9A%EF%BC%89/\ 」様の中段、「 nginx 管理スクリプト」の項に記述されているシェルスクリプトを使わせて頂きました。
 
 .. code-block:: sh
 
@@ -79,10 +79,10 @@ GUI だし割りとわかりやすいのでは。
     $ mysql_install_db
     $ mysql_secure_installation
 
-4. \ PHP-FPMのインストール
---------------------------
+4. \ PHP-FPM のインストール
+---------------------------
 
-`PHPの公式サイト <http://php.net/>`__ から適当なミラーサイトを選んでソースをダウンロード、解凍、インストール。
+`PHP の公式サイト <http://php.net/>`__ から適当なミラーサイトを選んでソースをダウンロード、解凍、インストール。
 
 .. code-block:: sh
 
@@ -93,7 +93,7 @@ GUI だし割りとわかりやすいのでは。
     $ make
     Build complete.
     Don't forget to run 'make test'.
-    $make test # 私のこと忘れないでね///って言われたので。
+    $ make test # 私のこと忘れないでね///って言われたので。
     $ make install
     $ cp /usr/local/etc/php-fpm.conf.default /usr/local/etc/php-fpm.conf
     $ vim /usr/local/etc/php-fpm.conf
@@ -112,11 +112,11 @@ GUI だし割りとわかりやすいのでは。
      18 php_fpm_PID=/usr/local/var/run/php-fpm.pid
     $ /etc/init.d/php-fpm start  # 起動
 
-5. uWSGIのインストール
-----------------------
+5. uWSGI のインストール
+-----------------------
 
 pip でインストールできるので、それを使う。
-pip が入っていない場合は、 `uWSGIのプロジェクトページ <http://projects.unbit.it/uwsgi/>`__\ からソースダウンロードしてインストールするか、すでに setuptools が入っているのなら ``easy\_install pip`` で pip を入れてから次のコマンドを実行。
+pip が入っていない場合は、 `uWSGI のプロジェクトページ <http://projects.unbit.it/uwsgi/>`__\ からソースダウンロードしてインストールするか、すでに setuptools が入っているのなら ``easy\_install pip`` で pip を入れてから次のコマンドを実行。
 
 .. code-block:: sh
 
@@ -164,7 +164,7 @@ pip が入っていない場合は、 `uWSGIのプロジェクトページ <http
 
 次にみんな大好き Python
 
-えーと、 WSGI をしゃべれないといけないんで、ぼくの独断と偏見からFlaskを使います (ｰ\`дｰ´)ｷﾘｯ
+えーと、 WSGI をしゃべれないといけないんで、ぼくの独断と偏見から Flask を使います (ｰ\`дｰ´)ｷﾘｯ
 
 .. code-block:: sh
 
@@ -189,20 +189,20 @@ Python たん(;´Д｀)ﾊｧﾊｧは手がかかる可愛い子なので、ア
     $ uwsgi --socket localhost:8000 --pythonpath /usr/local/nginx/html/ --module test:app
 
 他にもオプションがありますが、テストなのでこの程度。
-実運用なら、 ``-M`` オプションを追加して ``--daemonize (ログファイルのパス)`` を指定してやるのが良いでしょう。
-また、 virtualenv をご利用の方は、 ``--virtualenv (Virtualenvへのパス)`` も必要です。
+実運用なら、 ``-M`` オプションを追加して ``--daemonize （ログファイルのパス）`` を指定してやるのが良いでしょう。
+また、 virtualenv をご利用の方は、 ``--virtualenv （ Virtualenv へのパス）`` も必要です。
 
 表示確認と行こうか
 ------------------
 
-http://127.0.0.1/test.php と http://127.0.0.1/test.py にアクセスして、それぞれお馴染みの ``phpinfo();`` と Hello, World! が表示されればOK！！
+http://127.0.0.1/test.php と http://127.0.0.1/test.py にアクセスして、それぞれお馴染みの ``phpinfo();`` と Hello, World! が表示されれば OK ！！
 
 もし、うまく行かなかったら
 --------------------------
 
 -  ソースファイルがダウンロードされてしまうようなら、 nginx.conf の設定が間違っている可能性が大きいです。
--  (Chrome\|ブラウザ)さんからのエラーページがでたら……。バックエンドサーバーになにか問題があるようです。たとえば、--moduleや、--pythonpathの間違え……。
--  Nginx からのエラーメッセージがでるようなら、バックエンドサーバーが立ち上がっていないか、バックエンドサーバーの IP アドレスないし port が間違っています。同一のマシン内で立ち上げているのならまっさきにポート番号を確認してください。
+-  (Chrome\|ブラウザ) さんからのエラーページがでたら……。バックエンドサーバーになにか問題があるようです。たとえば、 --module や、 --pythonpath の間違え……。
+-  NGINX からのエラーメッセージがでるようなら、バックエンドサーバーが立ち上がっていないか、バックエンドサーバーの IP アドレスないし port が間違っています。同一のマシン内で立ち上げているのならまっさきにポート番号を確認してください。
 
 以上です
 --------
@@ -217,7 +217,7 @@ http://127.0.0.1/test.php と http://127.0.0.1/test.py にアクセスして、�
 P.S.
 ----
 
-いえーーーーい!!@\ `red\_kanchi <http://twitter.com/red_kanchi>`__\ みてるーーーーーー？？？
+いえーーーーい!! `@red\_kanchi <http://twitter.com/red_kanchi>`__ みてるーーーーーー？？？
 
 参考サイト
 ----------

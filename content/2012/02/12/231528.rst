@@ -1,5 +1,5 @@
-Skype4Pyをいじってみた
-======================
+Skype4Py をいじってみた
+=======================
 
 :authors: yosida95
 :category: Code
@@ -128,11 +128,11 @@ processor 関数の args 引数には反応対象の単語の後に書かれて�
 Bot の初回起動時には Skype に「このアプリのアクセスを許可するか」的な事を訊かれるので許可してあげてください。
 「選択を保存」風なチェックボックスをチェックしておくと便利です。
 
-skypebot.pyは Linux 上で動かすことを前提に書かれています。
+skypebot.py は Linux 上で動かすことを前提に書かれています。
 
 Python を 32bit モードで動かし Skype4Py.Skype を引数なしで呼ぶと Mac でも動きます。
 32bit モードでの動かし方は `Skype4Pyがsegmentation fault する - mfumiの日記 <http://d.hatena.ne.jp/mFumi/20100402/1270216343>`__\ をご参照ください。
-Windowsのことは知りません。
+Windows のことは知りません。
 
 本格的に Bot として動かすなら Skype のデーモン化が必要になります。
 これについては `Linux上で動くSkype用のbotを作る方法 - muddy brown thang <http://d.hatena.ne.jp/moriyoshi/20100926/1285517353>`__ をご参照ください。

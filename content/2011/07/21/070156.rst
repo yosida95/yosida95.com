@@ -6,7 +6,7 @@ VirtualHost 自動設定スクリプト
 :tags: Apache HTTP Server, Python
 
 `VirtualHost の設定`_\ でディレクトリを追加するだけで VirtualHost の設定が済む httpd.conf を掲載しました。
-あのあとあの記事に従って設置したディレクトリの中で更に mod\_rewrite を使うと転送ループなどの問題が発生してしまいましたので、VirtualHostを追加する Python スクリプトを書きました。
+あのあとあの記事に従って設置したディレクトリの中で更に mod\_rewrite を使うと転送ループなどの問題が発生してしまいましたので、 VirtualHost を追加する Python スクリプトを書きました。
 
 .. _VirtualHost の設定: {filename}/2011/07/19/211021.rst
 
@@ -166,8 +166,8 @@ VirtualHost 自動設定スクリプト
 How To Use
 ----------
 
-VirtualHost追加時
-~~~~~~~~~~~~~~~~~
+VirtualHost 追加時
+~~~~~~~~~~~~~~~~~~
 
 第1引数にホスト名、第2引数にサーバー管理者のメールアドレス、第3引数にルートディレクトリのフルパスを指定し、あとはガイドに従うだけ。
 サーバーの再起動とかは必要なく、正常終了すれば公開が開始されている。

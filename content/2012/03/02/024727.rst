@@ -1,5 +1,5 @@
-Twitterの会話をリアルタイムにまとめるWebサイト、「TwitActivity」を公開しました
-==============================================================================
+Twitter の会話をリアルタイムにまとめる Web サイト、「 TwitActivity 」を公開しました
+===================================================================================
 
 :authors: yosida95
 :category: Work
@@ -20,10 +20,10 @@ TwitActivity は `TweetDialogue <https://dialogue.yosida95.com/>`__ に生まれ
 このサービスでは、  Twitter の Streaming API を使用してユーザーのつぶやきをリアルタイムに取得しています。
 そして取得したつぶやきの in-reply-to を再帰的にたどって会話としてまとめます。
 
-開発言語は Python で、使用したフレームワークはPyramid 、 データベースは MySQL + memcached。
+開発言語は Python で、使用したフレームワークは Pyramid 、 データベースは MySQL + memcached 。
 Pyramid の利用はこれが初めてでした。
 プラットホームには Google App Engine のようなクラウドは採用せずに自前で用意しました。
-フロントエンドは Nginx、 バックエンドは uWSGI です。
+フロントエンドは NGINX 、 バックエンドは uWSGI です。
 
 ログインをお願いする理由
 ------------------------

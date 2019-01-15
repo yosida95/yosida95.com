@@ -8,7 +8,7 @@ PQI Air Card が届いた
 女の子と2人でとしまえんに遊びに行ってきた yosida95 です。
 なんか、楽しかった反動で寝られそうにないので、ブログでも書きます。
 
-さて、先日 `id:koba789 <http://blog.hatena.ne.jp/koba789/>`__ から Amazon wishlist 経由で、 PQI Air Card と、SD カードライターがセットで届きました。
+さて、先日 `id:koba789 <http://blog.hatena.ne.jp/koba789/>`__ から Amazon wishlist 経由で、 PQI Air Card と、 SD カードライターがセットで届きました。
 なんでも、 `CombConf <{filename}/2012/12/25/064109.rst>`_ 開催にあたり、ぼくが立て替えていた分をこれで返すそうです。
 年末一杯遊べるおもちゃを与えてくれてありがとうございます!!
 
@@ -18,7 +18,7 @@ PQI Air Card とは
 
 Micro SD カードを SD カードとして使うためのアダプタです。
 ただ、それだけではなくて、このアダプタには WiFi モジュールが組み込まれています。
-本来は、写真や動画を WiFi で共有するための機能なのですが、中で Linux が動いていて、telnet で接続できたり FTP や HTTP が使えたりできるので、 Geek のおもちゃになっています。
+本来は、写真や動画を WiFi で共有するための機能なのですが、中で Linux が動いていて、 telnet で接続できたり FTP や HTTP が使えたりできるので、 Geek のおもちゃになっています。
 
 詳しくはググってください。
 Let's google it!
@@ -29,12 +29,12 @@ PQI Air Card の準備
 PQI Air Card には 32GB の Micro SD カードが付属するので、これを PQI Air Card に挿入します。
 自分で用意した Micro SD カードでも使えます。
 これが PQI Air Card と他の類似品との大きな違いです。
-次に、Micro SD カードを挿入した PQI Air Card をそのへんに転がってるデジカメや SD カードライターに挿入します。
+次に、 Micro SD カードを挿入した PQI Air Card をそのへんに転がってるデジカメや SD カードライターに挿入します。
 
 PQI Air Card に接続する
 -----------------------
 
-PQI Air Card をデジカメや SD カードライターにセットしてから25秒くらい(マニュアル値)待つと、そのなも "PQI Air card" というアクセスポイントが立ちます。
+PQI Air Card をデジカメや SD カードライターにセットしてから25秒くらい（マニュアル値）待つと、そのなも "PQI Air card" というアクセスポイントが立ちます。
 これに、適当なマシンで接続してやります。
 すると、 192.168.1.50-52 あたりの IP アドレスが降ってきます。
 
@@ -111,7 +111,7 @@ autorun.sh を書く
 ``autorun.sh`` は、 PQI Air Card がイニシャライズするときに呼ばれるシェルスクリプトです。
 このシェルスクリプトに上記のようなコマンドを列挙してやることで自動化できます。
 
-``autorun.sh`` を置く場所は、Micro SD カードのルート、つまり ``/mnt/sd/autorun.sh`` です。
+``autorun.sh`` を置く場所は、 Micro SD カードのルート、つまり ``/mnt/sd/autorun.sh`` です。
 
 おまけ
 ------

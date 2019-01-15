@@ -6,7 +6,7 @@ FTP 自動アップローダー
 :tags: Python, FTP
 
 【追記】
-bitbucketにリポジトリとしておきました。
+Bitbucket にリポジトリとしておきました。
 いい感じに手直ししていただけると嬉しいです。
 `yosida95 / AutoFTPUploader / overview — Bitbucket <https://bitbucket.org/yosida95/autoftpuploader>`__
 

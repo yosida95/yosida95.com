@@ -3,7 +3,7 @@ Zabbix や munin のアラートを Pushover 経由でスマートフォンに�
 
 :authors: yosida95
 :category: Operations
-:tags: Zabbix, munin
+:tags: Zabbix, munin, Python
 
 はじめに
 --------

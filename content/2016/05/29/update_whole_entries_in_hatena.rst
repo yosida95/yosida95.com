@@ -3,7 +3,7 @@
 
 :authors: yosida95
 :category: Code
-:tags: AtomPub
+:tags: AtomPub, Python
 
 はじめに
 --------
