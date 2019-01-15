@@ -60,14 +60,14 @@
           <div class="nav">
             <ul>
               <li><a href="{{ SITEURL }}/"><span>HOME</span></a></li>
-              <li><a href="{{ SITEURL }}/archives.html"><span>BLOG</span></a></li>
+              <li><a href="{{ SITEURL }}/{{ INDEX_URL }}"><span>BLOG</span></a></li>
               <li><a href="{{ SITEURL }}/photos"><span>PHOTOS</span></a></li>
             </ul>
 
             <select id="mobile-nav">
               <option>Select page:</option>
-              <option value="{{ SITEURL }}/'">HOME</option>
-              <option value="{{ SITEURL }}/archives.html'">BLOG</option>
+              <option value="{{ SITEURL }}/">HOME</option>
+              <option value="{{ SITEURL }}/{{ INDEX_URL }}">BLOG</option>
               <option value="{{ SITEURL }}/photos">PHOTOS</option>
             </select>
           </div><!-- .nav end -->
@@ -81,17 +81,6 @@
           <div class="content">
             {%- block body -%}
             {%- endblock %}
-
-            {%- if prev or next %}
-            <div class="pagination">
-              {%- if prev %}
-              <a href="{{ prev.link|e }}" class="newer-posts">&laquo; {{ prev.title }}</a>
-              {%- endif %}
-              {%- if next %}
-              <a href="{{ next.link|e }}" class="older-posts">{{ next.title }} &raquo;</a>
-              {%- endif %}
-            </div>
-            {%- endif %}
           </div>
           <div class="sidebar">
             <div class="sidebar_item">

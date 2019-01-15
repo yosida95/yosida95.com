@@ -12,7 +12,6 @@ USE_FOLDER_AS_CATEGORY = False
 RELATIVE_URLS = True
 
 THEME = './_themes/purity'
-DIRECT_TEMPLATES = ['archives']
 SUMMARY_MAX_LENGTH = 10
 DEFAULT_PAGINATION = 5
 JINJA_ENVIRONMENT = {
@@ -24,9 +23,10 @@ PYGMENTS_RST_OPTIONS = {}
 PLUGIN_PATHS = ['../plugins/pelican-plugins']
 PLUGINS = ['pelican_alias']
 
-INDEX_SAVE_AS = None
+INDEX_SAVE_AS = 'archives.html'
+INDEX_URL = 'archives/'
 
-ARCHIVES_SAVE_AS = 'archives.html'
+ARCHIVES_SAVE_AS = ''
 
 ARTICLE_PATHS = ['']
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
@@ -38,6 +38,10 @@ PAGE_SAVE_AS = '{slug}/index.html'
 
 AUTHORS_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
+
+CATEGORIES_SAVE_AS = ''
+
+TAGS_SAVE_AS = ''
 
 STATIC_PATHS = ['_static']
 EXTRA_PATH_METADATA = {

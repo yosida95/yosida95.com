@@ -2,16 +2,25 @@
 {% extends "base.html" %}
 
 {% block body %}
-{%- for article in articles %}
+{%- for article in dates_page.object_list %}
             <div class="post">
               <h1 class="title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
               <span class="post-meta">
                 Posted on <strong>{{ article.date| strftime('%a, %b %d, %Y') }}</strong>
               </span>
-
-{{ article.summary}}
             </div>
 {%- endfor %}
+
+{%- if dates_page.has_other_pages() %}
+            <div class="pagination">
+              {%- if dates_page.has_previous() %}
+              <a href="{{ SITEURL }}/{{ dates_previous_page.url }}" class="newer-posts">&laquo; Newer posts</a>
+              {%- endif %}
+              {%- if dates_page.has_next() %}
+              <a href="{{ SITEURL }}/{{ dates_next_page.url }}" class="older-posts">Older posts &raquo;</a>
+              {%- endif %}
+            </div>
+{%- endif %}
 {%- endblock %}
 
 {%- macro category_list(post_categories) -%}
@@ -35,4 +44,3 @@
     Untagged
     {%- endif -%}
 {%- endmacro -%}
-
