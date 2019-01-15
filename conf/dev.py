@@ -51,11 +51,13 @@ PAGE_SAVE_AS = '{slug}/index.html'
 AUTHORS_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
 
-CATEGORIES_SAVE_AS = ''
+CATEGORIES_SAVE_AS = 'categories/index.html'
+CATEGORIES_URL = 'categories/'
 CATEGORY_SAVE_AS = 'categories/{slug}/index.html'
 CATEGORY_URL = 'categories/{slug}/'
 
-TAGS_SAVE_AS = ''
+TAGS_SAVE_AS = 'tags/index.html'
+TAGS_URL = 'categories/'
 TAG_SAVE_AS = 'tags/{slug}/index.html'
 TAG_URL = 'tags/{slug}/'
 
