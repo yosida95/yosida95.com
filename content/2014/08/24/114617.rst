@@ -107,7 +107,7 @@ munin
 #. munin.conf に上記 2 行を追記する
 
 おわりに
-========
+--------
 
 |Zabbix pushover|
 
