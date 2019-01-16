@@ -3,6 +3,7 @@
 <html lang='ja'>
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ description|striptags|e }}">
     <!-- The Open Graph -->
     <meta property="og:title" content="{{ self.title() }}">
@@ -18,7 +19,6 @@
 
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/responsive.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/retina.css" media="screen">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css" media="screen">
 
@@ -63,13 +63,6 @@
               <li><a href="{{ SITEURL }}/{{ INDEX_URL }}"><span>BLOG</span></a></li>
               <li><a href="{{ SITEURL }}/photos"><span>PHOTOS</span></a></li>
             </ul>
-
-            <select id="mobile-nav">
-              <option>Select page:</option>
-              <option value="{{ SITEURL }}/">HOME</option>
-              <option value="{{ SITEURL }}/{{ INDEX_URL }}">BLOG</option>
-              <option value="{{ SITEURL }}/photos">PHOTOS</option>
-            </select>
           </div><!-- .nav end -->
           <div class="clear"></div>
         </div><!-- .inner end -->

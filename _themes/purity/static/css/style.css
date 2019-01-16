@@ -21,45 +21,35 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, img, strong, ol, u
 
 body {
   background: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   font-family: Helvetica, Arial, sans-serif;
   color: #888;
 }
 
 #wrapper {
-  width: 980px;
+  width: 100%;
   background: #fff;
   margin: 0 auto;
 }
 
 .inner {
-  width: 900px;
-  margin: 0 auto;
+  width: 90%;
+  margin: 0 5%;
 }
 
 #header, #main, #footer {
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
 }
 
 a {
   color: #d16f4e;
   text-decoration: none;
-  transition: color 0.1s linear;
-  -moz-transition: color 0.1s linear;
-  -webkit-transition: color 0.1s linear;
-  -o-transition: color 0.1s linear;
 }
+
 a:hover {
   color: #444;
-}
-a:active {
-  outline: none;
-}
-a:focus {
-  outline: none;
-  -moz-outline-style: none;
 }
 
 p {
@@ -81,10 +71,10 @@ input, textarea {
 }
 
 .clear {
-  clear: both;
-  display: block;
-  height: 0;
   width: 100%;
+  height: 0;
+  display: block;
+  clear: both;
 }
 
 img {
@@ -151,9 +141,9 @@ img {
 }
 
 .divider {
-  display: block;
   width: 100%;
   height: 0;
+  display: block;
   clear: both;
   margin: 20px 0px;
   position: relative;
@@ -166,21 +156,22 @@ img {
 }
 
 .top {
+  width: 98.35%;
   text-align: right;
   border-top: 1px dotted #ddd;
   margin-top: 28px;
   margin-bottom: 29px;
-  width: 98.35%;
 }
 
 .top a {
-  font-size: 8px;
+  font-size: 0.5em;
   line-height: 20px;
   position: absolute;
   right: -14px;
   top: -10px;
   color: #bbb;
 }
+
 .top a:hover {
   color: #d16f4e;
 }
@@ -224,19 +215,20 @@ h1, h2, h3, h4, h5, h6 {
 .title a {
   color: #444;
 }
+
 .title a:hover {
   color: #d16f4e;
 }
 
 .pullleft, .pullright {
-  float: right;
-  font-size: 15px;
-  font-style: italic;
-  color: #999;
   width: 32%;
   margin: 20px 2px 14px 14px;
   padding: 20px;
   border-left: 2px solid #e1e1e1;
+  float: right;
+  color: #999;
+  font-size: 0.94em;
+  font-style: italic;
 }
 
 .pullleft {
@@ -289,32 +281,19 @@ img.specific {
 }
 
 .caption {
-  color: #aaa;
-  font-size: 11px;
+  color: #999;
+  font-size: 0.69em;
   font-style: italic;
   text-align: center;
   margin: 0;
 }
 
 blockquote {
-  color: #aaa;
-  font-size: 15px;
+  color: #999;
   font-style: italic;
-  margin: 20px 0px 20px 20px;
-  padding: 20px;
-  border-left: 3px solid #ddd;
-}
-
-blockquote p {
-  margin: 0px;
-}
-
-blockquote span {
-  display: block;
-  font-size: 12px;
-  line-height: 20px;
-  color: #555;
-  float: right;
+  margin: 1.5em;
+  padding: 0 1.5em;
+  border-left: 0.2em solid #ddd;
 }
 
 
@@ -326,9 +305,11 @@ blockquote span {
   z-index: 999;
   position: relative;
 }
+
 #header .inner {
   border-bottom: 1px dotted #ddd;
 }
+
 #header .logo {
   float: left;
   padding: 30px 0;
@@ -355,7 +336,7 @@ blockquote span {
   margin-left: 20px;
   position: relative;
   display: block;
-  font-size: 22px;
+  font-size: 1.5em;
 }
 
 .nav ul li > a {
@@ -365,6 +346,7 @@ blockquote span {
   text-decoration: none;
   display: block;
 }
+
 .nav ul li:hover > a {
   color: #d16f4e;
 }
@@ -407,15 +389,6 @@ blockquote span {
 /* Mobile Navigation */
 #mobile-nav {
   display: none;
-  -webkit-appearance: none;
-  width: 100%;
-  padding: 10px 14px;
-  border: 1px solid #e0e0e0;
-  barder-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -o-border-radius: 0;
-  background: #fff url('../img/select-arrows.png') no-repeat right center;
 }
 
 
@@ -424,9 +397,9 @@ blockquote span {
 /*=========================*/
 
 .tagline {
-  padding: 30px 0px;
-  width: 900px;
+  width: 100%;
   margin: 0 auto;
+  padding: 30px 0px;
   border-bottom: 1px dotted #ddd;
 }
 
@@ -456,12 +429,12 @@ blockquote span {
 }
 
 .content {
-  color: #333;
-  width: 662px;
+  width: 78%;
+  margin: 0 2% 0 0;
   float: left;
+  color: #333;
   text-align: justify;
   letter-spacing: 0.04em;
-  margin-right: 20px;
 }
 
 .content .gallery {
@@ -469,7 +442,7 @@ blockquote span {
 }
 
 .content .gallery a > img {
-  width: 644px;
+  width: 100%;
 }
 
 
@@ -478,8 +451,8 @@ blockquote span {
 /*========================*/
 
 .sidebar, .sidebar_left {
-  margin: 0px 0px 0px 20px;
-  width: 198px;
+  margin: 0;
+  width: 20%;
   float: left;
 }
 
@@ -500,7 +473,7 @@ blockquote span {
 
 .sidebar h5, .sidebar h6 {
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   letter-spacing: 0.05em;
   margin-bottom: 10px;
 }
@@ -510,48 +483,16 @@ blockquote span {
 }
 
 
-/*===========================*/
-/*===  6.1.1. Search bar  ===*/
-/*===========================*/
-
-.search {
-  position: relative;
-}
-
-.search_box {
-  padding: 10px 38px 10px 14px;
-  background: #fff;
-  width: 144px;
-  color: #999;
-  font-style: italic;
-  font-size: 11px;
-  line-height: 11px;
-  outline: none;
-  margin: 0;
-  border: 1px solid #e0e0e0;
-}
-
-.search_submit {
-  position: absolute;
-  right: 1px;
-  top: 1px;
-  background: url(../img/search.png) no-repeat center center;
-  width: 38px;
-  height: 33px;
-  cursor: pointer;
-}
-
-
 /*========================*/
 /*===  6.2. Blog       ===*/
 /*========================*/
 
 .post {
+  width: 100%;
   margin-bottom: 30px;
   border-bottom: 1px dotted #ddd;
   padding-bottom: 29px;
   overflow: hidden;
-  width: 100%;
 }
 
 .post-info {
@@ -610,7 +551,7 @@ blockquote span {
 }
 
 .post-meta {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 20px;
   font-style: italic;
   color: #b0b0b0;
@@ -636,10 +577,11 @@ blockquote span {
 }
 
 .pagination a {
-  font-size: 12px;
+  font-size: 0.75em;
   color: #444;
   font-style: italic;
 }
+
 .pagination a:hover {
   color: #d16f4e;
 }
@@ -677,7 +619,7 @@ a.older-posts {
 
 .item-name p {
   color: #888;
-  font-size: 11px;
+  font-size: 0.69em;
   margin-bottom: 4px;
 }
 
@@ -690,11 +632,11 @@ a.older-posts {
 }
 
 .item-name > a {
-  font-size: 11px;
+  font-size: 0.69em;
 }
 
 .one-column > li {
-  width: 900px;
+  width: 100%;
   margin-bottom: 24px;
   display: inline-block;
   float: none;
@@ -709,14 +651,14 @@ a.older-posts {
 }
 
 .one-column .item-name span a {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 20px;
   display: block;
   margin-bottom: 10px;
 }
 
 .one-column p {
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 .one-column .item-name h4, .one-column .item-name h3 {
@@ -746,26 +688,34 @@ a.older-posts {
 }
 
 .two-columns {
-  width: 950px;
+  width: 100%;
 }
 
 .two-columns li {
-  width: 425px;
-  margin: 0 50px 40px 0;
+  width: 47.5%;
+  margin: 0 5% 40px 0;
+}
+
+.two-columns li:nth-child(even) {
+  margin: 0 0 40px 0;
 }
 
 .two-columns li img, .two-columns .over {
-  width: 411px;
+  width: 90%;
   height: 290px;
 }
 
 .three-columns {
-  width: 945px;
+  width: 100%;
 }
 
 .three-columns li {
-  width: 270px;
-  margin: 0 45px 35px 0;
+  width: 30%;
+  margin: 0 5% 35px 0;
+}
+
+.three-columns li:nth-child(3n) {
+  margin: 0 0 35px 0;
 }
 
 .three-columns li img, .three-columns .over {
@@ -774,12 +724,16 @@ a.older-posts {
 }
 
 .four-columns {
-  width: 936px;
+  width: 100%;
 }
 
 .four-columns li {
-  width: 198px;
-  margin: 0 36px 30px 0;
+  width: 21.25%;
+  margin: 0 5% 30px 0;
+}
+
+.four-columns li:nth-child(4n) {
+  margin: 0 0 30px 0;
 }
 
 .four-columns li img, .four-columns .over {
@@ -788,11 +742,9 @@ a.older-posts {
 }
 
 .item-image {
-  width: width;
-  height: height;
   border: 1px solid #e1e1e1;
-  padding: 6px;
   margin-bottom: 4px;
+  padding: 6px;
 }
 
 .gallery li {
@@ -835,7 +787,7 @@ a.older-posts {
 #footer ul.links li a {
   color: #888;
   display: block;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 20px;
   padding: 0px 0px 8px 0px;
 }
@@ -847,7 +799,7 @@ a.older-posts {
 
 .footer_small {
   clear: both;
-  width: 900px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   padding: 20px 0;
@@ -855,7 +807,7 @@ a.older-posts {
 }
 
 .copyright {
-  font-size: 11px;
+  font-size: 0.75em;
   padding-top: 8px;
   text-align: center;
 }
@@ -870,12 +822,14 @@ a.older-posts {
   text-align: center;
   margin-left: -5px;
 }
+
 #footer .social a {
   display: block;
   display: -moz-inline-stack;
   display: inline-block;
   margin-left: 10px;
 }
+
 #footer .social img {
   background-color: #fff;
 }
