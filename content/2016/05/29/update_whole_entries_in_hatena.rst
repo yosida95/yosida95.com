@@ -21,7 +21,7 @@
 はてなブログのすべての記事を自動で更新する
 ------------------------------------------
 
-.. code:: python
+.. code-block:: python
 
    # -*- coding: utf-8 -*-
 
@@ -209,10 +209,10 @@
 
 冒頭で定義されている以下の変数にそれぞれ適切な値を代入してください。
 
-- ENDPOINT_PREFIX
-- YOUR_HATENA_ID
-- YOUR_API_KEY
-- PATH_TO_APACHE_REWRITE_RULES
+-  ENDPOINT_PREFIX
+-  YOUR_HATENA_ID
+-  YOUR_API_KEY
+-  PATH_TO_APACHE_REWRITE_RULES
 
 PATH_TO_APACHE_REWRITE_RULES には移転前のブログパスから移転後の URL へ転送する RewriteRule を対応づけた .htaccess へのパスを指定して下さい。
 もっとも、新しいブログの URL を本文に記載する必要がない場合は、 `update_entry` 関数内の `make_new_content` の呼び出し周辺をいい感じに改変してあげて下さい。

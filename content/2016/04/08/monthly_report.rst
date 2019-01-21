@@ -13,47 +13,47 @@
 やったこと
 ----------
 
-- 8日
+-  8日
 
-  - 歯科医院に行った
+   -  歯科医院に行った
 
-- 9日
+-  9日
 
-  - `yosida95/golang-jenkins#28 <https://github.com/yosida95/golang-jenkins/pull/28>`__ をマージした
+   -  `yosida95/golang-jenkins#28 <https://github.com/yosida95/golang-jenkins/pull/28>`__ をマージした
 
-- 14日
+-  14日
 
-  - 内科医院に行った
-  - Microservices Casual Talks に行った
+   -  内科医院に行った
+   -  Microservices Casual Talks に行った
 
-- 16日
+-  16日
 
-  - 歯科医院に行った
+   -  歯科医院に行った
 
-- 18日
+-  18日
 
-  - `@oidong1 <https://twitter.com/oidong1>`__ と焼き肉に行った
+   -  `@oidong1 <https://twitter.com/oidong1>`__ と焼き肉に行った
 
-- 22日
+-  22日
 
-  - 内科医院に行った
+   -  内科医院に行った
 
-- 23日
+-  23日
 
-  - CT スキャンをした
+   -  CT スキャンをした
 
-- 26日
+-  26日
 
-  - 美容院に行った
+   -  美容院に行った
 
-- 28日
+-  28日
 
-  - 内科医院に行った
-  - `yosida95/golang-jenkins#29 <https://github.com/yosida95/golang-jenkins/pull/29>`__ をマージした
+   -  内科医院に行った
+   -  `yosida95/golang-jenkins#29 <https://github.com/yosida95/golang-jenkins/pull/29>`__ をマージした
 
-- 30日
+-  30日
 
-  - 歯科医院に行った
+   -  歯科医院に行った
 
 所感
 ----
@@ -87,9 +87,9 @@ oidong1 と肉を食べた
 ぼくが社会人になった頃からこれまでの2年間、振り返ってみれば oidong1 とは四半期に一度くらいのペースで、焼肉や寿司、天ぷらなどを食べに行っています。
 今回も27年度が終わるタイミングだったので、年度を締めていくぞという思いで焼き肉を食べに行きました。
 
-- oidong 「相談事において、男性は相手に解決策を、女性は相手に同情を求めると言うが、俺だって同情が欲しい」
+   oidong 「相談事において、男性は相手に解決策を、女性は相手に同情を求めると言うが、俺だって同情が欲しい」
 
-- yosida95 「悩み事の解決策は自力で導くから、解決の過程で出てしまったゴミを分かち合いたい」
+   yosida95 「悩み事の解決策は自力で導くから、解決の過程で出てしまったゴミを分かち合いたい」
 
 だいたいこんな感じの会合です。
 

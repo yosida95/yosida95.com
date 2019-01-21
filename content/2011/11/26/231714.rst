@@ -32,9 +32,9 @@
 事前に用意したネタが非常につまらないことに気づき、結局 URL 短縮サービスやイベント管理サービスが提供している API をたたいで遊んでいました。
 その様子がこちら。
 
-- `a48316 / yosida95 - Pckles <http://pckles.com/yosida95/a48316>`__
-- `841eb9 / yosida95 - Pckles <http://pckles.com/yosida95/841eb9>`__
-- `f7f05b / yosida95 - Pckles <http://pckles.com/yosida95/f7f05b>`__
+-  `a48316 / yosida95 - Pckles <http://pckles.com/yosida95/a48316>`__
+-  `841eb9 / yosida95 - Pckles <http://pckles.com/yosida95/841eb9>`__
+-  `f7f05b / yosida95 - Pckles <http://pckles.com/yosida95/f7f05b>`__
 
 こんな感じで遊んであわよくばそれをライブラリ化しようと思ったのですが、オブジェクトの設計に行き詰まり、急遽 Vim 風のキーバインドで操作できる CUITwitter クライアントを作り始めました。
 

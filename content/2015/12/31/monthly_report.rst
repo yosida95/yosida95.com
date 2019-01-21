@@ -16,17 +16,17 @@
 やったこと
 ----------
 
-- 6日
+-  6日
 
-   - `Go Conference 2015 Winter <http://eventdots.jp/event/573121>`__ で登壇
+   -  `Go Conference 2015 Winter <http://eventdots.jp/event/573121>`__ で登壇
 
-- 18日
+-  18日
 
-   - 「\ `Gehirn DNS API 仕様 <{filename}/2015/12/18/gehirn_dns_api_spec.rst>`_\ 」を公開
+   -  「\ `Gehirn DNS API 仕様 <{filename}/2015/12/18/gehirn_dns_api_spec.rst>`_\ 」を公開
 
-- 22日
+-  22日
 
-   - 会社の忘年会に参加
+   -  会社の忘年会に参加
 
 所感
 ----

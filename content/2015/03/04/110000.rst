@@ -19,18 +19,21 @@
 -  10 日
 
    -  会社で新年会があって焼き肉を食べた。
+
       今月から正職員が2名増えてオフィスが賑やかになってきた。
       今年も頑張るぞいという気持ちを新たにした。
 
 -  11 日
 
    -  社長の @isidai さんと同僚の @satoshi\_m8a さんと NHK 番組技術展に行ってきた。
+
       興味深い展示も幾つかあって楽しかった。
       今回がぼくにとって 2 回目だったけれど、前回から今回までの間に Go で MPEG2-TS パーサー `yosida95/tsparser <https://github.com/yosida95/tsparser>`__ を書いたり、社長による熱心な NHK 推しを事あるごとうけたりして、放送技術への興味が前回よりも高まっていたのでより楽しめたと思う。
 
 -  12 日
 
    -  `@oidong1 <http://twitter.com/oidong1>`__ と焼き肉を食べた。
+
       昨年の11月25日にも一緒に焼き肉を食べに行ったけれど、やっぱり会社の外の同じ年とあって話すと刺激があって面白い。
 
 -  13 日
@@ -43,7 +46,7 @@
 
 -  12 日から 28 日
 
-   - |GitHub Contributions|
+   -  |GitHub Contributions|
 
 所感
 ----
@@ -51,8 +54,6 @@
 先月のように出張したり、どこかにパッチを投げたりという活動がなかったので特筆することはないけれど、とにかく開発が忙しい1ヶ月だった。
 
 .. raw:: html
-
-    <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">ぼくがその気になれば 2 月はいつまでも続くさ</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/572320715594063872">March 2, 2015</a></blockquote>
 
     <blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">最近の気付きとして、 24 時間はどう頑張っても 24 時間だし、ぼくは 1 人しかいない</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/571953664664838144">March 1, 2015</a></blockquote>
 

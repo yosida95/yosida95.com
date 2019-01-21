@@ -53,12 +53,10 @@ pushover_zabbix.py
    if __name__ == u'__main__':
        sys.exit(main())
 
-#. ``zabbix_server.conf`` の ``AlertScriptsPath``
-   で指定したディレクトリに置く
+#. ``zabbix_server.conf`` の ``AlertScriptsPath`` で指定したディレクトリに置く
 #. chmod で実行権限を与える
 #. Zabbix の Web コントロール画面からメディアタイプに指定する
-#. Pushover を使って通知を受け取りたい Zabbix ユーザーに、上記で追加した
-   Pushover メディアタイプを追加する
+#. Pushover を使って通知を受け取りたい Zabbix ユーザーに、上記で追加したPushover メディアタイプを追加する
 
    -  この時、送信先として Pushover のユーザートークンを指定する
 
@@ -102,8 +100,7 @@ munin
    if __name__ == u'__main__':
     sys.exit(main())
 
-#. pushover\_mnin.py を munin がアクセスできるパスに munin
-   がアクセスできる権限で設置する
+#. pushover\_mnin.py を munin がアクセスできるパスに munin がアクセスできる権限で設置する
 #. pushover\_munin.py に実行権限を与える
 #. munin.conf に上記 2 行を追記する
 

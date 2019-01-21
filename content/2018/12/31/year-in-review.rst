@@ -21,9 +21,9 @@ yosida95 の2018年まとめ
 
 ことし始めた主なことは以下の3つです。
 
-- 自動車の運転
-- 筋力トレーニング
-- ボイストレーニング
+-  自動車の運転
+-  筋力トレーニング
+-  ボイストレーニング
 
 このうち、筋力トレーニングとボイストレーニングについては10月のブログエントリ「 `ご報告 <{filename}/2018/10/05/greetings.rst>`_ 」でも触れました。
 
@@ -60,18 +60,18 @@ yosida95 の2018年まとめ
 
 現在は主に以下の種目に取り組んでいます。
 
-- ベンチプレス
-- チェストプレス
-- ケーブルクロスオーバー
-- チンニング
-- ラットプルダウン
-- シットアップ
-- クランチ
-- レッグレイズ
-- バーベルスクワット
-- レッグプレス
-- レッグカール
-- レッグエクステンション
+-  ベンチプレス
+-  チェストプレス
+-  ケーブルクロスオーバー
+-  チンニング
+-  ラットプルダウン
+-  シットアップ
+-  クランチ
+-  レッグレイズ
+-  バーベルスクワット
+-  レッグプレス
+-  レッグカール
+-  レッグエクステンション
 
 12月27日にトレーニング納めをしたところベンチプレスとバーベルスクワットでこれまでで最高の重量を持つことができ、自分の体重を超える負荷をかけられるようになったので成長を感じています。
 実感としても特に大胸筋、上腕二頭筋および上腕三頭筋がはっきりと発達してきています。
@@ -105,8 +105,8 @@ yosida95 の2018年まとめ
 
 ことし買ってよかったものは次の2点です。
 
-- 電子ピアノ
-- パネルヒーター
+-  電子ピアノ
+-  パネルヒーター
 
 電子ピアノ
 ~~~~~~~~~~
@@ -151,13 +151,13 @@ yosida95 の2018年まとめ
 ことし観た映画
 --------------
 
-- `「恋は雨上がりのように」 <http://koiame-movie.com/>`_
-- `「あさがおと加瀬さん。」 <http://asagao-anime.com/>`_
-- `「未来のミライ」 <http://mirai-no-mirai.jp/>`_
-- `「カメラを止めるな!」 <http://kametome.net/index.html>`_
-- `「ペンギン・ハイウェイ」 <http://penguin-highway.com/>`_
-- `「 search 」 <http://www.search-movie.jp/>`_
-- `「スマホを落としただけなのに」 <http://www.sumaho-otoshita.jp/index.html>`_
+-  `「恋は雨上がりのように」 <http://koiame-movie.com/>`_
+-  `「あさがおと加瀬さん。」 <http://asagao-anime.com/>`_
+-  `「未来のミライ」 <http://mirai-no-mirai.jp/>`_
+-  `「カメラを止めるな!」 <http://kametome.net/index.html>`_
+-  `「ペンギン・ハイウェイ」 <http://penguin-highway.com/>`_
+-  `「 search 」 <http://www.search-movie.jp/>`_
+-  `「スマホを落としただけなのに」 <http://www.sumaho-otoshita.jp/index.html>`_
 
 「恋は雨上がりのように」
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -196,12 +196,12 @@ yosida95 の2018年まとめ
 
 ことし視聴したアニメで、ことし放映されたアニメ以外も含みます。
 
-- `「宇宙よりも遠い場所」 <http://yorimoi.com/>`_
-- `「月がきれい」 <https://tsukigakirei.jp/>`_
-- `「まおゆう魔王勇者」 <http://maoyu.jp/>`_
-- `「舟を編む」 <http://www.funewoamu.com/>`_
-- `「魔法科高校の劣等生」 <https://mahouka.jp/tv/>`_
-- `「 GOSICK 」 <https://www.tv-tokyo.co.jp/anime/gosick/>`_
+-  `「宇宙よりも遠い場所」 <http://yorimoi.com/>`_
+-  `「月がきれい」 <https://tsukigakirei.jp/>`_
+-  `「まおゆう魔王勇者」 <http://maoyu.jp/>`_
+-  `「舟を編む」 <http://www.funewoamu.com/>`_
+-  `「魔法科高校の劣等生」 <https://mahouka.jp/tv/>`_
+-  `「 GOSICK 」 <https://www.tv-tokyo.co.jp/anime/gosick/>`_
 
 「宇宙よりも遠い場所」
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -280,8 +280,8 @@ yosida95 の2018年まとめ
 
 ことし寄付した先は以下の2つです。
 
-- Arch Linux
-- Wikipedia (Wikimedia Foundation)
+-  Arch Linux
+-  Wikipedia (Wikimedia Foundation)
 
 Arch Linux
 ~~~~~~~~~~
@@ -318,11 +318,11 @@ Wikipedia (Wikimedia Foundation)
 これまでのまとめ
 ----------------
 
-- `yosida95 の 2017 年まとめ <{filename}/2017/12/31/greetings.rst>`_
-- `yosida95 の 2016 年まとめ <{filename}/2016/12/31/yearly_report.rst>`_
-- `yosida95 の 2015 年まとめ <{filename}/2015/12/31/yearly_report.rst>`_
-- `yosida95 の 2014 年まとめ <{filename}/2014/12/29/130000.rst>`_
-- `yosida95 の2013年を振り返る <{filename}/2013/12/31/111207.rst>`_
-- `2012 年にぼくがさせていただいたこと <{filename}/2013/01/01/005050.rst>`_
-- `2011年が終わるね！！ <{filename}/2011/12/31/235927.rst>`_
-- `2010 年 <{filename}/2010/12/31/115758.rst>`_
+-  `yosida95 の 2017 年まとめ <{filename}/2017/12/31/greetings.rst>`_
+-  `yosida95 の 2016 年まとめ <{filename}/2016/12/31/yearly_report.rst>`_
+-  `yosida95 の 2015 年まとめ <{filename}/2015/12/31/yearly_report.rst>`_
+-  `yosida95 の 2014 年まとめ <{filename}/2014/12/29/130000.rst>`_
+-  `yosida95 の2013年を振り返る <{filename}/2013/12/31/111207.rst>`_
+-  `2012 年にぼくがさせていただいたこと <{filename}/2013/01/01/005050.rst>`_
+-  `2011年が終わるね！！ <{filename}/2011/12/31/235927.rst>`_
+-  `2010 年 <{filename}/2010/12/31/115758.rst>`_

@@ -92,5 +92,4 @@ Consistent Hashing の実装
         return 1 if v1 > v2 else -1 if v1 < v2 else 0
 
 -  `移植元:node-consistent-hashing <https://github.com/dakatsuka/node-consistent-hashing>`__
--  `移植元のライセンス:MIT
-   LICENSE <https://github.com/dakatsuka/node-consistent-hashing/blob/master/LICENSE>`__
+-  `移植元のライセンス:MIT LICENSE <https://github.com/dakatsuka/node-consistent-hashing/blob/master/LICENSE>`__

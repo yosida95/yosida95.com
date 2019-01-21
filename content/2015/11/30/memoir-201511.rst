@@ -18,33 +18,33 @@
 やったこと
 ----------
 
-- 1日
+-  1日
 
-   - 出張先の宮崎県から東京に帰ってきた
+   -  出張先の宮崎県から東京に帰ってきた
 
-- 9日
+-  9日
 
-   - `Go Conference 2015 Winter <http://eventdots.jp/event/573121>`__ にセッションが採択された
+   -  `Go Conference 2015 Winter <http://eventdots.jp/event/573121>`__ にセッションが採択された
 
-- 15日
+-  15日
 
-   - 新しい本棚を購入した
+   -  新しい本棚を購入した
 
-- 23日
+-  23日
 
-   - 15日に購入した本棚が届いた
+   -  15日に購入した本棚が届いた
 
-- 24日
+-  24日
 
-   - `yosida95/golang-jenkins#19 <https://github.com/yosida95/golang-jenkins/pull/19>`__ をマージ
+   -  `yosida95/golang-jenkins#19 <https://github.com/yosida95/golang-jenkins/pull/19>`__ をマージ
 
-- 25日
+-  25日
 
-   - `@oidong1 <https://twitter.com/oidong1>`__ と天ぷらを食べた
+   -  `@oidong1 <https://twitter.com/oidong1>`__ と天ぷらを食べた
 
-- 29日
+-  29日
 
-   - `yosida95/golang-jenkins#20 <https://github.com/yosida95/golang-jenkins/pull/20>`__ をマージ
+   -  `yosida95/golang-jenkins#20 <https://github.com/yosida95/golang-jenkins/pull/20>`__ をマージ
 
 所感
 ----

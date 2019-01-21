@@ -122,5 +122,5 @@ hoge.com/hoge にアクセスで HOGEHOGE が表示されれば成功
 参考にしたウェブページ
 ----------------------
 
-- `フレームワークWeb.py - m-tagの日記 <http://d.hatena.ne.jp/m-tag/20091007/1254903609>`__
-- `Blog not found <http://r0nb.blogspot.com/2010/02/webpy-03xweb.html>`__
+-  `フレームワークWeb.py - m-tagの日記 <http://d.hatena.ne.jp/m-tag/20091007/1254903609>`__
+-  `Blog not found <http://r0nb.blogspot.com/2010/02/webpy-03xweb.html>`__

@@ -102,4 +102,4 @@ bitbucket などからリポジトリを clone する時などは、やはりプ
 【参考】
 --------
 
-- `Mercurialのproxy設定 - irykazeの日記 - Rubyist <http://rubyist.g.hatena.ne.jp/irykaze/20080708>`__
+-  `Mercurialのproxy設定 - irykazeの日記 - Rubyist <http://rubyist.g.hatena.ne.jp/irykaze/20080708>`__

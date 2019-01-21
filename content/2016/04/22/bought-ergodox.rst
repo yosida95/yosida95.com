@@ -20,10 +20,10 @@ ErgoDox というキーボードを買った
 
 このように、 ErgoDox を購入したユーザーが次々にブログエントリを公開しています。
 
-- `ergodoxを買いました | kammers <http://kammers.aa0.netvolante.jp/20150928201048/>`__
-- `漢(オトコ)のコンピュータ道: キーボードを新しくした話（ErgoDox） <http://nippondanji.blogspot.jp/2016/01/ergodox.html>`__
-- `ErgoDoxを購入して人生がバラ色になった - YAMAGUCHI::weblog <http://ymotongpoo.hatenablog.com/entry/2016/03/25/203734>`__
-- `ErgoDox EZが届いた &middot; I Will Survive <http://blog.restartr.com/2016/03/31/got-my-ergodox-ez/>`__
+-  `ergodoxを買いました | kammers <http://kammers.aa0.netvolante.jp/20150928201048/>`__
+-  `漢(オトコ)のコンピュータ道: キーボードを新しくした話（ErgoDox） <http://nippondanji.blogspot.jp/2016/01/ergodox.html>`__
+-  `ErgoDoxを購入して人生がバラ色になった - YAMAGUCHI::weblog <http://ymotongpoo.hatenablog.com/entry/2016/03/25/203734>`__
+-  `ErgoDox EZが届いた &middot; I Will Survive <http://blog.restartr.com/2016/03/31/got-my-ergodox-ez/>`__
 
 わたしも流行に便乗して ErgoDox を購入したので、今日はその話をします。
 
