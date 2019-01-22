@@ -434,7 +434,9 @@ blockquote {
   float: left;
   color: #333;
   text-align: justify;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .content .gallery {
