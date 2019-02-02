@@ -3,6 +3,20 @@
 {% from "base_helper.html" import archives with context %}
 {% from "index_helper.html" import summary with context %}
 
+{% block url -%}
+  {%- if dates|length > 0 -%}
+    {%- with date = dates[0].date -%}
+      {%- if period|length > 2 -%}
+        {{ DAY_ARCHIVE_URL.format(date=date) }}
+      {%- elif period|length > 1 -%}
+        {{ MONTH_ARCHIVE_URL.format(date=date) }}
+      {%- elif period|length > 0 -%}
+        {{ YEAR_ARCHIVE_URL.format(date=date) }}
+      {%- endif -%}
+    {%- endwith -%}
+  {%- endif -%}
+{%- endblock %}
+
 {% block title -%}
 {{ period | reverse | join(' ') }}
 {%- endblock %}
