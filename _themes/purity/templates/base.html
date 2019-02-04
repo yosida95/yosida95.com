@@ -10,7 +10,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ SITEURL }}/{% block url %}{% endblock %}">
     <meta property="og:description" content="{{ description|striptags|e }}">
-    <meta property="og:image" content="https://yosida95.com/_static/icon_200x200.png">
+    <meta property="og:image" content="{% block thumbnail %}{{ SITEURL }}/_static/icon_200x200.png{% endblock %}">
     <meta property="og:site_name" content="yosida95">
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
