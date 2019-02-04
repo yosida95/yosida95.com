@@ -61,10 +61,6 @@ strong {
   font-weight: bold;
 }
 
-input, textarea {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-}
-
 ::selection {
   background: #d16f4e;
   color: #fff;
@@ -196,7 +192,7 @@ img {
     font-style: normal;
 }
 
-.nav, h1, h2, h3, h4, .tagline h1, .over span, .bold, .flex-caption {
+.nav, .tagline h1, .over span, .bold, .flex-caption {
   font-family: 'LeagueGothicRegular', Helvetica, Arial;
   font-weight: normal;
 }
@@ -207,9 +203,8 @@ img {
 /*=================================*/
 
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing: 0.02em;
-  line-height: 1;
-  color: #000;
+  line-height: 1em;
+  color: #333;
 }
 
 .title a {
