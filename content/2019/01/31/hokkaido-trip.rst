@@ -389,4 +389,8 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 おわりに
 --------
 
-さーて次はどこに行こうかな。
+.. raw:: html
+
+   <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">5日間北海道旅行をした成果です <a href="https://t.co/uMywLB7Xns">pic.twitter.com/uMywLB7Xns</a></p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/1093795309405138944?ref_src=twsrc%5Etfw">February 8, 2019</a></blockquote>
+
+さーて、次はどこに行こうかな。
