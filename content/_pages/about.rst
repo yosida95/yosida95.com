@@ -22,8 +22,8 @@ Job
 PGP Key
    `CE40 05C0 5B79 15B0 78F2  F631 1DE6 BF20 9FE8 2114 <http://keys.gnupg.net/pks/lookup?op=get&search=0x1DE6BF209FE82114>`__
 
-EMail
-   |reCAPTCHAemail|
+Email
+   `Send a mail <kohei@yosida95.com>`_
 
 Twitter
    `@yosida95 <https://twitter.com/yosida95>`_
@@ -77,7 +77,3 @@ Texts
 -  `Gehirn News <http://news.gehirn.jp/author/yosida95/>`_
 -  `PyCon JP 2012参加レポート <http://gihyo.jp/news/report/01/pyconjp2012>`_
 -  `高校生による中学生・高校生のためのカンファレンス，CombConfを12月23日に開催します <http://gihyo.jp/news/info/2012/11/2701>`_
-
-.. |reCAPTCHAemail| raw:: html
-
-   <a href="http://www.google.com/recaptcha/mailhide/d?k=01jmAXz7i6EPDtZm9JtNihIA==&amp;c=Nq7fPBr7j7tnxHRew6yldqsDGS7lfCp0UadLg6fLARg=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01jmAXz7i6EPDtZm9JtNihIA\x3d\x3d\x26c\x3dNq7fPBr7j7tnxHRew6yldqsDGS7lfCp0UadLg6fLARg\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;">k...@yosida95.com</a>
