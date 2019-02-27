@@ -22,11 +22,11 @@
 きっかけ
 --------
 
-きっかけは何より初めてのひとり旅だった前回の名古屋旅行が楽しかったことで、名古屋から帰ってきてからすぐに次はどこへ行こうかと一生分くらい旅行系のキュレーションサイトを眺めていました。
+きっかけは何より初めてのひとり旅だった前回の名古屋旅行が楽しかったことで、名古屋から帰ってきてからすぐに、次はどこへ行こうかと一生分くらい旅行系のキュレーションサイトを眺めていました。
 
-そんな折に1月10日支給分の給与明細を眺めたところ、年末調整により手取り額の2割弱が還付されたこと、そして2月1日に失効する有給休暇が7日分あることに気が付きました。資金と時間が揃い旅行をするのにこれ以上のタイミングはないだろうということで1月中に旅行に出ようと決めました。
+そんな折に1月10日支給分の給与明細を眺めていたところ、年末調整により手取り額の2割弱が還付されたこと、そして2月1日に失効する有給休暇が7日分あることに気が付きました。資金と時間が揃い、旅行にこれ以上のタイミングはないだろうということで1月中に旅行に出ようと決めました。
 
-行き先として北海道を選んだのは、せっかく1週間の休みがあるなら広大の地域の方が旅行し甲斐があろうと思ったこと、東京で生まれ育ったわたしにとって真冬の北海道の未知が魅力的だったためです。
+行き先として北海道を選んだのは、せっかく1週間の休みがあるなら広大な地域の方が旅行し甲斐があろうと思ったこと、東京で生まれ育ったわたしにとって真冬の北海道の未知が魅力的だったためです。
 
 そして最大の決め手は JR 北海道が LCC 利用者に限り管内の広大なエリアが5日間、 **特急列車も含め乗り放題** になる `ひがし北海道フリーパス <https://www.jrhokkaido.co.jp/travel/freepass/>`_ を発売していたことです。
 
@@ -37,7 +37,7 @@
 
    -- `ひがし北海道フリーパス・きた北海道フリーパス｜JR北海道- Hokkaido Railway Company <https://www.jrhokkaido.co.jp/travel/freepass/>`_
 
-また、北海道での鉄道旅行を検討しているときにちょうど目にした次の記事はわたしの背中を押してくれました。
+また、北海道での鉄道旅行を検討しているときにちょうど目にした、次の記事がわたしの背中を押してくれました。
 
    .. image:: https://blogmedia.yosida95.com/2019/01/31/hokkaido-trip/ekimemo_hokkaido.jpg
       :width: 100%
@@ -64,7 +64,7 @@
 
 1日目は京成スカイライナーで成田空港第2ビル駅に行き、駅からバニラエアのターミナルがある第3ターミナルまで徒歩で移動しました。機内持ち込みするバックパックの計量を終え計量済み札を付けてもらい、保安検査までの待ち時間を利用してフードコートで朝ごはんを食べました。
 
-保安検査を終えると搭乗する飛行機まで通勤ラッシュのごとく混雑したバスに押し込まれて飛行機まで輸送されました。外は結構な勢いで雪が降っていて、除雪が必要になった影響で30分程度遅れたものの無事に離陸しました。
+保安検査を終えると通勤ラッシュのごとく混雑したバスに押し込まれ、搭乗する飛行機まで輸送されました。外は結構な勢いで雪が降っていて、除雪が必要になった影響で30分程度遅れたものの無事に離陸しました。
 
 この成田空港で見た雪が5日間の行程の中でもっとも激しい降雪でした。
 
@@ -96,17 +96,17 @@
 
 .. raw:: html
 
-   <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BtVxLKIhB6_/?utm_source=ig_embed&amp;utm_medium=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BtVxLKIhB6_/?utm_source=ig_embed&amp;utm_medium=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div><div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BtVxLKIhB6_/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Kohei YOSHIDA (@yosida95)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-02-01T13:02:43+00:00">Feb 1, 2019 at 5:02am PST</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+   <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">この旅行に持ってきた唯一の荷物であるバックパックをホテルに置いてきたため財布と飲み物が入ったコンビニ袋だけを持って競馬場に出入りしていて、見かけは完全に &quot;プロ&quot; になってしまった</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/1089071117203959813?ref_src=twsrc%5Etfw">January 26, 2019</a></blockquote>
 
 これまでの人生で初めて競馬場に足を踏み入れました。もちろん馬券の買い方も知りませんでしたが、せっかくの機会なのでものは試しと館内に掲示されている馬券の種類や購入方法を学んで、次のレースの三連複の馬券を購入してみました。
 
-.. raw:: html
-
-   <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">この旅行に持ってきた唯一の荷物であるバックパックをホテルに置いてきたため財布と飲み物が入ったコンビニ袋だけを持って競馬場に出入りしていて、見かけは完全に &quot;プロ&quot; になってしまった</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/1089071117203959813?ref_src=twsrc%5Etfw">January 26, 2019</a></blockquote>
-
-馬券を購入してレースの始まりを待っていたところ外国人観光客に話しかけられ馬券の購入方法を訊ねられるという出来事があり、いま覚えたばかりの馬券の購入方法を英語で説明したところ無事に購入することができていました。
+馬券を購入してレースの始まりを待っていたところ、外国人観光客に話しかけられ馬券の購入方法を訊ねられるという出来事があり、いま覚えたばかりの馬券の購入方法を英語で説明したところ無事に購入することができていました。
 
 なお、わたしが購入した馬券は一切かすりもせずに外れました。
+
+.. raw:: html
+
+   <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BtVxLKIhB6_/?utm_source=ig_embed&amp;utm_medium=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BtVxLKIhB6_/?utm_source=ig_embed&amp;utm_medium=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div><div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BtVxLKIhB6_/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Kohei YOSHIDA (@yosida95)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-02-01T13:02:43+00:00">Feb 1, 2019 at 5:02am PST</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
 
 .. image:: https://blogmedia.yosida95.com/2019/01/31/hokkaido-trip/banei-tokachi.gif
    :width: 100%
@@ -137,7 +137,7 @@
 阿寒湖温泉
 """"""""""
 
-この日滞在する阿寒湖温泉の周辺には鉄道が通っていないので滞在するホテルの送迎バスを利用することにしました。この送迎バスが十勝駅前にある `とかちプラザ <https://www.city.obihiro.hokkaido.jp/tokachiplaza/a600110tokachiplaza.html>`_ から出発するとのことなので、緑ヶ丘公園の散策を終えたわたしは徒歩で帯広駅まで戻り、バスの出発時刻までの時間を利用してとかちプラザ内にあるレストランで昼食にスパゲティを食べました。
+この日滞在する阿寒湖温泉の周辺には鉄道が通っていないので、滞在するホテルの送迎バスを利用することにしました。この送迎バスが十勝駅前にある `とかちプラザ <https://www.city.obihiro.hokkaido.jp/tokachiplaza/a600110tokachiplaza.html>`_ から出発するとのことなので、緑ヶ丘公園の散策を終えたわたしは徒歩で帯広駅まで戻り、バスの出発時刻までの時間を利用して、とかちプラザ内にあるレストランで昼食にスパゲティを食べました。
 
 帯広駅前を出発したバスは4時間弱で阿寒湖温泉に着きました。チェックインを済ませしばらく休憩したところで夕食の時間となり、食堂で夕食を取りました。夕食は山菜の炊き込みご飯やそば、豚肉の白湯鍋、茶碗蒸し、わかさぎの天ぷら、お造り、ビーフシチューなど品目が多く、どれも外れはありませんでした。
 
@@ -164,13 +164,15 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 博物館網走監獄
 """"""""""""""
 
-ホテルを出発して送迎バスに乗り3時間ほどで網走駅に到着しました。網走駅で荷物をコインロッカーに預け、財布と飲み物、そして前日に帯広で購入した酔い止めの薬をダウンジャケットのポケットに突っ込んだ他は手ぶらで駅前で拾ったタクシーに乗り、 `博物館網走監獄 <https://www.kangoku.jp/>`_ に行きました。
+ホテルを出発して送迎バスに乗り3時間ほどで網走駅に到着しました。
 
 .. raw:: html
 
    <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">網走駅で見かけた穏やかじゃないポスト <a href="https://t.co/k8QewILWrA">https://t.co/k8QewILWrA</a> <a href="https://t.co/JYIySTzAWe">pic.twitter.com/JYIySTzAWe</a></p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/1091333255964454916?ref_src=twsrc%5Etfw">February 1, 2019</a></blockquote>
 
-博物館網走監獄は網走刑務所を改築するにあたって対象となった建物を保存するために移築し展示した博物館で、北海道開拓の基礎となった `囚人による道路建設 <https://ja.wikipedia.org/wiki/%E5%9B%9A%E4%BA%BA%E9%81%93%E8%B7%AF_(%E6%97%A5%E6%9C%AC%E5%8F%B2)>`_ の様子や、当時の囚人の暮らしなどについて学ぶことができます。
+網走駅で荷物をコインロッカーに預け、財布と飲み物、そして前日に帯広で購入した酔い止めの薬をダウンジャケットのポケットに突っ込んだ他は手ぶらで駅前で拾ったタクシーに乗り、 `博物館網走監獄 <https://www.kangoku.jp/>`_ に行きました。
+
+博物館網走監獄は、網走刑務所を改築するにあたって対象となった建物を保存のために移築し展示した博物館で、北海道開拓の基礎となった `囚人による道路建設 <https://ja.wikipedia.org/wiki/%E5%9B%9A%E4%BA%BA%E9%81%93%E8%B7%AF_(%E6%97%A5%E6%9C%AC%E5%8F%B2)>`_ の様子や、当時の囚人の暮らしなどについて学ぶことができます。
 
 .. raw:: html
 
@@ -179,9 +181,9 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 先回りするタクシー
 """"""""""""""""""""""
 
-博物館網走監獄の見学を終えタクシーを呼んでもらうよう網走監獄の受付の方にお願いしました。受付の方がタクシー会社に電話して配車の手配をしたところ、「すでにタクシーが到着しているらしいのでそのまま乗ってください」と言われました。
+博物館網走監獄の見学を終え、タクシーを呼んでもらうよう網走監獄の受付の方にお願いしました。受付の方がタクシー会社に電話して配車の手配をしたところ、「すでにタクシーが到着しているらしいのでそのまま乗ってください」と言われました。
 
-そんなこともあるのかと思いつつ指定された網走監獄の駐車場に到着しているタクシーに乗り込んだところ、なんと往路で網走駅から送ってくれた運転手さんで、「道中にお聞きした予定では15時発の流氷観光砕氷船おーろらに乗船されるとのことでしたので、そろそろお迎えが必要かと思い先回りして待機していました。」とのことでした。
+そんなこともあるのかと思いつつ指定された網走監獄の駐車場に到着しているタクシーに乗り込んだところ、なんと往路で網走駅から送ってくれた運転手さんのタクシーで、「道中にお聞きした予定からそろそろお迎えが必要かと思い先回りして待機していました。」とのことでした。
 
 名古屋旅行では都内とは違って流しのタクシーは存在しないということを学び、今回はそれを踏まえタクシーは電話で配車をお願いするという方針でやっていましたが、まさか往路のタクシーが先回りしてわたしを待っているという経験をするとは思ってもみませんでした。なお、わたしが乗車することを予見して駐車場で待っていたタクシーでしたが、迎車料金はきっちり取られました。
 
@@ -192,11 +194,11 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 流氷観光砕氷船おーろら
 """"""""""""""""""""""
 
-先回りして待っていてくれたタクシーに乗って、流氷観測船おーろらの乗船場である道の駅流氷街道網走まで送ってもらいました。道中も北海道の地域による積雪の差や阿寒湖温泉のホテルにまつわる話、タクシーで阿寒湖温泉街を走っていたら家族旅行中のご息女の旦那さんに出くわした話などをして楽しませてくれました。
+先回りして待っていてくれたタクシーに乗って、流氷観光砕氷船おーろらの乗船場である `道の駅流氷街道網走 <http://www.hokkaido-michinoeki.jp/michinoeki/2986/>`_ まで送ってもらいました。道中も北海道における積雪の地域差や、阿寒湖温泉のホテルにまつわる話、タクシーで阿寒湖温泉街を走っていたら海外で暮らすご息女夫婦が家族旅行で来日しているところに出くわした話などで楽しませてくれました。
 
-`流氷観測砕氷船おーろら <https://www.ms-aurora.com/abashiri/>`_ はその名の通り網走の沖合に流れ着いた流氷を船上から観測するアクティビティで、氷をかき分け進んでいきます。インターネットから事前に予約を取れますが、わたしが旅行を計画し始めた時点ではこの日しか予約が取れなかったため、この乗船日に合わせて旅行の出発日を決めました。
+`流氷観光砕氷船おーろら <https://www.ms-aurora.com/abashiri/>`_ はその名の通り網走の沖合に流れ着いた流氷を船上から観測するアクティビティで、氷をかき分け進んでいきます。インターネットから事前に予約を取れますが、わたしが旅行を計画し始めた時点ではこの日しか予約が取れなかったため、この乗船日に合わせて旅行の出発日を決めました。
 
-日によっては流氷が漂着しておらずただのクルーズとなってしまう回もあるようですが、わたしが乗船した日は写真の通り海面を覆い尽くす流氷を観測することができました。
+時季によっては流氷が漂着しておらずただのクルーズとなってしまう回もあるようですが、わたしが乗船した日は写真や動画の通り海面を覆い尽くす流氷を観測することができました。
 
 .. raw:: html
 
@@ -204,7 +206,7 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 
 船内には座席と大きな窓があり、暖房が効いた船内から風に当たらずに流氷を眺めることもできますが、水面に近い1階のデッキや2階のデッキ及び屋上の展望デッキに出て観測することもでき、わたしは航行中のほとんどの時間をデッキで過ごしました。
 
-1階や2階のデッキから船首付近を眺めることも楽しいですが、船尾から船によってそこだけ流氷がどけられた道筋を眺めることも楽しかったです。
+1階や2階のデッキから船首付近を眺めることも楽しいですが、船尾から船によってどけられた流氷が作る道筋を眺めることも楽しかったです。
 
 
 4日目
@@ -215,13 +217,13 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 
 流氷観測を終えて網走駅に戻り、その日のうちに網走駅から特急でおよそ4時間かけて旭川駅に向かいました。旭川駅を出るとちらちらと雪が舞っていて、5日間の北海道旅行で体験した唯一の降雪となりました。
 
-4日目の朝を旭川で迎え、旭川市博物館に向かう道すがら旭川駅周辺を散策しました。旭川はこの北海道旅行の中で最も雪深い地域でした。車道に氷の層ができていてその上を車が行き交っている他、歩道は駅前を除いて除雪も融雪もされておらず新雪も残っているためスニーカーで歩くことがとても難しく、人とすれ違う目的などで新雪に足を踏み入れるとスニーカーが完全に埋まってしまうため、靴にどんどん水が染みてきました。
+4日目の朝を旭川で迎え、旭川市博物館に向かう道すがら旭川駅周辺を散策しました。旭川はこの北海道旅行の中で最も雪深い地域でした。車道に氷の層ができていてその上を車が行き交っている他、歩道は駅前を除いて除雪も融雪もされておらず、新雪も残っているためスニーカーで歩くことがとても難しく、人とすれ違う目的などで新雪に足を踏み入れるとスニーカーが完全に埋まってしまうため、靴にどんどん水が染みてきました。
+
+ただ、このような環境からもっとも「北海道に来たぞ」感を得ることができる楽しい街でした。
 
 .. raw:: html
 
    <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">旭川市は本当に積雪がすごくて、駅前を除いては融雪はおろか除雪もされていないところがあって歩道に 20cm くらい積もっていたり 車道に踏み固められた 5cm くらいの氷の層ができていたりするんだけれど、バスもタクシーも乗用車も当たり前のようにバンバン飛ばしていてそれでいて事故らないからすごい</p>&mdash; Kohei YOSHIDA (@yosida95) <a href="https://twitter.com/yosida95/status/1090088998192656384?ref_src=twsrc%5Etfw">January 29, 2019</a></blockquote>
-
-ただこのような環境からもっとも「北海道に来たぞ」感を得ることができる楽しい街でした。
 
 .. raw:: html
 
@@ -230,7 +232,7 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 旭川市博物館
 """"""""""""
 
-`旭山市博物館 <http://www.city.asahikawa.hokkaido.jp/hakubutukan/>`_ はアイヌの歴史や文化を中心に、北海道開拓の歴史や旭川市周辺の動植物や地質など自然に関する展示もある総合博物館です。3時間もあれば十分にじっくり回れる規模で、平日の午前中ということもあって十分に堪能することができました。
+`旭川市博物館 <http://www.city.asahikawa.hokkaido.jp/hakubutukan/>`_ はアイヌの歴史や文化を中心に、北海道開拓の歴史や旭川市周辺の動植物や地質など自然に関する展示もある総合博物館です。3時間もあれば十分にじっくり回れる規模で、平日の午前中ということもあって十分に堪能することができました。
 
 特に全体の半分を占めるアイヌに関する展示は見事で、アイヌ式の住宅を再現した展示の中で聴くアイヌ語による伝承物語の読み聞かせが印象に残っています。
 
@@ -241,20 +243,20 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 旭山動物園
 """"""""""
 
-言わずと知れた知名度を誇る `旭山動物園 <http://www.city.asahikawa.hokkaido.jp/asahiyamazoo/>`_ にも行きました。冬季は一部の動物は屋内で飼育され展示されていないのですが、寒い地方に生息する動物や水棲動物、温度管理された室内で展示される爬虫類は見ることはでき、特に雪中で過ごす動物は旭山動物園が得意とする行動展示とも相まってより楽しむことができたような気がします。
+言わずと知れた知名度を誇る `旭山動物園 <http://www.city.asahikawa.hokkaido.jp/asahiyamazoo/>`_ にも行きました。冬季は一部の動物は屋内で飼育され展示されていないのですが、寒い地方に生息する動物や水棲動物、温度管理された室内で展示される爬虫類は見ることができ、特に雪中で過ごす動物は旭山動物園が得意とする行動展示とも相まってより楽しむことができたような気がします。
+
+.. raw:: html
+
+   <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BtVz3t-BpT0/?utm_source=ig_embed&amp;utm_medium=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BtVz3t-BpT0/?utm_source=ig_embed&amp;utm_medium=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div><div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BtVz3t-BpT0/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Kohei YOSHIDA (@yosida95)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-02-01T13:26:17+00:00">Feb 1, 2019 at 5:26am PST</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
 
 普段動物園で見かけない動物としてはカラスが展示されています。北海道札幌市出身の作家である `太田紫織 <https://ja.wikipedia.org/wiki/%E5%A4%AA%E7%94%B0%E7%B4%AB%E7%B9%94>`_ さんによる `「櫻子さんの足下には死体が埋まっている」シリーズ <https://ja.wikipedia.org/wiki/%E6%AB%BB%E5%AD%90%E3%81%95%E3%82%93%E3%81%AE%E8%B6%B3%E4%B8%8B%E3%81%AB%E3%81%AF%E6%AD%BB%E4%BD%93%E3%81%8C%E5%9F%8B%E3%81%BE%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B>`_ では主人公の館脇少年がハシブトガラスとハシボソガラスについて言及するシーンが（たしか何度か）あり、彼が言っていたのはこの事かという発見がありました。
 
-また、展示されている動物のほか、飼育員による動物の生態などを解説した掲示物も面白く、「今動物園でシマフクロウを飼育する意義とは」という掲示は特に面白かったです。
+また、展示されている動物のほか、飼育員による動物の生態などを解説した掲示物も面白く、「今、動物園でシマフクロウを飼育する意義とは」という掲示は特に面白かったです。
 
 .. image:: https://blogmedia.yosida95.com/2019/01/31/hokkaido-trip/owl.jpg
    :width: 100%
    :alt: 旭山動物園 「今動物園でシマフクロウを飼育する意義とは」
    :target: https://blogmedia.yosida95.com/2019/01/31/hokkaido-trip/owl.jpg
-
-.. raw:: html
-
-   <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BtVz3t-BpT0/?utm_source=ig_embed&amp;utm_medium=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BtVz3t-BpT0/?utm_source=ig_embed&amp;utm_medium=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div><div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BtVz3t-BpT0/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Kohei YOSHIDA (@yosida95)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-02-01T13:26:17+00:00">Feb 1, 2019 at 5:26am PST</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
 
 .. image:: https://blogmedia.yosida95.com/2019/01/31/hokkaido-trip/seal.gif
    :width: 100%
@@ -264,11 +266,11 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 平和通買物公園
 """"""""""""""
 
-旭山動物園から旭川駅に戻ってきてから乗りたい特急の発車まで90分ほどあったので、まずは旭川駅に直結しているイオンモール旭川駅前で時間を潰すことにしました。
+旭山動物園から旭川駅に戻ってきたものの乗りたい特急の発車まで90分ほどあったので、まずは旭川駅に直結している `イオンモール旭川駅前 <https://asahikawaekimae-aeonmall.com/>`_ を巡って発車までの時間を過ごすことにしました。
 
-イオンモール内にある未来屋書店に入ったところ、先述の太田紫織による「昨日の僕が僕を殺す」を見つけたので購入してみました。これに加えて文庫本一冊では旅行中に読み切るかもと思ったので、先日映画館で観た「ペンギン・ハイウェイ」の原作小説である森見登美彦さんの同名小説も購入しました。
+イオンモール内にある未来屋書店に入ったところ、先述の太田紫織さんによる `「昨日の僕が僕を殺す」 <https://www.amazon.co.jp/dp/4041071003/>`_ を見つけたので購入してみました。これに加えて文庫本一冊では旅行中に読み切ってしまうかもと思ったので、先日映画館で観た `「ペンギン・ハイウェイ」 <http://penguin-highway.com/>`_ の原作小説である森見登美彦さんの `同名小説 <https://www.amazon.co.jp/dp/4041005612/>`_ も購入しました。
 
-イオンモールを巡り終わってもまだ時間があったので、平和通買物公園もふらっと通ってみました。きょろきょろしながら歩いていたところ外国人観光客に英語でイオンモールまでの道のりを訊かれ、その道を真っ直ぐ行くだけだったものの「 Google Maps 上で目的地を指さして」と頼まれ画面を覗き込んだらアラビア文字で面食らうという出来事もありました。
+イオンモールを巡り終わってもまだ時間があったので、平和通買物公園もふらっと通ってみました。きょろきょろしながら歩いていたところ外国人観光客に英語でイオンモールまでの道のりを訊かれ、その道を真っ直ぐ行くだけだったものの、「 Google Maps 上で目的地を指さして」と頼まれて画面を覗き込んだらアラビア文字で面食らうという出来事もありました。
 
 .. raw:: html
 
@@ -330,7 +332,7 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 
 新千歳空港から羽田空港に戻る飛行機の中では旭川で購入した「ペンギン・ハイウェイ」を読んで過ごしました。復路は ANA とのコードシェア便である AIRDO 便で、機内でドリンクサービスを受けられた他、 `AIRDO 就航20周年を記念して札幌市立大学のデザイン学部生がデザインしたステッカー <http://www.scu.ac.jp/news/pressrelease/40984/>`_ が希望者に配布されていたので、アテンダントさんにお願いしてステッカーをいただきました。
 
-普段は在宅勤務をしているなかせっかく外に出たのだからということで、羽田空港に着いたその足でオフィスにお土産を渡しに行きました。ちょうどオフィスに居た `@isidai <https://twitter.com/isidai>`_ さんからの第一声「すごい、完全防備ですね」や、 `@nasu_ch <https://twitter.com/nasu_ch>`_ ちゃんから「すごく暖かそうですね」という声を掛けられました。
+普段は在宅勤務をしている中せっかく外に出たのだからということで、羽田空港に着いたその足でオフィスにお土産を渡しに行きました。ちょうどオフィスに居た `@isidai <https://twitter.com/isidai>`_ さんからの第一声「すごい、完全防備ですね」や、 `@nasu_ch <https://twitter.com/nasu_ch>`_ ちゃんから「すごく暖かそうですね」という声を掛けられました。
 
 .. image:: https://blogmedia.yosida95.com/2019/01/31/hokkaido-trip/gift.jpg
    :width: 100%
@@ -351,7 +353,7 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 -  `ヒートテックウルトラウォームクルーネックT <https://www.uniqlo.com/jp/store/goods/408120/>`_
 -  `ヒートテックウルトラウォームタイツ <https://www.uniqlo.com/jp/store/goods/400231/>`_
 
-防寒はこれで十分で -22 |deg|\ C の阿寒湖や海上で風もある流氷観光砕氷船おーろら乗船中も動いている限りは寒くありませんでしたし、 -1 |deg| \C 程度だった小樽ではむしろ暑いくらいでした。初日の帯広で念のためにカイロを購入しましたが結局使わずに東京に持って帰ってきました。
+防寒はこれで十分で -22 |deg|\ C の阿寒湖や海上で風もある流氷観光砕氷船おーろら乗船中も動いている限りは寒くありませんでしたし、 -1 |deg|\ C 程度だった小樽ではむしろ暑いくらいでした。初日の帯広で念のためにカイロを購入しましたが結局使わずに東京に持って帰ってきました。
 
 また、着替えはコインランドリーがあるホテルを利用することで、バックパックに入れた2日分と初日に着用していた分の計3日分で十分間に合いました。
 
@@ -364,16 +366,16 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 
 心配な点として今回は飛行機を利用したので持ち込み制限のことがありましたが、国内線ならスプレーや刃物でない限り割となんでも持ち込めるということが判りました。
 
-カバンはキャリーケースかバックパックかで迷いましたが、今回の旅行は雪中を移動するためにホイールが役に立たなくなるだろうことが予想できたこと、移動が大きな割合を占めることから両手が塞がらないようバックパックを選択しました。また、普段なら大きな荷物を持ち歩かなくて済むように財布などの携帯品はカバンを分けますが、今回は毎日滞在する場所が変わることからすべての荷物をバックパックに詰めました。
+カバンはキャリーケースかバックパックかで迷いましたが、今回の旅行は雪中を移動するためにホイールが役に立たなくなるだろうことが予想できたこと、移動が大きな割合を占めることから両手を塞がないようにしたかったことからバックパックを選択しました。また、普段なら大きな荷物を持ち歩かなくて済むように財布などの携帯品はカバンを分けますが、今回は毎日滞在する場所が変わることからすべての荷物をバックパックに詰めました。
 
 しかしこれは杞憂で、駅にはコインロッカーという大変便利な物が存在するため、コインロッカーに預けてしまうことを考えれば小さなカバンもあったほうが便利でした。今回はダウンジャケットのポケットに財布と飲み物、スマートフォンだけを入れて観光することになりました。また、コインロッカーを利用するために100円玉を大量に用意するとよいことも判りました。
 
 飛行機
 ~~~~~~
 
-往路はひがし北海道フリーパスの購入条件からピーチかバニラエアと決まっていたので、あとはわたしが起きられそうな時間帯を考慮に入れて予約しました。バニラエアは羽田空港ではなく成田空港をハブ空港としているので空港を間違えないことが最大の課題でしたが、日暮里に向かう山手線の中で指定席を購入した京成スカイライナーが便利でした。
+往路はひがし北海道フリーパスの購入条件からピーチかバニラエアと決まっていたので、あとはわたしが起きられそうな時間帯を考慮に入れて予約しました。バニラエアは羽田空港ではなく成田空港をハブ空港としているので空港を間違えないことが最大の課題でしたが、日暮里に向かう山手線の中で指定席券を購入した京成スカイライナーが JR からの専用改札口がある上に空港ターミナルにも直結していて便利でした。
 
-復路は往路の初めての LCC にがっかり或いはうんざりしている可能性を考慮して AIRDO 便 (ANA とのコードシェア便) を予約しました。
+復路は往路の初めての LCC にがっかり、或いはうんざりしている可能性を考慮して AIRDO 便を予約しました。
 
 .. raw:: html
 
@@ -382,7 +384,7 @@ Google によるとこの時間の気温は -22 |deg|\ C でこの旅行での�
 ホテル
 ~~~~~~
 
-ホテルは4日分すべて予約しましたが振り返ってみればこれは失敗で、今回の旅行のように毎日 200-300km を移動するような旅行では道中に何があるか分からず、またせっかく乗り降り自由のフリーパスで旅行をしているため、より行き当たりばったり的に気になったところを巡りつつ、その日にたどり着いた地に宿泊するくらいの感じのほうが気忙しくなくてよかったと思いました。
+ホテルは4日分すべて予約しましたが振り返ってみればこれは失敗で、今回の旅行のように毎日 200-300km を移動するような旅行では道中に何があるか分からず、またせっかく乗り降り自由のフリーパスで旅行をしているので、より行き当たりばったりに気になったところを巡りつつ、その日にたどり着いた地で宿泊するくらいの感じのほうが気忙しくなくてよかったかなと思いました。
 
 特に冬の北海道は大雪のために頻繁に電車が遅延したり運休になったり、そもそも日に数本しか目的地にたどり着ける電車が運行されていなかったりするため、幸い今回の旅行では予定通り行動することができましたが、少しのミスで連鎖的に後の行程に響く恐れもありました。
 
