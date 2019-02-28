@@ -103,9 +103,9 @@ Blog の項ではそもそもブログとはなんぞやという所から始ま
 
 ※今日はエイプリールフールです。
 
-.. |Web 2.0 を極める| image:: http://cdn-ak.f.st-hatena.com/images/fotolife/y/yosida95/20120329/20120329163753.jpg
+.. |Web 2.0 を極める| image:: https://blogmedia.yosida95.com/2012/04/01/222721/package.jpg
    :width: 100%
-.. |タイトル画面| image:: http://cdn-ak.f.st-hatena.com/images/fotolife/y/yosida95/20120401/20120401212917.png
+.. |タイトル画面| image:: https://blogmedia.yosida95.com/2012/04/01/222721/title.png
    :width: 100%
 .. |お姉さん 2.0| image:: https://blogmedia.yosida95.com/2012/04/01/222721/guide.png
    :width: 100%
