@@ -1,0 +1,2 @@
+pelican >= 4.0.1, < 5.0
+pelican-alias >= 1.1, < 2.0
