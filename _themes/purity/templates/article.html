@@ -10,7 +10,7 @@
   {% if 'description' in article.metadata -%}
     {{ article.description }}
   {%- else -%}
-    {{ article.content| striptags| truncate(200) }}
+    {{ article.content| striptags| truncate(140) }}
   {%- endif -%}
 {%- endblock %}
 
