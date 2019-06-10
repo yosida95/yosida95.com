@@ -2,6 +2,7 @@
 
 AUTHOR = 'yosida95'
 SITENAME = 'yosida95'
+SITEDESCRIPTION = 'ここで述べる内容は私個人の見解に基づくものであり、私の雇用者や私が所属する団体とは一切の関係がありません。'
 SITEURL = ''
 RELATIVE_URLS = True
 

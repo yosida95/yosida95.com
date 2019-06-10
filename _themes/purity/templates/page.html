@@ -3,14 +3,22 @@
 
 {% block title %}{{ page.title }}{% endblock %}
 
+{% block description -%}
+  {% if 'description' in page.metadata -%}
+    {{ page.description }}
+  {%- else -%}
+    {{ super() }}
+  {%- endif -%}
+{%- endblock %}
+
 {% block url %}{{ page.url }}{% endblock %}
 
 {% block thumbnail -%}
-{%- if 'thumbnail' in page.metadata -%}
-{{ page.thumbnail }}
-{%- else -%}
-{{ super() }}
-{%- endif -%}
+  {%- if 'thumbnail' in page.metadata -%}
+    {{ page.thumbnail }}
+  {%- else -%}
+    {{ super() }}
+  {%- endif -%}
 {%- endblock %}
 
 {% block body %}

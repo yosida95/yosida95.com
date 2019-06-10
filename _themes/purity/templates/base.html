@@ -4,12 +4,12 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ description|striptags|e }}">
+    <meta name="description" content="{% block description %}{{ SITEDESCRIPTION }}{% endblock %}">
     <!-- The Open Graph -->
     <meta property="og:title" content="{{ self.title() }}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ SITEURL }}/{% block url %}{% endblock %}">
-    <meta property="og:description" content="{{ description|striptags|e }}">
+    <meta property="og:description" content="{{ self.description() }}">
     <meta property="og:image" content="{% block thumbnail %}{{ SITEURL }}/_static/icon_200x200.png{% endblock %}">
     <meta property="og:site_name" content="yosida95">
     <!-- Twitter Cards -->

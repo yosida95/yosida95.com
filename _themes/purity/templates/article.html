@@ -4,14 +4,22 @@
 
 {% block title %}{{ article.title }}{% endblock %}
 
+{% block description -%}
+  {% if 'description' in article.metadata -%}
+    {{ article.description }}
+  {%- else -%}
+    {{ article.content| striptags| truncate(200) }}
+  {%- endif -%}
+{%- endblock %}
+
 {% block url %}{{ article.url }}{% endblock %}
 
 {% block thumbnail -%}
-{%- if 'thumbnail' in article.metadata -%}
-{{ article.thumbnail }}
-{%- else -%}
-{{ super() }}
-{%- endif -%}
+  {%- if 'thumbnail' in article.metadata -%}
+    {{ article.thumbnail }}
+  {%- else -%}
+    {{ super() }}
+  {%- endif -%}
 {%- endblock %}
 
 {% block archives %}{{ archives(expand=article) }}{% endblock %}
