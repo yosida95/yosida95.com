@@ -2,7 +2,9 @@
 
 {% from "base_helper.html" import archives, taglist with context %}
 
-{% block title %}{{ article.title }}{% endblock %}
+{% block title -%}
+{{ article.title }} {{ TITLESEPARATOR }} {{ super() }}
+{%- endblock %}
 
 {% block description -%}
   {% if 'description' in article.metadata -%}
@@ -36,5 +38,4 @@
 
 {{ article.content }}
 {%- endblock %}
-
 {# vim:set filetype=htmljinja: #}

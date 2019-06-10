@@ -2,7 +2,7 @@
 
 {% block url %}{{ CATEGORIES_URL }}{% endblock %}
 
-{% block title %}Categories{% endblock %}
+{% block title %}Categories {{ TITLESEPARATOR }} {{ super() }}{% endblock %}
 
 {% block body %}
             <h1>Categories</h1>
@@ -12,3 +12,4 @@
               {%- endfor %}
             </ul>
 {%- endblock %}
+{#- vim:set filetype=htmljinja: -#}

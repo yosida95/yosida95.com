@@ -18,7 +18,7 @@
 {%- endblock %}
 
 {% block title -%}
-{{ period | reverse | join(' ') }}
+{{ period | reverse | join(' ') }} {{ TITLESEPARATOR }} {{ super() }}
 {%- endblock %}
 
 {% block archives %}{{ archives(expand=dates[0]) }}{% endblock %}
@@ -28,5 +28,4 @@
             {{ summary(article=article) }}
 {%- endfor %}
 {%- endblock %}
-
 {# vim:set filetype=htmljinja: #}

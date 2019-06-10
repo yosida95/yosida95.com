@@ -1,7 +1,8 @@
-{#- vim:set filetype=htmljinja shiftwidth=2: -#}
 {% extends "base.html" %}
 
-{% block title %}{{ page.title }}{% endblock %}
+{% block title -%}
+{{ page.title }} {{ TITLESEPARATOR }} {{ super() }}
+{%- endblock %}
 
 {% block description -%}
   {% if 'description' in page.metadata -%}
@@ -26,3 +27,4 @@
 
 {{ page.content }}
 {%- endblock %}
+{# vim:set filetype=htmljinja: #}

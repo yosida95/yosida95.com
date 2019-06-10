@@ -5,7 +5,7 @@
 
 {% block url %}{{ INDEX_URL }}{% endblock %}
 
-{% block title %}Archives{% endblock %}
+{% block title %}Archives {{ TITLESEPARATOR }} {{ super() }}{% endblock %}
 
 {% block body %}
 {%- for article in dates_page.object_list %}
@@ -23,5 +23,4 @@
             </div>
 {%- endif %}
 {%- endblock %}
-
 {# vim:set filetype=htmljinja: #}
