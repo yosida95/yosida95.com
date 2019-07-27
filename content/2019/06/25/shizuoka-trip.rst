@@ -3,7 +3,7 @@
 
 :authors: yosida95
 :category: Diary
-:thumbnail: https://blogmedia.yosida95.com/2019/06/09/trip-around-boso-peninsula/ekimemo01.png
+:thumbnail: https://blogmedia.yosida95.com/2019/06/25/shizuoka-trip/tumbnail.jpg
 :tags: Travel
 
 はじめに
