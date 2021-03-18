@@ -1,4 +1,5 @@
 *://*.debugcn.com/*
 *://*.it-swarm.jp.net/*
 *://isolution.pro/*
+*://living-sun.com/*
 *://tex2e.github.io/rfc-translater/*
