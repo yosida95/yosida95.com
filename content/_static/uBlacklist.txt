@@ -1,5 +1,10 @@
+*://*.buildwebhost.com/*
 *://*.debugcn.com/*
+*://*.ecnf2016.org/*
+*://*.gitmemory.com/*
 *://*.it-swarm.jp.net/*
 *://isolution.pro/*
+*://itectec.com/*
 *://living-sun.com/*
 *://tex2e.github.io/rfc-translater/*
+*://xn--go-hh0g6u.com/*
