@@ -3,6 +3,7 @@
 *://*.ecnf2016.org/*
 *://*.gitmemory.com/*
 *://*.it-swarm.jp.net/*
+*://*.javaer101.com/*
 *://isolution.pro/*
 *://itectec.com/*
 *://living-sun.com/*
