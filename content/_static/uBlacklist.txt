@@ -1,9 +1,12 @@
 *://*.buildwebhost.com/*
+*://*.codetd.com/*
 *://*.debugcn.com/*
 *://*.ecnf2016.org/*
 *://*.gitmemory.com/*
+*://*.it-mure.jp.net/*
 *://*.it-swarm.jp.net/*
 *://*.javaer101.com/*
+*://goto-linux.com/*
 *://isolution.pro/*
 *://itectec.com/*
 *://living-sun.com/*
