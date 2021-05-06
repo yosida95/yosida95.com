@@ -5,6 +5,7 @@
 *://*.gitmemory.com/*
 *://*.it-mure.jp.net/*
 *://*.it-swarm.jp.net/*
+*://*.it-swarm-ja.com/*
 *://*.javaer101.com/*
 *://code-kitchen.dev/*
 *://creatorquest.jp/reference/*
@@ -13,6 +14,7 @@
 *://html-coding.co.jp/annex/*
 *://isolution.pro/*
 *://itectec.com/*
+*://knews.vip/*
 *://living-sun.com/*
 *://style.potepan.com/*
 *://taghtml.com/*
