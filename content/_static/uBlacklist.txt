@@ -16,10 +16,13 @@
 *://itectec.com/*
 *://knews.vip/*
 *://living-sun.com/*
+*://mogile.web.fc2.com/*
+*://srgia.com/docs/*
 *://style.potepan.com/*
 *://taghtml.com/*
 *://techacademy.jp/magazine/*
 *://tex2e.github.io/rfc-translater/*
 *://webliker.info/*
 *://web-manabu.com/*
+*://www.postfix-jp.info/trans-*/*
 *://xn--go-hh0g6u.com/*
