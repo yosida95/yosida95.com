@@ -1,5 +1,4 @@
 *://*.codetd.com/*
-*://*.gitmemory.com/*
 *://code-kitchen.dev/*
 *://creatorquest.jp/reference/*
 *://ferret-plus.com/*
@@ -9,11 +8,19 @@
 *://taghtml.com/*
 *://webliker.info/*
 *://web-manabu.com/*
+*://linuxtut.com/*
+
+##############################
+# GitHub
+##############################
+*://bleepcoder.com/*
+*://*.gitmemory.com/*
 
 ##############################
 # Programming "Scool"
 ##############################
 *://techacademy.jp/magazine/*
+*://www.sejuku.net/blog/*
 
 ##############################
 # Pirates
@@ -22,6 +29,7 @@
 
 # Stack Exchange
 *://base64.work/*
+*://ichi.pro/*
 *://isolution.pro/*
 *://itectec.com/*
 *://knews.vip/*
@@ -37,6 +45,7 @@
 *://*.it-swarm-tr.com/*
 *://*.it-swarm.jp.net/*
 *://*.javaer101.com/*
+*://*.kevinmcgowan.org/*
 *://*.upcyclingfestival.org/*
 *://*.uwenku.com/*
 
