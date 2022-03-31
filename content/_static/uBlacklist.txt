@@ -4,6 +4,7 @@
 *://ferret-plus.com/*
 *://html-coding.co.jp/annex/*
 *://mogile.web.fc2.com/*
+*://python.readthedocs.io/*
 *://style.potepan.com/*
 *://taghtml.com/*
 *://webliker.info/*
@@ -25,7 +26,11 @@
 ##############################
 # Pirates
 ##############################
+*://ask.csdn.net/*
+*://docs.daemon.ac/*
+*://getdoc.wiki/*
 *://goto-linux.com/*
+*://*.finddevguides.com/*
 
 # Stack Exchange
 *://base64.work/*
@@ -52,8 +57,10 @@
 ##############################
 # (Unofficial) Translations
 ##############################
+*://runebook.dev/*
 *://srgia.com/docs/*
 *://tex2e.github.io/rfc-translater/*
+*://triple-underscore.github.io/rfc-others/*
 *://www.postfix-jp.info/trans-*/*
 *://xn--go-hh0g6u.com/*
 *://ysatoautonomous.github.io/jm-draft/*
