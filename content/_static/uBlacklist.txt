@@ -57,6 +57,7 @@
 ##############################
 # (Unofficial) Translations
 ##############################
+*://requests-docs-ja.readthedocs.io/*
 *://runebook.dev/*
 *://srgia.com/docs/*
 *://tex2e.github.io/rfc-translater/*
