@@ -32,6 +32,10 @@
 *://goto-linux.com/*
 *://*.finddevguides.com/*
 
+# GitHub
+*://bytemeta.vip/*
+*://issueantenna.com/*
+
 # Stack Exchange
 *://base64.work/*
 *://ichi.pro/*
@@ -57,6 +61,7 @@
 ##############################
 # (Unofficial) Translations
 ##############################
+*://pentan.info/doc/rfc/*
 *://requests-docs-ja.readthedocs.io/*
 *://runebook.dev/*
 *://salt.iajapan.org/wpmu/anti_spam/admin/tech/rfc/*
@@ -64,6 +69,7 @@
 *://tex2e.github.io/rfc-translater/*
 *://triple-underscore.github.io/rfc-others/*
 *://www.postfix-jp.info/trans-*/*
+*://www.t-net.ne.jp/~cyfis/rfc/*
 *://www5d.biglobe.ne.jp/stssk/rfc/*
 *://xn--go-hh0g6u.com/*
 *://ysatoautonomous.github.io/jm-draft/*
