@@ -71,5 +71,6 @@
 *://www.postfix-jp.info/trans-*/*
 *://www.t-net.ne.jp/~cyfis/rfc/*
 *://www5d.biglobe.ne.jp/stssk/rfc/*
+*://www5d.biglobe.ne.jp/~stssk/rfc/*
 *://xn--go-hh0g6u.com/*
 *://ysatoautonomous.github.io/jm-draft/*
