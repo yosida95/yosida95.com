@@ -18,6 +18,7 @@ Birthday
 
 .. _contacts:
 
+
 Contacts
 --------
 
@@ -32,6 +33,7 @@ Facebook
 
 Keybase
     `keybase.io/yosida95`_
+
 
 Works
 -----
@@ -55,6 +57,7 @@ Miscellany
 -  `PyCon JP 2012参加レポート <http://gihyo.jp/news/report/01/pyconjp2012>`_
 -  `高校生による中学生・高校生のためのカンファレンス，CombConfを12月23日に開催します <http://gihyo.jp/news/info/2012/11/2701>`_
 
+
 Talks
 -----
 
@@ -77,6 +80,7 @@ Selected Talks
 
 .. _certifications:
 
+
 Certifications
 --------------
 
@@ -95,6 +99,11 @@ Certifications
 - `宅地建物取引士 資格試験合格 <http://www.retio.or.jp/>`_ (Dec 2019)
 
   (en: Qualifications Examination for Real Estate Transaction Agent)
+
+- `測量士補 資格試験合格 <https://www.gsi.go.jp/>`_ (Jan 2021)
+
+  (en: Qualifications Examination for Assistant Surveyor)
+
 
 Online Presence
 ---------------
