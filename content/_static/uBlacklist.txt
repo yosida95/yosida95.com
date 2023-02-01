@@ -34,6 +34,7 @@
 
 # GitHub
 *://bytemeta.vip/*
+*://github-wiki-see.page/*
 *://issueantenna.com/*
 
 # Stack Exchange
@@ -65,6 +66,7 @@
 *://requests-docs-ja.readthedocs.io/*
 *://runebook.dev/*
 *://salt.iajapan.org/wpmu/anti_spam/admin/tech/rfc/*
+*://sphinx.shibu.jp/*
 *://srgia.com/docs/*
 *://tex2e.github.io/rfc-translater/*
 *://triple-underscore.github.io/rfc-others/*
