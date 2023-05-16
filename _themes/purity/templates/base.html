@@ -29,6 +29,7 @@
     {%- endif %}
     <link rel="author" href="http://www.hatena.ne.jp/yosida95/">
 
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script>
       window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
@@ -47,7 +48,7 @@
         return t;
       }(document, "script", "twitter-wjs"));
     </script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    {%- include "google_analytics.html" %}
     {%- block extrahead %}{% endblock %}
   </head>
   <body>
@@ -134,7 +135,6 @@
     </div><!-- #wrapper End -->
 
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57d37edcf04e9ecd"></script>
-    {%- include "google_analytics.html" %}
   </body>
 </html>
-{#- vim:set filetype=htmljinja: -#}
+{#- vim:set filetype=jinja2.html: -#}
