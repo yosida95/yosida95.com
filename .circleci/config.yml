@@ -1,40 +1,38 @@
 ---
-version: 2
+version: 2.1
+orbs:
+  python: circleci/python@2.1
 defaults: &defaults
-    docker:
-      - image: circleci/python:3.6
 jobs:
   build:
-    <<: *defaults
+    executor:
+      name: python/default
+      tag: "3.10"
     steps:
       - checkout: {}
-      - restore_cache:
-          key: build-{{ checksum "requirements.txt" }}
+      - python/install-packages:
+          pkg-manager: pip
+          pip-dependency-file: requirements.txt
       - run: |
-          if [ ! -d ".venv" ]; then
-            python -m venv ./.venv
-            . ./.venv/bin/activate
-            pip install --upgrade pip
-            pip install -r requirements.txt
-          fi
-      - save_cache:
-          key: build-{{ checksum "requirements.txt" }}
-          paths:
-            - ".venv"
-      - run: |
-          . ./.venv/bin/activate
           make publish
-      - persist_to_workspace:
-          root: .
-          paths:
-            - output
+      - when:
+          condition:
+            equal:
+              - <<pipeline.git.branch>>
+              - master
+          steps:
+            - persist_to_workspace:
+                root: .
+                paths:
+                  - output
   deploy:
-    <<: *defaults
+    docker:
+      - image: cimg/base:current-22.04
     steps:
       - checkout: {}
       - add_ssh_keys: {}
       - run: |
-          cat << EOF > ~/.ssh/known_hosts
+          cat \<< EOF > ~/.ssh/known_hosts
           [s9.rs2plus.gehirn.ne.jp]:22341,[153.127.109.65]:22341 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGh08oN+BTakK+pFUgZPI9lj1mb8vSuNtl7RmTf/KUmoNYeI/y54HvNMHaWNuy4/Zco3zFctBkZIk4FxPFrVDR4=
           EOF
       - attach_workspace:
@@ -53,4 +51,6 @@ workflows:
       - deploy:
           requires:
             - build
-...
+          filters:
+            branches:
+              only: master
