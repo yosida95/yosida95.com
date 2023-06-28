@@ -62,6 +62,8 @@
 ##############################
 # (Unofficial) Translations
 ##############################
+*://docs.pylonsproject.jp/*
+*://okajun35.github.io/*
 *://pentan.info/doc/rfc/*
 *://requests-docs-ja.readthedocs.io/*
 *://runebook.dev/*
@@ -69,7 +71,8 @@
 *://sphinx.shibu.jp/*
 *://srgia.com/docs/*
 *://tex2e.github.io/rfc-translater/*
-*://triple-underscore.github.io/rfc-others/*
+*://triple-underscore.github.io/*
+*://www.asahi-net.or.jp/~ax2s-kmtn/*
 *://www.postfix-jp.info/trans-*/*
 *://www.t-net.ne.jp/~cyfis/rfc/*
 *://www5d.biglobe.ne.jp/stssk/rfc/*
