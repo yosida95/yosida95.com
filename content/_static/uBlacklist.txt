@@ -63,6 +63,8 @@
 # (Unofficial) Translations
 ##############################
 *://docs.pylonsproject.jp/*
+*://ja.legacy.reactjs.org/*
+*://nextjs-ja-translation-docs.vercel.app/*
 *://okajun35.github.io/*
 *://pentan.info/doc/rfc/*
 *://requests-docs-ja.readthedocs.io/*
@@ -71,6 +73,7 @@
 *://sphinx.shibu.jp/*
 *://srgia.com/docs/*
 *://tex2e.github.io/rfc-translater/*
+*://tracpath.com/docs/*
 *://triple-underscore.github.io/*
 *://www.asahi-net.or.jp/~ax2s-kmtn/*
 *://www.postfix-jp.info/trans-*/*
