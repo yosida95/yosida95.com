@@ -62,11 +62,15 @@
 ##############################
 # (Unofficial) Translations
 ##############################
+*://cgi.cse.unsw.edu.au/*
+*://developer.mozilla.org.cach3.com/*
 *://docs.pylonsproject.jp/*
 *://ja.legacy.reactjs.org/*
+*://jekyllrb-ja.github.io/*
 *://nextjs-ja-translation-docs.vercel.app/*
 *://okajun35.github.io/*
 *://pentan.info/doc/rfc/*
+*://pipenv-ja.readthedocs.io/*
 *://requests-docs-ja.readthedocs.io/*
 *://runebook.dev/*
 *://salt.iajapan.org/wpmu/anti_spam/admin/tech/rfc/*
