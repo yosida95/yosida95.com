@@ -62,6 +62,7 @@
 ##############################
 # (Unofficial) Translations
 ##############################
+*://angular.jp/*
 *://cgi.cse.unsw.edu.au/*
 *://developer.mozilla.org.cach3.com/*
 *://docs.pylonsproject.jp/*
@@ -86,3 +87,4 @@
 *://www5d.biglobe.ne.jp/~stssk/rfc/*
 *://xn--go-hh0g6u.com/*
 *://ysatoautonomous.github.io/jm-draft/*
+*://*.docschina.org/
