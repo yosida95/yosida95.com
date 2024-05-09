@@ -64,12 +64,14 @@
 ##############################
 *://angular.jp/*
 *://cgi.cse.unsw.edu.au/*
+*://delete-circleci-and-firebase--angular-ja.netlify.app/*
 *://developer.mozilla.org.cach3.com/*
 *://docs.pylonsproject.jp/*
 *://ja.legacy.reactjs.org/*
 *://jekyllrb-ja.github.io/*
 *://nextjs-ja-translation-docs.vercel.app/*
 *://okajun35.github.io/*
+*://packaging.python.org/ja/*
 *://pentan.info/doc/rfc/*
 *://pipenv-ja.readthedocs.io/*
 *://requests-docs-ja.readthedocs.io/*
