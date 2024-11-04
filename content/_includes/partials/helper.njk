@@ -1,0 +1,44 @@
+{% macro archives(currentYear=none) -%}
+  <div>
+    <ul>
+      {%- for year in collections.byYear %}
+      <li>
+        <a href="{{ year.url }}">{{ year.year }}</a> ({{ year.pages| length }})
+        {%- if currentYear and (currentYear| int) == year.year %}
+        <ul>
+          {%- for month in year.months %}
+          <li><a href="{{ month.url }}">{{ month.title }}</a> ({{ month.pages| length }})</li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+{%- endmacro %}
+
+{% macro taglist(tags) -%}
+  {%- for tag in tags| sort %}
+    <a href="{{ collections.tagByName[tag].url }}">{{ tag }}</a>
+    {%- if not loop.last -%}, {% endif %}
+  {%- endfor %}
+{%- endmacro %}
+
+{% macro summary(article) -%}
+  <article class="post">
+    <h1 class="title"><a href="{{ article.url }}">{{ article.data.title }}</a></h1>
+    <span class="post-meta">
+      Posted on <strong>{{ article.date| strftime('%a, %b %d, %Y') }}</strong>
+      in <strong><a href="{{ collections.categoryByName[article.data.postCategory].url }}">{{ article.data.postCategory }}</a></strong>
+      {%- if article.data.postTags| length > 0 %}
+      tagged with {{ taglist(article.data.postTags) }}
+      {%- endif %}
+    </span>
+
+    <p>
+      {{ article.content| striptags| truncate(10) }}
+    </p>
+
+    <a href="{{ article.url }}">Read more &hellip;</a>
+  </article>
+{%- endmacro %}

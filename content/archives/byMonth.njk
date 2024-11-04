@@ -1,0 +1,10 @@
+---
+permalink: "{{ month.url }}"
+pagination:
+  data: collections.byMonth
+  size: 1
+  alias: month
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ month.title }}"
+---

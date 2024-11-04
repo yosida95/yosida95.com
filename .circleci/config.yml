@@ -1,33 +1,31 @@
 ---
 version: 2.1
 orbs:
-  python: circleci/python@2.1
-defaults: &defaults
+  node: circleci/node@6
 jobs:
   build:
-    executor:
-      name: python/default
-      tag: "3.10"
+    executor: &node
+      name: node/default
+      tag: "22.12"
     steps:
       - checkout: {}
-      - python/install-packages:
-          pkg-manager: pip
-          pip-dependency-file: requirements.txt
-      - run: |
-          make publish
-      - when:
-          condition:
-            equal:
-              - <<pipeline.git.branch>>
-              - master
-          steps:
-            - persist_to_workspace:
-                root: .
-                paths:
-                  - output
+      - node/install-packages: {}
+      - run:
+          environment:
+            NODE_ENV: production
+          command: npm run build
+      - run:
+          name: PostCSS
+          environment:
+            NODE_ENV: production
+          command: npm run postcss
+      - persist_to_workspace:
+          root: .
+          paths:
+            - dist
   deploy:
     docker:
-      - image: cimg/base:current-22.04
+      - image: cimg/deploy:2024.11
     steps:
       - checkout: {}
       - add_ssh_keys: {}
@@ -39,8 +37,8 @@ jobs:
           at: .
       - run: |
           REVISION="$(git rev-parse --short HEAD)"
-          ln -s ./output "./${REVISION}"
-          tar czvfh "./${REVISION}.tar.gz" "./${REVISION}"
+          ln -s ./dist "./${REVISION}"
+          tar czvhf "./${REVISION}.tar.gz" "./${REVISION}"
           scp -P 22341 "${REVISION}.tar.gz" "rs2p@s9.rs2plus.gehirn.ne.jp:/var/www/yosida95.com"
           ssh -p 22341 rs2p@s9.rs2plus.gehirn.ne.jp "cd /var/www/yosida95.com; tar xzf ${REVISION}.tar.gz && ln -sfT /var/www/yosida95.com/${REVISION} ./html"
 workflows:
@@ -53,4 +51,5 @@ workflows:
             - build
           filters:
             branches:
-              only: master
+              only:
+                - master

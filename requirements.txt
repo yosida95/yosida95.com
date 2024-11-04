@@ -1,2 +1,0 @@
-pelican ~= 4.5
-pelican-alias ~= 1.1

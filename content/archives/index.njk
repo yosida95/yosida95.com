@@ -1,0 +1,25 @@
+---
+title: Archives
+layout: layouts/base.njk
+permalink: "archives/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber + 1}}.html{% else %}index.html{% endif %}"
+pagination:
+  data: collections.posts
+  size: 5
+  alias: posts
+  reverse: true
+eleventyExcludeFromCollections: true
+---
+{% from "partials/helper.njk" import summary with context %}
+
+{%- for article in posts %}
+  {{ summary(article) }}
+{%- endfor %}
+
+<div class="pagination">
+  {%- if pagination.href.previous| default(false) %}
+  <a href="{{ pagination.href.previous }}" class="newer-posts">&laquo; Newer posts</a>
+  {%- endif %}
+  {%- if pagination.href.next| default(false) %}
+  <a href="{{ pagination.href.next }}" class="older-posts">Older posts &raquo;</a>
+  {%- endif %}
+</div>

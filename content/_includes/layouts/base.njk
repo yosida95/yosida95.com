@@ -1,0 +1,128 @@
+{%- from "partials/helper.njk" import archives with context -%}
+{%- set qualifiedTitle %}
+{%- if includePageTitle| default(true) -%}{{ title }} — {% endif -%}{{ site.name }}
+{%- endset -%}
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ description }}" />
+    <!-- The Open Graph -->
+    <meta property="og:title" content="{{ qualifiedTitle }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ page.url| htmlBaseUrl(site.url) }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="{{ thumbnail| htmlBaseUrl(site.url) }}" />
+    <meta property="og:site_name" content="yosida95" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@yosida95" />
+    <title>{{ qualifiedTitle }}</title>
+    <link rel="stylesheet" type="text/css" href="/_static/css/style.css" media="screen" />
+    <link rel="canonical" href="{{ page.url| htmlBaseUrl(site.url) }}" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <link rel="author" href="http://www.hatena.ne.jp/yosida95/" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
+    {%- include "partials/google_analytics.njk" %}
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <div class="inner">
+          <div class="logo">
+            <a href="/"><strong>yosida95</strong></a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="/"><span>HOME</span></a></li>
+              <li><a href="/archives/"><span>BLOG</span></a></li>
+              <li><a href="/photos"><span>PHOTOS</span></a></li>
+            </ul>
+          </div><!-- .nav end -->
+          <div class="clear"></div>
+        </div><!-- .inner end -->
+      </div><!-- #header end -->
+
+      <div id="main">
+        <div class="inner custom_content">
+          <div class="content">
+            {%- block body -%}
+            <h1>{{ title }}</h1>
+            {{ content| safe }}
+            {%- endblock %}
+          </div>
+          <div class="sidebar">
+            <div class="sidebar_item">
+              <h5>yosida95</h5>
+              <div id="author-bio">
+                <p style="text-align: center"><img src="/_static/icon_200x200.png" width="160" /></p>
+                <p><a href="/">著者について / About yosida95</a></p>
+                <p>ここで述べる内容は私個人の見解に基づくものであり、私の雇用者や私が所属する団体とは一切の関係がありません。</p>
+              </div>
+              <p><a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/yosida95">Follow @yosida95</a></p>
+            </div>
+
+            <div class="sidebar_item">
+              <h5>Recent Articles</h5>
+              <ul>
+              {%- for page in collections.posts| reverse| firstN(5) %}
+                <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+              {%- endfor %}
+              </ul>
+            </div>
+
+            <div class="sidebar_item">
+              <h5>Categories</h5>
+              <ul>
+              {%- for category in collections.categories| sort %}
+                <li><a href="{{ category.url }}">{{ category.name }}</a> ({{ category.pages| length }})</li>
+              {%- endfor %}
+              </ul>
+            </div>
+
+            <div class="sidebar_item">
+              <h5>Archives</h5>
+              {%- block archives %}
+              {{ archives() }}
+              {%- endblock %}
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div><!-- .inner End -->
+      </div><!-- #main End -->
+
+      <div id="footer">
+        <div class="footer_small">
+          <div class="copyright">Copyright &copy; 2015 Kohei YOSHIDA.</div>
+          <div class="social">
+            <a href="https://github.com/yosida95"><img src="/_static/img/github.svg" width="24" alt="GitHub" /></a>
+            <a href="https://twitter.com/yosida95"><img src="/_static/img/twitter.svg" width="24" alt="Twitter" /></a>
+            <a href="https://www.facebook.com/yosida95"><img src="/_static/img/facebook.svg" width="24" alt="facebook" /></a>
+            <a href="/rss.xml"><img src="/_static/img/rss.svg" width="24" alt="RSS Feed" /></a>
+          </div>
+        </div>
+      </div><!-- #footer End -->
+    </div><!-- #wrapper End -->
+  </body>
+</html>

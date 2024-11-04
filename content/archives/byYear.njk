@@ -1,0 +1,10 @@
+---
+permalink: "{{ year.url }}"
+pagination:
+  data: collections.byYear
+  size: 1
+  alias: year
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ year.title }}"
+---

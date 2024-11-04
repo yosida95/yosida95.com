@@ -1,0 +1,55 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order"
+  ],
+  "rules": {
+    "alpha-value-notation": [
+      "number"
+    ],
+    "comment-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment",
+          "stylelint-commands"
+        ],
+        "ignoreComments": [
+          "/\\{\\{\\{|\\}\\}\\}/"
+        ]
+      }
+    ],
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "after-comment",
+          "after-declaration",
+          "first-nested"
+        ]
+      }
+    ],
+    "font-family-name-quotes": [
+      "always-unless-keyword"
+    ],
+    "import-notation": "string",
+    "media-feature-range-notation": "prefix",
+    "no-descending-specificity": null,
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": [
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ],
+    "selector-id-pattern": null,
+    "selector-class-pattern": null
+  }
+}

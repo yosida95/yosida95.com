@@ -1,0 +1,10 @@
+---
+permalink: "{{ day.url }}"
+pagination:
+  data: collections.byDay
+  size: 1
+  alias: day
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ day.title }}"
+---

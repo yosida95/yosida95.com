@@ -1,0 +1,12 @@
+---
+permalink: "/categories/{{ category.name }}/"
+layout: layouts/archive.njk
+pagination:
+  data: collections.categories
+  size: 1
+  alias: category
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ category.name }}"
+reverse: true
+---

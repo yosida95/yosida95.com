@@ -1,8 +1,0 @@
-{% extends "index.html" %}
-
-{% block url %}{{ tag.url }}{% endblock %}
-
-{% block title -%}
-tag:{{ tag }} {{ TITLESEPARATOR }} {{ super() }}
-{%- endblock %}
-{#- vim:set filetype=htmljinja: -#}

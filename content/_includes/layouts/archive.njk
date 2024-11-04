@@ -1,0 +1,16 @@
+---
+reverse: false
+---
+
+{%- extends "layouts/base.njk" -%}
+{%- from "partials/helper.njk" import summary with context -%}
+
+{%- set top = pagination.items[0] %}
+
+{% block archives %}{{ archives(top.year| default(0)) }}{% endblock %}
+
+{% block body %}
+  {%- for article in top.pages| reverse if reverse else top.pages %}
+    {{ summary(article) }}
+  {%- endfor %}
+{% endblock %}

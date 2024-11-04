@@ -1,0 +1,101 @@
+@import "@csstools/normalize.css";
+@import "./purity.css";
+@import "./responsive.css";
+@import "prismjs/themes/prism-okaidia.css";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.post-meta {
+  margin: 0.5em 0;
+}
+
+#header .logo a,
+#header .logo strong {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #444;
+}
+
+.content {
+  line-height: 1.8;
+
+  h1 {
+    margin: calc((1em - 1lh) / 2) 0;
+    line-height: 1.6;
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin: 1em 0;
+    line-height: 1.8;
+  }
+
+  ul li {
+    margin: 0.25em 0;
+  }
+
+  table {
+    margin: 2em 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 0;
+
+    tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      padding: 1em 0.5em;
+    }
+  }
+
+  img {
+    display: inline-block;
+    max-height: 85dvh;
+    padding: 2em;
+    margin: 0;
+    object-fit: contain;
+  }
+
+  code:not([class*="language-*"]) {
+    padding: 0.25em;
+    color: #f8f8f2;
+    background: #272822;
+  }
+
+  .table-x-scroll {
+    position: relative;
+    max-width: 100%;
+    overflow-x: scroll;
+
+    & > p {
+      position: sticky;
+      top: 0;
+      left: 0;
+      font-size: 0.95em;
+      color: #555;
+      text-align: center;
+    }
+  }
+}
+
+.footnote {
+  margin: 2em 0;
+  border-top: 1px dotted #ddd;
+
+  aside[role="doc-footnote"] {
+    margin: 1em 0;
+    font-size: 0.95em;
+  }
+}
+
+article.post {
+  padding: 0 0 2em;
+  margin: 2em 0;
+}

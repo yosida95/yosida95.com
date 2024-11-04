@@ -1,0 +1,21 @@
+{% extends "layouts/base.njk" %}
+
+{% from "partials/helper.njk" import archives, taglist with context %}
+
+{% block description -%}
+{%- endblock %}
+
+{% block archives %}{{ archives(page.date.getFullYear()) }}{% endblock %}
+
+{% block body %}
+<h1>{{ title }}</h1>
+<span class="post-meta">
+  Posted on <strong>{{ page.date| strftime('%a, %b %d, %Y') }}</strong>
+  in <strong><a href="{{ collections.categoryByName[postCategory].url }}">{{ postCategory }}</a></strong>
+  {%- if postTags| length > 0 %}
+  tagged with {{ taglist(postTags) }}
+  {%- endif %}
+</span>
+
+{{ content| safe }}
+{%- endblock %}
