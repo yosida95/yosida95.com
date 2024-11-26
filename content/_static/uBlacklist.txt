@@ -71,6 +71,7 @@
 *://ja.legacy.reactjs.org/*
 *://jekyllrb-ja.github.io/*
 *://nextjs-ja-translation-docs.vercel.app/*
+*://nodejs.jp/*
 *://okajun35.github.io/*
 *://packaging.python.org/ja/*
 *://pentan.info/doc/rfc/*
@@ -90,4 +91,5 @@
 *://www5d.biglobe.ne.jp/~stssk/rfc/*
 *://xn--go-hh0g6u.com/*
 *://ysatoautonomous.github.io/jm-draft/*
+*://yujiorama.github.io/unofficial-translations/*
 *://*.docschina.org/
