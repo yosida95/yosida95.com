@@ -100,6 +100,11 @@ Wikimedia Foundation への寄付は 2014 年から始め、 2018 年 7 月か�
 
 みなさんも健康に気をつけて人生を進めてください。
 
+## 追伸
+
+ことし9年ぶりに [unixtime.jp](https://unixtime.jp/) のコードを書いて UNIX 時間から ISO 8601 日時を引くエンドポイントを実装したのでご活用ください。<br />
+[https://unixtime.jp/by-time/1735657200](https://unixtime.jp/by-time/1735657200)
+
 ## これまでのまとめ
 
 - [2010 年](/2010/12/31/115758.html)
