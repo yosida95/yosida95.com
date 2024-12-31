@@ -6,6 +6,7 @@ import strftime from "strftime";
 
 import * as collections from "./content/_includes/collections.js";
 import * as shortCodes from "./content/_includes/shortCodes.js";
+import * as transforms from "./content/_includes/transforms.js";
 import { isProduction } from "./content/_includes/env.js";
 import setupMarkdownIt from "./content/_includes/setupMarkdownIt.js";
 
@@ -73,6 +74,8 @@ export default (eleventyConfig) => {
       return content;
     });
   }
+
+  eleventyConfig.addTransform("external", transforms.external);
 
   return {
     dir: {
