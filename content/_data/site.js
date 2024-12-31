@@ -6,5 +6,6 @@ export default {
   googleAnalytics: isProduction ? "G-LDLSZKMGS4" : undefined,
   externalLinks: {
     allowed: ["blogmedia.yosida95.com"],
+    prohibited: ["localhost", "localdomain", "hq.yosida95.net"],
   },
 };
