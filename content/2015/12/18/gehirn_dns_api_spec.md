@@ -89,12 +89,12 @@ API を用いて行える操作は以下に示すとおりです。
 }
 ```
 
-| フィールド         | 意味                            | リクエスト時要否 |
-| ------------------ | ------------------------------- | ---------------- |
-| id                 | ゾーンを特定する一意な ID       | 不要             |
-| name               | ドメイン名                      | 必要             |
-| current_version_id | 現在アクティブなバージョンの ID | 不要             |
-| current_version    | 現在アクティブなバージョン      | 不要             |
+| フィールド {scope="col"} | 意味 {scope="col"}              | リクエスト時要否 {scope="col"} |
+|--------------------------|---------------------------------|--------------------------------|
+| id                       | ゾーンを特定する一意な ID       | 不要                           |
+| name                     | ドメイン名                      | 必要                           |
+| current_version_id       | 現在アクティブなバージョンの ID | 不要                           |
+| current_version          | 現在アクティブなバージョン      | 不要                           |
 
 #### ゾーンの作成
 
@@ -210,13 +210,13 @@ Request Body
 }
 ```
 
-| フィールド       | 意味                          | リクエスト時要否 |
-| ---------------- | ----------------------------- | ---------------- |
-| id               | バージョンを特定する一意な ID | 不要             |
-| name             | 任意のバージョン名            | 必要             |
-| editable         | 編集可否                      | 不要             |
-| created_at       | バージョン作成時刻            | 不要             |
-| last_modified_at | バージョン最終更新時刻        | 不要             |
+| フィールド {scope="col"} | 意味 {scope="col"}            | リクエスト時要否 {scope="col"} |
+|--------------------------|-------------------------------|--------------------------------|
+| id                       | バージョンを特定する一意な ID | 不要                           |
+| name                     | 任意のバージョン名            | 必要                           |
+| editable                 | 編集可否                      | 不要                           |
+| created_at               | バージョン作成時刻            | 不要                           |
+| last_modified_at         | バージョン最終更新時刻        | 不要                           |
 
 #### バージョンの作成
 
@@ -419,24 +419,24 @@ Request Body
 }
 ```
 
-| フィールド       | 意味                                              | リクエスト時要否               |
-| ---------------- | ------------------------------------------------- | ------------------------------ |
-| id               | レコードセットを特定する一意な ID                 | 不要                           |
-| name             | ホストネーム                                      | 必要                           |
-| type             | レコードタイプ (A, AAAA, CNAME, MX, NS, SRV, TXT) | 必要                           |
-| enable_alias     | エイリアス機能利用                                | 必要                           |
-| alias_to         | エイリアス先 (エイリアス機能利用時)               | enable_alias が true の時のみ  |
-| ttl              | TTL                                               | enable_alias が false の時のみ |
-| records          | レコードのリスト                                  | enable_alias が false の時のみ |
-| records.prio     | Priority                                          | type が MX または SRV の時のみ |
-| records.address  | IPv4 または IPv6 アドレス                         | type が A または AAAA の時のみ |
-| records.cname    | CNAME                                             | type が CNAME の時のみ         |
-| records.exchange | メールサーバーのドメインネーム                    | type が MX の時のみ            |
-| records.nsdname  | ネームサーバーのドメインネーム                    | type が NS の時のみ            |
-| records.target   | ターゲットのドメインネーム                        | type が SRV の時のみ           |
-| records.port     | ターゲットのポート番号                            | type が SRV の時のみ           |
-| records.weight   | ターゲットの重み                                  | type が SRV の時のみ           |
-| records.data     | TXT データ                                        | type が TXT の時のみ           |
+| フィールド {scope="col"} | 意味 {scope="col"}                                | リクエスト時要否 {scope="col"} |
+|--------------------------|---------------------------------------------------|--------------------------------|
+| id                       | レコードセットを特定する一意な ID                 | 不要                           |
+| name                     | ホストネーム                                      | 必要                           |
+| type                     | レコードタイプ (A, AAAA, CNAME, MX, NS, SRV, TXT) | 必要                           |
+| enable_alias             | エイリアス機能利用                                | 必要                           |
+| alias_to                 | エイリアス先 (エイリアス機能利用時)               | enable_alias が true の時のみ  |
+| ttl                      | TTL                                               | enable_alias が false の時のみ |
+| records                  | レコードのリスト                                  | enable_alias が false の時のみ |
+| records.prio             | Priority                                          | type が MX または SRV の時のみ |
+| records.address          | IPv4 または IPv6 アドレス                         | type が A または AAAA の時のみ |
+| records.cname            | CNAME                                             | type が CNAME の時のみ         |
+| records.exchange         | メールサーバーのドメインネーム                    | type が MX の時のみ            |
+| records.nsdname          | ネームサーバーのドメインネーム                    | type が NS の時のみ            |
+| records.target           | ターゲットのドメインネーム                        | type が SRV の時のみ           |
+| records.port             | ターゲットのポート番号                            | type が SRV の時のみ           |
+| records.weight           | ターゲットの重み                                  | type が SRV の時のみ           |
+| records.data             | TXT データ                                        | type が TXT の時のみ           |
 
 #### レコードセットの作成
 
