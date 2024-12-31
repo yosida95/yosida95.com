@@ -4,7 +4,7 @@ import globals from "globals";
 
 export default [
   {
-    ignores: ["output/"],
+    ignores: ["output/", "content/**/*.njk"],
   },
   js.configs.recommended,
   {
