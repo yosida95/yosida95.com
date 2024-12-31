@@ -95,6 +95,62 @@
   }
 }
 
+.post-navigation {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0 1em;
+  align-items: stretch;
+  padding: 1em 0;
+  margin: 2em 0;
+  border: dotted #ddd;
+  border-width: 1px 0;
+
+  &::before {
+    box-sizing: border-box;
+    display: inline-block;
+    flex: 0 0;
+    width: 1px;
+    content: "";
+    border: dotted #ddd;
+    border-width: 0 1px 0 0;
+  }
+
+  .prev,
+  .next {
+    flex: 1;
+
+    a {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 0.5em;
+      height: 100%;
+
+      span {
+        flex: 1;
+      }
+    }
+  }
+
+  .prev {
+    order: -1;
+  }
+
+  .prev a::before {
+    display: block;
+    flex: 0 0 auto;
+    align-self: center;
+    content: "\00ab";
+  }
+
+  .next a::after {
+    display: inline-block;
+    flex: 0 0 auto;
+    align-self: center;
+    justify-content: start;
+    content: "\00bb";
+  }
+}
+
 article.post {
   padding: 0 0 2em;
   margin: 2em 0;

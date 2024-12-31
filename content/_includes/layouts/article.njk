@@ -2,6 +2,9 @@
 
 {% from "partials/helper.njk" import archives, taglist with context %}
 
+{%- set previous = collections.posts| getPreviousCollectionItem(page) -%}
+{%- set next = collections.posts| getNextCollectionItem(page) -%}
+
 {% block description -%}
 {%- endblock %}
 
@@ -18,4 +21,9 @@
 </span>
 
 {{ content| safe }}
+
+<div class="post-navigation">
+  <div class="prev">{% if previous %}<a href="{{ previous.url }}"><span>{{ previous.data.title }}</span></a>{% endif %}</div>
+  <div class="next">{% if next %}<a href="{{ next.url }}"><span>{{ next.data.title }}</span></a>{% endif %}</div>
+</div>
 {%- endblock %}
