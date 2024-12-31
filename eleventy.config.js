@@ -75,7 +75,12 @@ export default (eleventyConfig) => {
     });
   }
 
-  eleventyConfig.addTransform("external", transforms.external);
+  eleventyConfig.addTransform("external", function (content) {
+    if (this.page.outputPath.endsWith(".html")) {
+      return transforms.external(content);
+    }
+    return content;
+  });
 
   return {
     dir: {
