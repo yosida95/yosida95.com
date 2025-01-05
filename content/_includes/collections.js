@@ -147,6 +147,8 @@ export function byDay(collections) {
 export function redirects(collections) {
   return collections
     .getAllSorted()
-    .filter((page) => typeof page.data.alias?.trim() === "string")
-    .map(({ url: to, data: { title, alias: from } }) => ({ from, to, title }));
+    .filter(({ data: { aliases } }) => Array.isArray(aliases) && aliases.length > 0)
+    .flatMap(({ url: to, data: { title, aliases } }) =>
+      aliases.map((from) => ({ from, to, title })),
+    );
 }

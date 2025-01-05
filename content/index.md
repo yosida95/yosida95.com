@@ -2,7 +2,9 @@
 title: About yosida95
 layout: layouts/base.njk
 includePageTitle: false
-alias: pages/about.html
+aliases:
+  - /pages/about.html
+  - /yosida95/
 ---
 
 <dl>
