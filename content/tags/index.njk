@@ -1,0 +1,11 @@
+---
+title: Tags
+layout: layouts/base.njk
+eleventyExcludeFromCollections: true
+---
+
+<ul>
+{%- for tag in collections.tags %}
+  <li><a href="{{ tag.url }}">{{ tag.name }}</a> ({{ tag.pages| length }})</li>
+{%- endfor %}
+</ul>

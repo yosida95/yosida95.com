@@ -1,0 +1,12 @@
+---
+layout: layouts/archive.njk
+permalink: "/tags/{{ tag.name }}/"
+pagination:
+  data: collections.tags
+  size: 1
+  alias: tag
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ tag.name }}"
+reverse: true
+---
