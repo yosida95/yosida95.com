@@ -19,6 +19,9 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@yosida95" />
     <meta name="generator" content="{{ eleventy.generator }}" />
+    {%- if robots is defined %}
+    <meta name="robots" content="{{ robots }}" />
+    {%- endif %}
     <title>{{ qualifiedTitle }}</title>
     <link rel="stylesheet" type="text/css" href="/_static/css/style.css" media="screen" />
     <link rel="canonical" href="{{ page.url| htmlBaseUrl(site.url) }}" />

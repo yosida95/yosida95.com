@@ -2,6 +2,8 @@
 title: すべての記事
 layout: layouts/base.njk
 permalink: "archives/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber + 1}}.html{% else %}index.html{% endif %}"
+eleventyComputed:
+  robots: "{% if pagination.pageNumber === 0 %}all{% else %}noindex{% endif %}"
 pagination:
   data: collections.posts
   size: 5
