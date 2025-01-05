@@ -10,6 +10,7 @@ reverse: false
 {% block archives %}{{ archives(top.year| default(0)) }}{% endblock %}
 
 {% block body %}
+  <h1>{{ title }}</h1>
   {%- for article in top.pages| reverse if reverse else top.pages %}
     {{ summary(article) }}
   {%- endfor %}
