@@ -1,0 +1,78 @@
+@import "@csstools/normalize.css";
+@import "./purity.css";
+@import "./responsive.css";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#header .logo a,
+#header .logo strong {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #444;
+}
+
+.content {
+  line-height: 1.8;
+}
+
+.post-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0 1em;
+  align-items: center;
+  padding: 1em 0;
+  margin: 2em 0;
+  border: dotted #ddd;
+  border-width: 1px 0;
+
+  &::before {
+    box-sizing: border-box;
+    display: inline-block;
+    grid-row: 1;
+    grid-column: 2;
+    width: 1px;
+    height: 1.5lh;
+    content: "";
+    border: dotted #ddd;
+    border-width: 0 1px 0 0;
+  }
+
+  :is(.prev, .next) a {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5em;
+    height: 100%;
+
+    span {
+      flex: 1;
+    }
+  }
+
+  .prev {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: start;
+
+    a::before {
+      flex: 0 0 auto;
+      align-self: center;
+      content: "\00ab";
+    }
+  }
+
+  .next {
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: end;
+
+    a::after {
+      flex: 0 0 auto;
+      align-self: center;
+      content: "\00bb";
+    }
+  }
+}

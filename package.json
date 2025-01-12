@@ -4,14 +4,13 @@
   "scripts": {
     "build": "eleventy",
     "dev": "eleventy --serve",
-    "postcss": "postcss content/_static/css/style.css --dir dist/_static/css/ --verbose"
+    "postcss": "postcss content/_static/css/style.css content/_static/css/photos.css --dir dist/_static/css/ --verbose"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@csstools/normalize.css": "^12.1.1",
-    "@fullhuman/postcss-purgecss": "^6.0.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "autoprefixer": "^10.4.16",
     "common-tags": "^1.8.2",
