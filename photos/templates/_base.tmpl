@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ block "description" . }}Photos{{ end }}">
+    <!-- The Open Graph protocol -->
+    <meta property="og:title" content="Photos &mdash; yosida95">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ .URL }}">
+    <meta property="og:description" content="{{ template "description" . }}">
+    <meta property="og:image" content="https://yosida95.com/_static/icon_200x200.png">
+    <meta property="og:site_name" content="yosida95">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@yosida95">
+    <link rel="stylesheet" type="text/css" href="/_static/css/style.css" media="screen">
+    <link rel="canonical" href="{{ .URL }}" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="author" href="http://www.hatena.ne.jp/yosida95/" />
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+    <title>Photos &mdash; yosida95</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <div class="inner">
+          <div class="logo">
+            <a href="/"><strong>yosida95</strong></a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="/"><span>HOME</span></a></li>
+              <li><a href="/archives/"><span>BLOG</span></a></li>
+              <li><a href="/photos"><span>PHOTOS</span></a></li>
+            </ul>
+          </div><!-- .nav end -->
+          <div class="clear"></div>
+        </div><!-- .inner end -->
+      </div><!-- #header end -->
+
+      <div id="main">
+        <div class="inner">
+          {{- block "main" . -}}
+          {{- end }}
+        </div><!-- .inner END -->
+      </div><!-- #main End -->
+
+      <div id="footer">
+        <div class="footer_small">
+          <div class="copyright">Copyright &copy; 2015 Kohei YOSHIDA.</div>
+          <div class="social">
+            <a href="https://github.com/yosida95"><img src="/_static/img/github.svg" width="24" alt="GitHub"></a>
+            <a href="https://twitter.com/yosida95"><img src="/_static/img/twitter.svg" width="24" alt="Twitter"></a>
+            <a href="https://www.facebook.com/yosida95"><img src="/_static/img/facebook.svg" width="24" alt="facebook"></a>
+            <a href="/rss.xml"><img src="/_static/img/rss.svg" width="24" alt="RSS Feed"></a>
+          </div>
+        </div>
+      </div><!-- #footer End -->
+    </div><!-- #wrapper End -->
+  </body>
+</html>

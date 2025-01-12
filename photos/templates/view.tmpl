@@ -1,0 +1,31 @@
+{{- define "description" -}}
+  {{ .Description }}
+{{- end -}}
+
+{{- define "main" }}
+          <div class="content">
+            <div class="gallery clearfix">
+              <a href="/photos/{{ .Photo.Key }}">
+                <img src="/photos/{{ .Photo.KeyResized }}" alt="{{ .Photo.Id }}">
+              </a>
+            </div>
+            <p class="post-meta">
+              posted on <strong>{{ .Photo.CreatedAt }}</strong>
+            </p>
+            <p>{{ .Photo.Comment }}</p>
+          </div><!-- .content End -->
+          <div class="sidebar">
+            <div class="sidebar_item">
+              <h5>yosida95</h5>
+              <div id="author-bio">
+                <p style="text-align: center"><img src="/_static/icon_200x200.png" width="160"></p>
+                <p><a href="/">著者について / About yosida95</a></p>
+                <p>ここで述べる内容は私個人の見解に基づくものであり、私の雇用者や私が所属する団体とは一切の関係がありません。</p>
+              </div>
+              <p><a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/yosida95">Follow @yosida95</a></p>
+            </div>
+          </div><!-- .sidebar End -->
+          <div class="clear"></div>
+{{- end -}}
+
+{{- template "templates/_base.tmpl" . -}}

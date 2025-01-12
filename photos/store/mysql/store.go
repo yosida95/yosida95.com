@@ -3,25 +3,22 @@ package store_mysql
 import (
 	"context"
 	"database/sql"
-	"google.golang.org/api/option"
 	"io"
 	"time"
 
 	"cloud.google.com/go/storage"
 	sq "github.com/Masterminds/squirrel"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/yosida95/yosida95.com/photos/pkg/photos"
-	"github.com/yosida95/yosida95.com/photos/pkg/store"
+	"github.com/yosida95/yosida95.com/photos"
 )
 
 type Config struct {
-	DSN         string
-	Bucket      string
-	Credentials string
-	KeyPrefix   string
+	DSN       string
+	Bucket    string
+	KeyPrefix string
 }
 
-func New(c Config) (store.StoreFactory, error) {
+func New(c Config) (photos.StoreFactory, error) {
 	conn, err := sql.Open("mysql", c.DSN)
 	if err != nil {
 		return nil, err
@@ -48,17 +45,13 @@ func (s *factory) Close() error {
 	return s.conn.Close()
 }
 
-func (s *factory) Begin(ctx context.Context) (store.Store, error) {
+func (s *factory) Begin(ctx context.Context) (photos.Store, error) {
 	tx, err := s.conn.BeginTx(ctx, nil)
 	if err != nil {
 		return nil, err
 	}
 
-	opts := []option.ClientOption{}
-	if s.cfg.Credentials != "" {
-		opts = append(opts, option.WithCredentialsFile(s.cfg.Credentials))
-	}
-	cli, err := storage.NewClient(ctx, opts...)
+	cli, err := storage.NewClient(ctx)
 	if err != nil {
 		return nil, err
 	}
@@ -89,7 +82,7 @@ func (c *cursor) Commit() error {
 	return c.tx.Commit()
 }
 
-func (c *cursor) PhotoFetch() photos.PhotoFetcher {
+func (c *cursor) FetchPhoto() photos.PhotoFetcher {
 	return &photoFetcher{
 		tx: c.tx,
 		stmt: sq.
@@ -155,7 +148,7 @@ func (f *photoFetcher) All() ([]*photos.Photo, error) {
 	return ret, nil
 }
 
-func (c *cursor) PhotoCount() (int64, error) {
+func (c *cursor) CountPhoto() (int64, error) {
 	var count int64
 	err := sq.
 		Select("COUNT(id)").

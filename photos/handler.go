@@ -1,33 +1,35 @@
-package handler
+package photos
 
 import (
 	"fmt"
 	"html/template"
 	"io"
+	"log"
 	"net/http"
+	"net/url"
+	"os"
 	"path"
 	"strconv"
 	"strings"
 	"unicode/utf8"
-
-	"github.com/yosida95/yosida95.com/photos/pkg/photos"
-	"github.com/yosida95/yosida95.com/photos/pkg/store"
 )
 
 type Handler struct {
-	store store.StoreFactory
+	store StoreFactory
 }
 
-func NewHandler(store store.StoreFactory) *Handler {
+func NewHandler(store StoreFactory) *Handler {
 	return &Handler{
 		store: store,
 	}
 }
 
 func Register(mux *http.ServeMux, h *Handler) {
-	mux.HandleFunc("/photos", h.List)
-	mux.HandleFunc("/photos/", h.View)
-	mux.HandleFunc("/photos/upload.xml", h.Upload)
+	if debug {
+		mux.Handle("GET /", http.FileServerFS(os.DirFS("dist/")))
+	}
+	mux.HandleFunc("GET /photos/{$}", h.List)
+	mux.HandleFunc("GET /photos/{photo_id}", h.View)
 }
 
 var commonHeaders = map[string]string{
@@ -43,13 +45,10 @@ func emitCommonHeaders(w http.ResponseWriter) {
 	}
 }
 
-var listTmpl = template.Must(
-	template.New("list").Parse(string(MustAsset("templates/list.tmpl"))))
-
 type listTmplContext struct {
 	Page   int64
 	Last   int64
-	Photos []*photos.Photo
+	Photos []*Photo
 }
 
 func (c *listTmplContext) PrevPage() int64 {
@@ -63,67 +62,72 @@ func (c *listTmplContext) NextPage() int64 {
 	return 0
 }
 
+func (c *listTmplContext) URL() template.URL {
+	return resolveURL(&url.URL{
+		Path:     "/photos",
+		RawQuery: fmt.Sprintf("page=%d", c.Page),
+	})
+}
+
 func (h *Handler) List(w http.ResponseWriter, req *http.Request) {
 	emitCommonHeaders(w)
-	if req.Method != http.MethodGet {
-		w.Header().Set("Methods", "GET")
-		w.WriteHeader(http.StatusMethodNotAllowed)
-		return
-	}
-
 	if err := req.ParseForm(); err != nil {
 		http.Error(w, http.StatusText(http.StatusBadRequest), http.StatusBadRequest)
 		return
 	}
 
 	ctx := req.Context()
-	store, err := h.store.Begin(ctx)
+	tx, err := h.store.Begin(ctx)
 	if err != nil {
+		log.Printf("Failed to start transaction: %v", err)
 		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return
 	}
-	defer store.Rollback()
+	defer tx.Rollback()
 
-	count, err := store.PhotoCount()
+	count, err := tx.CountPhoto()
 	if err != nil {
+		log.Printf("Failed to count photos: %v", err)
 		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return
 	}
 	last := (count + 8) / 9
 
-	page, err := strconv.ParseInt(req.Form.Get("page"), 10, 32)
-	if err != nil || page > last {
-		http.Redirect(w, req, fmt.Sprintf("/photos?page=%d", last), http.StatusFound)
-		return
+	var page int64
+	if pageValue := req.Form.Get("page"); pageValue == "" {
+		page = last
+	} else {
+		var err error
+		page, err = strconv.ParseInt(pageValue, 10, 32)
+		if err != nil || page > last {
+			http.Redirect(w, req, fmt.Sprintf("/photos?page=%d", last), http.StatusFound)
+			return
+		}
 	}
 
-	photos, err := store.
-		PhotoFetch().
+	photos, err := tx.
+		FetchPhoto().
 		Offset(9 * (page - 1)).
 		Limit(9).
 		All()
 	if err != nil {
+		log.Printf("Failed to fetch photos: %v", err)
 		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return
 	}
-	if len(photos) == 0 {
-		http.NotFound(w, req)
-		return
-	}
 
-	w.WriteHeader(http.StatusOK)
-	listTmpl.Execute(w, &listTmplContext{
+	w.Header().Set("Content-Type", "text/html; charset=UTF-8")
+	if err := lookupTemplate("templates/list.tmpl").Execute(w, &listTmplContext{
 		Page:   page,
 		Last:   last,
 		Photos: photos,
-	})
+	}); err != nil {
+		log.Printf("Failed to render HTML: %v", err)
+	}
 }
 
-var viewTmpl = template.Must(
-	template.New("view").Parse(string(MustAsset("templates/view.tmpl"))))
-
 type viewTmplContext struct {
-	Photo *photos.Photo
+	Photo *Photo
 }
 
 func (c *viewTmplContext) Description() string {
@@ -141,61 +145,60 @@ func (c *viewTmplContext) Description() string {
 	return c.Photo.Id.String()
 }
 
+func (c *viewTmplContext) URL() template.URL {
+	return resolveURL(&url.URL{
+		Path: path.Join("/photos", string(c.Photo.Id)),
+	})
+}
+
 func (h *Handler) View(w http.ResponseWriter, req *http.Request) {
 	emitCommonHeaders(w)
-	if req.Method != http.MethodGet {
-		w.Header().Set("Methods", "GET")
-		w.WriteHeader(http.StatusMethodNotAllowed)
-		return
-	}
 
-	base, name := path.Split(req.URL.Path)
-	if base != "/photos/" {
-		http.NotFound(w, req)
-		return
-	}
-	if name == "" {
-		http.Redirect(w, req, "/photos", http.StatusMovedPermanently)
-		return
-	}
-
-	var id photos.PhotoId
-	var ext, size string
+	name := req.PathValue("photo_id")
+	var (
+		id   PhotoId
+		ext  string
+		size string
+	)
 	if dot := strings.IndexByte(name, '.'); dot < 0 {
-		id = photos.PhotoId(name)
+		id = PhotoId(name)
 	} else {
-		id, ext = photos.PhotoId(name[:dot]), name[dot+1:]
+		id, ext = PhotoId(name[:dot]), name[dot+1:]
 		if dot := strings.IndexByte(ext, '.'); dot >= 0 {
 			size, ext = ext[:dot], ext[dot+1:]
 		}
 	}
 
 	ctx := req.Context()
-	store, err := h.store.Begin(ctx)
+	tx, err := h.store.Begin(ctx)
 	if err != nil {
+		log.Printf("Failed to start transaction: %v", err)
 		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return
 	}
-	defer store.Rollback()
+	defer tx.Rollback()
 
-	photo, err := store.
-		PhotoFetch().
+	photo, err := tx.
+		FetchPhoto().
 		Id(id).
 		First()
 	if err != nil {
-		if err == photos.ErrPhotoNotFound {
+		if err == ErrPhotoNotFound {
 			http.NotFound(w, req)
 			return
 		}
+		log.Printf("Failed to fetch metadata: %v", err)
 		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return
 	}
 
 	if ext == "" {
-		w.WriteHeader(http.StatusOK)
-		viewTmpl.Execute(w, &viewTmplContext{
+		w.Header().Set("Content-Type", "text/html; charset=UTF-8")
+		if err := lookupTemplate("templates/view.tmpl").Execute(w, &viewTmplContext{
 			Photo: photo,
-		})
+		}); err != nil {
+			log.Printf("Failed to render HTML: %v", err)
+		}
 		return
 	}
 	if ext != photo.Ext() {
@@ -204,34 +207,40 @@ func (h *Handler) View(w http.ResponseWriter, req *http.Request) {
 	}
 	var key string
 	switch size {
-	default:
-		http.NotFound(w, req)
-		return
-	case "raw":
-		http.Redirect(w, req, "/photos/"+photo.Key(), http.StatusMovedPermanently)
-		return
 	case "":
 		key = photo.Key()
 	case "resized":
 		key = photo.KeyResized()
 	case "thumbnail":
 		key = photo.KeyCropped()
+	case "raw":
+		http.Redirect(w, req, photo.Key(), http.StatusMovedPermanently)
+		return
+	default:
+		http.NotFound(w, req)
+		return
 	}
 
-	r, err := store.BlobGet(key)
+	r, err := tx.BlobGet(key)
 	if err != nil {
-		if err == photos.ErrPhotoNotFound {
+		if err == ErrPhotoNotFound {
 			http.NotFound(w, req)
 			return
 		}
+		log.Printf("Failed to load photo: %v", err)
 		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return
 	}
 	defer r.Close()
 
-	w.WriteHeader(http.StatusOK)
+	w.Header().Set("Cache-Control", "public, max-age=900")
 	io.Copy(w, r)
 }
 
-func (h *Handler) Upload(w http.ResponseWriter, req *http.Request) {
+func resolveURL(ref *url.URL) template.URL {
+	base := url.URL{
+		Scheme: "https",
+		Host:   "yosida95.com",
+	}
+	return template.URL(base.ResolveReference(ref).String())
 }

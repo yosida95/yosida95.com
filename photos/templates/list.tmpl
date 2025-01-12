@@ -1,0 +1,29 @@
+{{- define "main" }}
+          <ul class="portfolio three-columns">
+            {{ range $index, $photo := .Photos }}
+            <li>
+              <div class="item-image">
+                <div class="gallery clearfix" >
+                  <a href="/photos/{{ $photo.Id }}">
+                    <img src="/photos/{{ $photo.KeyCropped }}" alt="{{ $photo.Id }}">
+                  </a>
+                </div>
+              </div>
+              <div class="item-name">
+                <p>{{ $photo.CreatedAt }}</p>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+
+          <div class="post-navigation">
+            <div class="prev">
+              {{- if gt .PrevPage 0 }}<a href="/photos?page={{ .PrevPage }}"><span>Older</span></a>{{ end -}}
+            </div>
+            <div class="next">
+              {{- if gt .NextPage 0 }}<a href="/photos?page={{.NextPage}}"><span>Newer</span></a>{{ end -}}
+            </div>
+          </div>
+{{- end -}}
+
+{{- template "templates/_base.tmpl" . -}}
