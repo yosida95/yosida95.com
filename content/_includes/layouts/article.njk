@@ -14,7 +14,7 @@
 <h1>{{ title }}</h1>
 <span class="post-meta">
   Posted on <strong>{{ page.date| strftime('%a, %b %d, %Y') }}</strong>
-  in <strong><a href="{{ collections.categoryByName[postCategory].url }}">{{ postCategory }}</a></strong>
+  in <strong><a href="{{ postCategory| categoryUrl }}">{{ postCategory }}</a></strong>
   {%- if postTags| length > 0 %}
   tagged with {{ taglist(postTags) }}
   {%- endif %}

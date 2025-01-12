@@ -19,7 +19,7 @@
 
 {% macro taglist(tags) -%}
   {%- for tag in tags| sort %}
-    <a href="{{ collections.tagByName[tag].url }}">{{ tag }}</a>
+    <a href="{{ tag| tagUrl }}">{{ tag }}</a>
     {%- if not loop.last -%}, {% endif %}
   {%- endfor %}
 {%- endmacro %}
@@ -29,7 +29,7 @@
     <h1 class="title"><a href="{{ article.url }}">{{ article.data.title }}</a></h1>
     <span class="post-meta">
       Posted on <strong>{{ article.date| strftime('%a, %b %d, %Y') }}</strong>
-      in <strong><a href="{{ collections.categoryByName[article.data.postCategory].url }}">{{ article.data.postCategory }}</a></strong>
+      in <strong><a href="{{ article.data.postCategory| categoryUrl }}">{{ article.data.postCategory }}</a></strong>
       {%- if article.data.postTags| length > 0 %}
       tagged with {{ taglist(article.data.postTags) }}
       {%- endif %}

@@ -14,7 +14,6 @@ export function categories(collections) {
     if (index == null) {
       categories.push({
         name: category,
-        url: `/categories/${encodeURIComponent(category)}/`,
         pages: [e],
       });
       return;
@@ -23,10 +22,6 @@ export function categories(collections) {
   });
   categories.sort(({ name: a }, { name: b }) => collator.compare(a, b));
   return categories;
-}
-
-export function categoryByName(collections) {
-  return Object.fromEntries(categories(collections).map((e) => [e.name, e]));
 }
 
 export function tags(collections) {
@@ -45,7 +40,6 @@ export function tags(collections) {
       if (index == null) {
         tags.push({
           name: tag,
-          url: `/tags/${encodeURIComponent(tag)}/`,
           pages: [e],
         });
         return;
@@ -55,10 +49,6 @@ export function tags(collections) {
   });
   tags.sort(({ name: a }, { name: b }) => collator.compare(a, b));
   return tags;
-}
-
-export function tagByName(collections) {
-  return Object.fromEntries(tags(collections).map((e) => [e.name, e]));
 }
 
 export function byYear(collections) {

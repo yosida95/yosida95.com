@@ -6,6 +6,6 @@ eleventyExcludeFromCollections: true
 
 <ul>
 {%- for category in collections.categories %}
-  <li><a href="{{ category.url }}">{{ category.name }}</a> ({{ category.pages| length }})</li>
+  <li><a href="{{ category.name| categoryUrl }}">{{ category.name }}</a> ({{ category.pages| length }})</li>
 {%- endfor %}
 </ul>

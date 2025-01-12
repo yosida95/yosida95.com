@@ -40,16 +40,22 @@ export default (eleventyConfig) => {
     "content/_static/js": "_static/js",
   });
 
+  eleventyConfig.addFilter("categoryUrl", function (name) {
+    const slug = eleventyConfig.getFilter("slugify").call(this, name);
+    return `/categories/${slug}/`;
+  });
   eleventyConfig.addFilter("firstN", (collection, count) => collection.slice(0, count));
   eleventyConfig.addFilter("strftime", (data, format) => strftime(format, data));
+  eleventyConfig.addFilter("tagUrl", function (name) {
+    const slug = eleventyConfig.getFilter("slugify").call(this, name);
+    return `/tags/${slug}/`;
+  });
 
   eleventyConfig.addPairedShortcode("footnote", shortCodes.footnote);
   eleventyConfig.addPairedShortcode("fnitem", shortCodes.fnitem);
 
   eleventyConfig.addCollection("categories", collections.categories);
-  eleventyConfig.addCollection("categoryByName", collections.categoryByName);
   eleventyConfig.addCollection("tags", collections.tags);
-  eleventyConfig.addCollection("tagByName", collections.tagByName);
   eleventyConfig.addCollection("redirects", collections.redirects);
   eleventyConfig.addCollection("byYear", collections.byYear);
   eleventyConfig.addCollection("byMonth", collections.byMonth);

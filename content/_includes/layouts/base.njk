@@ -81,7 +81,7 @@
               <h5>Categories</h5>
               <ul>
               {%- for category in collections.categories| sort %}
-                <li><a href="{{ category.url }}">{{ category.name }}</a> ({{ category.pages| length }})</li>
+                <li><a href="{{ category.name| categoryUrl }}">{{ category.name }}</a> ({{ category.pages| length }})</li>
               {%- endfor %}
               </ul>
             </div>

@@ -1,5 +1,5 @@
 ---
-permalink: "/categories/{{ category.name }}/"
+permalink: "{{ category.name| categoryUrl }}"
 layout: layouts/archive.njk
 pagination:
   data: collections.categories

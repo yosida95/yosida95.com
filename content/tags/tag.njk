@@ -1,6 +1,6 @@
 ---
 layout: layouts/archive.njk
-permalink: "/tags/{{ tag.name }}/"
+permalink: "{{ tag.name| tagUrl }}"
 pagination:
   data: collections.tags
   size: 1
