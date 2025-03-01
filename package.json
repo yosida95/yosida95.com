@@ -15,7 +15,7 @@
     "autoprefixer": "^10.4.16",
     "common-tags": "^1.8.2",
     "cssnano": "^7.0.1",
-    "eslint": "^9.18.0",
+    "eslint": "^9.21.0",
     "eslint-config-prettier": "^9.0.0",
     "globals": "^15.0.0",
     "html-validate": "^9.1.3",
