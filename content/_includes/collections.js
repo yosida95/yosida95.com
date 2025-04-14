@@ -75,7 +75,7 @@ export function byYear(collections) {
    *  }>} */
   const out = [];
   collections.getFilteredByTag("posts").forEach((e) => {
-    const year = e.page.date.getFullYear();
+    const [, year, month, day] = e.page.filePathStem.split("/", 5);
     let byYear = out.find((e) => e.year === year);
     if (byYear == null) {
       byYear = {
@@ -89,7 +89,6 @@ export function byYear(collections) {
     }
     byYear.pages.push(e);
 
-    const month = e.page.date.getMonth() + 1;
     let byMonth = byYear.months.find((e) => e.month === month);
     if (byMonth == null) {
       byMonth = {
@@ -104,7 +103,6 @@ export function byYear(collections) {
     }
     byMonth.pages.push(e);
 
-    const day = e.page.date.getDate();
     let byDay = byMonth.days.find((e) => e.day === day);
     if (byDay == null) {
       byDay = {
