@@ -62,13 +62,13 @@ postTags: [Year in Review]
 
 ### 北海道
 
-> [![ひがし北海道フリーパスで4泊5日冬の北海道縦断旅行をした](https://blogmedia.yosida95.com/2019/01/31/hokkaido-trip/polar-bear.jpg)](/2019/01/31/hokkaido-trip.md)
+> [![ひがし北海道フリーパスで4泊5日冬の北海道縦断旅行をした](https://blogmedia.yosida95.com/2019/01/31/hokkaido-trip/polar-bear.jpg)](/2019/01/31/hokkaido-trip.html)
 >
 > <p class="attribution">-ひがし北海道フリーパスで4泊5日冬の北海道縦断旅行をした</p>
 
 ### 静岡県
 
-> [![静岡県ひとり旅](https://blogmedia.yosida95.com/2019/06/25/shizuoka-trip/tumbnail.jpg)](/2019/06/25/shizuoka-trip.md)
+> [![静岡県ひとり旅](https://blogmedia.yosida95.com/2019/06/25/shizuoka-trip/tumbnail.jpg)](/2019/06/25/shizuoka-trip.html)
 >
 > <p class="attribution">-静岡県ひとり旅</p>
 
