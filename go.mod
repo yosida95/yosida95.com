@@ -6,7 +6,7 @@ toolchain go1.24.1
 require (
 	cloud.google.com/go/storage v1.51.0
 	github.com/Masterminds/squirrel v1.5.4
-	github.com/go-sql-driver/mysql v1.8.1
+	github.com/go-sql-driver/mysql v1.9.2
 )
 
 require (
