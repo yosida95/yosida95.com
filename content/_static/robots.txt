@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /cdn-cgi/
 
 Sitemap: https://yosida95.com/sitemap.xml
