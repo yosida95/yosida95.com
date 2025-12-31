@@ -31,7 +31,7 @@ ChromeOS デバイスに触ってみたくて買った。 ChromeOS は2012年く
 
 KVM ベースの Linux VM が使える [Crostini](https://www.chromium.org/chromium-os/developer-library/guides/containers/containers-and-vms/) は魅力的で、普段のソフトウェア開発では Linux ボックスに SSH して Vim でコードを書いているわたしにとって、 Chromebook 1台ですべてを済ませられるのではという誘惑がある。
 
-でも、そこまでうまい話はなかった。 Intel N100 / 4 GB / eMMC の構成で VM を快適に使うのは難しいし、ターミナルエミュレータの自由度や好みの問題もある。そもそも今のスタイルに落ち着いたのは、 OS X 上の VirtualBox で Linux を動かしても性能が出ないし、 `/dev/random` のエントロピーもなかなかたまらなくて実機を求めた経緯がある。 Crostini は UI との融合が見事で、ワンクリックで Linux VM が立ち上がってくる利便性は高いのだけれど。
+でも、そこまでうまい話はなかった。 Intel N100 / 4 GB / eMMC の構成で VM を快適に使うのは難しいし、ターミナルエミュレータの自由度や好みの問題もある。そもそも今のスタイルに落ち着いたのは、 OS X 上の VirtualBox で Linux を動かしても性能が出ないし、 `/dev/random` のエントロピーもなかなかたまらなくて実機を求めた経緯からだった。 Crostini は UI との融合が見事で、ワンクリックで Linux VM が立ち上がってくる利便性は高いのだけれど。
 
 起動・終了の速さや筐体の頑丈さ、ユーザーに不用意に変なことをさせない堅牢さなどは、なるほど中高生に持たせるのに向いているし、外回りをする営業職や Web ベースの定型作業、コールセンターなどで重宝がられることが理解できる。安いし。 Chromebook には夢と実用性がある。
 
@@ -39,7 +39,7 @@ KVM ベースの Linux VM が使える [Crostini](https://www.chromium.org/chrom
 
 ### ThinkCentre neo
 
-日常のソフトウェア開発のために買ったけれどほとんど触れてない。手癖で Ubuntu Server を入れたけれど、私物なんだから雑に壊してもよく、 Arch Linux にしておけばよかったと後悔している。 Arch Linux を入れ直すとして、慣れている GRUB 2 にするか systemd-boot にするか悩むけれど、自宅から持ち出さないしひとり暮らしだし別にセキュアブートはいらないよね、みたいなところで放置している。
+日常のソフトウェア開発のために買ったけれどほとんど触れてない。手癖で Ubuntu Server を入れたけれど、私物なんだから雑に壊してもよく、 Arch Linux にしておけばよかったと後悔している。 Arch Linux を入れ直すとして、慣れている GRUB 2 にするか systemd-boot にするか、自宅から持ち出さないしひとり暮らしだし別にセキュアブートはいらないのでは、みたいなところで悩んで放置している。
 
 とりあえず PiKVM デバイスを繋いでいるけれど、 ThinkCentre の筐体から電源を引き出せないし、そもそも外出しないしで無用の長物と化している。
 
@@ -47,7 +47,7 @@ KVM ベースの Linux VM が使える [Crostini](https://www.chromium.org/chrom
 
 10年以上使っていたコンシューマ向けの NEC Aterm Wi-Fi AP を NETGEAR Bussiness の WAX 210 に入れ替えた。スペックと値段だけ見て決めたけれど、明確に失敗だった。まったく安定せず、多いと日に2度くらい、不定期にクラッシュする。
 
-コイル鳴きもひどいんだけれど、 YouTube やdアニメストアで動画をシークする度に音がなるのが少しおもしろい。
+コイル鳴きもひどいんだけれど、 YouTube やdアニメストアで動画をシークする度に音が鳴るのは少しおもしろい。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">…… Wi-Fi AP 壁面設置ヨシ！ <a href="https://t.co/L8G9vDCLhQ">pic.twitter.com/L8G9vDCLhQ</a></p>&mdash; よしだ (@yosida95) <a href="https://twitter.com/yosida95/status/1962393553914806317?ref_src=twsrc%5Etfw">September 1, 2025</a></blockquote>
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">NETGEAR WAX210 の WPA3-Personal Transition Mode と iOS 18.6 、ひょっとして相性問題がないだろうか　WPA2 で運用していた AP を置き換えて SSID はそのまま PSK を変更した上で Transition Mode を有効化、 iOS の Wi-Fi 設定を削除して再設定したら不安定になった　WPA2 固定で安定する</p>&mdash; よしだ (@yosida95) <a href="https://twitter.com/yosida95/status/1967802229643219040?ref_src=twsrc%5Etfw">September 16, 2025</a></blockquote>
@@ -55,7 +55,7 @@ KVM ベースの Linux VM が使える [Crostini](https://www.chromium.org/chrom
 
 ### そのほか
 
-ほかにも Dyson V12 や空気清浄機、布団掃除機、サーキュレーターなどを買ったけれど、買い替えだったり日常の買い物という感じだったりで特筆することはない。
+ほかにも Dyson V12 や空気清浄機、布団掃除機、サーキュレーターなどを買ったけれど、これらは買い替えだったり日常の買い物という感じだったりで特筆することはない。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">空気清浄機を12年ぶりに買い替えたぞ　加湿器は別途あるから加湿機能のないものを選んだらコンパクトでよい　古い機種では垂直に設置されていたフィルターが、新しい機種では水平に置かれていて高さが抑えられている <a href="https://t.co/JCoMDfphl7">pic.twitter.com/JCoMDfphl7</a></p>&mdash; よしだ (@yosida95) <a href="https://twitter.com/yosida95/status/1962407219502452901?ref_src=twsrc%5Etfw">September 1, 2025</a></blockquote>
 
@@ -80,7 +80,7 @@ KVM ベースの Linux VM が使える [Crostini](https://www.chromium.org/chrom
 
 感染症が広まって以降、ずっとリモートワークを続けていたけれど、8月、ついに物理出社した。
 
-担当外だけれどリモートワークが寂しくてミーティングに混ざって Google Meet で茶々を入れていたら、なんやかんやあって担当者になってネットワーク機器のキッティングやセットアップの仕事が生まれた。それ以来、月に2度くらい出社している。
+担当外だけれどリモートワークが寂しくてミーティングに混ざって Google Meet で茶々を入れていたら、なんやかんやあって担当者になってネットワーク機器のキッティングやセットアップの仕事が生まれた。それ以来、月に2度くらい出社している。 AI が体を得るまでは体を使う仕事をして糊口をしのごう。
 
 出社していなかった間に静脈認証器の更改があって、社歴が1番古いのにオフィスに入れない状態もついに終わりを迎えた。
 
@@ -88,7 +88,7 @@ KVM ベースの Linux VM が使える [Crostini](https://www.chromium.org/chrom
 
 ソフトウェア開発では、相変わらず完全仮想化、コンテナ仮想化、 DNS 、SMTP 、 Web PKI 、 OAuth 、 WebAuthn 、 HTTP 、 gRPC なんかの周りでパソコンカタカタをしている。
 
-ただ、リリース以来、ずっと開発していた[レンタルサーバーサービスが終了](https://support.gehirn.jp/information/2025/01/15/rs2plus-sunset/)することが決まって、その対応にも迫られている。個人でも社内でもちゃんとドッグフーディングしていたので、何度も移行作業を繰り返している。このブログも移行しないといけないので寂しい。
+ただ、リリース以来、ずっと開発していた[レンタルサーバーサービスが終了](https://support.gehirn.jp/information/2025/01/15/rs2plus-sunset/)することが決まって、その対応にも迫られている。社内でも個人でもちゃんとドッグフーディングしていたので、何度も移行作業を繰り返している。このブログも移行しないといけないので寂しい。
 
 ## ことし寄付した先
 
