@@ -17,7 +17,7 @@
     "cssnano": "^7.1.2",
     "eslint": "^9.30.0",
     "eslint-config-prettier": "^10.1.8",
-    "globals": "^16.3.0",
+    "globals": "^17.2.0",
     "html-validate": "^10.4.0",
     "htmlnano": "^2.1.2",
     "markdown-it": "^14.0.0",
