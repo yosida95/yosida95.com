@@ -11,7 +11,7 @@
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@csstools/normalize.css": "^12.1.1",
-    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
     "autoprefixer": "^10.4.16",
     "common-tags": "^1.8.2",
     "cssnano": "^7.1.2",
