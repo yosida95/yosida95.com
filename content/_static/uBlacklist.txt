@@ -70,6 +70,7 @@
 *://gitlab-docs.creationline.com/*
 *://ja.legacy.reactjs.org/*
 *://jekyllrb-ja.github.io/*
+*://matsuand.github.io/*
 *://nextjs-ja-translation-docs.vercel.app/*
 *://nodejs.jp/*
 *://okajun35.github.io/*
