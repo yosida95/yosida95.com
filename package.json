@@ -6,11 +6,10 @@
     "dev": "eleventy --serve",
     "postcss": "postcss content/_static/css/style.css content/_static/css/photos.css --dir dist/_static/css/ --verbose"
   },
-  "devDependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@biomejs/biome": "2.5.1",
     "@csstools/normalize.css": "^12.1.1",
     "autoprefixer": "^10.4.16",
     "common-tags": "^1.8.2",
@@ -25,14 +24,15 @@
     "postcss-import": "^16.0.0",
     "posthtml-parser": "^0.11.0",
     "posthtml-render": "^3.0.0",
+    "strftime": "^0.10.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.1",
     "stylelint": "^16.21.0",
     "stylelint-config-standard": "^38.0.0"
   },
   "browserslist": [
     "defaults and fully supports es6-module",
     "maintained node versions"
-  ],
-  "dependencies": {
-    "strftime": "^0.10.3"
-  }
+  ]
 }
