@@ -9,7 +9,9 @@ function isInternalLink(href) {
   if (url.hostname === baseUrl.hostname) {
     return true;
   }
-  if (site.externalLinks?.prohibited?.some((e) => isSubdomain(url.hostname, e))) {
+  if (
+    site.externalLinks?.prohibited?.some((e) => isSubdomain(url.hostname, e))
+  ) {
     throw new Error(`not allowed: ${url.hostname}`);
   }
   return site.externalLinks?.allowed?.some((e) => isSubdomain(url.hostname, e));

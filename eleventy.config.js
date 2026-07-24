@@ -5,17 +5,18 @@ import htmlnano from "htmlnano";
 import strftime from "strftime";
 
 import * as collections from "./content/_includes/collections.js";
-import * as shortCodes from "./content/_includes/shortCodes.js";
-import * as transforms from "./content/_includes/transforms.js";
 import { isProduction } from "./content/_includes/env.js";
 import setupMarkdownIt from "./content/_includes/setupMarkdownIt.js";
+import * as shortCodes from "./content/_includes/shortCodes.js";
+import * as transforms from "./content/_includes/transforms.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default (eleventyConfig) => {
   eleventyConfig.amendLibrary("md", (mdLib) => setupMarkdownIt(mdLib));
 
   eleventyConfig.addGlobalData("permalink", () => {
-    return (data) => `${data.page.filePathStem}.${data.page.outputFileExtension}`;
+    return (data) =>
+      `${data.page.filePathStem}.${data.page.outputFileExtension}`;
   });
 
   eleventyConfig.addPlugin(HtmlBasePlugin);
@@ -44,8 +45,12 @@ export default (eleventyConfig) => {
     const slug = eleventyConfig.getFilter("slugify").call(this, name);
     return `/categories/${slug}/`;
   });
-  eleventyConfig.addFilter("firstN", (collection, count) => collection.slice(0, count));
-  eleventyConfig.addFilter("strftime", (data, format) => strftime(format, data));
+  eleventyConfig.addFilter("firstN", (collection, count) =>
+    collection.slice(0, count),
+  );
+  eleventyConfig.addFilter("strftime", (data, format) =>
+    strftime(format, data),
+  );
   eleventyConfig.addFilter("tagUrl", function (name) {
     const slug = eleventyConfig.getFilter("slugify").call(this, name);
     return `/tags/${slug}/`;
