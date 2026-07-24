@@ -1,6 +1,18 @@
 ---
 version: 2
 updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    groups:
+      actions:
+        patterns: ["actions/*"]
+    schedule:
+      interval: "monthly"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    commit-message:
+      prefix: dependabot
+      include: scope
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
