@@ -16,7 +16,7 @@
     "cssnano": "^7.1.2",
     "html-validate": "^10.4.0",
     "htmlnano": "^2.1.2",
-    "markdown-it": "^14.3.0",
+    "markdown-it": "^14.3.2",
     "markdown-it-attrs": "^4.3.1",
     "markdown-it-deflist": "^3.0.0",
     "postcss": "^8.5.22",
